@@ -61,7 +61,12 @@ if ! git remote get-url origin >/dev/null 2>&1; then
   printf "Name for the repository [hypatia]: "; read -r REPO; REPO=${REPO:-hypatia}
   echo "A public repository can have a free live site; a private one cannot on a free plan."
   if ask "Make it public?"; then VIS=--public; else VIS=--private; fi
-  gh repo create "$REPO" $VIS --source=. --remote=origin
+  REPO=$(echo "$REPO" | tr ' ' '-')
+  # If a repository with that name already exists on your account, use it.
+  gh repo create "$REPO" $VIS --source=. --remote=origin 2>/dev/null || git remote add origin "https://github.com/$LOGIN/$REPO.git"
+  if git fetch -q origin main 2>/dev/null; then
+    git merge -q origin/main --allow-unrelated-histories -X ours -m "Join the repository's existing history" 2>/dev/null || true
+  fi
 fi
 FULL=$(gh repo view --json nameWithOwner -q .nameWithOwner)
 
