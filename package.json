@@ -12,7 +12,10 @@
     "test:watch": "vitest",
     "assets:pins": "node scripts/make-nasa-pin.mjs",
     "docs:credits": "node scripts/image-credits.mjs",
-    "seed:supabase": "node --env-file-if-exists=.env scripts/seed-supabase.mjs"
+    "seed:supabase": "node --env-file-if-exists=.env scripts/seed-supabase.mjs",
+    "engine:update": "sh engine/scripts/update.sh",
+    "publish:github": "sh scripts/publish-github.sh",
+    "engine:test": "cd engine && .venv/bin/python -m pytest -q"
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.3.0",
@@ -25,6 +28,7 @@
     "zustand": "^5.1.0"
   },
   "devDependencies": {
+    "@anthropic-ai/sdk": "^1.8.0",
     "@testing-library/dom": "^10.4.2",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.3",

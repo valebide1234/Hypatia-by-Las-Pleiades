@@ -1,12 +1,16 @@
 # Hypatia: NASA terrestrial analog finder
 
-Explore places on Earth that NASA and other agencies use as terrestrial analogs for the Moon and Mars.
+Explore places on Earth that NASA and other agencies use as terrestrial analogs for the Moon and Mars, discover new ones from NASA data, and open up any comparison in full.
 
-> Status: **Phase 7 complete**: all planned phases are built. The discovery engine itself is a reserved slot; see `docs/DISCOVERY_INTEGRATION.md`. See `hypatia_claude_code_prompt.md` for the full plan.
+**Created by Las Pléyades**, a team of girls aged 17 and 18 who have taken part in space and engineering projects such as cometa.sim, ShakthiSAT and NASA Astro Camp.
+
+Hypatia is an independent project that uses public NASA and Copernicus data. It is not endorsed by NASA, ESA or any other agency.
+
+> Status: **Phase 7 complete**, and the **discovery engine is connected**: it proposes new analog places and new uses for known sites from NASA data. See `docs/ENGINE.md` (what it does and how it is kept current) and `docs/DISCOVERY_INTEGRATION.md` (how it plugs in). See `hypatia_claude_code_prompt.md` for the original plan.
 
 ## Stack
 
-React 18 + TypeScript + Vite 5 · Tailwind CSS 3 · Zustand · Supabase (auth + Postgres) · Vitest · CesiumJS (from Phase 2)
+React 18 + TypeScript + Vite 5 · Tailwind CSS 3 · Zustand · Supabase (auth + Postgres) · Vitest · CesiumJS (from Phase 2) · Python 3.13 for the discovery engine (`engine/`, only needed to refresh its data)
 
 ## Setup
 
@@ -29,7 +33,10 @@ The app runs without Supabase keys: accounts are disabled and only guest mode is
 | `VITE_SUPABASE_URL` | Supabase project URL (Project Settings → API) |
 | `VITE_SUPABASE_ANON_KEY` | Supabase anon (public) key. Data is protected by row-level security. |
 | `SUPABASE_SERVICE_ROLE_KEY` | Server-side only, used by `npm run seed:supabase`. Never prefix with `VITE_`. |
-| `VITE_ENABLE_MOCK_DISCOVERY` | `true` by default. Set to `false` to remove the mock discovery provider (TEST DATA). |
+| `VITE_ENABLE_MOCK_DISCOVERY` | `false` by default. Set to `true` to also list the mock discovery provider (TEST DATA). |
+| `VITE_ENGINE_DATA_URL` | Optional. URL of the engine's data file. Default: `public/engine/discovery.json`, shipped with the app. |
+| `VITE_ASSISTANT_URL` | Optional. Address of the deployed `assistant` function, for Claude-worded answers in the Lab. |
+| `VITE_BASE` | Build time only. Sub-path the app is served from (e.g. `/hypatia/` on GitHub Pages). Default `/`. |
 | `VITE_CESIUM_ION_TOKEN` | Optional. Cesium ion token: enables Bing aerial imagery + Cesium World Terrain. Without it the globe uses NASA's Blue Marble (via GIBS, ~500 m/pixel, no terrain). |
 
 ### Supabase
@@ -40,6 +47,59 @@ The app runs without Supabase keys: accounts are disabled and only guest mode is
 2. Load the site catalogue: `npm run seed:supabase` (needs `SUPABASE_SERVICE_ROLE_KEY`; `-- --dry-run` to check without writing).
 3. **Auth → URL configuration:** set the Site URL to your app origin and add `http://localhost:5173/targets` and `http://localhost:5173/auth/update-password` to the redirect URLs (the second is used by the password-reset email).
 4. **Google sign-in (optional):** Auth → Providers → Google. Create an OAuth client in Google Cloud Console and add `https://<project-ref>.supabase.co/auth/v1/callback` as an authorized redirect URI.
+
+## Discovery engine
+
+`engine/` holds the analysis (Python). It retrieves NASA POWER climate (MERRA-2, CERES), Copernicus DEM terrain and the lunar and Martian archives (LOLA, MOLA, Diviner, Mars Climate Database, TES), scores Earth against 19 mission regions, and writes `public/engine/discovery.json`. The app reads that file through the discovery provider in `src/discovery/engine/`.
+
+```bash
+npm run engine:update   # re-fetch what NASA has published since the last run, re-score, export
+npm run engine:test     # the engine's own tests
+```
+
+The first `engine:update` creates `engine/.venv` and installs `engine/requirements.txt`. `.github/workflows/engine-update.yml` does the same once a month and commits the new data file. Details, thresholds and limits: `docs/ENGINE.md`.
+
+## Lab
+
+`/lab` (the **Lab** button in the top bar) holds the engine's full analysis, in the same look as the rest of the app. Everything is computed in the browser from `public/engine/lab.json`, which the engine exports together with the discovery file.
+
+| View | What it shows |
+| --- | --- |
+| Compare | Any Earth place against any of the 19 mission regions, for 9 kinds of test: overall score, confidence, the four categories, every parameter side by side with how each value was obtained, the best places for the region, and three other distance measures |
+| Report | The ten-section scientific report of the selected pair, in the interface language, downloadable as Markdown |
+| Machine learning | What the model is for, the map of Earth's environments (k-means, PCA, isolation forest on 877 grid cells), where the selected place and region fall, and how stable the model is |
+| Applications | Experiments the pair supports, field tests that are feasible, what no place on Earth can reproduce, and the best known pair for each kind of test |
+| Assistant | Questions answered from the engine's data in English, Spanish or Italian, and **Add a place**: a name or coordinates are looked up and the place's climate is requested live from NASA POWER |
+| Sources and method | Every page and service used and what is taken from each, how recent the data are, what could not be retrieved, and the full method with its tolerances |
+| About | The team, what Hypatia is for and what it must not be taken for |
+
+The score is the engine's own (`engine/analogs/similarity.py`), re-implemented in `src/lab/scoring.ts` and checked against numbers the Python engine exports (`src/lab/scoring.test.ts`). Earth places are Hypatia's 27 catalogued sites plus 10 engine reference sites that are not in the catalogue yet.
+
+**Claude (optional).** The assistant works without any key. To have Claude reword its answers in natural language, deploy `supabase/functions/assistant` (`supabase functions deploy assistant`), store the key as a Supabase secret (`supabase secrets set ANTHROPIC_API_KEY=…`) and set `VITE_ASSISTANT_URL`. Claude is given the engine's facts and told not to add to them.
+
+## Languages
+
+English (default), Spanish and Italian, chosen from the top bar and remembered in the browser. `t("English text")` looks the text up in `src/i18n/es.ts` and `src/i18n/it.ts` and falls back to English; a test (`src/i18n/i18n.test.ts`) fails if an interface text has no translation. Translated: the first screens, the top bar, the tour, filters and qualities, the discovery panel, the engine's findings, and the whole Lab including reports and the assistant. Not translated yet: the catalogue's long texts (site descriptions and explanations), the evidence sentences the engine writes for candidates, the favourites and saved-search panels, and, in Italian only, the Lab's application lists and source descriptions.
+
+## Publishing
+
+See [`docs/PUBLISHING.md`](docs/PUBLISHING.md): GitHub Pages (a workflow is included) and what the App Store would need.
+
+## Guided tour
+
+A tour leads a new visitor through the app, starting on the very first screen. Each page has its own short tour that starts by itself the first time the page is opened:
+
+| Page | What the tour explains |
+| --- | --- |
+| First screen (`/`) | What Hypatia is for, logging in or signing up, and continuing without an account |
+| Sign-in (`/auth`) | The log-in and sign-up tabs and the form (or why accounts are unavailable) |
+| Target page (`/targets`) | Choosing the Moon or Mars, and the session corner |
+| Globe (`/explore/…`) | The globe, the pins, a site's panel, the engine's findings, limitations, filters, the discovery panel, the Lab, favourites |
+| Lab (`/lab`) | The seven views, choosing a pair, the score and its confidence, the parameter table, the language switch |
+
+On the globe page the tour opens a site's panel and the discovery panel itself to explain what is inside them, and closes them again. Each note sits beside the element it describes, with Back, Next and **Skip tour** (which ends the tours for good). The **Tour** button replays the tour of the current page. Arrow keys move between steps and Esc skips.
+
+The steps are plain data in `src/tour/steps.ts`; a step points at the element marked `data-tour="…"`. The overlay is `src/components/tour/Tour.tsx` and the state is `src/store/tour.ts`. What has been seen is remembered in the browser (`localStorage`, key `hypatia.tour.v1`).
 
 ## Auth and guest mode
 
@@ -97,16 +157,18 @@ The rules live in `src/lib/ranking.ts` and are tested in `src/lib/ranking.test.t
 - **Code:** `src/lib/favourites.ts` holds the pure state, filter and sort logic (tested in `favourites.test.ts`). `src/store/userData.ts` applies changes optimistically through a `UserDataRepo`: `src/data/repo/supabaseRepo.ts` in production, protected by RLS, and `localRepo.ts` for development.
 - **Local demo account (development only):** when Supabase is not configured, the sign-in page offers "Use local demo account". It stores favourites in `localStorage` so the signed-in features can be tried without a backend. It is not available in production builds.
 
-## Discovery module (reserved slot)
+## Discovery module
 
-"Discover new analogs" in the filter bar opens a panel that reuses the quality picker. It shows a "Discovery engine coming soon" notice and runs any registered `DiscoveryProvider` (`src/discovery/`).
+"Discover new analogs" in the filter bar opens a panel that reuses the quality picker, lets the user choose a mission region (for example the Artemis south-pole region or Jezero crater), and runs a registered `DiscoveryProvider` (`src/discovery/`). The default provider is the Hypatia engine. The panel shows how recent the engine's data are and whether NASA has published newer data since.
 
 Provider results are validated, then shown as amber Hypatia-candidate pins. They:
 - are ranked by the same `rankSites` function as known sites
-- open the side panel with an "unverified" warning and the provider's confidence
+- open the side panel with an "unverified" warning, the provider's confidence and the values the engine retrieved
 - can be saved to favourites
 
-The included mock provider returns three synthetic candidates clearly labelled **TEST DATA**. Disable it with `VITE_ENABLE_MOCK_DISCOVERY=false` (or the `ENABLE_MOCK_DISCOVERY` constant). Integration steps for the real engine: [`docs/DISCOVERY_INTEGRATION.md`](docs/DISCOVERY_INTEGRATION.md).
+The panel also lists **known sites with new reasons**: catalogued sites where the data support a quality the catalogue does not list. The same findings appear in each site's panel, next to the catalogue entries the data support. They are suggestions and never change a site's rank.
+
+A mock provider that returns three synthetic candidates labelled **TEST DATA** remains for checking the pipeline; it is listed only when `VITE_ENABLE_MOCK_DISCOVERY=true`. Contract and data flow: [`docs/DISCOVERY_INTEGRATION.md`](docs/DISCOVERY_INTEGRATION.md).
 
 ## Data
 

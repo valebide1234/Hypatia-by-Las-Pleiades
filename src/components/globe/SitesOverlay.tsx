@@ -1,13 +1,14 @@
 import { useMemo, useState } from "react";
 import { NASA_BADGE_URL, PIN_SIZE, pinImage } from "./pinImages";
 import { ORIGIN_LABEL, type AnalogSite, type SiteOrigin } from "@/types/site";
+import { tx, useT } from "@/i18n";
 
 const ORIGINS: SiteOrigin[] = ["nasa_official", "literature", "hypatia_candidate"];
 
 const ORIGIN_HELP: Record<SiteOrigin, string> = {
-  nasa_official: "Used in NASA analog field work (circular badge)",
-  literature: "Other agencies or the scientific literature (teardrop pin)",
-  hypatia_candidate: "Proposed by Hypatia's discovery module, unverified (amber diamond)",
+  nasa_official: tx("Used in NASA analog field work (circular badge)"),
+  literature: tx("Other agencies or the scientific literature (teardrop pin)"),
+  hypatia_candidate: tx("New place proposed by the Hypatia engine or by the team, not verified by any agency (amber diamond)"),
 };
 
 export function PinIcon({ origin, scale = 0.7 }: { origin: SiteOrigin; scale?: number }) {
@@ -35,6 +36,7 @@ interface Props {
 
 /** Legend for the three pin types plus a keyboard-accessible list of every visible site. */
 export default function SitesOverlay({ sites, selectedId, onSelect, listLabel }: Props) {
+  const t = useT();
   const [open, setOpen] = useState(false);
   const [legendOpen, setLegendOpen] = useState(true);
   const counts = useMemo(() => {
@@ -45,7 +47,7 @@ export default function SitesOverlay({ sites, selectedId, onSelect, listLabel }:
   const sorted = useMemo(() => [...sites].sort((a, b) => a.name.localeCompare(b.name)), [sites]);
 
   return (
-    <aside className="glass pointer-events-auto flex min-h-0 shrink-0 flex-col overflow-hidden text-sm">
+    <aside data-tour="legend" className="glass pointer-events-auto flex min-h-0 shrink-0 flex-col overflow-hidden text-sm">
       <section aria-labelledby="legend-title" className="px-4 pb-1 pt-3">
         <h2 id="legend-title" className="flex items-center justify-between text-xs font-semibold uppercase tracking-widest text-slate-400">
           <button
@@ -55,7 +57,7 @@ export default function SitesOverlay({ sites, selectedId, onSelect, listLabel }:
             aria-controls="legend-list"
             onClick={() => setLegendOpen((v) => !v)}
           >
-            Legend<span aria-hidden="true">{legendOpen ? "▾" : "▸"}</span>
+            {t("Legend")}<span aria-hidden="true">{legendOpen ? "▾" : "▸"}</span>
           </button>
         </h2>
         {legendOpen && (
@@ -65,10 +67,10 @@ export default function SitesOverlay({ sites, selectedId, onSelect, listLabel }:
               <PinIcon origin={o} />
               <div className="min-w-0">
                 <div className="flex items-baseline gap-2 text-slate-100">
-                  {ORIGIN_LABEL[o]}
+                  {t(ORIGIN_LABEL[o])}
                   <span className="text-xs text-slate-500">{counts[o]}</span>
                 </div>
-                <p className="text-[11px] leading-snug text-slate-400">{ORIGIN_HELP[o]}</p>
+                <p className="text-[11px] leading-snug text-slate-400">{t(ORIGIN_HELP[o])}</p>
               </div>
             </li>
           ))}
@@ -84,7 +86,7 @@ export default function SitesOverlay({ sites, selectedId, onSelect, listLabel }:
           aria-controls="site-list"
           onClick={() => setOpen((v) => !v)}
         >
-          {listLabel ?? "Sites"} ({sites.length})<span aria-hidden="true">{open ? "▾" : "▸"}</span>
+          {t(listLabel ?? "Sites")} ({sites.length})<span aria-hidden="true">{open ? "▾" : "▸"}</span>
         </button>
         {open && (
           <ul id="site-list" className="min-h-0 overflow-y-auto px-2 pb-2">

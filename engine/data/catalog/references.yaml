@@ -1,0 +1,353 @@
+# Bibliografía. Cada entrada se cita por su clave desde los demás catálogos.
+# Solo se incluye DOI cuando se conoce con certeza; si falta, se indica revista/volumen.
+# kind: dataset = producto de datos consultado en línea por el pipeline
+#       paper   = literatura revisada por pares / informe técnico
+
+# ---------------------------------------------------------------- datasets
+nasa_power:
+  kind: dataset
+  cite: "NASA Langley Research Center (LaRC) POWER Project, Prediction Of Worldwide Energy Resources, API v2 (fuentes: MERRA-2, CERES SYN1deg)."
+  url: "https://power.larc.nasa.gov/"
+merra2:
+  kind: paper
+  cite: "Gelaro, R., et al. (2017). The Modern-Era Retrospective Analysis for Research and Applications, Version 2 (MERRA-2). Journal of Climate, 30, 5419-5454."
+  doi: "10.1175/JCLI-D-16-0758.1"
+copernicus_dem:
+  kind: dataset
+  cite: "European Space Agency (2021). Copernicus Global Digital Elevation Model GLO-90. Distribuido por Copernicus / AWS Open Data."
+  doi: "10.5270/ESA-c5d3d65"
+  url: "https://dataspace.copernicus.eu/"
+lola_gdr:
+  kind: dataset
+  cite: "Smith, D. E., et al. LRO LOLA Gridded Data Record (LDEM_64, 64 px/grado). NASA PDS Geosciences Node, LRO-L-LOLA-4-GDR-V1.0."
+  url: "https://pds-geosciences.wustl.edu/lro/lro-l-lola-3-rdr-v1/lrolol_1xxx/data/lola_gdr/cylindrical/img/"
+lola_paper:
+  kind: paper
+  cite: "Smith, D. E., et al. (2010). Initial observations from the Lunar Orbiter Laser Altimeter (LOLA). Geophysical Research Letters, 37, L18204."
+  doi: "10.1029/2010GL043751"
+diviner_gcp:
+  kind: dataset
+  cite: "Williams, J.-P., & Paige, D. A. LRO Diviner Global Cumulative Products (GCP), LRO-L-DLRE-5-GCP-V1.0. NASA PDS Geosciences Node. Observaciones nadir 2009-07-05 a 2015-04-01."
+  url: "https://pds-geosciences.wustl.edu/lro/urn-nasa-pds-lro_diviner_derived1/data_derived_gcp/"
+williams2017:
+  kind: paper
+  cite: "Williams, J.-P., Paige, D. A., Greenhagen, B. T., & Sefton-Nash, E. (2017). The global surface temperatures of the Moon as measured by the Diviner Lunar Radiometer Experiment. Icarus, 283, 300-325."
+  doi: "10.1016/j.icarus.2016.08.012"
+kaguya_mi_minerals:
+  kind: dataset
+  cite: "Lemelin, M., et al. Kaguya Multiband Imager mineral maps (olivino, piroxenos, plagioclasa, FeO), 50N-50S. USGS Astrogeology Science Center."
+  url: "https://planetarymaps.usgs.gov/mosaic/Lunar_MI_mineral_maps/"
+mola_megdr:
+  kind: dataset
+  cite: "MGS MOLA Mission Experiment Gridded Data Record, mosaico global 463 m/px. USGS Astrogeology Science Center / NASA PDS."
+  url: "https://planetarymaps.usgs.gov/mosaic/Mars_MGS_MOLA_DEM_mosaic_global_463m.tif"
+smith2001_mola:
+  kind: paper
+  cite: "Smith, D. E., et al. (2001). Mars Orbiter Laser Altimeter: Experiment summary after the first year of global mapping of Mars. Journal of Geophysical Research, 106(E10), 23689-23722."
+  doi: "10.1029/2000JE001364"
+tes_albedo:
+  kind: dataset
+  cite: "MGS TES albedo bolométrico (0.3-2.9 um), mosaico global 7410 m/px. USGS Astrogeology Science Center."
+  url: "https://planetarymaps.usgs.gov/mosaic/Mars_MGS_TES_Albedo_mosaic_global_7410m.tif"
+christensen2001:
+  kind: paper
+  cite: "Christensen, P. R., et al. (2001). Mars Global Surveyor Thermal Emission Spectrometer experiment: Investigation description and surface science results. Journal of Geophysical Research, 106(E10), 23823-23871."
+  doi: "10.1029/2000JE001370"
+tes_timap:
+  kind: dataset
+  cite: "Putzig, N. E., & Mellon, M. T. MGS TES Thermal Inertia Maps, MGS-M-TES-5-TIMAP-V1.0 (mapa nocturno 2007, 20 px/grado). NASA PDS Geosciences Node."
+  url: "https://pds-geosciences.wustl.edu/mgs/mgs-m-tes-5-timap-v1/mgst_9001/data/"
+putzig2007:
+  kind: paper
+  cite: "Putzig, N. E., & Mellon, M. T. (2007). Apparent thermal inertia and the surface heterogeneity of Mars. Icarus, 191, 68-94."
+  doi: "10.1016/j.icarus.2007.05.013"
+mcd:
+  kind: dataset
+  cite: "Mars Climate Database v6.x (LMD/OU/IAA/ESA/CNES), interfaz web. Salida de modelo de circulación general, escenario climatológico. Millour, E., et al. (2022), EPSC2022-786."
+  url: "https://www-mars.lmd.jussieu.fr/mcd_python/"
+forget1999:
+  kind: paper
+  cite: "Forget, F., et al. (1999). Improved general circulation models of the Martian atmosphere from the surface to above 80 km. Journal of Geophysical Research, 104(E10), 24155-24175."
+  doi: "10.1029/1999JE001025"
+iau_gazetteer:
+  kind: dataset
+  cite: "IAU Working Group for Planetary System Nomenclature / USGS Astrogeology. Gazetteer of Planetary Nomenclature (puntos centrales de rasgos)."
+  url: "https://planetarynames.wr.usgs.gov/"
+nasa_cmr:
+  kind: dataset
+  cite: "NASA Earthdata Common Metadata Repository (CMR) Search API."
+  url: "https://cmr.earthdata.nasa.gov/search/"
+nasa_gibs:
+  kind: dataset
+  cite: "NASA Global Imagery Browse Services (GIBS) / Worldview, EOSDIS."
+  url: "https://worldview.earthdata.nasa.gov/"
+nasa_trek:
+  kind: dataset
+  cite: "NASA Solar System Treks (Moon Trek / Mars Trek), teselas WMTS. NASA SSERVI / JPL."
+  url: "https://trek.nasa.gov/"
+nssdca_factsheets:
+  kind: dataset
+  cite: "Williams, D. R. Planetary Fact Sheets (Earth, Moon, Mars). NASA Space Science Data Coordinated Archive (NSSDCA), Goddard Space Flight Center."
+  url: "https://nssdc.gsfc.nasa.gov/planetary/planetfact.html"
+
+# ------------------------------------------------------- ambiente / física
+vasavada2012:
+  kind: paper
+  cite: "Vasavada, A. R., et al. (2012). Lunar equatorial surface temperatures and regolith properties from the Diviner Lunar Radiometer Experiment. Journal of Geophysical Research, 117, E00H18."
+  doi: "10.1029/2011JE003987"
+hayne2017:
+  kind: paper
+  cite: "Hayne, P. O., et al. (2017). Global regolith thermophysical properties of the Moon from the Diviner Lunar Radiometer Experiment. Journal of Geophysical Research: Planets, 122, 2371-2400."
+  doi: "10.1002/2017JE005387"
+stern1999:
+  kind: paper
+  cite: "Stern, S. A. (1999). The lunar atmosphere: History, status, current problems, and context. Reviews of Geophysics, 37, 453-491."
+  doi: "10.1029/1999RG900005"
+hassler2014:
+  kind: paper
+  cite: "Hassler, D. M., et al. (2014). Mars' surface radiation environment measured with the Mars Science Laboratory's Curiosity rover. Science, 343, 1244797."
+  doi: "10.1126/science.1244797"
+zhang2020:
+  kind: paper
+  cite: "Zhang, S., et al. (2020). First measurements of the radiation dose on the lunar surface. Science Advances, 6, eaaz1334."
+  doi: "10.1126/sciadv.aaz1334"
+mahaffy2013:
+  kind: paper
+  cite: "Mahaffy, P. R., et al. (2013). Abundance and isotopic composition of gases in the Martian atmosphere from the Curiosity rover. Science, 341, 263-266."
+  doi: "10.1126/science.1237966"
+mazarico2011:
+  kind: paper
+  cite: "Mazarico, E., et al. (2011). Illumination conditions of the lunar polar regions using LOLA topography. Icarus, 211, 1066-1081."
+  doi: "10.1016/j.icarus.2010.10.030"
+paige2010:
+  kind: paper
+  cite: "Paige, D. A., et al. (2010). Diviner Lunar Radiometer observations of cold traps in the Moon's south polar region. Science, 330, 479-482."
+  doi: "10.1126/science.1187726"
+colaprete2010:
+  kind: paper
+  cite: "Colaprete, A., et al. (2010). Detection of water in the LCROSS ejecta plume. Science, 330, 463-468."
+  doi: "10.1126/science.1186986"
+
+# ------------------------------------------------------------------- Luna
+lunar_sourcebook:
+  kind: paper
+  cite: "Heiken, G. H., Vaniman, D. T., & French, B. M. (eds.) (1991). Lunar Sourcebook: A User's Guide to the Moon. Cambridge University Press."
+haruyama2009:
+  kind: paper
+  cite: "Haruyama, J., et al. (2009). Possible lunar lava tube skylight observed by SELENE cameras. Geophysical Research Letters, 36, L21206."
+  doi: "10.1029/2009GL040635"
+gaddis2003:
+  kind: paper
+  cite: "Gaddis, L. R., et al. (2003). Compositional analyses of lunar pyroclastic deposits. Icarus, 161, 262-280."
+  doi: "10.1016/S0019-1035(02)00036-2"
+zuber2012:
+  kind: paper
+  cite: "Zuber, M. T., et al. (2012). Constraints on the volatile distribution within Shackleton crater at the lunar south pole. Nature, 486, 378-381."
+  doi: "10.1038/nature11216"
+li2019_ce4:
+  kind: paper
+  cite: "Li, C., et al. (2019). Chang'E-4 initial spectroscopic identification of lunar far-side mantle-derived materials. Nature, 569, 378-382."
+  doi: "10.1038/s41586-019-1189-0"
+
+# ------------------------------------------------------------------ Marte
+grotzinger2014:
+  kind: paper
+  cite: "Grotzinger, J. P., et al. (2014). A habitable fluvio-lacustrine environment at Yellowknife Bay, Gale crater, Mars. Science, 343, 1242777."
+  doi: "10.1126/science.1242777"
+ewing2017:
+  kind: paper
+  cite: "Ewing, R. C., et al. (2017). Sedimentary processes of the Bagnold Dunes: Implications for the eolian rock record of Mars. Journal of Geophysical Research: Planets, 122, 2544-2573."
+  doi: "10.1002/2017JE005324"
+farley2022:
+  kind: paper
+  cite: "Farley, K. A., et al. (2022). Aqueously altered igneous rocks sampled on the floor of Jezero crater, Mars. Science, 377, eabo2196."
+  doi: "10.1126/science.abo2196"
+mangold2021:
+  kind: paper
+  cite: "Mangold, N., et al. (2021). Perseverance rover reveals an ancient delta-lake system and flood deposits at Jezero crater, Mars. Science, 374, 711-717."
+  doi: "10.1126/science.abl4051"
+squyres2004:
+  kind: paper
+  cite: "Squyres, S. W., et al. (2004). In situ evidence for an ancient aqueous environment at Meridiani Planum, Mars. Science, 306, 1709-1714."
+  doi: "10.1126/science.1104559"
+klingelhofer2004:
+  kind: paper
+  cite: "Klingelhöfer, G., et al. (2004). Jarosite and hematite at Meridiani Planum from Opportunity's Mössbauer spectrometer. Science, 306, 1740-1745."
+  doi: "10.1126/science.1104653"
+squyres2008:
+  kind: paper
+  cite: "Squyres, S. W., et al. (2008). Detection of silica-rich deposits on Mars. Science, 320, 1063-1067."
+  doi: "10.1126/science.1155429"
+morris2010:
+  kind: paper
+  cite: "Morris, R. V., et al. (2010). Identification of carbonate-rich outcrops on Mars by the Spirit rover. Science, 329, 421-424."
+  doi: "10.1126/science.1189667"
+golombek2020:
+  kind: paper
+  cite: "Golombek, M., et al. (2020). Geology of the InSight landing site on Mars. Nature Communications, 11, 1014."
+  doi: "10.1038/s41467-020-14679-1"
+smith2009_phx:
+  kind: paper
+  cite: "Smith, P. H., et al. (2009). H2O at the Phoenix landing site. Science, 325, 58-61."
+  doi: "10.1126/science.1172339"
+hecht2009:
+  kind: paper
+  cite: "Hecht, M. H., et al. (2009). Detection of perchlorate and the soluble chemistry of Martian soil at the Phoenix lander site. Science, 325, 64-67."
+  doi: "10.1126/science.1172466"
+golombek1997:
+  kind: paper
+  cite: "Golombek, M. P., et al. (1997). Overview of the Mars Pathfinder mission and assessment of landing site predictions. Science, 278, 1743-1748."
+  doi: "10.1126/science.278.5344.1743"
+cushing2007:
+  kind: paper
+  cite: "Cushing, G. E., Titus, T. N., Wynne, J. J., & Christensen, P. R. (2007). THEMIS observes possible cave skylights on Mars. Geophysical Research Letters, 34, L17201."
+  doi: "10.1029/2007GL030709"
+gendrin2005:
+  kind: paper
+  cite: "Gendrin, A., et al. (2005). Sulfates in Martian layered terrains: The OMEGA/Mars Express view. Science, 307, 1587-1591."
+  doi: "10.1126/science.1109087"
+quantin2021:
+  kind: paper
+  cite: "Quantin-Nataf, C., et al. (2021). Oxia Planum: The landing site for the ExoMars 'Rosalind Franklin' rover mission: Geological context and prelanding interpretation. Astrobiology, 21, 345-366."
+  doi: "10.1089/ast.2019.2191"
+langevin2005:
+  kind: paper
+  cite: "Langevin, Y., Poulet, F., Bibring, J.-P., & Gondet, B. (2005). Sulfates in the north polar region of Mars detected by OMEGA/Mars Express. Science, 307, 1584-1586."
+  doi: "10.1126/science.1109091"
+osterloo2008:
+  kind: paper
+  cite: "Osterloo, M. M., et al. (2008). Chloride-bearing materials in the southern highlands of Mars. Science, 319, 1651-1654."
+  doi: "10.1126/science.1150690"
+
+# ------------------------------------------------------ análogos terrestres
+preston2014:
+  kind: paper
+  cite: "Preston, L. J., & Dartnell, L. R. (2014). Planetary habitability: lessons learned from terrestrial analogues. International Journal of Astrobiology, 13, 81-98."
+  doi: "10.1017/S1473550413000396"
+leveille2010:
+  kind: paper
+  cite: "Léveillé, R. (2010). A half-century of terrestrial analog studies: From craters on the Moon to searching for life on Mars. Planetary and Space Science, 58, 631-638."
+navarro2003:
+  kind: paper
+  cite: "Navarro-González, R., et al. (2003). Mars-like soils in the Atacama Desert, Chile, and the dry limit of microbial life. Science, 302, 1018-1021."
+  doi: "10.1126/science.1089143"
+cabrol2007:
+  kind: paper
+  cite: "Cabrol, N. A., et al. (2007). Life in the Atacama: Searching for life with rovers (science overview). Journal of Geophysical Research, 112, G04S02."
+  doi: "10.1029/2006JG000298"
+marchant2007:
+  kind: paper
+  cite: "Marchant, D. R., & Head, J. W. (2007). Antarctic dry valleys: Microclimate zonation, variable geomorphic processes, and implications for assessing climate change on Mars. Icarus, 192, 187-222."
+heldmann2013:
+  kind: paper
+  cite: "Heldmann, J. L., et al. (2013). The high elevation Dry Valleys in Antarctica as analog sites for subsurface ice on Mars. Planetary and Space Science, 85, 53-58."
+dickson2013:
+  kind: paper
+  cite: "Dickson, J. L., Head, J. W., Levy, J. S., & Marchant, D. R. (2013). Don Juan Pond, Antarctica: Near-surface CaCl2-brine feeding Earth's most saline lake and implications for Mars. Scientific Reports, 3, 1166."
+  doi: "10.1038/srep01166"
+mangold2011:
+  kind: paper
+  cite: "Mangold, N., et al. (2011). Segregation of olivine grains in volcanic sands in Iceland and implications for Mars. Earth and Planetary Science Letters, 310, 233-243."
+allen1998:
+  kind: paper
+  cite: "Allen, C. C., et al. (1998). Martian soil simulant available for scientific, educational study (JSC Mars-1). Eos, Transactions AGU, 79(34), 405-409."
+seelos2010:
+  kind: paper
+  cite: "Seelos, K. D., et al. (2010). Silica in a Mars analog environment: Ka'u Desert, Kilauea Volcano, Hawaii. Journal of Geophysical Research, 115, E00D15."
+  doi: "10.1029/2009JE003347"
+lim2019:
+  kind: paper
+  cite: "Lim, D. S. S., et al. (2019). The BASALT research program: Designing and developing mission elements in support of human scientific exploration of Mars. Astrobiology, 19, 245-259."
+risacher1991:
+  kind: paper
+  cite: "Risacher, F., & Fritz, B. (1991). Quaternary geochemical evolution of the salars of Uyuni and Coipasa, Central Altiplano, Bolivia. Chemical Geology, 90, 211-231."
+lancaster1989:
+  kind: paper
+  cite: "Lancaster, N. (1989). The Namib Sand Sea: Dune Forms, Processes and Sediments. A. A. Balkema, Rotterdam."
+fernandez2005:
+  kind: paper
+  cite: "Fernández-Remolar, D. C., Morris, R. V., Gruener, J. E., Amils, R., & Knoll, A. H. (2005). The Río Tinto Basin, Spain: Mineralogy, sedimentary geobiology, and implications for interpretation of outcrop rocks at Meridiani Planum, Mars. Earth and Planetary Science Letters, 240, 149-167."
+lee2005:
+  kind: paper
+  cite: "Lee, P., & Osinski, G. R. (2005). The Haughton-Mars Project: Overview of science investigations at the Haughton impact structure and surrounding terrains, and relevance to planetary studies. Meteoritics & Planetary Science, 40, 1755-1758."
+kring2007:
+  kind: paper
+  cite: "Kring, D. A. (2007). Guidebook to the Geology of Barringer Meteorite Crater, Arizona (a.k.a. Meteor Crater). LPI Contribution No. 1355, Lunar and Planetary Institute."
+mckay1994:
+  kind: paper
+  cite: "McKay, D. S., et al. (1994). JSC-1: A new lunar soil simulant. Engineering, Construction, and Operations in Space IV, ASCE, 857-866."
+ross2013:
+  kind: paper
+  cite: "Ross, A., Kosmo, J., & Janoiko, B. (2013). Historical synopses of Desert RATS 1997-2010 and a preview of Desert RATS 2011. Acta Astronautica, 90, 182-202."
+sauro2020:
+  kind: paper
+  cite: "Sauro, F., et al. (2020). Lava tubes on Earth, Moon and Mars: A review on their size and morphology revealed by comparative planetology. Earth-Science Reviews, 209, 103288."
+  doi: "10.1016/j.earscirev.2020.103288"
+greeley_amboy:
+  kind: dataset
+  cite: "Amboy Crater field analog data (campo de lava basáltica y rasgos eólicos, Mojave). NASA PDS Geosciences Node, Analog Data."
+  url: "https://pds-geosciences.wustl.edu/missions/amboycrater/index.htm"
+clarke2011:
+  kind: paper
+  cite: "Clarke, J. D. A., & Stoker, C. R. (2011). Concretions in exhumed and inverted channels near Hanksville Utah: implications for Mars. International Journal of Astrobiology, 10, 161-175."
+cavalazzi2019:
+  kind: paper
+  cite: "Cavalazzi, B., et al. (2019). The Dallol Geothermal Area, Northern Afar (Ethiopia) - An exceptional planetary field analog on Earth. Astrobiology, 19, 553-578."
+djokic2017:
+  kind: paper
+  cite: "Djokic, T., Van Kranendonk, M. J., Campbell, K. A., Walter, M. R., & Ward, C. R. (2017). Earliest signs of life on land preserved in ca. 3.5 Ga hot spring deposits. Nature Communications, 8, 15263."
+  doi: "10.1038/ncomms15263"
+xiao2017:
+  kind: paper
+  cite: "Xiao, L., et al. (2017). A new terrestrial analogue site for Mars research: The Qaidam Basin, Tibetan Plateau (NW China). Earth-Science Reviews, 164, 84-101."
+maloof2010:
+  kind: paper
+  cite: "Maloof, A. C., et al. (2010). Geology of Lonar Crater, India. Geological Society of America Bulletin, 122, 109-126."
+  doi: "10.1130/B26474.1"
+stoffler2013:
+  kind: paper
+  cite: "Stöffler, D., et al. (2013). Ries crater and suevite revisited - Observations and modeling. Part I: Observations. Meteoritics & Planetary Science, 48, 515-589."
+  doi: "10.1111/maps.12086"
+mader2018:
+  kind: paper
+  cite: "Mader, M. M., & Osinski, G. R. (2018). Impactites of the Mistastin Lake impact structure: Insights into impact ejecta emplacement. Meteoritics & Planetary Science, 53, 2492-2518."
+stoeser2010:
+  kind: paper
+  cite: "Stoeser, D. B., Rickman, D. L., & Wilson, S. (2010). Design and specifications for the highland regolith prototype simulants NU-LHT-1M and -2M. NASA/TM-2010-216438."
+pollard2009:
+  kind: paper
+  cite: "Pollard, W., et al. (2009). Overview of analogue science activities at the McGill Arctic Research Station, Axel Heiberg Island, Canadian High Arctic. Planetary and Space Science, 57, 646-659."
+szynkiewicz2010:
+  kind: paper
+  cite: "Szynkiewicz, A., et al. (2010). Origin of terrestrial gypsum dunes - Implications for Martian gypsum-rich dunes of Olympia Undae. Geomorphology, 121, 69-83."
+cabrol2009:
+  kind: paper
+  cite: "Cabrol, N. A., et al. (2009). The High-Lakes Project. Journal of Geophysical Research, 114, G00D06."
+  doi: "10.1029/2008JG000818"
+baker1978:
+  kind: paper
+  cite: "Baker, V. R. (1978). The Spokane Flood controversy and the Martian outflow channels. Science, 202, 1249-1256."
+  doi: "10.1126/science.202.4374.1249"
+peters2008:
+  kind: paper
+  cite: "Peters, G. H., et al. (2008). Mojave Mars simulant - Characterization of a new geologic Mars analog. Icarus, 197, 470-479."
+  doi: "10.1016/j.icarus.2008.05.004"
+kounaves2010:
+  kind: paper
+  cite: "Kounaves, S. P., et al. (2010). Discovery of natural perchlorate in the Antarctic Dry Valleys and its global implications. Environmental Science & Technology, 44, 2360-2364."
+  doi: "10.1021/es9033606"
+osinski2005:
+  kind: paper
+  cite: "Osinski, G. R., et al. (2005). A case study of impact-induced hydrothermal activity: The Haughton impact structure, Devon Island, Canadian High Arctic. Meteoritics & Planetary Science, 40, 1859-1877."
+treiman2002:
+  kind: paper
+  cite: "Treiman, A. H., Amundsen, H. E. F., Blake, D. F., & Bunch, T. (2002). Hydrothermal origin for carbonate globules in Martian meteorite ALH84001: a terrestrial analogue from Spitsbergen (Norway). Earth and Planetary Science Letters, 204, 323-332."
+  doi: "10.1016/S0012-821X(02)00998-6"
+copernicus_catalogue:
+  kind: dataset
+  cite: "Copernicus Data Space Ecosystem, catálogo OData de productos Sentinel (ESA / Comisión Europea)."
+  url: "https://catalogue.dataspace.copernicus.eu/odata/v1/Products"
+worldview_snapshots:
+  kind: dataset
+  cite: "NASA Worldview Snapshots (EOSDIS GIBS): imágenes satelitales por región y fecha."
+  url: "https://wvs.earthdata.nasa.gov/"

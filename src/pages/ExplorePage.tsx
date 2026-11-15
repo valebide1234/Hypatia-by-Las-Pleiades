@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import FilterBar from "@/components/filters/FilterBar";
 import RankingPanel from "@/components/filters/RankingPanel";
@@ -13,11 +13,17 @@ import { useAllSites } from "@/data/siteRegistry";
 import { rankSites, relaxationHint } from "@/lib/ranking";
 import { useFilters } from "@/store/filters";
 import { useGlobeView } from "@/store/globeView";
+import { useEngine } from "@/store/engine";
 import { useSession } from "@/store/session";
+import { useTour } from "@/store/tour";
 import { useUserData } from "@/store/userData";
+import { TOURS } from "@/tour/steps";
 import { TARGET_LABEL, isTarget, type Target } from "@/types/site";
+import { tx } from "@/i18n";
 
 const NO_SELECTION: string[] = [];
+/** Site whose panel the guided tour opens: one with engine findings to show. */
+const TOUR_SITE: Record<Target, string> = { mars: "atacama-yungay", moon: "haughton-crater" };
 
 export default function ExplorePage() {
   const { target: param } = useParams();
@@ -80,6 +86,24 @@ export default function ExplorePage() {
 
   const close = useCallback(() => setSelectedId(null), []);
 
+  // The guided tour opens a site's panel and the discovery panel to explain them, and closes
+  // what it opened when it ends. null = no tour running on this page.
+  const tourScene = useTour((s) => (s.active === "explore" ? (TOURS.explore[s.index]?.scene ?? "none") : null));
+  const tourDrove = useRef(false);
+  useEffect(() => {
+    if (tourScene === null && !tourDrove.current) return;
+    tourDrove.current = tourScene !== null;
+    const demo = target ? (visibleSites.find((s) => s.id === TOUR_SITE[target]) ?? visibleSites[0]) : undefined;
+    setSelectedId(tourScene === "site" && demo ? demo.id : null);
+    useUi.getState().setDiscoverOpen(tourScene === "discover");
+  }, [tourScene]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Load the engine's data (site findings, mission regions) and, on a first visit, start the tour.
+  useEffect(() => {
+    void useEngine.getState().load();
+    useTour.getState().startIfFirstVisit("explore");
+  }, []);
+
   if (!target) return <Navigate to="/targets" replace />;
 
   const selected = visibleSites.find((s) => s.id === selectedId) ?? null;
@@ -123,7 +147,7 @@ export default function ExplorePage() {
           </button>
         </div>
       )}
-      <div className="relative min-h-0 flex-1">
+      <div className="relative min-h-0 flex-1" data-tour="globe">
         <GlobeView sites={visibleSites} selectedId={selectedId} onSelect={setSelectedId} ranks={ranks} favouriteIds={favouriteIds} onViewCenter={setCenter} />
         <div className="pointer-events-none absolute bottom-3 left-3 top-3 z-10 flex w-72 flex-col gap-3">
           {ranking && (
@@ -137,7 +161,7 @@ export default function ExplorePage() {
               onQuickSave={signedIn ? (siteId) => void useUserData.getState().saveFavourite(siteId, "", []) : undefined}
             />
           )}
-          <SitesOverlay sites={visibleSites} selectedId={selectedId} onSelect={setSelectedId} listLabel={focus ? "Favourites shown" : ranking ? "All matches" : "Sites"} />
+          <SitesOverlay sites={visibleSites} selectedId={selectedId} onSelect={setSelectedId} listLabel={focus ? tx("Favourites shown") : ranking ? tx("All matches") : tx("Sites")} />
         </div>
         <SitePanel site={selected} target={target} onClose={close} ranking={siteRanking} />
         <DiscoverPanel target={target} onSelectSite={(id) => requestSelect(id)} />

@@ -3,6 +3,7 @@ import { SITES } from "@/data/sites";
 import type { DiscoveryProvider, DiscoveryQuery } from "@/discovery/DiscoveryProvider";
 import { validateCandidates, type CandidateProblem } from "@/discovery/validateCandidate";
 import type { AnalogSite } from "@/types/site";
+import { useEngine } from "./engine";
 
 interface LastRun {
   providerId: string;
@@ -43,7 +44,8 @@ export const useDiscovery = create<DiscoveryState>((set, get) => ({
       if (signal.aborted) return;
       // Replace this provider's previous candidates for the same target; keep everything else.
       const kept = get().candidates.filter((c) => !(c.discovery?.providerId === provider.id && c.targets.includes(query.target)));
-      const reserved = new Set([...SITES.map((s) => s.id), ...kept.map((c) => c.id)]);
+      const proposals = useEngine.getState().dataset?.proposals ?? [];
+      const reserved = new Set([...SITES.map((s) => s.id), ...proposals.map((p) => p.id), ...kept.map((c) => c.id)]);
       const { valid, problems } = validateCandidates(provider, query, raw, reserved);
       set({
         candidates: [...kept, ...valid],

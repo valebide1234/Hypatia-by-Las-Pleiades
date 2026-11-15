@@ -1,16 +1,18 @@
 # Discovery module: integration guide
 
-The discovery module is the slot where the future Hypatia engine plugs in. The engine compares datasets and proposes **new analog sites that no space agency has catalogued yet**. This document describes the contract the engine must implement and how its results flow through the app.
+The discovery module is the slot where discovery engines plug in. An engine compares datasets and proposes **new analog sites that no space agency has catalogued yet**. This document describes the contract a provider must implement and how its results flow through the app.
 
-The analysis itself is **not** implemented. A mock provider returns synthetic **TEST DATA** so the pipeline can be checked end to end.
+The **Hypatia engine is connected** through this contract: see `docs/ENGINE.md` for what it does. A mock provider that returns synthetic **TEST DATA** is still available for checking the pipeline; it is listed only when `VITE_ENABLE_MOCK_DISCOVERY=true`.
 
 ## Files
 
 | File | Role |
 | --- | --- |
 | `src/discovery/DiscoveryProvider.ts` | `DiscoveryQuery` and `DiscoveryProvider` interfaces (the contract) |
-| `src/discovery/registry.ts` | List of installed providers. **Register the engine here.** |
-| `src/discovery/config.ts` | `ENABLE_MOCK_DISCOVERY`, the single flag that removes the mock provider |
+| `src/discovery/registry.ts` | List of installed providers (the Hypatia engine first) |
+| `src/discovery/engine/` | The Hypatia engine's provider: loads `public/engine/discovery.json` and answers queries from it |
+| `src/discovery/config.ts` | `ENABLE_MOCK_DISCOVERY` (lists the mock provider) and `ENGINE_DATA_URL` |
+| `src/store/engine.ts` | The engine's dataset for the panels, and the live check of NASA's newest data |
 | `src/discovery/mockProvider.ts` | Mock provider (TEST DATA) |
 | `src/discovery/validateCandidate.ts` | Validation applied to every provider result before display |
 | `src/store/discovery.ts` | Runs providers, stores validated candidates for the session |
@@ -25,6 +27,8 @@ interface DiscoveryQuery {
   target: "moon" | "mars";
   qualityIds: string[];          // ids from data/qualities.json
   region?: GeoJSON.Polygon;      // optional search area, WGS84 lon/lat (RFC 7946)
+  missionRegionId?: string;      // optional mission need: a lunar or Martian region to match
+  preferNewData?: boolean;       // put first the places the newest data strengthen
 }
 
 interface DiscoveryProvider {
@@ -70,23 +74,25 @@ interface DiscoveryMeta {
 
 ## How results flow
 
-1. The user opens **Discover new analogs** (filter bar), picks qualities with the shared `QualityPicker` (pre-filled from the globe filters) and a provider, then presses **Run discovery**.
+1. The user opens **Discover new analogs** (filter bar), picks qualities with the shared `QualityPicker` (pre-filled from the globe filters), optionally a mission region, then presses **Run discovery**.
 2. `useDiscovery.run(provider, query)` calls `provider.run`, validates the output, and **replaces** that provider's previous candidates for the same target. Other providers' and other targets' candidates are kept. A new run aborts an in-flight one through the `AbortSignal`.
 3. `useAllSites()` merges the candidates with the catalogue, so they:
    - appear as **amber diamond pins** (shape and colour differ from known sites)
    - take part in **`rankSites`**, the same function and weights as known sites, and can enter the top 10 while keeping their colour
    - open the **side panel** with the "Hypatia candidate, unverified" warning, confidence, method and datasets
    - can be **saved to favourites** and filed into folders
-4. Optionally, the run's qualities are applied to the globe ranking.
+4. Optionally, the run's qualities are applied to the globe ranking. With the Hypatia engine only the qualities it can measure are applied, because its candidates never claim the others.
 
-## Integrating the real engine
+## Adding another provider
 
-1. Implement `DiscoveryProvider`, typically as a thin client that calls the engine's HTTP API, for example:
+The Hypatia engine (`src/discovery/engine/engineProvider.ts`) reads a data file that the Python engine exports ahead of time. A provider can also be a thin client of an HTTP API:
+
+1. Implement `DiscoveryProvider`, for example:
 
    ```ts
    export const hypatiaEngineProvider: DiscoveryProvider = {
-     id: "hypatia-engine",
-     name: "Hypatia discovery engine",
+     id: "my-engine",
+     name: "My discovery engine",
      async run(query, signal) {
        const res = await fetch(`${import.meta.env.VITE_DISCOVERY_API}/discover`, {
          method: "POST",
@@ -101,13 +107,12 @@ interface DiscoveryMeta {
    ```
 
 2. Add it to the array in `src/discovery/registry.ts`.
-3. Turn the mock off: set `VITE_ENABLE_MOCK_DISCOVERY=false` (or change `ENABLE_MOCK_DISCOVERY` in `config.ts`).
-4. Enable the region option in `DiscoverPanel.tsx` (currently a disabled checkbox) and pass `region` in the query.
-5. Run `npm test`. The tests in `src/discovery/discovery.test.ts` describe the expected behaviour; add provider-specific tests next to them.
+3. Run `npm test`. The tests in `src/discovery/discovery.test.ts` describe the expected behaviour; add provider-specific tests next to them.
 
 ## Known gaps and follow-ups
 
-- **Persistence:** candidates live in memory for the session. A favourite that points at a candidate keeps working after a reload only once that candidate is produced again by a run with the same id. Otherwise the Favourites panel shows "This site is no longer in the catalogue". For durable candidates, either:
+- **Search area:** `region` (a polygon drawn on the globe) is in the contract but no provider uses it yet, and the panel has no control for it.
+- **Persistence:** candidates live in memory for the session. The Hypatia engine returns deterministic ids (`hypatia-engine:<grid cell>:<target>`), so the same run reproduces the same candidates. A favourite that points at a candidate keeps working after a reload only once that candidate is produced again by a run with the same id. Otherwise the Favourites panel shows "This site is no longer in the catalogue". For durable candidates, either:
   - store a snapshot in a `discovery_candidates` table, which would need a schema change; ask before doing it, or
   - make the engine return stable, deterministic ids.
 - **Review workflow:** `status` changes (`under_review`, `confirmed_by_literature`) are display-only today; there is no curation UI.

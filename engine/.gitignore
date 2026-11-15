@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+.pytest_cache/
+# Downloaded NASA / Copernicus responses. Rebuilt by the pipeline.
+data/cache/
+# Fitted model: rebuilt by `python -m analogs.pipeline train`.
+data/processed/*.joblib

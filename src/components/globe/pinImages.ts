@@ -1,4 +1,5 @@
 import type { SiteOrigin } from "@/types/site";
+import { asset } from "@/lib/asset";
 
 /**
  * Pin artwork for the three site origins. Each type differs in SHAPE as well as colour,
@@ -15,7 +16,7 @@ export const PIN_SIZE: Record<SiteOrigin, { width: number; height: number; ancho
   hypatia_candidate: { width: 34, height: 34, anchor: "center" },
 };
 
-export const NASA_BADGE_URL = "/assets/nasa-approved-pin-128.png";
+export const NASA_BADGE_URL = asset("/assets/nasa-approved-pin-128.png");
 
 const PX = 2;
 const cache = new Map<string, HTMLCanvasElement>();

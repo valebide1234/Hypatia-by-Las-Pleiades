@@ -1,6 +1,7 @@
 import { PinIcon } from "@/components/globe/SitesOverlay";
 import { QUALITY_BY_ID } from "@/data/qualities";
-import { STRENGTH_WEIGHT, TOP_N, strengthSummary, type RankedSite } from "@/lib/ranking";
+import { STRENGTH_WEIGHT, TOP_N, type RankedSite } from "@/lib/ranking";
+import { useT } from "@/i18n";
 
 interface Props {
   ranking: RankedSite[];
@@ -15,24 +16,25 @@ interface Props {
 
 /** Ordered list of the top matches for the active filters. */
 export default function RankingPanel({ ranking, selectedId, onSelect, hint, onApplyHint, favouriteIds, onQuickSave }: Props) {
+  const t = useT();
   const top = ranking.slice(0, TOP_N);
   return (
     <section aria-labelledby="ranking-title" className="glass pointer-events-auto flex min-h-0 flex-col overflow-hidden text-sm">
       <h2 id="ranking-title" className="flex items-baseline justify-between px-4 pb-2 pt-3.5 text-xs font-semibold uppercase tracking-widest text-slate-400">
-        {ranking.length === 0 ? "No matches" : `Top ${Math.min(TOP_N, ranking.length)} match${ranking.length === 1 ? "" : "es"}`}
-        <span className="font-normal normal-case tracking-normal text-slate-500">{ranking.length} total</span>
+        {ranking.length === 0 ? t("No matches") : ranking.length === 1 ? t("Top match") : t("Top {n} matches", { n: Math.min(TOP_N, ranking.length) })}
+        <span className="font-normal normal-case tracking-normal text-slate-500">{t("{n} total", { n: ranking.length })}</span>
       </h2>
 
       {ranking.length === 0 ? (
         <div className="px-4 pb-4 text-xs text-slate-300" role="status">
-          <p>No site has all the selected qualities without listing one of them as a limitation.</p>
+          <p>{t("No site has all the selected qualities without listing one of them as a limitation.")}</p>
           {hint && (
             <button
               type="button"
               onClick={() => onApplyHint(hint.drop)}
               className="mt-3 rounded-full border border-white/20 px-3 py-1.5 text-left hover:border-white/50"
             >
-              Remove “{QUALITY_BY_ID.get(hint.drop)?.label ?? hint.drop}” → {hint.matches} match{hint.matches === 1 ? "" : "es"}
+              {t("Remove “{quality}” → {n} matching", { quality: t(QUALITY_BY_ID.get(hint.drop)?.label ?? hint.drop), n: hint.matches })}
             </button>
           )}
         </div>
@@ -68,10 +70,10 @@ export default function RankingPanel({ ranking, selectedId, onSelect, hint, onAp
                       <span className="truncate text-slate-100">{r.site.name}</span>
                     </span>
                     <span className="mt-0.5 block truncate text-[11px] text-slate-400">
-                      {strengthSummary(r.matched)} · {strongest.map((m) => QUALITY_BY_ID.get(m.qualityId)?.label ?? m.qualityId).join(", ")}
+                      {strongest.map((m) => `${t(QUALITY_BY_ID.get(m.qualityId)?.label ?? m.qualityId)} (${t(m.strength)})`).join(", ")}
                     </span>
                   </span>
-                  <span className="shrink-0 text-xs tabular-nums text-slate-300" title="Score">
+                  <span className="shrink-0 text-xs tabular-nums text-slate-300" title={t("Score")}>
                     {r.score.toFixed(1)}
                   </span>
                 </button>
@@ -79,7 +81,7 @@ export default function RankingPanel({ ranking, selectedId, onSelect, hint, onAp
             );
           })}
           {ranking.length > TOP_N && (
-            <li className="px-2 pt-1 text-[11px] text-slate-500">+ {ranking.length - TOP_N} more matches, shown with their rank on the globe.</li>
+            <li className="px-2 pt-1 text-[11px] text-slate-500">{t("+ {n} more matches, shown with their rank on the globe.", { n: ranking.length - TOP_N })}</li>
           )}
         </ol>
       )}

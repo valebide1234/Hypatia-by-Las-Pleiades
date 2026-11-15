@@ -1,0 +1,878 @@
+id,lat,lon,cluster,environment,rarity,pc1,pc2
+cell_-87.50_-177.50,-87.5,-177.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4379,-4.3809,-0.5542
+cell_-87.50_-172.50,-87.5,-172.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4721,-4.3858,-0.5594
+cell_-87.50_-167.50,-87.5,-167.5,1,"polar hiperárido, cubierto de nieve o hielo",0.5268,-4.3647,-0.4931
+cell_-87.50_-162.50,-87.5,-162.5,1,"polar hiperárido, cubierto de nieve o hielo",0.6693,-4.3583,-0.4236
+cell_-87.50_-157.50,-87.5,-157.5,1,"polar hiperárido, cubierto de nieve o hielo",0.6864,-4.3629,-0.4092
+cell_-87.50_-152.50,-87.5,-152.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7457,-4.3747,-0.4469
+cell_-87.50_-147.50,-87.5,-147.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7708,-4.3837,-0.5313
+cell_-87.50_-142.50,-87.5,-142.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7685,-4.4083,-0.5983
+cell_-87.50_-137.50,-87.5,-137.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7013,-4.4013,-0.6024
+cell_-87.50_-132.50,-87.5,-132.5,1,"polar hiperárido, cubierto de nieve o hielo",0.6534,-4.3277,-0.4824
+cell_-87.50_-127.50,-87.5,-127.5,1,"polar hiperárido, cubierto de nieve o hielo",0.5849,-4.2879,-0.3925
+cell_-87.50_-122.50,-87.5,-122.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4173,-4.2722,-0.3686
+cell_-87.50_-117.50,-87.5,-117.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3957,-4.2393,-0.3459
+cell_-87.50_-112.50,-87.5,-112.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4458,-4.194,-0.2658
+cell_-87.50_-107.50,-87.5,-107.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4538,-4.1391,-0.2152
+cell_-87.50_-102.50,-87.5,-102.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4835,-4.1627,-0.2369
+cell_-87.50_-097.50,-87.5,-97.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4344,-4.202,-0.3067
+cell_-87.50_-092.50,-87.5,-92.5,1,"polar hiperárido, cubierto de nieve o hielo",0.52,-4.2491,-0.3732
+cell_-87.50_-087.50,-87.5,-87.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4356,-4.2623,-0.4213
+cell_-87.50_-082.50,-87.5,-82.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4778,-4.2879,-0.4889
+cell_-87.50_-077.50,-87.5,-77.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4812,-4.3106,-0.5084
+cell_-87.50_-072.50,-87.5,-72.5,1,"polar hiperárido, cubierto de nieve o hielo",0.447,-4.3091,-0.509
+cell_-87.50_-067.50,-87.5,-67.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4322,-4.3078,-0.4994
+cell_-87.50_-062.50,-87.5,-62.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4139,-4.2884,-0.46
+cell_-87.50_-057.50,-87.5,-57.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3546,-4.2756,-0.4235
+cell_-87.50_-052.50,-87.5,-52.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3455,-4.2565,-0.4013
+cell_-87.50_-047.50,-87.5,-47.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3444,-4.2311,-0.3899
+cell_-87.50_-042.50,-87.5,-42.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3307,-4.2107,-0.3888
+cell_-87.50_-037.50,-87.5,-37.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3261,-4.2109,-0.3894
+cell_-87.50_-032.50,-87.5,-32.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3056,-4.2317,-0.4218
+cell_-87.50_-027.50,-87.5,-27.5,1,"polar hiperárido, cubierto de nieve o hielo",0.252,-4.2571,-0.4582
+cell_-87.50_-022.50,-87.5,-22.5,1,"polar hiperárido, cubierto de nieve o hielo",0.2577,-4.2711,-0.4559
+cell_-87.50_-017.50,-87.5,-17.5,1,"polar hiperárido, cubierto de nieve o hielo",0.2463,-4.3094,-0.4874
+cell_-87.50_-012.50,-87.5,-12.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3113,-4.3237,-0.4931
+cell_-87.50_-007.50,-87.5,-7.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3147,-4.3398,-0.5058
+cell_-87.50_-002.50,-87.5,-2.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3044,-4.3675,-0.5343
+cell_-87.50_+002.50,-87.5,2.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3535,-4.3731,-0.5212
+cell_-87.50_+007.50,-87.5,7.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3466,-4.3833,-0.5262
+cell_-87.50_+012.50,-87.5,12.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3227,-4.3914,-0.5307
+cell_-87.50_+017.50,-87.5,17.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3158,-4.3908,-0.5366
+cell_-87.50_+022.50,-87.5,22.5,1,"polar hiperárido, cubierto de nieve o hielo",0.2851,-4.386,-0.5443
+cell_-87.50_+027.50,-87.5,27.5,1,"polar hiperárido, cubierto de nieve o hielo",0.2839,-4.3881,-0.5517
+cell_-87.50_+032.50,-87.5,32.5,1,"polar hiperárido, cubierto de nieve o hielo",0.2942,-4.3849,-0.5439
+cell_-87.50_+037.50,-87.5,37.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3124,-4.394,-0.5451
+cell_-87.50_+042.50,-87.5,42.5,1,"polar hiperárido, cubierto de nieve o hielo",0.301,-4.402,-0.551
+cell_-87.50_+047.50,-87.5,47.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4071,-4.4233,-0.5651
+cell_-87.50_+052.50,-87.5,52.5,1,"polar hiperárido, cubierto de nieve o hielo",0.455,-4.4462,-0.5848
+cell_-87.50_+057.50,-87.5,57.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4914,-4.4648,-0.5995
+cell_-87.50_+062.50,-87.5,62.5,1,"polar hiperárido, cubierto de nieve o hielo",0.5371,-4.4794,-0.6097
+cell_-87.50_+067.50,-87.5,67.5,1,"polar hiperárido, cubierto de nieve o hielo",0.5804,-4.4809,-0.5984
+cell_-87.50_+072.50,-87.5,72.5,1,"polar hiperárido, cubierto de nieve o hielo",0.6682,-4.4971,-0.5984
+cell_-87.50_+077.50,-87.5,77.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7035,-4.4959,-0.5896
+cell_-87.50_+082.50,-87.5,82.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7434,-4.5037,-0.5978
+cell_-87.50_+087.50,-87.5,87.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7594,-4.5134,-0.6075
+cell_-87.50_+092.50,-87.5,92.5,1,"polar hiperárido, cubierto de nieve o hielo",0.748,-4.5103,-0.6031
+cell_-87.50_+097.50,-87.5,97.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7149,-4.516,-0.6184
+cell_-87.50_+102.50,-87.5,102.5,1,"polar hiperárido, cubierto de nieve o hielo",0.6363,-4.5182,-0.6256
+cell_-87.50_+107.50,-87.5,107.5,1,"polar hiperárido, cubierto de nieve o hielo",0.5964,-4.5215,-0.6402
+cell_-87.50_+112.50,-87.5,112.5,1,"polar hiperárido, cubierto de nieve o hielo",0.5325,-4.5273,-0.6622
+cell_-87.50_+117.50,-87.5,117.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4048,-4.5252,-0.6707
+cell_-87.50_+122.50,-87.5,122.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3637,-4.5302,-0.6821
+cell_-87.50_+127.50,-87.5,127.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3558,-4.5326,-0.6811
+cell_-87.50_+132.50,-87.5,132.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3432,-4.5381,-0.6929
+cell_-87.50_+137.50,-87.5,137.5,1,"polar hiperárido, cubierto de nieve o hielo",0.2862,-4.5254,-0.6974
+cell_-87.50_+142.50,-87.5,142.5,1,"polar hiperárido, cubierto de nieve o hielo",0.2987,-4.5008,-0.6759
+cell_-87.50_+147.50,-87.5,147.5,1,"polar hiperárido, cubierto de nieve o hielo",0.2782,-4.4896,-0.6828
+cell_-87.50_+152.50,-87.5,152.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3101,-4.4849,-0.6955
+cell_-87.50_+157.50,-87.5,157.5,1,"polar hiperárido, cubierto de nieve o hielo",0.2965,-4.4698,-0.6882
+cell_-87.50_+162.50,-87.5,162.5,1,"polar hiperárido, cubierto de nieve o hielo",0.2919,-4.4687,-0.7016
+cell_-87.50_+167.50,-87.5,167.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3592,-4.4375,-0.662
+cell_-87.50_+172.50,-87.5,172.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3808,-4.4112,-0.6136
+cell_-87.50_+177.50,-87.5,177.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3603,-4.3857,-0.582
+cell_-82.50_-152.50,-82.5,-152.5,7,"polar árido, cubierto de nieve o hielo",0.829,-2.4814,0.5002
+cell_-82.50_-147.50,-82.5,-147.5,7,"polar árido, cubierto de nieve o hielo",0.7697,-2.57,0.4041
+cell_-82.50_-142.50,-82.5,-142.5,7,"polar árido, cubierto de nieve o hielo",0.7001,-2.6322,0.37
+cell_-82.50_-137.50,-82.5,-137.5,7,"polar árido, cubierto de nieve o hielo",0.5291,-2.7048,0.2921
+cell_-82.50_-132.50,-82.5,-132.5,7,"polar árido, cubierto de nieve o hielo",0.4641,-2.8147,0.155
+cell_-82.50_-127.50,-82.5,-127.5,7,"polar árido, cubierto de nieve o hielo",0.4527,-2.911,0.1272
+cell_-82.50_-122.50,-82.5,-122.5,7,"polar árido, cubierto de nieve o hielo",0.4059,-2.9868,0.1248
+cell_-82.50_-117.50,-82.5,-117.5,7,"polar árido, cubierto de nieve o hielo",0.3911,-3.1234,0.0917
+cell_-82.50_-112.50,-82.5,-112.5,7,"polar árido, cubierto de nieve o hielo",0.5017,-3.3025,0.0585
+cell_-82.50_-107.50,-82.5,-107.5,7,"polar árido, cubierto de nieve o hielo",0.5758,-3.4902,-0.011
+cell_-82.50_-102.50,-82.5,-102.5,7,"polar árido, cubierto de nieve o hielo",0.5644,-3.4584,0.0002
+cell_-82.50_-097.50,-82.5,-97.5,7,"polar árido, cubierto de nieve o hielo",0.7583,-3.3216,0.0978
+cell_-82.50_-092.50,-82.5,-92.5,7,"polar árido, cubierto de nieve o hielo",0.6876,-3.2714,0.2112
+cell_-82.50_-087.50,-82.5,-87.5,7,"polar árido, cubierto de nieve o hielo",0.5781,-3.2997,0.1469
+cell_-82.50_-082.50,-82.5,-82.5,7,"polar árido, cubierto de nieve o hielo",0.675,-3.3083,0.1096
+cell_-82.50_-077.50,-82.5,-77.5,7,"polar árido, cubierto de nieve o hielo",0.7628,-3.2251,0.1609
+cell_-82.50_-072.50,-82.5,-72.5,7,"polar árido, cubierto de nieve o hielo",0.6944,-2.9685,0.2758
+cell_-82.50_-067.50,-82.5,-67.5,7,"polar árido, cubierto de nieve o hielo",0.6659,-2.6911,0.5165
+cell_-82.50_-062.50,-82.5,-62.5,4,frío húmedo,0.8871,-1.598,1.1558
+cell_-82.50_-052.50,-82.5,-52.5,7,"polar árido, cubierto de nieve o hielo",0.7469,-2.956,0.2075
+cell_-82.50_-047.50,-82.5,-47.5,7,"polar árido, cubierto de nieve o hielo",0.4846,-2.6696,0.6161
+cell_-82.50_-042.50,-82.5,-42.5,7,"polar árido, cubierto de nieve o hielo",0.7298,-2.9974,-0.0114
+cell_-82.50_-037.50,-82.5,-37.5,7,"polar árido, cubierto de nieve o hielo",0.7948,-3.6186,-0.3304
+cell_-82.50_-032.50,-82.5,-32.5,7,"polar árido, cubierto de nieve o hielo",0.6043,-3.6103,-0.2875
+cell_-82.50_-027.50,-82.5,-27.5,7,"polar árido, cubierto de nieve o hielo",0.5599,-3.6261,-0.2392
+cell_-82.50_-022.50,-82.5,-22.5,7,"polar árido, cubierto de nieve o hielo",0.5986,-3.6817,-0.2824
+cell_-82.50_-017.50,-82.5,-17.5,7,"polar árido, cubierto de nieve o hielo",0.7127,-3.876,-0.4617
+cell_-82.50_-012.50,-82.5,-12.5,1,"polar hiperárido, cubierto de nieve o hielo",0.626,-3.9352,-0.4533
+cell_-82.50_-007.50,-82.5,-7.5,1,"polar hiperárido, cubierto de nieve o hielo",0.5553,-3.9324,-0.4041
+cell_-82.50_-002.50,-82.5,-2.5,1,"polar hiperárido, cubierto de nieve o hielo",0.5462,-3.9985,-0.4606
+cell_-82.50_+002.50,-82.5,2.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4584,-4.0647,-0.5332
+cell_-82.50_+007.50,-82.5,7.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3478,-4.0949,-0.5848
+cell_-82.50_+012.50,-82.5,12.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3649,-4.1196,-0.6329
+cell_-82.50_+017.50,-82.5,17.5,1,"polar hiperárido, cubierto de nieve o hielo",0.374,-4.1745,-0.6742
+cell_-82.50_+022.50,-82.5,22.5,1,"polar hiperárido, cubierto de nieve o hielo",0.366,-4.2725,-0.784
+cell_-82.50_+027.50,-82.5,27.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3774,-4.4355,-0.8975
+cell_-82.50_+032.50,-82.5,32.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4983,-4.5427,-0.9646
+cell_-82.50_+037.50,-82.5,37.5,1,"polar hiperárido, cubierto de nieve o hielo",0.5633,-4.6271,-1.0205
+cell_-82.50_+042.50,-82.5,42.5,1,"polar hiperárido, cubierto de nieve o hielo",0.6249,-4.6635,-1.0363
+cell_-82.50_+047.50,-82.5,47.5,1,"polar hiperárido, cubierto de nieve o hielo",0.6408,-4.7109,-1.0521
+cell_-82.50_+052.50,-82.5,52.5,1,"polar hiperárido, cubierto de nieve o hielo",0.8164,-4.7717,-1.0758
+cell_-82.50_+057.50,-82.5,57.5,1,"polar hiperárido, cubierto de nieve o hielo",0.9111,-4.7917,-1.0936
+cell_-82.50_+062.50,-82.5,62.5,1,"polar hiperárido, cubierto de nieve o hielo",0.9715,-4.8265,-1.099
+cell_-82.50_+067.50,-82.5,67.5,1,"polar hiperárido, cubierto de nieve o hielo",0.9909,-4.8547,-1.1473
+cell_-82.50_+072.50,-82.5,72.5,1,"polar hiperárido, cubierto de nieve o hielo",0.9897,-4.8832,-1.1896
+cell_-82.50_+077.50,-82.5,77.5,1,"polar hiperárido, cubierto de nieve o hielo",0.9761,-4.8901,-1.2184
+cell_-82.50_+082.50,-82.5,82.5,1,"polar hiperárido, cubierto de nieve o hielo",0.9567,-4.8722,-1.1822
+cell_-82.50_+087.50,-82.5,87.5,1,"polar hiperárido, cubierto de nieve o hielo",0.87,-4.8013,-1.1143
+cell_-82.50_+092.50,-82.5,92.5,1,"polar hiperárido, cubierto de nieve o hielo",0.8472,-4.7686,-1.1095
+cell_-82.50_+097.50,-82.5,97.5,1,"polar hiperárido, cubierto de nieve o hielo",0.8084,-4.7743,-1.1104
+cell_-82.50_+102.50,-82.5,102.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7503,-4.7556,-1.0932
+cell_-82.50_+107.50,-82.5,107.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7024,-4.7919,-1.1266
+cell_-82.50_+112.50,-82.5,112.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7161,-4.7581,-1.1127
+cell_-82.50_+117.50,-82.5,117.5,1,"polar hiperárido, cubierto de nieve o hielo",0.6294,-4.6529,-1.0024
+cell_-82.50_+122.50,-82.5,122.5,1,"polar hiperárido, cubierto de nieve o hielo",0.634,-4.6999,-1.0814
+cell_-82.50_+127.50,-82.5,127.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7058,-4.7092,-1.1339
+cell_-82.50_+132.50,-82.5,132.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7104,-4.6492,-1.1403
+cell_-82.50_+137.50,-82.5,137.5,1,"polar hiperárido, cubierto de nieve o hielo",0.707,-4.5619,-1.1124
+cell_-82.50_+142.50,-82.5,142.5,1,"polar hiperárido, cubierto de nieve o hielo",0.5587,-4.4226,-1.0062
+cell_-82.50_+147.50,-82.5,147.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4162,-4.2514,-0.9193
+cell_-82.50_+152.50,-82.5,152.5,1,"polar hiperárido, cubierto de nieve o hielo",0.5279,-3.9616,-0.6615
+cell_-82.50_+157.50,-82.5,157.5,7,"polar árido, cubierto de nieve o hielo",0.6625,-3.4005,-0.1182
+cell_-82.50_+162.50,-82.5,162.5,7,"polar árido, cubierto de nieve o hielo",0.577,-2.7117,0.269
+cell_-77.50_-157.50,-77.5,-157.5,7,"polar árido, cubierto de nieve o hielo",0.6762,-2.0026,1.0664
+cell_-77.50_-152.50,-77.5,-152.5,4,frío húmedo,0.7731,-1.3475,1.5245
+cell_-77.50_-147.50,-77.5,-147.5,7,"polar árido, cubierto de nieve o hielo",0.6967,-1.8555,1.1779
+cell_-77.50_-142.50,-77.5,-142.5,7,"polar árido, cubierto de nieve o hielo",0.3729,-2.4811,0.5023
+cell_-77.50_-137.50,-77.5,-137.5,7,"polar árido, cubierto de nieve o hielo",0.3284,-2.8861,0.0102
+cell_-77.50_-132.50,-77.5,-132.5,7,"polar árido, cubierto de nieve o hielo",0.3786,-3.1556,-0.2745
+cell_-77.50_-127.50,-77.5,-127.5,7,"polar árido, cubierto de nieve o hielo",0.5074,-3.1043,-0.2336
+cell_-77.50_-122.50,-77.5,-122.5,7,"polar árido, cubierto de nieve o hielo",0.4447,-3.1045,-0.046
+cell_-77.50_-117.50,-77.5,-117.5,7,"polar árido, cubierto de nieve o hielo",0.642,-2.8194,0.4871
+cell_-77.50_-112.50,-77.5,-112.5,7,"polar árido, cubierto de nieve o hielo",0.5496,-2.6878,0.6996
+cell_-77.50_-107.50,-77.5,-107.5,7,"polar árido, cubierto de nieve o hielo",0.5393,-2.7283,0.5781
+cell_-77.50_-102.50,-77.5,-102.5,7,"polar árido, cubierto de nieve o hielo",0.5359,-2.8373,0.4545
+cell_-77.50_-097.50,-77.5,-97.5,7,"polar árido, cubierto de nieve o hielo",0.4949,-2.8926,0.3953
+cell_-77.50_-092.50,-77.5,-92.5,7,"polar árido, cubierto de nieve o hielo",0.3922,-2.799,0.3683
+cell_-77.50_-087.50,-77.5,-87.5,7,"polar árido, cubierto de nieve o hielo",0.4196,-2.6809,0.4491
+cell_-77.50_-082.50,-77.5,-82.5,7,"polar árido, cubierto de nieve o hielo",0.7092,-2.1538,0.9638
+cell_-77.50_-077.50,-77.5,-77.5,7,"polar árido, cubierto de nieve o hielo",0.667,-2.3663,0.8543
+cell_-77.50_-027.50,-77.5,-27.5,7,"polar árido, cubierto de nieve o hielo",0.3273,-2.7715,0.0701
+cell_-77.50_-022.50,-77.5,-22.5,7,"polar árido, cubierto de nieve o hielo",0.3717,-2.9752,-0.188
+cell_-77.50_-017.50,-77.5,-17.5,7,"polar árido, cubierto de nieve o hielo",0.4401,-3.1335,-0.2589
+cell_-77.50_-012.50,-77.5,-12.5,7,"polar árido, cubierto de nieve o hielo",0.5097,-3.2625,-0.3689
+cell_-77.50_-007.50,-77.5,-7.5,1,"polar hiperárido, cubierto de nieve o hielo",0.512,-3.4574,-0.4711
+cell_-77.50_-002.50,-77.5,-2.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4094,-3.6842,-0.6027
+cell_-77.50_+002.50,-77.5,2.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3523,-3.8959,-0.8189
+cell_-77.50_+007.50,-77.5,7.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3888,-4.037,-0.9228
+cell_-77.50_+012.50,-77.5,12.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4025,-4.2317,-1.0294
+cell_-77.50_+017.50,-77.5,17.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7195,-4.3057,-1.0735
+cell_-77.50_+022.50,-77.5,22.5,1,"polar hiperárido, cubierto de nieve o hielo",0.6522,-4.4028,-1.1797
+cell_-77.50_+027.50,-77.5,27.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7993,-4.4707,-1.2269
+cell_-77.50_+032.50,-77.5,32.5,1,"polar hiperárido, cubierto de nieve o hielo",0.8712,-4.5135,-1.2613
+cell_-77.50_+037.50,-77.5,37.5,1,"polar hiperárido, cubierto de nieve o hielo",0.9453,-4.5306,-1.2614
+cell_-77.50_+042.50,-77.5,42.5,1,"polar hiperárido, cubierto de nieve o hielo",0.9635,-4.5142,-1.1337
+cell_-77.50_+047.50,-77.5,47.5,1,"polar hiperárido, cubierto de nieve o hielo",0.9008,-4.523,-1.1196
+cell_-77.50_+052.50,-77.5,52.5,1,"polar hiperárido, cubierto de nieve o hielo",0.5815,-4.5252,-1.1725
+cell_-77.50_+057.50,-77.5,57.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4105,-4.4215,-1.0251
+cell_-77.50_+062.50,-77.5,62.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3569,-4.3412,-1.0023
+cell_-77.50_+067.50,-77.5,67.5,1,"polar hiperárido, cubierto de nieve o hielo",0.6431,-4.476,-1.0851
+cell_-77.50_+072.50,-77.5,72.5,1,"polar hiperárido, cubierto de nieve o hielo",0.6899,-4.5338,-1.0891
+cell_-77.50_+077.50,-77.5,77.5,1,"polar hiperárido, cubierto de nieve o hielo",0.5029,-4.4287,-1.0423
+cell_-77.50_+082.50,-77.5,82.5,1,"polar hiperárido, cubierto de nieve o hielo",0.5257,-4.4242,-1.0755
+cell_-77.50_+087.50,-77.5,87.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7252,-4.4591,-1.1052
+cell_-77.50_+092.50,-77.5,92.5,1,"polar hiperárido, cubierto de nieve o hielo",0.9407,-4.4815,-1.148
+cell_-77.50_+097.50,-77.5,97.5,1,"polar hiperárido, cubierto de nieve o hielo",0.9532,-4.5513,-1.2387
+cell_-77.50_+102.50,-77.5,102.5,1,"polar hiperárido, cubierto de nieve o hielo",0.9202,-4.5835,-1.3075
+cell_-77.50_+107.50,-77.5,107.5,1,"polar hiperárido, cubierto de nieve o hielo",0.8506,-4.5803,-1.333
+cell_-77.50_+112.50,-77.5,112.5,1,"polar hiperárido, cubierto de nieve o hielo",0.8746,-4.5418,-1.3127
+cell_-77.50_+117.50,-77.5,117.5,1,"polar hiperárido, cubierto de nieve o hielo",0.8552,-4.4876,-1.2625
+cell_-77.50_+122.50,-77.5,122.5,1,"polar hiperárido, cubierto de nieve o hielo",0.8267,-4.4716,-1.2518
+cell_-77.50_+127.50,-77.5,127.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7206,-4.5419,-1.287
+cell_-77.50_+132.50,-77.5,132.5,1,"polar hiperárido, cubierto de nieve o hielo",0.6089,-4.5338,-1.2697
+cell_-77.50_+137.50,-77.5,137.5,1,"polar hiperárido, cubierto de nieve o hielo",0.5165,-4.4,-1.1268
+cell_-77.50_+142.50,-77.5,142.5,1,"polar hiperárido, cubierto de nieve o hielo",0.5108,-4.3108,-1.0397
+cell_-77.50_+147.50,-77.5,147.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3831,-4.2206,-0.9115
+cell_-77.50_+152.50,-77.5,152.5,1,"polar hiperárido, cubierto de nieve o hielo",0.3409,-4.1301,-0.8558
+cell_-77.50_+157.50,-77.5,157.5,1,"polar hiperárido, cubierto de nieve o hielo",0.5348,-3.9371,-0.767
+cell_-77.50_+162.50,-77.5,162.5,7,"polar árido, cubierto de nieve o hielo",0.7754,-2.5244,0.2268
+cell_-72.50_-062.50,-72.5,-62.5,7,"polar árido, cubierto de nieve o hielo",0.5188,-2.3404,0.4338
+cell_-72.50_-012.50,-72.5,-12.5,4,frío húmedo,0.7491,-1.184,1.1561
+cell_-72.50_-007.50,-72.5,-7.5,7,"polar árido, cubierto de nieve o hielo",0.7332,-2.9211,-0.2361
+cell_-72.50_-002.50,-72.5,-2.5,7,"polar árido, cubierto de nieve o hielo",0.6636,-2.465,0.3441
+cell_-72.50_+002.50,-72.5,2.5,7,"polar árido, cubierto de nieve o hielo",0.7184,-3.3015,-0.6458
+cell_-72.50_+007.50,-72.5,7.5,7,"polar árido, cubierto de nieve o hielo",0.74,-3.6334,-0.6349
+cell_-72.50_+012.50,-72.5,12.5,1,"polar hiperárido, cubierto de nieve o hielo",0.756,-3.9194,-0.8841
+cell_-72.50_+017.50,-72.5,17.5,7,"polar árido, cubierto de nieve o hielo",0.8905,-3.7892,-0.6661
+cell_-72.50_+022.50,-72.5,22.5,7,"polar árido, cubierto de nieve o hielo",0.9122,-3.87,-1.0275
+cell_-72.50_+027.50,-72.5,27.5,7,"polar árido, cubierto de nieve o hielo",0.9704,-4.1883,-0.9025
+cell_-72.50_+032.50,-72.5,32.5,7,"polar árido, cubierto de nieve o hielo",0.9179,-4.0088,-0.9919
+cell_-72.50_+037.50,-72.5,37.5,1,"polar hiperárido, cubierto de nieve o hielo",0.8461,-4.2028,-1.128
+cell_-72.50_+042.50,-72.5,42.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7662,-4.1743,-1.0722
+cell_-72.50_+047.50,-72.5,47.5,1,"polar hiperárido, cubierto de nieve o hielo",0.6819,-4.1735,-1.1758
+cell_-72.50_+052.50,-72.5,52.5,1,"polar hiperárido, cubierto de nieve o hielo",0.6499,-4.0536,-0.9933
+cell_-72.50_+057.50,-72.5,57.5,1,"polar hiperárido, cubierto de nieve o hielo",0.4572,-4.0678,-0.9441
+cell_-72.50_+062.50,-72.5,62.5,7,"polar árido, cubierto de nieve o hielo",0.9521,-3.9986,-0.854
+cell_-72.50_+067.50,-72.5,67.5,7,"polar árido, cubierto de nieve o hielo",0.9156,-1.8332,0.3228
+cell_-72.50_+072.50,-72.5,72.5,7,"polar árido, cubierto de nieve o hielo",0.6796,-3.0521,-0.4486
+cell_-72.50_+077.50,-72.5,77.5,7,"polar árido, cubierto de nieve o hielo",0.8221,-3.8649,-0.9557
+cell_-72.50_+082.50,-72.5,82.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7138,-4.0549,-1.0549
+cell_-72.50_+087.50,-72.5,87.5,1,"polar hiperárido, cubierto de nieve o hielo",0.6328,-4.0954,-1.0461
+cell_-72.50_+092.50,-72.5,92.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7765,-4.1745,-1.0702
+cell_-72.50_+097.50,-72.5,97.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7799,-4.1571,-1.0938
+cell_-72.50_+102.50,-72.5,102.5,1,"polar hiperárido, cubierto de nieve o hielo",0.6842,-4.1805,-1.0659
+cell_-72.50_+107.50,-72.5,107.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7834,-4.2134,-1.0653
+cell_-72.50_+112.50,-72.5,112.5,1,"polar hiperárido, cubierto de nieve o hielo",0.8449,-4.0166,-1.0385
+cell_-72.50_+117.50,-72.5,117.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7617,-3.9671,-0.9995
+cell_-72.50_+122.50,-72.5,122.5,1,"polar hiperárido, cubierto de nieve o hielo",0.805,-3.9465,-1.0141
+cell_-72.50_+127.50,-72.5,127.5,1,"polar hiperárido, cubierto de nieve o hielo",0.8404,-3.9907,-1.0468
+cell_-72.50_+132.50,-72.5,132.5,1,"polar hiperárido, cubierto de nieve o hielo",0.6511,-4.0274,-1.0501
+cell_-72.50_+137.50,-72.5,137.5,1,"polar hiperárido, cubierto de nieve o hielo",0.6488,-4.0564,-1.066
+cell_-72.50_+142.50,-72.5,142.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7241,-4.0527,-1.1016
+cell_-72.50_+147.50,-72.5,147.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7674,-3.8858,-0.9826
+cell_-72.50_+152.50,-72.5,152.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7172,-3.665,-0.8064
+cell_-72.50_+157.50,-72.5,157.5,1,"polar hiperárido, cubierto de nieve o hielo",0.7218,-3.4727,-0.7145
+cell_-72.50_+162.50,-72.5,162.5,7,"polar árido, cubierto de nieve o hielo",0.6739,-2.981,-0.4462
+cell_-72.50_+167.50,-72.5,167.5,7,"polar árido, cubierto de nieve o hielo",0.8826,-2.4415,0.192
+cell_-67.50_-067.50,-67.5,-67.5,4,frío húmedo,0.8233,-0.8068,1.7905
+cell_-67.50_+052.50,-67.5,52.5,7,"polar árido, cubierto de nieve o hielo",0.7913,-2.9261,-0.3944
+cell_-67.50_+057.50,-67.5,57.5,7,"polar árido, cubierto de nieve o hielo",0.8632,-2.5245,0.0849
+cell_-67.50_+082.50,-67.5,82.5,7,"polar árido, cubierto de nieve o hielo",0.9316,-1.3725,0.8859
+cell_-67.50_+087.50,-67.5,87.5,7,"polar árido, cubierto de nieve o hielo",0.9396,-2.6494,0.0375
+cell_-67.50_+092.50,-67.5,92.5,7,"polar árido, cubierto de nieve o hielo",0.927,-3.21,-0.5006
+cell_-67.50_+097.50,-67.5,97.5,7,"polar árido, cubierto de nieve o hielo",0.9498,-3.4409,-0.6226
+cell_-67.50_+102.50,-67.5,102.5,7,"polar árido, cubierto de nieve o hielo",0.9076,-3.3519,-0.7996
+cell_-67.50_+107.50,-67.5,107.5,7,"polar árido, cubierto de nieve o hielo",0.943,-3.2524,-0.4237
+cell_-67.50_+112.50,-67.5,112.5,7,"polar árido, cubierto de nieve o hielo",0.878,-2.6718,-0.0329
+cell_-67.50_+117.50,-67.5,117.5,7,"polar árido, cubierto de nieve o hielo",0.9327,-2.4017,0.295
+cell_-67.50_+122.50,-67.5,122.5,7,"polar árido, cubierto de nieve o hielo",0.9441,-2.8271,-0.1578
+cell_-67.50_+127.50,-67.5,127.5,7,"polar árido, cubierto de nieve o hielo",0.9806,-2.8197,0.0979
+cell_-67.50_+132.50,-67.5,132.5,7,"polar árido, cubierto de nieve o hielo",0.8438,-3.0218,-0.4156
+cell_-67.50_+137.50,-67.5,137.5,7,"polar árido, cubierto de nieve o hielo",0.8997,-3.2383,-0.595
+cell_-67.50_+142.50,-67.5,142.5,7,"polar árido, cubierto de nieve o hielo",0.9749,-2.8551,0.0999
+cell_-52.50_-072.50,-52.5,-72.5,4,frío húmedo,0.7651,0.3103,1.6934
+cell_-47.50_-072.50,-47.5,-72.5,2,templado húmedo,0.1585,0.6768,0.6508
+cell_-47.50_-067.50,-47.5,-67.5,2,templado húmedo,0.6055,1.8239,-0.6108
+cell_-42.50_-072.50,-42.5,-72.5,2,templado húmedo,0.2691,1.279,1.2998
+cell_-42.50_-067.50,-42.5,-67.5,6,"templado semiárido, de gran altitud",0.8187,1.8574,-1.3696
+cell_-42.50_+147.50,-42.5,147.5,2,templado húmedo,0.0627,1.9679,0.3748
+cell_-42.50_+172.50,-42.5,172.5,2,templado húmedo,0.3421,1.3371,1.0747
+cell_-37.50_-072.50,-37.5,-72.5,5,cálido húmedo,0.3375,2.5059,-0.1146
+cell_-37.50_-067.50,-37.5,-67.5,0,cálido árido,0.3341,2.7382,-1.3675
+cell_-37.50_-062.50,-37.5,-62.5,5,cálido húmedo,0.1038,2.4163,-0.3093
+cell_-37.50_-057.50,-37.5,-57.5,2,templado húmedo,0.2725,2.0478,0.6748
+cell_-37.50_+142.50,-37.5,142.5,2,templado húmedo,0.0456,2.2445,0.0779
+cell_-37.50_+147.50,-37.5,147.5,2,templado húmedo,0.2452,2.2068,0.6334
+cell_-32.50_-067.50,-32.5,-67.5,0,cálido árido,0.3763,2.9167,-1.5298
+cell_-32.50_-062.50,-32.5,-62.5,5,cálido húmedo,0.1859,2.7139,0.1083
+cell_-32.50_-057.50,-32.5,-57.5,5,cálido húmedo,0.1437,2.5269,0.3226
+cell_-32.50_-052.50,-32.5,-52.5,3,cálido muy húmedo,0.8198,2.0106,1.0228
+cell_-32.50_+022.50,-32.5,22.5,0,cálido árido,0.6169,2.9446,-2.0939
+cell_-32.50_+027.50,-32.5,27.5,5,cálido húmedo,0.1083,2.3732,-0.2139
+cell_-32.50_+117.50,-32.5,117.5,5,cálido húmedo,0.1688,2.6449,-0.9276
+cell_-32.50_+122.50,-32.5,122.5,5,cálido húmedo,0.3352,2.7844,-1.0592
+cell_-32.50_+137.50,-32.5,137.5,0,cálido árido,0.5336,2.8669,-1.6745
+cell_-32.50_+142.50,-32.5,142.5,0,cálido árido,0.496,2.7964,-1.4479
+cell_-32.50_+147.50,-32.5,147.5,5,cálido húmedo,0.1117,2.7925,-0.7955
+cell_-27.50_-067.50,-27.5,-67.5,6,"templado semiárido, de gran altitud",0.9133,2.4851,-2.3294
+cell_-27.50_-062.50,-27.5,-62.5,5,cálido húmedo,0.1961,3.0339,-0.4773
+cell_-27.50_-057.50,-27.5,-57.5,5,cálido húmedo,0.2269,2.7393,0.6691
+cell_-27.50_-052.50,-27.5,-52.5,3,cálido muy húmedo,0.236,2.3281,0.9013
+cell_-27.50_+017.50,-27.5,17.5,0,cálido árido,0.9373,3.4506,-3.1995
+cell_-27.50_+022.50,-27.5,22.5,0,cálido árido,0.6317,3.0283,-2.1459
+cell_-27.50_+027.50,-27.5,27.5,5,cálido húmedo,0.4766,2.5662,-1.3164
+cell_-27.50_+032.50,-27.5,32.5,5,cálido húmedo,0.6214,2.8543,0.2581
+cell_-27.50_+117.50,-27.5,117.5,0,cálido árido,0.4857,3.2329,-2.2527
+cell_-27.50_+122.50,-27.5,122.5,0,cálido árido,0.4686,3.1685,-2.1703
+cell_-27.50_+127.50,-27.5,127.5,0,cálido árido,0.6283,3.2117,-2.5344
+cell_-27.50_+132.50,-27.5,132.5,0,cálido árido,0.6648,3.2535,-2.6121
+cell_-27.50_+137.50,-27.5,137.5,0,cálido árido,0.8153,3.1209,-2.4343
+cell_-27.50_+142.50,-27.5,142.5,0,cálido árido,0.545,3.2251,-1.9018
+cell_-27.50_+147.50,-27.5,147.5,0,cálido árido,0.268,3.309,-1.4303
+cell_-27.50_+152.50,-27.5,152.5,5,cálido húmedo,0.1517,2.9542,-0.0721
+cell_-22.50_-067.50,-22.5,-67.5,6,"templado semiárido, de gran altitud",1.0,1.5019,-4.1135
+cell_-22.50_-062.50,-22.5,-62.5,5,cálido húmedo,0.3797,3.0945,-0.3643
+cell_-22.50_-057.50,-22.5,-57.5,5,cálido húmedo,0.1482,3.0314,0.1872
+cell_-22.50_-052.50,-22.5,-52.5,3,cálido muy húmedo,0.2109,2.8359,0.4867
+cell_-22.50_-047.50,-22.5,-47.5,5,cálido húmedo,0.114,2.9093,-0.1171
+cell_-22.50_-042.50,-22.5,-42.5,3,cálido muy húmedo,0.1779,2.5671,0.8317
+cell_-22.50_+017.50,-22.5,17.5,0,cálido árido,0.8426,3.0236,-2.1606
+cell_-22.50_+022.50,-22.5,22.5,0,cálido árido,0.4926,3.2633,-1.8196
+cell_-22.50_+027.50,-22.5,27.5,5,cálido húmedo,0.3033,3.154,-1.3888
+cell_-22.50_+032.50,-22.5,32.5,5,cálido húmedo,0.3877,3.5392,-0.8673
+cell_-22.50_+047.50,-22.5,47.5,3,cálido muy húmedo,0.5051,2.7488,1.364
+cell_-22.50_+117.50,-22.5,117.5,0,cálido árido,0.7936,3.5916,-2.2142
+cell_-22.50_+122.50,-22.5,122.5,0,cálido árido,0.6385,3.6067,-2.0651
+cell_-22.50_+127.50,-22.5,127.5,0,cálido árido,0.5906,3.4974,-2.2854
+cell_-22.50_+132.50,-22.5,132.5,0,cálido árido,0.6192,3.4185,-2.4017
+cell_-22.50_+137.50,-22.5,137.5,0,cálido árido,0.6853,3.476,-2.1482
+cell_-22.50_+142.50,-22.5,142.5,0,cálido árido,0.6203,3.4901,-1.8785
+cell_-22.50_+147.50,-22.5,147.5,5,cálido húmedo,0.2303,3.223,-0.9416
+cell_-17.50_-067.50,-17.5,-67.5,6,"templado semiárido, de gran altitud",0.9726,1.8846,-2.3148
+cell_-17.50_-062.50,-17.5,-62.5,5,cálido húmedo,0.2178,3.0327,0.3107
+cell_-17.50_-057.50,-17.5,-57.5,5,cálido húmedo,0.6021,3.5281,-0.2316
+cell_-17.50_-052.50,-17.5,-52.5,5,cálido húmedo,0.171,3.0545,-0.208
+cell_-17.50_-047.50,-17.5,-47.5,5,cálido húmedo,0.1802,3.0568,-0.3755
+cell_-17.50_-042.50,-17.5,-42.5,5,cálido húmedo,0.1471,3.004,-0.3046
+cell_-17.50_+012.50,-17.5,12.5,0,cálido árido,0.8951,3.6809,-2.3828
+cell_-17.50_+017.50,-17.5,17.5,0,cálido árido,0.6442,3.3924,-1.8478
+cell_-17.50_+022.50,-17.5,22.5,5,cálido húmedo,0.4116,3.3647,-1.3186
+cell_-17.50_+027.50,-17.5,27.5,5,cálido húmedo,0.2087,3.2495,-0.603
+cell_-17.50_+032.50,-17.5,32.5,5,cálido húmedo,0.2759,3.0747,-0.8165
+cell_-17.50_+037.50,-17.5,37.5,3,cálido muy húmedo,0.8119,2.8872,0.327
+cell_-17.50_+047.50,-17.5,47.5,5,cálido húmedo,0.5006,2.72,0.0445
+cell_-17.50_+122.50,-17.5,122.5,5,cálido húmedo,0.6374,3.6995,-0.9298
+cell_-17.50_+127.50,-17.5,127.5,5,cálido húmedo,0.4185,3.6317,-1.3878
+cell_-17.50_+132.50,-17.5,132.5,5,cálido húmedo,0.6146,3.7522,-1.4462
+cell_-17.50_+137.50,-17.5,137.5,5,cálido húmedo,0.5245,3.7054,-1.4115
+cell_-17.50_+142.50,-17.5,142.5,5,cálido húmedo,0.5827,3.6914,-0.8696
+cell_-12.50_-072.50,-12.5,-72.5,3,cálido muy húmedo,0.8483,2.2461,0.4011
+cell_-12.50_-067.50,-12.5,-67.5,3,cálido muy húmedo,0.4652,2.9599,1.3928
+cell_-12.50_-062.50,-12.5,-62.5,3,cálido muy húmedo,0.4413,3.0583,1.0571
+cell_-12.50_-057.50,-12.5,-57.5,3,cálido muy húmedo,0.4036,3.0443,0.8693
+cell_-12.50_-052.50,-12.5,-52.5,3,cálido muy húmedo,0.6078,3.2758,0.6545
+cell_-12.50_-047.50,-12.5,-47.5,5,cálido húmedo,0.3489,3.4673,-0.2881
+cell_-12.50_-042.50,-12.5,-42.5,5,cálido húmedo,0.293,3.2403,-0.7895
+cell_-12.50_+017.50,-12.5,17.5,5,cálido húmedo,0.4504,3.215,-0.9876
+cell_-12.50_+022.50,-12.5,22.5,5,cálido húmedo,0.3501,3.1875,-0.651
+cell_-12.50_+027.50,-12.5,27.5,5,cálido húmedo,0.3945,2.7664,-0.3287
+cell_-12.50_+032.50,-12.5,32.5,5,cálido húmedo,0.2816,3.3486,-0.597
+cell_-12.50_+037.50,-12.5,37.5,5,cálido húmedo,0.3295,3.0745,0.2981
+cell_-12.50_+132.50,-12.5,132.5,5,cálido húmedo,0.6477,3.584,-0.1693
+cell_-12.50_+142.50,-12.5,142.5,3,cálido muy húmedo,0.5154,3.0474,0.6123
+cell_-07.50_-077.50,-7.5,-77.5,6,"templado semiárido, de gran altitud",0.821,1.8716,-0.4644
+cell_-07.50_-072.50,-7.5,-72.5,3,cálido muy húmedo,0.5564,2.918,1.4775
+cell_-07.50_-067.50,-7.5,-67.5,3,cálido muy húmedo,0.6397,2.933,1.6492
+cell_-07.50_-062.50,-7.5,-62.5,3,cálido muy húmedo,0.6226,3.1209,1.4396
+cell_-07.50_-057.50,-7.5,-57.5,3,cálido muy húmedo,0.6135,3.2517,1.1155
+cell_-07.50_-052.50,-7.5,-52.5,3,cálido muy húmedo,0.4892,3.0293,1.1637
+cell_-07.50_-047.50,-7.5,-47.5,5,cálido húmedo,0.5507,3.54,0.07
+cell_-07.50_-042.50,-7.5,-42.5,5,cálido húmedo,0.5884,3.6213,-0.7608
+cell_-07.50_-037.50,-7.5,-37.5,5,cálido húmedo,0.618,3.3599,-1.3787
+cell_-07.50_+017.50,-7.5,17.5,5,cálido húmedo,0.5724,3.3074,0.0809
+cell_-07.50_+022.50,-7.5,22.5,5,cálido húmedo,0.3079,2.947,0.2457
+cell_-07.50_+027.50,-7.5,27.5,5,cálido húmedo,0.3193,3.1254,0.0423
+cell_-07.50_+032.50,-7.5,32.5,5,cálido húmedo,0.4128,2.873,-0.2041
+cell_-07.50_+037.50,-7.5,37.5,3,cálido muy húmedo,0.2223,3.1256,0.5008
+cell_-07.50_+107.50,-7.5,107.5,3,cálido muy húmedo,0.9852,2.2298,1.8246
+cell_-07.50_+112.50,-7.5,112.5,3,cálido muy húmedo,0.6306,3.2548,1.033
+cell_-07.50_+142.50,-7.5,142.5,3,cálido muy húmedo,0.7719,3.0406,1.5669
+cell_-02.50_-077.50,-2.5,-77.5,3,cálido muy húmedo,0.8734,2.4628,2.1386
+cell_-02.50_-072.50,-2.5,-72.5,3,cálido muy húmedo,0.9031,2.6846,2.2314
+cell_-02.50_-067.50,-2.5,-67.5,3,cálido muy húmedo,0.854,2.7434,2.0524
+cell_-02.50_-062.50,-2.5,-62.5,3,cálido muy húmedo,0.8278,2.9218,1.9119
+cell_-02.50_-057.50,-2.5,-57.5,3,cálido muy húmedo,0.862,2.961,1.691
+cell_-02.50_-052.50,-2.5,-52.5,3,cálido muy húmedo,0.7377,3.0435,1.5381
+cell_-02.50_-047.50,-2.5,-47.5,3,cálido muy húmedo,0.699,3.1692,1.3944
+cell_-02.50_+012.50,-2.5,12.5,3,cálido muy húmedo,0.7548,2.4653,1.9284
+cell_-02.50_+017.50,-2.5,17.5,3,cálido muy húmedo,0.6032,2.963,1.4948
+cell_-02.50_+022.50,-2.5,22.5,3,cálido muy húmedo,0.6556,2.9461,1.281
+cell_-02.50_+027.50,-2.5,27.5,3,cálido muy húmedo,0.8563,2.5437,1.6786
+cell_-02.50_+032.50,-2.5,32.5,3,cálido muy húmedo,0.7229,2.4772,0.4536
+cell_-02.50_+037.50,-2.5,37.5,5,cálido húmedo,0.3216,2.874,-0.4284
+cell_-02.50_+102.50,-2.5,102.5,3,cálido muy húmedo,0.7868,2.7491,1.772
+cell_-02.50_+112.50,-2.5,112.5,3,cálido muy húmedo,0.8415,3.1608,1.7047
+cell_-02.50_+137.50,-2.5,137.5,3,cálido muy húmedo,0.8917,2.7316,1.9886
+cell_+02.50_-077.50,2.5,-77.5,3,cálido muy húmedo,0.6933,2.5063,1.5796
+cell_+02.50_-072.50,2.5,-72.5,3,cálido muy húmedo,0.8757,2.7279,2.1134
+cell_+02.50_-067.50,2.5,-67.5,3,cálido muy húmedo,0.8962,2.7203,2.1165
+cell_+02.50_-062.50,2.5,-62.5,3,cálido muy húmedo,0.5678,2.9581,1.3301
+cell_+02.50_-057.50,2.5,-57.5,3,cálido muy húmedo,0.5941,3.139,1.0308
+cell_+02.50_-052.50,2.5,-52.5,3,cálido muy húmedo,0.6454,3.0393,1.5156
+cell_+02.50_+012.50,2.5,12.5,3,cálido muy húmedo,0.6579,2.7231,1.3201
+cell_+02.50_+017.50,2.5,17.5,3,cálido muy húmedo,0.5656,2.9562,1.4906
+cell_+02.50_+022.50,2.5,22.5,3,cálido muy húmedo,0.5747,2.9262,1.4055
+cell_+02.50_+027.50,2.5,27.5,3,cálido muy húmedo,0.7571,2.6012,1.4535
+cell_+02.50_+032.50,2.5,32.5,5,cálido húmedo,0.4265,3.2532,-0.3579
+cell_+02.50_+037.50,2.5,37.5,0,cálido árido,0.9225,3.3435,-1.8041
+cell_+02.50_+042.50,2.5,42.5,5,cálido húmedo,0.7343,3.473,-0.7656
+cell_+02.50_+102.50,2.5,102.5,3,cálido muy húmedo,0.8495,2.9,1.9003
+cell_+02.50_+112.50,2.5,112.5,3,cálido muy húmedo,0.9555,2.7853,2.3521
+cell_+02.50_+117.50,2.5,117.5,3,cálido muy húmedo,0.9647,2.8238,2.2537
+cell_+07.50_-077.50,7.5,-77.5,3,cálido muy húmedo,0.9282,2.6923,2.1956
+cell_+07.50_-072.50,7.5,-72.5,3,cálido muy húmedo,0.5701,2.0641,0.2775
+cell_+07.50_-067.50,7.5,-67.5,3,cálido muy húmedo,0.764,3.3329,0.6175
+cell_+07.50_-062.50,7.5,-62.5,5,cálido húmedo,0.4971,3.2329,0.2038
+cell_+07.50_-012.50,7.5,-12.5,3,cálido muy húmedo,0.9669,2.7113,1.7974
+cell_+07.50_-007.50,7.5,-7.5,3,cálido muy húmedo,0.4743,2.8951,1.2331
+cell_+07.50_-002.50,7.5,-2.5,3,cálido muy húmedo,0.2896,3.067,0.7217
+cell_+07.50_+002.50,7.5,2.5,3,cálido muy húmedo,0.4151,2.8893,1.0968
+cell_+07.50_+007.50,7.5,7.5,3,cálido muy húmedo,0.1653,3.0136,0.6201
+cell_+07.50_+012.50,7.5,12.5,3,cálido muy húmedo,0.5621,2.8072,0.4543
+cell_+07.50_+017.50,7.5,17.5,5,cálido húmedo,0.4515,3.4147,0.0879
+cell_+07.50_+022.50,7.5,22.5,5,cálido húmedo,0.5861,3.2273,0.2444
+cell_+07.50_+027.50,7.5,27.5,5,cálido húmedo,0.4755,3.4183,-0.0334
+cell_+07.50_+032.50,7.5,32.5,5,cálido húmedo,0.6773,3.4933,0.0833
+cell_+07.50_+037.50,7.5,37.5,5,cálido húmedo,0.7925,2.5112,0.015
+cell_+07.50_+042.50,7.5,42.5,5,cálido húmedo,0.5929,3.4412,-1.3957
+cell_+07.50_+047.50,7.5,47.5,0,cálido árido,0.8689,3.2627,-1.8089
+cell_+07.50_+122.50,7.5,122.5,3,cálido muy húmedo,0.9772,2.5666,1.6618
+cell_+12.50_-012.50,12.5,-12.5,5,cálido húmedo,0.4903,3.6413,-0.076
+cell_+12.50_-007.50,12.5,-7.5,5,cálido húmedo,0.3364,3.4742,-0.5547
+cell_+12.50_-002.50,12.5,-2.5,5,cálido húmedo,0.4014,3.5537,-0.6493
+cell_+12.50_+002.50,12.5,2.5,5,cálido húmedo,0.3865,3.4737,-0.5954
+cell_+12.50_+007.50,12.5,7.5,5,cálido húmedo,0.3751,3.3198,-0.6457
+cell_+12.50_+012.50,12.5,12.5,5,cálido húmedo,0.6545,3.5465,-1.2034
+cell_+12.50_+017.50,12.5,17.5,5,cálido húmedo,0.7047,3.7456,-1.1605
+cell_+12.50_+022.50,12.5,22.5,5,cálido húmedo,0.7446,3.6175,-1.0517
+cell_+12.50_+027.50,12.5,27.5,0,cálido árido,0.813,3.5537,-1.7289
+cell_+12.50_+032.50,12.5,32.5,5,cálido húmedo,0.5998,3.5776,-0.8866
+cell_+12.50_+037.50,12.5,37.5,5,cálido húmedo,0.8073,2.789,-0.3255
+cell_+12.50_+042.50,12.5,42.5,0,cálido árido,0.9601,3.796,-1.9808
+cell_+12.50_+077.50,12.5,77.5,5,cálido húmedo,0.2953,3.1289,-0.2811
+cell_+12.50_+102.50,12.5,102.5,3,cálido muy húmedo,0.7605,2.7764,1.8223
+cell_+12.50_+107.50,12.5,107.5,3,cálido muy húmedo,0.6591,2.814,1.1834
+cell_+17.50_-097.50,17.5,-97.5,5,cálido húmedo,0.691,2.5764,-0.9023
+cell_+17.50_-092.50,17.5,-92.5,3,cálido muy húmedo,0.4287,2.9558,1.0131
+cell_+17.50_-012.50,17.5,-12.5,0,cálido árido,0.797,3.5462,-1.6996
+cell_+17.50_-007.50,17.5,-7.5,0,cálido árido,0.8666,3.2939,-2.1094
+cell_+17.50_-002.50,17.5,-2.5,0,cálido árido,0.886,3.3608,-2.2818
+cell_+17.50_+002.50,17.5,2.5,0,cálido árido,0.8062,3.3445,-2.4528
+cell_+17.50_+007.50,17.5,7.5,0,cálido árido,0.9054,3.8123,-2.2667
+cell_+17.50_+012.50,17.5,12.5,0,cálido árido,0.9818,2.8998,-2.8429
+cell_+17.50_+017.50,17.5,17.5,0,cálido árido,0.9783,3.1142,-3.0182
+cell_+17.50_+022.50,17.5,22.5,0,cálido árido,0.9339,3.1525,-3.1261
+cell_+17.50_+027.50,17.5,27.5,0,cálido árido,0.9692,3.0156,-3.4072
+cell_+17.50_+032.50,17.5,32.5,0,cálido árido,0.9544,3.4395,-2.9772
+cell_+17.50_+037.50,17.5,37.5,0,cálido árido,0.919,3.8138,-2.1615
+cell_+17.50_+042.50,17.5,42.5,0,cálido árido,0.8369,3.6863,-1.4729
+cell_+17.50_+047.50,17.5,47.5,0,cálido árido,0.9658,3.1059,-3.2718
+cell_+17.50_+052.50,17.5,52.5,0,cálido árido,0.8347,3.1424,-2.5792
+cell_+17.50_+077.50,17.5,77.5,5,cálido húmedo,0.3854,3.2244,-0.274
+cell_+17.50_+082.50,17.5,82.5,3,cálido muy húmedo,0.3672,3.0724,0.6954
+cell_+17.50_+097.50,17.5,97.5,3,cálido muy húmedo,0.4629,2.9705,1.3926
+cell_+17.50_+102.50,17.5,102.5,3,cálido muy húmedo,0.3615,3.1442,0.6123
+cell_+22.50_-102.50,22.5,-102.5,6,"templado semiárido, de gran altitud",0.7959,2.6468,-2.059
+cell_+22.50_-012.50,22.5,-12.5,0,cálido árido,0.8723,3.0128,-3.1552
+cell_+22.50_-007.50,22.5,-7.5,0,cálido árido,0.8358,3.0606,-3.1294
+cell_+22.50_-002.50,22.5,-2.5,0,cálido árido,0.8985,3.0092,-3.2644
+cell_+22.50_+002.50,22.5,2.5,0,cálido árido,0.9304,2.9712,-3.4792
+cell_+22.50_+007.50,22.5,7.5,0,cálido árido,0.9384,2.8659,-3.503
+cell_+22.50_+012.50,22.5,12.5,0,cálido árido,0.9259,2.9229,-3.1186
+cell_+22.50_+017.50,22.5,17.5,0,cálido árido,0.9863,2.8829,-3.8359
+cell_+22.50_+022.50,22.5,22.5,0,cálido árido,0.9829,2.735,-3.559
+cell_+22.50_+027.50,22.5,27.5,0,cálido árido,0.992,2.5988,-3.8251
+cell_+22.50_+032.50,22.5,32.5,0,cálido árido,0.9875,2.9693,-4.0804
+cell_+22.50_+042.50,22.5,42.5,0,cálido árido,0.9578,3.2032,-3.215
+cell_+22.50_+047.50,22.5,47.5,0,cálido árido,0.9236,3.0366,-3.0879
+cell_+22.50_+052.50,22.5,52.5,0,cálido árido,0.984,3.224,-3.1243
+cell_+22.50_+057.50,22.5,57.5,0,cálido árido,0.9624,4.0093,-2.1032
+cell_+22.50_+072.50,22.5,72.5,5,cálido húmedo,0.4436,3.4256,-0.2229
+cell_+22.50_+077.50,22.5,77.5,5,cálido húmedo,0.4675,3.3388,0.0264
+cell_+22.50_+082.50,22.5,82.5,5,cálido húmedo,0.4481,3.2179,0.3067
+cell_+22.50_+087.50,22.5,87.5,3,cálido muy húmedo,0.5234,3.0074,0.9728
+cell_+22.50_+092.50,22.5,92.5,3,cálido muy húmedo,0.7081,2.9086,1.6052
+cell_+22.50_+097.50,22.5,97.5,5,cálido húmedo,0.6271,2.8849,0.1004
+cell_+22.50_+102.50,22.5,102.5,3,cálido muy húmedo,0.683,2.2378,1.3746
+cell_+22.50_+107.50,22.5,107.5,3,cálido muy húmedo,0.3318,2.5233,1.2178
+cell_+22.50_+112.50,22.5,112.5,3,cálido muy húmedo,0.5063,2.428,1.5361
+cell_+27.50_-112.50,27.5,-112.5,0,cálido árido,0.7366,2.9098,-1.6077
+cell_+27.50_-107.50,27.5,-107.5,6,"templado semiárido, de gran altitud",0.8381,2.2713,-1.1534
+cell_+27.50_-102.50,27.5,-102.5,0,cálido árido,0.5177,2.7273,-1.7722
+cell_+27.50_-097.50,27.5,-97.5,5,cálido húmedo,0.439,2.5459,0.3578
+cell_+27.50_-082.50,27.5,-82.5,3,cálido muy húmedo,0.7355,2.6355,0.5893
+cell_+27.50_-012.50,27.5,-12.5,0,cálido árido,0.7526,2.7511,-1.5653
+cell_+27.50_-007.50,27.5,-7.5,0,cálido árido,0.7412,2.8166,-2.8405
+cell_+27.50_-002.50,27.5,-2.5,0,cálido árido,0.8597,2.8586,-3.0307
+cell_+27.50_+002.50,27.5,2.5,0,cálido árido,0.8005,2.8234,-3.0556
+cell_+27.50_+007.50,27.5,7.5,0,cálido árido,0.9464,2.6942,-3.4217
+cell_+27.50_+012.50,27.5,12.5,0,cálido árido,0.8769,2.786,-2.8867
+cell_+27.50_+017.50,27.5,17.5,0,cálido árido,0.8677,3.3369,-2.8558
+cell_+27.50_+022.50,27.5,22.5,0,cálido árido,0.959,2.7233,-3.0423
+cell_+27.50_+027.50,27.5,27.5,0,cálido árido,0.9293,2.6146,-2.9224
+cell_+27.50_+032.50,27.5,32.5,0,cálido árido,0.9247,2.6309,-3.7199
+cell_+27.50_+037.50,27.5,37.5,0,cálido árido,0.9612,2.9267,-3.6891
+cell_+27.50_+042.50,27.5,42.5,0,cálido árido,0.8107,2.9835,-2.8842
+cell_+27.50_+047.50,27.5,47.5,0,cálido árido,0.8655,2.7568,-2.8625
+cell_+27.50_+057.50,27.5,57.5,0,cálido árido,0.8928,3.576,-2.5261
+cell_+27.50_+062.50,27.5,62.5,0,cálido árido,0.9475,3.0752,-2.9869
+cell_+27.50_+067.50,27.5,67.5,0,cálido árido,0.6157,3.6364,-1.3671
+cell_+27.50_+072.50,27.5,72.5,0,cálido árido,0.6568,3.5661,-1.4737
+cell_+27.50_+077.50,27.5,77.5,5,cálido húmedo,0.4789,3.3993,-0.3401
+cell_+27.50_+082.50,27.5,82.5,5,cálido húmedo,0.2794,3.2217,0.2319
+cell_+27.50_+087.50,27.5,87.5,6,"templado semiárido, de gran altitud",0.7286,1.4545,0.1228
+cell_+27.50_+092.50,27.5,92.5,2,templado húmedo,0.8609,1.1576,0.6684
+cell_+27.50_+097.50,27.5,97.5,3,cálido muy húmedo,0.7309,1.9493,1.1588
+cell_+27.50_+102.50,27.5,102.5,6,"templado semiárido, de gran altitud",0.7879,1.8764,0.0254
+cell_+27.50_+107.50,27.5,107.5,2,templado húmedo,0.5382,1.8069,1.277
+cell_+27.50_+112.50,27.5,112.5,2,templado húmedo,0.561,2.1314,1.6118
+cell_+27.50_+117.50,27.5,117.5,3,cálido muy húmedo,0.7389,2.1297,1.8335
+cell_+32.50_-112.50,32.5,-112.5,0,cálido árido,0.4595,3.1775,-2.0444
+cell_+32.50_-107.50,32.5,-107.5,0,cálido árido,0.5872,2.6273,-2.1273
+cell_+32.50_-102.50,32.5,-102.5,0,cálido árido,0.3626,2.6695,-1.5685
+cell_+32.50_-097.50,32.5,-97.5,5,cálido húmedo,0.1699,2.5362,0.0655
+cell_+32.50_-092.50,32.5,-92.5,3,cálido muy húmedo,0.4493,2.5273,1.1862
+cell_+32.50_-087.50,32.5,-87.5,3,cálido muy húmedo,0.3706,2.5598,1.0256
+cell_+32.50_-082.50,32.5,-82.5,5,cálido húmedo,0.1642,2.6585,0.4876
+cell_+32.50_-007.50,32.5,-7.5,0,cálido árido,0.2645,3.124,-1.4526
+cell_+32.50_-002.50,32.5,-2.5,0,cálido árido,0.5918,2.5739,-2.1336
+cell_+32.50_+002.50,32.5,2.5,0,cálido árido,0.7537,2.5758,-2.4586
+cell_+32.50_+007.50,32.5,7.5,0,cálido árido,0.9487,2.6424,-2.3781
+cell_+32.50_+012.50,32.5,12.5,0,cálido árido,0.4823,2.9776,-1.4299
+cell_+32.50_+022.50,32.5,22.5,5,cálido húmedo,0.2554,2.5008,-0.8166
+cell_+32.50_+037.50,32.5,37.5,0,cálido árido,0.7822,2.9521,-2.6395
+cell_+32.50_+042.50,32.5,42.5,0,cálido árido,0.6887,2.8006,-2.0774
+cell_+32.50_+047.50,32.5,47.5,0,cálido árido,0.6112,3.1165,-1.5723
+cell_+32.50_+052.50,32.5,52.5,0,cálido árido,0.8837,2.5923,-2.7299
+cell_+32.50_+057.50,32.5,57.5,0,cálido árido,0.9019,2.9883,-2.733
+cell_+32.50_+062.50,32.5,62.5,0,cálido árido,0.8301,2.9124,-2.7303
+cell_+32.50_+067.50,32.5,67.5,6,"templado semiárido, de gran altitud",0.8575,2.3141,-1.9634
+cell_+32.50_+072.50,32.5,72.5,5,cálido húmedo,0.3934,3.2137,-0.4035
+cell_+32.50_+077.50,32.5,77.5,6,"templado semiárido, de gran altitud",0.9954,-0.1878,-1.3557
+cell_+32.50_+082.50,32.5,82.5,6,"templado semiárido, de gran altitud",0.9977,1.065,-3.2878
+cell_+32.50_+087.50,32.5,87.5,6,"templado semiárido, de gran altitud",0.9943,0.4288,-2.3731
+cell_+32.50_+092.50,32.5,92.5,6,"templado semiárido, de gran altitud",0.9932,0.2112,-1.8284
+cell_+32.50_+097.50,32.5,97.5,6,"templado semiárido, de gran altitud",0.9795,0.6446,-1.5089
+cell_+32.50_+102.50,32.5,102.5,6,"templado semiárido, de gran altitud",0.9213,0.7807,-0.8076
+cell_+32.50_+107.50,32.5,107.5,2,templado húmedo,0.6784,1.7229,1.1484
+cell_+32.50_+112.50,32.5,112.5,2,templado húmedo,0.2509,2.3571,0.7585
+cell_+32.50_+117.50,32.5,117.5,2,templado húmedo,0.2166,2.2165,0.9455
+cell_+37.50_-122.50,37.5,-122.5,2,templado húmedo,0.5542,1.7298,0.4002
+cell_+37.50_-117.50,37.5,-117.5,0,cálido árido,0.8392,2.3913,-2.3553
+cell_+37.50_-112.50,37.5,-112.5,6,"templado semiárido, de gran altitud",0.6727,1.742,-1.6873
+cell_+37.50_-107.50,37.5,-107.5,6,"templado semiárido, de gran altitud",0.8814,1.1054,-1.0598
+cell_+37.50_-102.50,37.5,-102.5,6,"templado semiárido, de gran altitud",0.4002,2.1363,-1.3033
+cell_+37.50_-097.50,37.5,-97.5,5,cálido húmedo,0.1163,2.1755,-0.0439
+cell_+37.50_-092.50,37.5,-92.5,2,templado húmedo,0.1334,1.9848,0.942
+cell_+37.50_-087.50,37.5,-87.5,2,templado húmedo,0.2007,1.9814,0.9975
+cell_+37.50_-082.50,37.5,-82.5,2,templado húmedo,0.1551,2.1166,0.9206
+cell_+37.50_-077.50,37.5,-77.5,2,templado húmedo,0.244,2.2916,0.9956
+cell_+37.50_-007.50,37.5,-7.5,5,cálido húmedo,0.1174,2.8105,-0.5534
+cell_+37.50_-002.50,37.5,-2.5,6,"templado semiárido, de gran altitud",0.3181,2.4418,-1.1855
+cell_+37.50_+022.50,37.5,22.5,5,cálido húmedo,0.1722,2.2163,0.052
+cell_+37.50_+027.50,37.5,27.5,5,cálido húmedo,0.0684,2.6831,-0.275
+cell_+37.50_+032.50,37.5,32.5,6,"templado semiárido, de gran altitud",0.2417,2.0434,-0.7833
+cell_+37.50_+037.50,37.5,37.5,5,cálido húmedo,0.2828,2.3815,-0.777
+cell_+37.50_+042.50,37.5,42.5,6,"templado semiárido, de gran altitud",0.3843,2.2276,-0.9304
+cell_+37.50_+047.50,37.5,47.5,6,"templado semiárido, de gran altitud",0.553,2.0287,-1.5281
+cell_+37.50_+057.50,37.5,57.5,6,"templado semiárido, de gran altitud",0.5975,2.1906,-1.5221
+cell_+37.50_+062.50,37.5,62.5,0,cálido árido,0.5735,2.7088,-1.679
+cell_+37.50_+067.50,37.5,67.5,0,cálido árido,0.5086,2.6991,-1.3338
+cell_+37.50_+072.50,37.5,72.5,6,"templado semiárido, de gran altitud",0.9966,0.5923,-2.6604
+cell_+37.50_+077.50,37.5,77.5,6,"templado semiárido, de gran altitud",0.9065,1.8385,-2.1864
+cell_+37.50_+082.50,37.5,82.5,0,cálido árido,0.9145,2.163,-2.4634
+cell_+37.50_+087.50,37.5,87.5,6,"templado semiárido, de gran altitud",0.9989,0.6259,-3.4321
+cell_+37.50_+092.50,37.5,92.5,6,"templado semiárido, de gran altitud",0.9886,1.4142,-3.0583
+cell_+37.50_+097.50,37.5,97.5,6,"templado semiárido, de gran altitud",0.9681,0.9331,-1.9461
+cell_+37.50_+102.50,37.5,102.5,6,"templado semiárido, de gran altitud",0.8039,1.07,-0.9663
+cell_+37.50_+107.50,37.5,107.5,6,"templado semiárido, de gran altitud",0.2976,1.7708,-1.0061
+cell_+37.50_+112.50,37.5,112.5,6,"templado semiárido, de gran altitud",0.2908,2.0681,-0.3346
+cell_+37.50_+117.50,37.5,117.5,2,templado húmedo,0.2338,2.2876,0.3114
+cell_+37.50_+127.50,37.5,127.5,2,templado húmedo,0.2144,1.8535,1.0796
+cell_+42.50_-122.50,42.5,-122.5,2,templado húmedo,0.4208,1.7916,0.3588
+cell_+42.50_-117.50,42.5,-117.5,6,"templado semiárido, de gran altitud",0.488,1.8535,-1.105
+cell_+42.50_-112.50,42.5,-112.5,6,"templado semiárido, de gran altitud",0.3968,1.4043,-0.6533
+cell_+42.50_-107.50,42.5,-107.5,6,"templado semiárido, de gran altitud",0.6716,1.2842,-1.4234
+cell_+42.50_-102.50,42.5,-102.5,6,"templado semiárido, de gran altitud",0.333,1.7224,-0.8604
+cell_+42.50_-097.50,42.5,-97.5,2,templado húmedo,0.2246,1.6368,0.0065
+cell_+42.50_-092.50,42.5,-92.5,2,templado húmedo,0.065,1.4946,0.4903
+cell_+42.50_-087.50,42.5,-87.5,2,templado húmedo,0.894,0.9955,1.7762
+cell_+42.50_-082.50,42.5,-82.5,2,templado húmedo,0.073,1.341,0.9081
+cell_+42.50_-077.50,42.5,-77.5,2,templado húmedo,0.0308,1.5434,1.0855
+cell_+42.50_-072.50,42.5,-72.5,2,templado húmedo,0.1596,1.7843,1.1644
+cell_+42.50_-007.50,42.5,-7.5,2,templado húmedo,0.195,1.9937,0.8898
+cell_+42.50_-002.50,42.5,-2.5,2,templado húmedo,0.1414,2.1378,0.0335
+cell_+42.50_+002.50,42.5,2.5,2,templado húmedo,0.2018,1.9612,0.3186
+cell_+42.50_+012.50,42.5,12.5,2,templado húmedo,0.0707,2.1924,0.5489
+cell_+42.50_+022.50,42.5,22.5,2,templado húmedo,0.1186,1.5756,0.5301
+cell_+42.50_+027.50,42.5,27.5,2,templado húmedo,0.1676,1.8867,0.8805
+cell_+42.50_+042.50,42.5,42.5,2,templado húmedo,0.2634,1.7674,1.0289
+cell_+42.50_+047.50,42.5,47.5,2,templado húmedo,0.2155,1.6369,0.2416
+cell_+42.50_+057.50,42.5,57.5,0,cálido árido,0.7788,2.0747,-1.2604
+cell_+42.50_+062.50,42.5,62.5,0,cálido árido,0.7845,2.3768,-1.4
+cell_+42.50_+067.50,42.5,67.5,0,cálido árido,0.5314,2.2816,-1.0962
+cell_+42.50_+072.50,42.5,72.5,6,"templado semiárido, de gran altitud",0.732,1.211,-1.1174
+cell_+42.50_+077.50,42.5,77.5,2,templado húmedo,0.4664,1.3787,0.0444
+cell_+42.50_+082.50,42.5,82.5,6,"templado semiárido, de gran altitud",0.8848,0.7859,-1.3666
+cell_+42.50_+087.50,42.5,87.5,6,"templado semiárido, de gran altitud",0.8016,1.5108,-1.4439
+cell_+42.50_+092.50,42.5,92.5,0,cálido árido,0.9738,2.5627,-2.369
+cell_+42.50_+097.50,42.5,97.5,0,cálido árido,0.8974,1.896,-2.378
+cell_+42.50_+102.50,42.5,102.5,0,cálido árido,0.8529,1.9839,-2.2146
+cell_+42.50_+107.50,42.5,107.5,6,"templado semiárido, de gran altitud",0.6807,1.7547,-1.6104
+cell_+42.50_+112.50,42.5,112.5,6,"templado semiárido, de gran altitud",0.6602,1.4273,-1.3308
+cell_+42.50_+117.50,42.5,117.5,6,"templado semiárido, de gran altitud",0.39,1.0005,-0.5904
+cell_+42.50_+122.50,42.5,122.5,2,templado húmedo,0.0958,1.7132,0.1258
+cell_+42.50_+127.50,42.5,127.5,2,templado húmedo,0.0559,1.3161,0.9095
+cell_+42.50_+142.50,42.5,142.5,2,templado húmedo,0.1893,1.0552,1.5475
+cell_+47.50_-117.50,47.5,-117.5,2,templado húmedo,0.1003,1.5031,0.3706
+cell_+47.50_-112.50,47.5,-112.5,2,templado húmedo,0.3022,1.0318,0.0653
+cell_+47.50_-107.50,47.5,-107.5,2,templado húmedo,0.1745,1.3946,-0.2321
+cell_+47.50_-102.50,47.5,-102.5,2,templado húmedo,0.2771,1.3297,-0.1971
+cell_+47.50_-097.50,47.5,-97.5,2,templado húmedo,0.138,1.2832,0.1433
+cell_+47.50_-092.50,47.5,-92.5,2,templado húmedo,0.0217,1.1521,0.6912
+cell_+47.50_-087.50,47.5,-87.5,2,templado húmedo,0.951,0.6209,1.7313
+cell_+47.50_-082.50,47.5,-82.5,2,templado húmedo,0.0787,1.1868,1.1293
+cell_+47.50_-077.50,47.5,-77.5,2,templado húmedo,0.0661,1.2477,1.1203
+cell_+47.50_-072.50,47.5,-72.5,2,templado húmedo,0.0593,1.1138,1.3915
+cell_+47.50_-067.50,47.5,-67.5,2,templado húmedo,0.0239,1.0826,1.5136
+cell_+47.50_-002.50,47.5,-2.5,2,templado húmedo,0.4709,1.551,0.8738
+cell_+47.50_+002.50,47.5,2.5,2,templado húmedo,0.0924,1.7702,0.7477
+cell_+47.50_+007.50,47.5,7.5,2,templado húmedo,0.1015,1.438,1.2143
+cell_+47.50_+012.50,47.5,12.5,2,templado húmedo,0.4869,1.0045,1.4765
+cell_+47.50_+017.50,47.5,17.5,2,templado húmedo,0.0992,1.7629,0.6802
+cell_+47.50_+022.50,47.5,22.5,2,templado húmedo,0.0388,1.8616,0.7268
+cell_+47.50_+027.50,47.5,27.5,2,templado húmedo,0.0582,1.8359,0.5676
+cell_+47.50_+032.50,47.5,32.5,2,templado húmedo,0.2531,1.9465,0.2685
+cell_+47.50_+037.50,47.5,37.5,2,templado húmedo,0.1608,1.7671,0.3288
+cell_+47.50_+042.50,47.5,42.5,2,templado húmedo,0.2383,1.7345,0.331
+cell_+47.50_+047.50,47.5,47.5,2,templado húmedo,0.5131,1.8619,-0.1035
+cell_+47.50_+052.50,47.5,52.5,2,templado húmedo,0.6066,1.841,-0.373
+cell_+47.50_+057.50,47.5,57.5,2,templado húmedo,0.4253,1.6135,-0.4339
+cell_+47.50_+062.50,47.5,62.5,2,templado húmedo,0.6921,1.7136,-0.7486
+cell_+47.50_+067.50,47.5,67.5,2,templado húmedo,0.5576,1.5355,-0.8073
+cell_+47.50_+072.50,47.5,72.5,6,"templado semiárido, de gran altitud",0.5405,1.3606,-0.7948
+cell_+47.50_+077.50,47.5,77.5,6,"templado semiárido, de gran altitud",0.504,1.4891,-0.9402
+cell_+47.50_+082.50,47.5,82.5,6,"templado semiárido, de gran altitud",0.4082,1.2,-0.6729
+cell_+47.50_+087.50,47.5,87.5,2,templado húmedo,0.5485,1.4875,-0.7662
+cell_+47.50_+092.50,47.5,92.5,6,"templado semiárido, de gran altitud",0.8335,1.4368,-1.5227
+cell_+47.50_+097.50,47.5,97.5,6,"templado semiárido, de gran altitud",0.9168,0.458,-1.3813
+cell_+47.50_+102.50,47.5,102.5,6,"templado semiárido, de gran altitud",0.5439,1.2044,-0.8352
+cell_+47.50_+107.50,47.5,107.5,6,"templado semiárido, de gran altitud",0.6123,0.921,-0.9399
+cell_+47.50_+112.50,47.5,112.5,6,"templado semiárido, de gran altitud",0.4937,1.1623,-0.7421
+cell_+47.50_+117.50,47.5,117.5,2,templado húmedo,0.4219,1.3372,-0.5581
+cell_+47.50_+122.50,47.5,122.5,2,templado húmedo,0.0468,1.3674,0.3381
+cell_+47.50_+127.50,47.5,127.5,2,templado húmedo,0.016,1.1285,0.8004
+cell_+47.50_+132.50,47.5,132.5,2,templado húmedo,0.0775,1.1358,0.6894
+cell_+47.50_+137.50,47.5,137.5,2,templado húmedo,0.0502,0.7846,1.1916
+cell_+47.50_+142.50,47.5,142.5,2,templado húmedo,0.317,0.9053,1.6982
+cell_+52.50_-127.50,52.5,-127.5,4,frío húmedo,0.5952,0.9531,2.2146
+cell_+52.50_-122.50,52.5,-122.5,2,templado húmedo,0.1824,1.0192,0.7841
+cell_+52.50_-117.50,52.5,-117.5,4,frío húmedo,0.6009,0.1924,0.6894
+cell_+52.50_-112.50,52.5,-112.5,2,templado húmedo,0.2121,0.9585,0.1201
+cell_+52.50_-107.50,52.5,-107.5,2,templado húmedo,0.3512,0.9717,-0.0166
+cell_+52.50_-102.50,52.5,-102.5,2,templado húmedo,0.0832,1.0067,0.6684
+cell_+52.50_-097.50,52.5,-97.5,4,frío húmedo,0.2474,0.3117,1.3439
+cell_+52.50_-092.50,52.5,-92.5,2,templado húmedo,0.0228,0.976,1.1774
+cell_+52.50_-087.50,52.5,-87.5,4,frío húmedo,0.0011,0.7617,1.3667
+cell_+52.50_-082.50,52.5,-82.5,2,templado húmedo,0.1243,0.855,1.1492
+cell_+52.50_-077.50,52.5,-77.5,4,frío húmedo,0.057,0.4231,1.3245
+cell_+52.50_-072.50,52.5,-72.5,4,frío húmedo,0.0639,0.2472,1.2145
+cell_+52.50_-067.50,52.5,-67.5,4,frío húmedo,0.1574,0.2422,1.2374
+cell_+52.50_-062.50,52.5,-62.5,4,frío húmedo,0.0091,0.5693,1.5196
+cell_+52.50_-057.50,52.5,-57.5,4,frío húmedo,0.0205,0.7308,1.6444
+cell_+52.50_-007.50,52.5,-7.5,2,templado húmedo,0.5302,1.0039,1.7972
+cell_+52.50_-002.50,52.5,-2.5,2,templado húmedo,0.2292,1.1375,1.4523
+cell_+52.50_+007.50,52.5,7.5,2,templado húmedo,0.2668,1.554,1.0715
+cell_+52.50_+012.50,52.5,12.5,2,templado húmedo,0.2098,1.521,1.0586
+cell_+52.50_+017.50,52.5,17.5,2,templado húmedo,0.2075,1.5309,0.9004
+cell_+52.50_+022.50,52.5,22.5,2,templado húmedo,0.0433,1.3311,1.0723
+cell_+52.50_+027.50,52.5,27.5,2,templado húmedo,0.0604,1.3295,1.0934
+cell_+52.50_+032.50,52.5,32.5,2,templado húmedo,0.0262,1.1509,1.1109
+cell_+52.50_+037.50,52.5,37.5,2,templado húmedo,0.0137,0.9937,1.0498
+cell_+52.50_+042.50,52.5,42.5,2,templado húmedo,0.0148,1.1836,0.8082
+cell_+52.50_+047.50,52.5,47.5,2,templado húmedo,0.0376,1.2392,0.7043
+cell_+52.50_+052.50,52.5,52.5,2,templado húmedo,0.1254,1.2308,0.4965
+cell_+52.50_+057.50,52.5,57.5,2,templado húmedo,0.0114,0.9758,0.8148
+cell_+52.50_+062.50,52.5,62.5,2,templado húmedo,0.1197,1.0607,0.3547
+cell_+52.50_+067.50,52.5,67.5,2,templado húmedo,0.1266,0.7951,0.4731
+cell_+52.50_+072.50,52.5,72.5,2,templado húmedo,0.2748,1.0836,0.2
+cell_+52.50_+077.50,52.5,77.5,2,templado húmedo,0.2999,1.1725,0.2117
+cell_+52.50_+082.50,52.5,82.5,2,templado húmedo,0.0901,0.992,0.4695
+cell_+52.50_+087.50,52.5,87.5,2,templado húmedo,0.0536,1.0112,1.2714
+cell_+52.50_+092.50,52.5,92.5,2,templado húmedo,0.2064,0.6457,0.9251
+cell_+52.50_+097.50,52.5,97.5,2,templado húmedo,0.3067,0.6298,0.621
+cell_+52.50_+102.50,52.5,102.5,2,templado húmedo,0.1106,0.936,0.8898
+cell_+52.50_+107.50,52.5,107.5,2,templado húmedo,0.2406,0.8132,0.6723
+cell_+52.50_+112.50,52.5,112.5,2,templado húmedo,0.1847,0.7568,0.1133
+cell_+52.50_+117.50,52.5,117.5,2,templado húmedo,0.2041,0.9529,0.4339
+cell_+52.50_+122.50,52.5,122.5,2,templado húmedo,0.0422,0.7791,0.8981
+cell_+52.50_+127.50,52.5,127.5,2,templado húmedo,0.0171,0.9384,0.9685
+cell_+52.50_+132.50,52.5,132.5,4,frío húmedo,0.3991,0.3433,1.3861
+cell_+52.50_+137.50,52.5,137.5,4,frío húmedo,0.0718,0.6858,1.2929
+cell_+52.50_+142.50,52.5,142.5,4,frío húmedo,0.0046,0.5386,1.3931
+cell_+52.50_+157.50,52.5,157.5,4,frío húmedo,0.1836,0.4286,1.8707
+cell_+57.50_-157.50,57.5,-157.5,4,frío húmedo,0.382,0.3687,1.9904
+cell_+57.50_-152.50,57.5,-152.5,4,frío húmedo,0.8518,0.3308,2.18
+cell_+57.50_-132.50,57.5,-132.5,4,frío húmedo,0.7777,0.0598,2.1397
+cell_+57.50_-127.50,57.5,-127.5,4,frío húmedo,0.3398,0.0228,0.884
+cell_+57.50_-122.50,57.5,-122.5,4,frío húmedo,0.203,0.6867,1.1908
+cell_+57.50_-117.50,57.5,-117.5,2,templado húmedo,0.122,0.9379,1.0152
+cell_+57.50_-112.50,57.5,-112.5,4,frío húmedo,0.0753,0.6913,1.2579
+cell_+57.50_-107.50,57.5,-107.5,4,frío húmedo,0.0034,0.5149,1.4403
+cell_+57.50_-102.50,57.5,-102.5,4,frío húmedo,0.13,0.435,1.306
+cell_+57.50_-097.50,57.5,-97.5,4,frío húmedo,0.0023,0.2955,1.3254
+cell_+57.50_-072.50,57.5,-72.5,4,frío húmedo,0.1528,-0.2836,1.2327
+cell_+57.50_-067.50,57.5,-67.5,4,frío húmedo,0.0274,0.025,1.2189
+cell_+57.50_-062.50,57.5,-62.5,4,frío húmedo,0.1927,-0.1072,1.1329
+cell_+57.50_-002.50,57.5,-2.5,2,templado húmedo,0.7514,1.0513,1.5543
+cell_+57.50_+012.50,57.5,12.5,2,templado húmedo,0.4367,1.242,1.8658
+cell_+57.50_+022.50,57.5,22.5,2,templado húmedo,0.7742,1.0847,1.4359
+cell_+57.50_+027.50,57.5,27.5,2,templado húmedo,0.0547,0.8166,1.6249
+cell_+57.50_+032.50,57.5,32.5,4,frío húmedo,0.187,0.9514,2.0374
+cell_+57.50_+037.50,57.5,37.5,4,frío húmedo,0.049,0.8848,1.7912
+cell_+57.50_+042.50,57.5,42.5,4,frío húmedo,0.0353,0.9105,1.7179
+cell_+57.50_+047.50,57.5,47.5,4,frío húmedo,0.0068,0.8046,1.6053
+cell_+57.50_+052.50,57.5,52.5,4,frío húmedo,0.0285,0.867,1.7192
+cell_+57.50_+057.50,57.5,57.5,4,frío húmedo,0.0057,0.7412,1.6898
+cell_+57.50_+062.50,57.5,62.5,4,frío húmedo,0.0125,0.8657,1.4437
+cell_+57.50_+067.50,57.5,67.5,2,templado húmedo,0.0867,0.7806,0.9857
+cell_+57.50_+072.50,57.5,72.5,4,frío húmedo,0.0194,0.7539,1.3048
+cell_+57.50_+077.50,57.5,77.5,4,frío húmedo,0.0103,0.7977,1.4766
+cell_+57.50_+082.50,57.5,82.5,4,frío húmedo,0.0319,0.8455,1.4834
+cell_+57.50_+087.50,57.5,87.5,4,frío húmedo,0.041,0.8024,1.5176
+cell_+57.50_+092.50,57.5,92.5,4,frío húmedo,0.1072,0.8896,1.3098
+cell_+57.50_+097.50,57.5,97.5,2,templado húmedo,0.1665,0.9032,1.2243
+cell_+57.50_+102.50,57.5,102.5,4,frío húmedo,0.1767,0.7689,1.1733
+cell_+57.50_+107.50,57.5,107.5,4,frío húmedo,0.1345,0.6831,1.3097
+cell_+57.50_+112.50,57.5,112.5,4,frío húmedo,0.1277,0.2238,1.3209
+cell_+57.50_+117.50,57.5,117.5,4,frío húmedo,0.4333,-0.2108,1.2044
+cell_+57.50_+122.50,57.5,122.5,4,frío húmedo,0.1881,-0.0918,1.2797
+cell_+57.50_+127.50,57.5,127.5,4,frío húmedo,0.3683,-0.1926,1.0723
+cell_+57.50_+132.50,57.5,132.5,4,frío húmedo,0.0969,0.0255,1.1902
+cell_+57.50_+137.50,57.5,137.5,4,frío húmedo,0.0525,0.0031,1.1882
+cell_+57.50_+157.50,57.5,157.5,4,frío húmedo,0.0616,0.5383,1.7517
+cell_+57.50_+162.50,57.5,162.5,4,frío húmedo,0.1231,0.3923,1.7531
+cell_+62.50_-162.50,62.5,-162.5,4,frío húmedo,0.1631,0.0473,1.7837
+cell_+62.50_-157.50,62.5,-157.5,4,frío húmedo,0.0889,0.2357,1.9604
+cell_+62.50_-152.50,62.5,-152.5,4,frío húmedo,0.2885,-0.0225,1.7584
+cell_+62.50_-147.50,62.5,-147.5,4,frío húmedo,0.2281,-0.0076,1.3321
+cell_+62.50_-142.50,62.5,-142.5,4,frío húmedo,0.5519,-0.0353,1.4763
+cell_+62.50_-137.50,62.5,-137.5,4,frío húmedo,0.1311,0.2333,1.1039
+cell_+62.50_-132.50,62.5,-132.5,4,frío húmedo,0.1984,0.0786,1.2187
+cell_+62.50_-127.50,62.5,-127.5,4,frío húmedo,0.6465,-0.3619,1.1764
+cell_+62.50_-122.50,62.5,-122.5,4,frío húmedo,0.008,0.5507,1.3972
+cell_+62.50_-117.50,62.5,-117.5,4,frío húmedo,0.0513,0.489,1.1739
+cell_+62.50_-112.50,62.5,-112.5,4,frío húmedo,0.2623,0.4745,0.7461
+cell_+62.50_-107.50,62.5,-107.5,4,frío húmedo,0.0878,-0.092,1.0598
+cell_+62.50_-102.50,62.5,-102.5,4,frío húmedo,0.0696,-0.2889,1.1839
+cell_+62.50_-097.50,62.5,-97.5,4,frío húmedo,0.1938,-0.2941,1.0768
+cell_+62.50_-092.50,62.5,-92.5,4,frío húmedo,0.2702,-0.2256,1.4365
+cell_+62.50_-082.50,62.5,-82.5,4,frío húmedo,0.4561,-0.4607,1.7151
+cell_+62.50_-077.50,62.5,-77.5,4,frío húmedo,0.5143,-0.5084,1.8112
+cell_+62.50_-067.50,62.5,-67.5,4,frío húmedo,0.3238,-0.6097,1.4641
+cell_+62.50_-047.50,62.5,-47.5,7,"polar árido, cubierto de nieve o hielo",0.8791,-1.9289,0.4632
+cell_+62.50_+007.50,62.5,7.5,4,frío húmedo,0.61,0.5716,2.2693
+cell_+62.50_+012.50,62.5,12.5,4,frío húmedo,0.2657,0.3122,1.7964
+cell_+62.50_+017.50,62.5,17.5,2,templado húmedo,0.5713,0.9942,1.8841
+cell_+62.50_+022.50,62.5,22.5,4,frío húmedo,0.1904,0.9878,1.893
+cell_+62.50_+027.50,62.5,27.5,4,frío húmedo,0.2566,0.7601,2.0304
+cell_+62.50_+032.50,62.5,32.5,4,frío húmedo,0.1323,0.7449,2.048
+cell_+62.50_+037.50,62.5,37.5,4,frío húmedo,0.1288,0.6652,2.0568
+cell_+62.50_+042.50,62.5,42.5,4,frío húmedo,0.1357,0.6764,2.0645
+cell_+62.50_+047.50,62.5,47.5,4,frío húmedo,0.3694,0.5699,2.2205
+cell_+62.50_+052.50,62.5,52.5,4,frío húmedo,0.1095,0.6849,1.9181
+cell_+62.50_+057.50,62.5,57.5,4,frío húmedo,0.179,0.4474,2.1977
+cell_+62.50_+062.50,62.5,62.5,4,frío húmedo,0.1425,0.6928,1.7559
+cell_+62.50_+067.50,62.5,67.5,4,frío húmedo,0.0479,0.4142,1.9879
+cell_+62.50_+072.50,62.5,72.5,4,frío húmedo,0.1049,0.1863,1.9646
+cell_+62.50_+077.50,62.5,77.5,4,frío húmedo,0.081,0.2037,1.9693
+cell_+62.50_+082.50,62.5,82.5,4,frío húmedo,0.0741,0.2443,2.026
+cell_+62.50_+087.50,62.5,87.5,4,frío húmedo,0.1209,0.3341,2.0745
+cell_+62.50_+092.50,62.5,92.5,4,frío húmedo,0.1368,0.0495,1.9915
+cell_+62.50_+097.50,62.5,97.5,4,frío húmedo,0.0251,0.1055,1.7046
+cell_+62.50_+102.50,62.5,102.5,4,frío húmedo,0.0445,0.2523,1.5138
+cell_+62.50_+107.50,62.5,107.5,4,frío húmedo,0.0798,0.386,1.3143
+cell_+62.50_+112.50,62.5,112.5,4,frío húmedo,0.0365,0.305,1.3136
+cell_+62.50_+117.50,62.5,117.5,4,frío húmedo,0.2497,0.6,1.0944
+cell_+62.50_+122.50,62.5,122.5,4,frío húmedo,0.0844,0.3117,1.1819
+cell_+62.50_+127.50,62.5,127.5,4,frío húmedo,0.2201,0.439,1.068
+cell_+62.50_+132.50,62.5,132.5,4,frío húmedo,0.358,0.5007,1.087
+cell_+62.50_+137.50,62.5,137.5,4,frío húmedo,0.4276,-0.0501,1.5386
+cell_+62.50_+142.50,62.5,142.5,4,frío húmedo,0.6613,-0.416,0.7761
+cell_+62.50_+147.50,62.5,147.5,4,frío húmedo,0.309,-0.207,1.0379
+cell_+62.50_+152.50,62.5,152.5,4,frío húmedo,0.0912,0.0099,1.2432
+cell_+62.50_+157.50,62.5,157.5,4,frío húmedo,0.2372,-0.4452,1.1265
+cell_+62.50_+162.50,62.5,162.5,4,frío húmedo,0.0331,-0.0652,1.5959
+cell_+62.50_+167.50,62.5,167.5,4,frío húmedo,0.0399,-0.1183,1.5745
+cell_+62.50_+172.50,62.5,172.5,4,frío húmedo,0.1403,-0.2477,1.5523
+cell_+67.50_-177.50,67.5,-177.5,4,frío húmedo,0.1756,-0.4702,1.5388
+cell_+67.50_-162.50,67.5,-162.5,4,frío húmedo,0.0296,-0.0649,1.4125
+cell_+67.50_-157.50,67.5,-157.5,4,frío húmedo,0.1916,-0.2198,1.7331
+cell_+67.50_-152.50,67.5,-152.5,4,frío húmedo,0.2235,-0.2726,1.5443
+cell_+67.50_-147.50,67.5,-147.5,4,frío húmedo,0.0855,-0.1099,1.3002
+cell_+67.50_-142.50,67.5,-142.5,4,frío húmedo,0.0342,0.1312,1.2449
+cell_+67.50_-137.50,67.5,-137.5,4,frío húmedo,0.1026,-0.1664,1.3056
+cell_+67.50_-132.50,67.5,-132.5,4,frío húmedo,0.0935,0.1141,1.2468
+cell_+67.50_-127.50,67.5,-127.5,4,frío húmedo,0.0182,-0.017,1.2494
+cell_+67.50_-122.50,67.5,-122.5,4,frío húmedo,0.0673,-0.2477,1.1717
+cell_+67.50_-117.50,67.5,-117.5,4,frío húmedo,0.0946,-0.4206,1.246
+cell_+67.50_-112.50,67.5,-112.5,4,frío húmedo,0.2052,-0.496,1.3096
+cell_+67.50_-107.50,67.5,-107.5,4,frío húmedo,0.2315,-0.4895,1.3693
+cell_+67.50_-102.50,67.5,-102.5,4,frío húmedo,0.1995,-0.5243,1.3161
+cell_+67.50_-097.50,67.5,-97.5,4,frío húmedo,0.2395,-0.6151,1.4479
+cell_+67.50_-092.50,67.5,-92.5,4,frío húmedo,0.2737,-0.7461,1.3485
+cell_+67.50_-082.50,67.5,-82.5,4,frío húmedo,0.2543,-0.7414,1.179
+cell_+67.50_-072.50,67.5,-72.5,4,frío húmedo,0.4424,-0.4982,1.7876
+cell_+67.50_-067.50,67.5,-67.5,4,frío húmedo,0.6237,-1.1784,0.9719
+cell_+67.50_-052.50,67.5,-52.5,4,frío húmedo,0.1619,-0.1143,1.419
+cell_+67.50_-047.50,67.5,-47.5,7,"polar árido, cubierto de nieve o hielo",0.7811,-2.148,0.5413
+cell_+67.50_-042.50,67.5,-42.5,7,"polar árido, cubierto de nieve o hielo",0.8096,-2.3468,0.0556
+cell_+67.50_-037.50,67.5,-37.5,7,"polar árido, cubierto de nieve o hielo",0.8027,-2.4821,-0.1208
+cell_+67.50_+017.50,67.5,17.5,4,frío húmedo,0.5416,-0.1722,1.8418
+cell_+67.50_+022.50,67.5,22.5,4,frío húmedo,0.1505,0.5424,1.986
+cell_+67.50_+027.50,67.5,27.5,4,frío húmedo,0.1733,0.4092,2.1408
+cell_+67.50_+032.50,67.5,32.5,4,frío húmedo,0.2714,0.4265,2.1211
+cell_+67.50_+037.50,67.5,37.5,4,frío húmedo,0.2212,0.2891,2.003
+cell_+67.50_+052.50,67.5,52.5,4,frío húmedo,0.2132,-0.0605,1.8798
+cell_+67.50_+057.50,67.5,57.5,4,frío húmedo,0.1813,-0.1356,1.8217
+cell_+67.50_+062.50,67.5,62.5,4,frío húmedo,0.1448,-0.2104,1.758
+cell_+67.50_+067.50,67.5,67.5,4,frío húmedo,0.0981,-0.2809,1.6189
+cell_+67.50_+072.50,67.5,72.5,4,frío húmedo,0.4618,-0.3203,1.8906
+cell_+67.50_+077.50,67.5,77.5,4,frío húmedo,0.2258,-0.3742,1.7839
+cell_+67.50_+082.50,67.5,82.5,4,frío húmedo,0.146,-0.3223,1.6889
+cell_+67.50_+087.50,67.5,87.5,4,frío húmedo,0.1152,-0.2092,1.7821
+cell_+67.50_+092.50,67.5,92.5,4,frío húmedo,0.3204,-0.4508,1.7577
+cell_+67.50_+097.50,67.5,97.5,4,frío húmedo,0.2611,-0.5812,1.4882
+cell_+67.50_+102.50,67.5,102.5,4,frío húmedo,0.0764,-0.1065,1.5967
+cell_+67.50_+107.50,67.5,107.5,4,frío húmedo,0.1494,-0.0949,1.6497
+cell_+67.50_+112.50,67.5,112.5,4,frío húmedo,0.2189,-0.1768,1.7571
+cell_+67.50_+117.50,67.5,117.5,4,frío húmedo,0.1129,-0.0708,1.645
+cell_+67.50_+122.50,67.5,122.5,4,frío húmedo,0.2326,0.1142,1.3871
+cell_+67.50_+127.50,67.5,127.5,4,frío húmedo,0.4698,-0.471,1.3205
+cell_+67.50_+132.50,67.5,132.5,4,frío húmedo,0.5473,0.1858,1.1687
+cell_+67.50_+137.50,67.5,137.5,4,frío húmedo,0.2588,-0.1356,1.3134
+cell_+67.50_+142.50,67.5,142.5,4,frío húmedo,0.1562,-0.1161,1.6148
+cell_+67.50_+147.50,67.5,147.5,4,frío húmedo,0.1539,-0.0243,1.3003
+cell_+67.50_+152.50,67.5,152.5,4,frío húmedo,0.1973,0.1338,1.261
+cell_+67.50_+157.50,67.5,157.5,4,frío húmedo,0.0821,-0.0211,1.5442
+cell_+67.50_+162.50,67.5,162.5,4,frío húmedo,0.1391,0.1218,1.2903
+cell_+67.50_+167.50,67.5,167.5,4,frío húmedo,0.2349,-0.4419,1.3145
+cell_+67.50_+172.50,67.5,172.5,4,frío húmedo,0.106,-0.5331,1.4971
+cell_+67.50_+177.50,67.5,177.5,4,frío húmedo,0.3387,-0.6247,1.3728
+cell_+72.50_-122.50,72.5,-122.5,4,frío húmedo,0.4607,-0.6616,1.12
+cell_+72.50_-117.50,72.5,-117.5,4,frío húmedo,0.5222,-0.6698,1.2258
+cell_+72.50_-112.50,72.5,-112.5,4,frío húmedo,0.3979,-0.8903,1.5183
+cell_+72.50_-107.50,72.5,-107.5,4,frío húmedo,0.6956,-1.0488,1.4856
+cell_+72.50_-097.50,72.5,-97.5,4,frío húmedo,0.4732,-0.884,1.3677
+cell_+72.50_-087.50,72.5,-87.5,4,frío húmedo,0.4994,-0.9065,1.2535
+cell_+72.50_-082.50,72.5,-82.5,4,frío húmedo,0.48,-0.9111,1.1601
+cell_+72.50_-077.50,72.5,-77.5,4,frío húmedo,0.6351,-1.0482,1.3237
+cell_+72.50_-052.50,72.5,-52.5,7,"polar árido, cubierto de nieve o hielo",0.8255,-1.7787,0.6737
+cell_+72.50_-047.50,72.5,-47.5,7,"polar árido, cubierto de nieve o hielo",0.7115,-2.8069,0.0256
+cell_+72.50_-042.50,72.5,-42.5,7,"polar árido, cubierto de nieve o hielo",0.7275,-2.9093,-0.0917
+cell_+72.50_-037.50,72.5,-37.5,7,"polar árido, cubierto de nieve o hielo",0.7891,-2.9479,-0.2153
+cell_+72.50_-032.50,72.5,-32.5,7,"polar árido, cubierto de nieve o hielo",0.5792,-2.907,-0.2633
+cell_+72.50_-027.50,72.5,-27.5,7,"polar árido, cubierto de nieve o hielo",0.6978,-1.6474,0.9102
+cell_+72.50_-022.50,72.5,-22.5,4,frío húmedo,0.7856,-0.8272,2.107
+cell_+72.50_+052.50,72.5,52.5,4,frío húmedo,0.8643,-0.4623,2.1011
+cell_+72.50_+072.50,72.5,72.5,4,frío húmedo,0.6705,-0.5801,2.0115
+cell_+72.50_+082.50,72.5,82.5,4,frío húmedo,0.423,-0.7807,1.7797
+cell_+72.50_+087.50,72.5,87.5,4,frío húmedo,0.4242,-0.7289,1.7166
+cell_+72.50_+092.50,72.5,92.5,4,frío húmedo,0.3136,-0.6732,1.6477
+cell_+72.50_+097.50,72.5,97.5,4,frío húmedo,0.26,-0.6558,1.612
+cell_+72.50_+102.50,72.5,102.5,4,frío húmedo,0.2805,-0.6033,1.6244
+cell_+72.50_+107.50,72.5,107.5,4,frío húmedo,0.2429,-0.6605,1.578
+cell_+72.50_+112.50,72.5,112.5,4,frío húmedo,0.2873,-0.672,1.5733
+cell_+72.50_+117.50,72.5,117.5,4,frío húmedo,0.325,-0.6454,1.523
+cell_+72.50_+122.50,72.5,122.5,4,frío húmedo,0.2486,-0.684,1.6079
+cell_+72.50_+127.50,72.5,127.5,4,frío húmedo,0.4299,-0.6662,1.6293
+cell_+72.50_+142.50,72.5,142.5,4,frío húmedo,0.431,-0.6983,1.383
+cell_+77.50_-117.50,77.5,-117.5,4,frío húmedo,0.8803,-0.9184,1.7974
+cell_+77.50_-087.50,77.5,-87.5,4,frío húmedo,0.7982,-0.6743,1.6322
+cell_+77.50_-082.50,77.5,-82.5,4,frío húmedo,0.7423,-1.2129,1.1934
+cell_+77.50_-067.50,77.5,-67.5,4,frío húmedo,0.8894,-1.1686,0.8538
+cell_+77.50_-062.50,77.5,-62.5,7,"polar árido, cubierto de nieve o hielo",0.8324,-2.505,0.3003
+cell_+77.50_-057.50,77.5,-57.5,7,"polar árido, cubierto de nieve o hielo",0.5895,-2.7372,0.3012
+cell_+77.50_-052.50,77.5,-52.5,7,"polar árido, cubierto de nieve o hielo",0.5211,-2.9324,0.0871
+cell_+77.50_-047.50,77.5,-47.5,7,"polar árido, cubierto de nieve o hielo",0.5428,-3.0211,-0.0348
+cell_+77.50_-042.50,77.5,-42.5,7,"polar árido, cubierto de nieve o hielo",0.5838,-3.0674,-0.1907
+cell_+77.50_-037.50,77.5,-37.5,7,"polar árido, cubierto de nieve o hielo",0.569,-3.0383,-0.2152
+cell_+77.50_-032.50,77.5,-32.5,7,"polar árido, cubierto de nieve o hielo",0.5667,-2.9798,-0.1393
+cell_+77.50_-027.50,77.5,-27.5,7,"polar árido, cubierto de nieve o hielo",0.7902,-2.8006,0.0999
+cell_+77.50_-022.50,77.5,-22.5,7,"polar árido, cubierto de nieve o hielo",0.9088,-1.7918,0.9589
+cell_+77.50_+017.50,77.5,17.5,4,frío húmedo,0.9099,-0.9929,2.2406
+cell_+77.50_+022.50,77.5,22.5,4,frío húmedo,0.9418,-0.7268,2.2877
+cell_+82.50_-082.50,82.5,-82.5,4,frío húmedo,0.8244,-0.8701,1.6255
+cell_+82.50_-077.50,82.5,-77.5,4,frío húmedo,0.9361,-1.4088,1.017
+cell_+82.50_-072.50,82.5,-72.5,4,frío húmedo,0.9042,-1.5597,1.0653
+cell_+82.50_-067.50,82.5,-67.5,4,frío húmedo,0.8176,-1.3148,1.2687
+cell_+82.50_-062.50,82.5,-62.5,4,frío húmedo,0.8883,-0.6569,1.2937
+cell_+82.50_-042.50,82.5,-42.5,4,frío húmedo,0.8141,-1.6484,1.0521
+cell_+82.50_-037.50,82.5,-37.5,7,"polar árido, cubierto de nieve o hielo",0.935,-1.7042,0.6358
+cell_+82.50_-032.50,82.5,-32.5,7,"polar árido, cubierto de nieve o hielo",0.7263,-1.8771,1.1544
+cell_+82.50_-027.50,82.5,-27.5,4,frío húmedo,0.8312,-1.7338,1.3135
+cell_+82.50_-022.50,82.5,-22.5,4,frío húmedo,0.8586,-1.0969,1.7627

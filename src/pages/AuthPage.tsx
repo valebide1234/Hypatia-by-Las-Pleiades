@@ -1,8 +1,12 @@
 import { useEffect, useState, type FormEvent } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import PleiadesBackground from "@/components/pleiades/PleiadesBackground";
+import TourButton from "@/components/tour/TourButton";
+import { useTour } from "@/store/tour";
 import { isSupabaseConfigured, supabase } from "@/lib/supabase";
 import { useSession } from "@/store/session";
+import { useT } from "@/i18n";
+import LanguageSwitcher from "@/components/common/LanguageSwitcher";
 
 type Mode = "signin" | "signup" | "reset";
 
@@ -17,13 +21,19 @@ export default function AuthPage() {
   const [notice, setNotice] = useState<string | null>(null);
   const status = useSession((s) => s.status);
   const navigate = useNavigate();
+  const t = useT();
 
   // Already signed in (or just finished signing in): go straight to target selection.
   useEffect(() => {
     if (status === "signedIn") navigate("/targets", { replace: true });
   }, [status, navigate]);
 
-  const redirectTo = `${window.location.origin}/targets`;
+  // First visit: explain the form.
+  useEffect(() => useTour.getState().startIfFirstVisit("auth"), []);
+
+  // Addresses for the links in emails; they include the sub-path the app is served from, if any.
+  const appUrl = (path: string) => `${window.location.origin}${import.meta.env.BASE_URL}${path}`;
+  const redirectTo = appUrl("targets");
 
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -34,11 +44,11 @@ export default function AuthPage() {
     try {
       if (mode === "reset") {
         const { error } = await supabase.auth.resetPasswordForEmail(email, {
-          redirectTo: `${window.location.origin}/auth/update-password`,
+          redirectTo: appUrl("auth/update-password"),
         });
         if (error) throw error;
         // Same message whether or not the address has an account, so emails can't be probed.
-        setNotice("If an account exists for that address, a reset link is on its way. Open it in this browser.");
+        setNotice(t("If an account exists for that address, a reset link is on its way. Open it in this browser."));
       } else if (mode === "signin") {
         const { error } = await supabase.auth.signInWithPassword({ email, password });
         if (error) throw error;
@@ -49,7 +59,7 @@ export default function AuthPage() {
           options: { emailRedirectTo: redirectTo },
         });
         if (error) throw error;
-        if (!data.session) setNotice("Check your inbox to confirm your email, then sign in.");
+        if (!data.session) setNotice(t("Check your inbox to confirm your email, then sign in."));
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : "Something went wrong.");
@@ -68,12 +78,16 @@ export default function AuthPage() {
   return (
     <div className="relative flex min-h-full items-center justify-center px-4 py-10">
       <PleiadesBackground />
+      <div className="absolute right-4 top-4 z-10 flex items-center gap-2">
+        <LanguageSwitcher />
+        <TourButton className="bg-space-950/40 backdrop-blur" />
+      </div>
       <div className="glass w-full max-w-sm p-6 sm:p-8">
         <Link to="/" className="font-display text-3xl text-white">
           Hypatia
         </Link>
 
-        <div role="tablist" aria-label="Account" className="mt-6 grid grid-cols-2 rounded-full bg-space-800 p-1 text-sm">
+        <div role="tablist" aria-label="Account" data-tour="auth-tabs" className="mt-6 grid grid-cols-2 rounded-full bg-space-800 p-1 text-sm">
           {(["signin", "signup"] as const).map((m) => (
             <button
               key={m}
@@ -87,16 +101,15 @@ export default function AuthPage() {
               }}
               className={`rounded-full py-1.5 transition-colors ${mode === m ? "bg-pleiad-300 text-space-950" : "text-slate-300 hover:text-white"}`}
             >
-              {m === "signin" ? "Log in" : "Sign up"}
+              {m === "signin" ? t("Log in") : t("Sign up")}
             </button>
           ))}
         </div>
 
         {!isSupabaseConfigured ? (
           <>
-            <p className="mt-6 rounded-lg border border-amber-300/30 bg-amber-300/10 p-3 text-sm text-amber-100">
-              Accounts aren't available yet: Supabase isn't configured. Add <code>VITE_SUPABASE_URL</code> and{" "}
-              <code>VITE_SUPABASE_ANON_KEY</code> to <code>.env</code> (see <code>.env.example</code>), or continue as a guest.
+            <p data-tour="auth-unavailable" className="mt-6 rounded-lg border border-amber-300/30 bg-amber-300/10 p-3 text-sm text-amber-100">
+              {t("Accounts aren't available yet: the account service (Supabase) isn't configured. Add VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY to .env (see .env.example), or continue as a guest.")}
             </p>
             {import.meta.env.DEV && (
               <button
@@ -107,15 +120,15 @@ export default function AuthPage() {
                   navigate("/targets");
                 }}
               >
-                Use local demo account (development only)
+                {t("Use local demo account (development only)")}
               </button>
             )}
           </>
         ) : (
-          <>
+          <div data-tour="auth-form">
             <form onSubmit={onSubmit} className="mt-6 flex flex-col gap-3">
               <label className="flex flex-col gap-1 text-xs text-slate-300">
-                Email
+                {t("Email")}
                 <input
                   className="field"
                   type="email"
@@ -127,13 +140,13 @@ export default function AuthPage() {
               </label>
               {mode === "reset" && (
                 <p className="text-sm text-slate-300">
-                  Enter your account email and we'll send you a link to choose a new password.
+                  {t("Enter your account email and we'll send you a link to choose a new password.")}
                 </p>
               )}
               {mode !== "reset" && (
               <label className="flex flex-col gap-1 text-xs text-slate-300">
                 <span className="flex items-center justify-between">
-                  Password
+                  {t("Password")}
                   {mode === "signin" && (
                     <button
                       type="button"
@@ -144,7 +157,7 @@ export default function AuthPage() {
                         setNotice(null);
                       }}
                     >
-                      Forgot password?
+                      {t("Forgot password?")}
                     </button>
                   )}
                 </span>
@@ -160,11 +173,11 @@ export default function AuthPage() {
               </label>
               )}
               <button type="submit" className="btn-primary mt-2" disabled={busy}>
-                {busy ? "Please wait…" : mode === "signin" ? "Log in" : mode === "signup" ? "Create account" : "Send reset link"}
+                {busy ? t("Please wait…") : mode === "signin" ? t("Log in") : mode === "signup" ? t("Create account") : t("Send reset link")}
               </button>
               {mode === "reset" && (
                 <button type="button" className="text-xs text-slate-400 hover:text-white" onClick={() => setMode("signin")}>
-                  Back to log in
+                  {t("Back to log in")}
                 </button>
               )}
             </form>
@@ -172,14 +185,14 @@ export default function AuthPage() {
             {mode !== "reset" && (
               <>
                 <div className="my-5 flex items-center gap-3 text-xs text-slate-500">
-                  <span className="h-px flex-1 bg-white/10" /> or <span className="h-px flex-1 bg-white/10" />
+                  <span className="h-px flex-1 bg-white/10" /> {t("or")} <span className="h-px flex-1 bg-white/10" />
                 </div>
                 <button type="button" className="btn-ghost w-full" onClick={onGoogle}>
-                  <GoogleMark /> Continue with Google
+                  <GoogleMark /> {t("Continue with Google")}
                 </button>
               </>
             )}
-          </>
+          </div>
         )}
 
         <div aria-live="polite" className="mt-4 text-sm">
@@ -187,8 +200,8 @@ export default function AuthPage() {
           {notice && <p className="text-emerald-300">{notice}</p>}
         </div>
 
-        <Link to="/" className="mt-4 inline-block text-xs text-slate-400 hover:text-white">
-          ← Back
+        <Link to="/" data-tour="auth-back" className="mt-4 inline-block text-xs text-slate-400 hover:text-white">
+          ← {t("Back")}
         </Link>
       </div>
     </div>

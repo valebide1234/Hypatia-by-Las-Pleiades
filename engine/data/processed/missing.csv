@@ -1,0 +1,7 @@
+entity_id,parameter,reason,source
+lanzarote_timanfaya,albedo,"celda CERES de 1° con solo 4% de tierra: el albedo describiría el océano, no el sitio",nasa_power
+shackleton_south_pole,ctx_feo_wtpct,fuera de la cobertura del mapa o sin píxeles válidos,kaguya_mi_minerals
+shackleton_south_pole,ctx_plagioclase_pct,fuera de la cobertura del mapa o sin píxeles válidos,kaguya_mi_minerals
+shackleton_south_pole,ctx_olivine_pct,fuera de la cobertura del mapa o sin píxeles válidos,kaguya_mi_minerals
+shackleton_south_pole,ctx_clinopyroxene_pct,fuera de la cobertura del mapa o sin píxeles válidos,kaguya_mi_minerals
+shackleton_south_pole,ctx_orthopyroxene_pct,fuera de la cobertura del mapa o sin píxeles válidos,kaguya_mi_minerals

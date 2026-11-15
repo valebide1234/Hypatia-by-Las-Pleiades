@@ -10,8 +10,10 @@ import AuthPage from "@/pages/AuthPage";
 import UpdatePasswordPage from "@/pages/UpdatePasswordPage";
 import TargetSelectPage from "@/pages/TargetSelectPage";
 import ExplorePage from "@/pages/ExplorePage";
+import LabPage from "@/pages/LabPage";
 import AppShell from "@/components/layout/AppShell";
 import LoadingSky from "@/components/layout/LoadingSky";
+import Tour from "@/components/tour/Tour";
 
 /** Routes behind the landing screen: open to guests and signed-in users only. */
 function RequireEntry() {
@@ -38,7 +40,8 @@ export default function App() {
   }, [user?.id]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <Routes>
+    <>
+      <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/auth" element={<AuthPage />} />
       <Route path="/auth/update-password" element={<UpdatePasswordPage />} />
@@ -46,9 +49,12 @@ export default function App() {
         <Route element={<AppShell />}>
           <Route path="/targets" element={<TargetSelectPage />} />
           <Route path="/explore/:target" element={<ExplorePage />} />
+          <Route path="/lab" element={<LabPage />} />
         </Route>
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
-    </Routes>
+      </Routes>
+      <Tour />
+    </>
   );
 }

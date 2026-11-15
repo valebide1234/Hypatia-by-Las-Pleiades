@@ -1,0 +1,231 @@
+{
+  "checked_at": "2026-11-15T14:11:12Z",
+  "links": {
+    "earthdata_search": {
+      "id": "earthdata_search",
+      "group": "primeros",
+      "title": "NASA Earthdata Search",
+      "url": "https://search.earthdata.nasa.gov/search",
+      "used": "yes",
+      "endpoint": "cmr.earthdata.nasa.gov · power.larc.nasa.gov",
+      "values": 728,
+      "entities": 29,
+      "parameters": 26,
+      "last_retrieved": "2026-11-15T13:21:06Z",
+      "example_urls": [
+        "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=TS%2CTS_MAX%2CTS_MIN%2CTS_RANGE%2CT2M%2CPS%2CWS10M%2CAOD_55%2CPW%2CALLSKY_SFC_SW_DWN%2CALLSKY_SRF_ALB%2CPRECTOTCORR%2CGWETTOP%2CRH2M%2CFROST_DAYS%2CALLSKY_SFC_UV_INDEX%2CTOA_SW_DWN&community=RE&longitude=-69.92&latitude=-24.08&start=2016&end=2025&format=JSON",
+        "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=TS%2CTS_MAX%2CTS_MIN%2CTS_RANGE%2CT2M%2CPS%2CWS10M%2CAOD_55%2CPW%2CALLSKY_SFC_SW_DWN%2CALLSKY_SRF_ALB%2CPRECTOTCORR%2CGWETTOP%2CRH2M%2CFROST_DAYS%2CALLSKY_SFC_UV_INDEX%2CTOA_SW_DWN&community=RE&longitude=160.7&latitude=-77.86&start=2016&end=2025&format=JSON",
+        "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=TS%2CTS_MAX%2CTS_MIN%2CTS_RANGE%2CT2M%2CPS%2CWS10M%2CAOD_55%2CPW%2CALLSKY_SFC_SW_DWN%2CALLSKY_SRF_ALB%2CPRECTOTCORR%2CGWETTOP%2CRH2M%2CFROST_DAYS%2CALLSKY_SFC_UV_INDEX%2CTOA_SW_DWN&community=RE&longitude=161.19&latitude=-77.565&start=2016&end=2025&format=JSON"
+      ],
+      "what": "Catálogo de datos de observación de la Tierra de la NASA.",
+      "how": "Earthdata Search es la interfaz del catálogo CMR. El pipeline consulta CMR directamente para (1) contar, sitio por sitio, las escenas MODIS de temperatura y albedo disponibles y la fecha de la más reciente, y (2) registrar la actualidad de las colecciones MERRA-2. Las variables climáticas de cada sitio (temperatura, presión, viento, humedad, precipitación, insolación, albedo) provienen de las colecciones MERRA-2 y CERES de Earthdata, leídas con el servicio NASA POWER, porque la descarga de archivos por Earthdata Search exige una cuenta Earthdata Login.",
+      "page_status": 200,
+      "cmr_queries": 58,
+      "granules_found": 637540,
+      "latest_granule": "2026-11-14T00:00:00.000Z"
+    },
+    "worldview": {
+      "id": "worldview",
+      "group": "primeros",
+      "title": "NASA Worldview",
+      "url": "https://worldview.earthdata.nasa.gov/",
+      "used": "yes",
+      "endpoint": "gibs.earthdata.nasa.gov · wvs.earthdata.nasa.gov",
+      "values": 0,
+      "entities": 0,
+      "parameters": 0,
+      "last_retrieved": "",
+      "example_urls": [],
+      "what": "Visor de imágenes satelitales diarias de la NASA.",
+      "how": "Worldview muestra las capas del servicio GIBS. El globo 3D y el mapa usan esas mismas capas, incluidas las del enlace del desafío: Blue Marble, MODIS Terra y Aqua, VIIRS NOAA-20 y NOAA-21 y PACE OCI en color verdadero. Además se descarga una imagen satelital de cada sitio con el servicio Worldview Snapshots, y cada sitio tiene un enlace que abre Worldview en ese lugar.",
+      "page_status": 200,
+      "snapshots": 29,
+      "globe_textures": [
+        {
+          "layer": "BlueMarble_ShadedRelief_Bathymetry",
+          "file": "earth_BlueMarble_ShadedRelief_Bathymetry.jpg",
+          "bytes": 939458
+        },
+        {
+          "layer": "MODIS_Terra_CorrectedReflectance_TrueColor",
+          "file": "earth_MODIS_Terra_CorrectedReflectance_TrueColor_20261113.jpg",
+          "bytes": 1960675
+        }
+      ],
+      "layers_available": [
+        "BlueMarble_ShadedRelief_Bathymetry",
+        "BlueMarble_NextGeneration",
+        "MODIS_Terra_CorrectedReflectance_TrueColor",
+        "MODIS_Aqua_CorrectedReflectance_TrueColor",
+        "VIIRS_NOAA20_CorrectedReflectance_TrueColor",
+        "VIIRS_NOAA21_CorrectedReflectance_TrueColor",
+        "OCI_PACE_True_Color"
+      ]
+    },
+    "pds_diviner": {
+      "id": "pds_diviner",
+      "group": "primeros",
+      "title": "PDS Geosciences Node · LRO Diviner",
+      "url": "https://pds-geosciences.wustl.edu/missions/lro/diviner.htm",
+      "used": "yes",
+      "endpoint": "pds-geosciences.wustl.edu/lro/urn-nasa-pds-lro_diviner_derived1/",
+      "values": 40,
+      "entities": 8,
+      "parameters": 5,
+      "last_retrieved": "2026-11-15T13:22:03Z",
+      "example_urls": [
+        "https://pds-geosciences.wustl.edu/lro/urn-nasa-pds-lro_diviner_derived1/data_derived_gcp/global_cumul_avg_cyl_00n10n_002.tab",
+        "https://pds-geosciences.wustl.edu/lro/urn-nasa-pds-lro_diviner_derived1/data_derived_gcp/global_cumul_avg_cyl_20n30n_002.tab",
+        "https://pds-geosciences.wustl.edu/lro/urn-nasa-pds-lro_diviner_derived1/data_derived_gcp/global_cumul_avg_cyl_10s00s_002.tab"
+      ],
+      "what": "Radiómetro Diviner del Lunar Reconnaissance Orbiter: temperatura de la superficie lunar.",
+      "how": "La página enlaza el archivo de productos derivados de Diviner. De ahí se lee, para cada región lunar, el ciclo diurno completo de temperatura (producto GCP, LRO-L-DLRE-5-GCP-V1.0): 96 intervalos de hora local de la celda de 0.5° que contiene el sitio. De esos datos salen la temperatura media, mínima, máxima y la amplitud térmica de la Luna.",
+      "page_status": 200,
+      "page_links_to_archive": true,
+      "marker": "urn-nasa-pds-lro_diviner_derived1",
+      "product_label": {
+        "label_url": "https://pds-geosciences.wustl.edu/lro/urn-nasa-pds-lro_diviner_derived1/data_derived_gcp/global_cumul_avg_cyl_00n10n_002.lbl",
+        "http_status": 200,
+        "data_set_id": "LRO-L-DLRE-5-GCP-V1.0",
+        "product_id": "GLOBAL_CUMUL_AVG_CYL_00N10N_002.TAB",
+        "instrument_name": "DIVINER LUNAR RADIOMETER EXPERIMENT",
+        "target_name": "MOON",
+        "producer_full_name": "JEAN-PIERRE WILLIAMS",
+        "start_time": "2009-07-05T16:50:26.195",
+        "stop_time": "2015-04-01T00:00:00.000",
+        "product_creation_time": "2016-05-27T12:00:00",
+        "last_modified": "Wed, 15 Mar 2017 20:33:39 GMT"
+      }
+    },
+    "pds_lro": {
+      "id": "pds_lro",
+      "group": "primeros",
+      "title": "PDS Geosciences Node · Lunar Reconnaissance Orbiter",
+      "url": "https://pds-geosciences.wustl.edu/missions/lro/",
+      "used": "yes",
+      "endpoint": "pds-geosciences.wustl.edu/lro/",
+      "values": 56,
+      "entities": 8,
+      "parameters": 7,
+      "last_retrieved": "2026-11-15T13:21:59Z",
+      "example_urls": [
+        "https://pds-geosciences.wustl.edu/lro/lro-l-lola-3-rdr-v1/lrolol_1xxx/data/lola_gdr/cylindrical/img/ldem_64.lbl"
+      ],
+      "what": "Archivo de la misión LRO: Diviner, LOLA, LEND, Mini-RF.",
+      "how": "Además de Diviner, se usa el altímetro láser LOLA: el modelo de elevación LDEM_64 (64 píxeles por grado) se lee por ventanas para calcular relieve, pendiente y rugosidad de cada región lunar con el mismo algoritmo que en la Tierra y Marte.",
+      "page_status": 200,
+      "page_links_to_archive": true,
+      "marker": "diviner.htm",
+      "product_label": {
+        "label_url": "https://pds-geosciences.wustl.edu/lro/lro-l-lola-3-rdr-v1/lrolol_1xxx/data/lola_gdr/cylindrical/img/ldem_64.lbl",
+        "http_status": 200,
+        "data_set_id": "LRO-L-LOLA-4-GDR-V1.0",
+        "product_id": "LDEM_64",
+        "instrument_name": "LUNAR ORBITER LASER ALTIMETER",
+        "target_name": "MOON",
+        "producer_full_name": "DAVID E. SMITH",
+        "start_time": "2009-07-13T17:33:17",
+        "stop_time": "2016-11-29T05:48:19",
+        "product_creation_time": "2019-03-15",
+        "last_modified": "Mon, 04 Mar 2019 20:54:37 GMT"
+      }
+    },
+    "pds": {
+      "id": "pds",
+      "group": "primeros",
+      "title": "NASA Planetary Data System (PDS)",
+      "url": "https://pds.nasa.gov/",
+      "used": "yes",
+      "endpoint": "pds-geosciences.wustl.edu · planetarymaps.usgs.gov (asc-pds-services)",
+      "values": 117,
+      "entities": 12,
+      "parameters": 27,
+      "last_retrieved": "2026-11-15T14:10:48Z",
+      "example_urls": [
+        "https://planetarymaps.usgs.gov/mosaic/Mars_MGS_MOLA_DEM_mosaic_global_463m.tif",
+        "https://planetarymaps.usgs.gov/mosaic/Mars_MGS_TES_Albedo_mosaic_global_7410m.tif",
+        "https://pds-geosciences.wustl.edu/mgs/mgs-m-tes-5-timap-v1/mgst_9001/data/global_ti_night_2007.lbl"
+      ],
+      "what": "Archivo oficial de datos de las misiones planetarias de la NASA.",
+      "how": "Del nodo de Geociencias: Diviner y LOLA (Luna) y los mapas de inercia térmica TES de Mars Global Surveyor (MGS-M-TES-5-TIMAP-V1.0). De los servicios PDS del USGS Astrogeology: la topografía MOLA de Marte y el albedo TES. También se cita el conjunto de datos de campo del cráter Amboy archivado en el PDS.",
+      "page_status": 200,
+      "product_label": {
+        "label_url": "https://pds-geosciences.wustl.edu/mgs/mgs-m-tes-5-timap-v1/mgst_9001/data/global_ti_night_2007.lbl",
+        "http_status": 200,
+        "data_set_id": "MGS-M-TES-5-TIMAP-V1.0",
+        "product_id": "GLOBAL_TI_NIGHT_2007",
+        "instrument_name": "THERMAL EMISSION SPECTROMETER",
+        "target_name": "MARS",
+        "producer_full_name": "NATHANIEL PUTZIG",
+        "start_time": "N/A",
+        "stop_time": "N/A",
+        "product_creation_time": "2007-01-30",
+        "last_modified": "Thu, 05 Nov 2009 17:58:46 GMT"
+      }
+    },
+    "jaxa_gportal": {
+      "id": "jaxa_gportal",
+      "group": "adicionales",
+      "title": "JAXA G-Portal",
+      "url": "https://gportal.jaxa.jp/gpr/index/index",
+      "used": "no",
+      "endpoint": "",
+      "values": 0,
+      "entities": 0,
+      "parameters": 0,
+      "last_retrieved": "",
+      "example_urls": [],
+      "what": "Portal de datos de observación de la Tierra de JAXA.",
+      "how": "No se consulta: la descarga exige registro de usuario. Sí se usan datos de una misión de JAXA, los mapas minerales de Kaguya (SELENE), obtenidos del USGS Astrogeology."
+    },
+    "esa_open_science": {
+      "id": "esa_open_science",
+      "group": "adicionales",
+      "title": "ESA Open Science Data Catalogue",
+      "url": "https://opensciencedata.esa.int/",
+      "used": "no",
+      "endpoint": "",
+      "values": 0,
+      "entities": 0,
+      "parameters": 0,
+      "last_retrieved": "",
+      "example_urls": [],
+      "what": "Catálogo de productos científicos de proyectos financiados por la ESA.",
+      "how": "No se consulta: el catálogo describe productos de investigación temáticos y no contiene las variables que compara este sistema."
+    },
+    "copernicus_dataspace": {
+      "id": "copernicus_dataspace",
+      "group": "adicionales",
+      "title": "Copernicus Data Space Ecosystem",
+      "url": "https://dataspace.copernicus.eu/",
+      "used": "partial",
+      "endpoint": "catalogue.dataspace.copernicus.eu · copernicus-dem-90m.s3.amazonaws.com",
+      "values": 203,
+      "entities": 29,
+      "parameters": 7,
+      "last_retrieved": "2026-11-15T13:21:06Z",
+      "example_urls": [
+        "https://copernicus-dem-90m.s3.amazonaws.com/"
+      ],
+      "what": "Portal de datos del programa Copernicus (satélites Sentinel y productos derivados).",
+      "how": "Se consulta el catálogo del Data Space para obtener, sitio por sitio, la escena Sentinel-2 más reciente. La topografía terrestre usa el Copernicus DEM GLO-90, producto del mismo programa, leído desde su copia pública en AWS porque la descarga desde el Data Space exige una cuenta.",
+      "catalogue_queries": 29,
+      "scenes_found": 29
+    },
+    "csa_radarsat": {
+      "id": "csa_radarsat",
+      "group": "adicionales",
+      "title": "Agencia Espacial Canadiense · RADARSAT-1, RCM y tutorial SAR",
+      "url": "https://donnees-data.asc-csa.gc.ca/en/dataset/radarsat1",
+      "used": "no",
+      "endpoint": "",
+      "values": 0,
+      "entities": 0,
+      "parameters": 0,
+      "last_retrieved": "",
+      "example_urls": [],
+      "what": "Datos de radar de apertura sintética (SAR) canadienses y un tutorial de procesamiento.",
+      "how": "No se usa: el portal no respondió a consultas automáticas y el sistema no incorpora variables de radar. Los sitios análogos canadienses (isla Devon, Axel Heiberg, Mistastin) serían los primeros candidatos para añadir rugosidad de superficie por SAR."
+    }
+  }
+}

@@ -1,0 +1,148 @@
+# Páginas indicadas en el desafío y qué se usa de cada una.
+#
+# group: "primeros" = el primer bloque de enlaces del desafío; "adicionales" = el segundo.
+# used:  yes     -> el pipeline consulta esta página o el servicio de datos que está detrás de ella
+#        partial -> se usa un producto del mismo programa, pero obtenido por otra vía (se explica)
+#        no      -> no se usa; se dice por qué
+# endpoint: servidor al que realmente se conecta el código. Es lo que permite verificar el uso:
+#   cada valor guardado conserva la URL exacta consultada.
+# sources: claves de data/catalog/references.yaml cuyos datos provienen de esta página.
+
+links:
+  - id: earthdata_search
+    group: primeros
+    title: "NASA Earthdata Search"
+    short: "Earthdata Search"
+    url: "https://search.earthdata.nasa.gov/search"
+    used: "yes"
+    endpoint: "cmr.earthdata.nasa.gov · power.larc.nasa.gov"
+    what: "Catálogo de datos de observación de la Tierra de la NASA."
+    how: >-
+      Earthdata Search es la interfaz del catálogo CMR. El pipeline consulta CMR directamente para
+      (1) contar, sitio por sitio, las escenas MODIS de temperatura y albedo disponibles y la fecha
+      de la más reciente, y (2) registrar la actualidad de las colecciones MERRA-2. Las variables
+      climáticas de cada sitio (temperatura, presión, viento, humedad, precipitación, insolación,
+      albedo) provienen de las colecciones MERRA-2 y CERES de Earthdata, leídas con el servicio
+      NASA POWER, porque la descarga de archivos por Earthdata Search exige una cuenta Earthdata Login.
+    sources: [nasa_cmr, nasa_power]
+
+  - id: worldview
+    group: primeros
+    title: "NASA Worldview"
+    short: "Worldview"
+    url: "https://worldview.earthdata.nasa.gov/"
+    used: "yes"
+    endpoint: "gibs.earthdata.nasa.gov · wvs.earthdata.nasa.gov"
+    what: "Visor de imágenes satelitales diarias de la NASA."
+    how: >-
+      Worldview muestra las capas del servicio GIBS. El globo 3D y el mapa usan esas mismas capas,
+      incluidas las del enlace del desafío: Blue Marble, MODIS Terra y Aqua, VIIRS NOAA-20 y NOAA-21
+      y PACE OCI en color verdadero. Además se descarga una imagen satelital de cada sitio con el
+      servicio Worldview Snapshots, y cada sitio tiene un enlace que abre Worldview en ese lugar.
+    sources: [nasa_gibs]
+
+  - id: pds_diviner
+    group: primeros
+    title: "PDS Geosciences Node · LRO Diviner"
+    short: "PDS · LRO Diviner"
+    url: "https://pds-geosciences.wustl.edu/missions/lro/diviner.htm"
+    used: "yes"
+    endpoint: "pds-geosciences.wustl.edu/lro/urn-nasa-pds-lro_diviner_derived1/"
+    what: "Radiómetro Diviner del Lunar Reconnaissance Orbiter: temperatura de la superficie lunar."
+    how: >-
+      La página enlaza el archivo de productos derivados de Diviner. De ahí se lee, para cada región
+      lunar, el ciclo diurno completo de temperatura (producto GCP, LRO-L-DLRE-5-GCP-V1.0): 96
+      intervalos de hora local de la celda de 0.5° que contiene el sitio. De esos datos salen la
+      temperatura media, mínima, máxima y la amplitud térmica de la Luna.
+    sources: [diviner_gcp]
+
+  - id: pds_lro
+    group: primeros
+    title: "PDS Geosciences Node · Lunar Reconnaissance Orbiter"
+    short: "PDS · LRO"
+    url: "https://pds-geosciences.wustl.edu/missions/lro/"
+    used: "yes"
+    endpoint: "pds-geosciences.wustl.edu/lro/"
+    what: "Archivo de la misión LRO: Diviner, LOLA, LEND, Mini-RF."
+    how: >-
+      Además de Diviner, se usa el altímetro láser LOLA: el modelo de elevación LDEM_64
+      (64 píxeles por grado) se lee por ventanas para calcular relieve, pendiente y rugosidad de
+      cada región lunar con el mismo algoritmo que en la Tierra y Marte.
+    sources: [lola_gdr, diviner_gcp]
+
+  - id: pds
+    group: primeros
+    title: "NASA Planetary Data System (PDS)"
+    short: "PDS"
+    url: "https://pds.nasa.gov/"
+    used: "yes"
+    endpoint: "pds-geosciences.wustl.edu · planetarymaps.usgs.gov (asc-pds-services)"
+    what: "Archivo oficial de datos de las misiones planetarias de la NASA."
+    how: >-
+      Del nodo de Geociencias: Diviner y LOLA (Luna) y los mapas de inercia térmica TES de Mars
+      Global Surveyor (MGS-M-TES-5-TIMAP-V1.0). De los servicios PDS del USGS Astrogeology: la
+      topografía MOLA de Marte y el albedo TES. También se cita el conjunto de datos de campo del
+      cráter Amboy archivado en el PDS.
+    sources: [tes_timap, mola_megdr, tes_albedo, lola_gdr, diviner_gcp, greeley_amboy]
+
+  - id: jaxa_gportal
+    group: adicionales
+    title: "JAXA G-Portal"
+    short: "JAXA G-Portal"
+    url: "https://gportal.jaxa.jp/gpr/index/index"
+    used: "no"
+    endpoint: ""
+    what: "Portal de datos de observación de la Tierra de JAXA."
+    how: >-
+      No se consulta: la descarga exige registro de usuario. Sí se usan datos de una misión de
+      JAXA, los mapas minerales de Kaguya (SELENE), obtenidos del USGS Astrogeology.
+    sources: []
+
+  - id: esa_open_science
+    group: adicionales
+    title: "ESA Open Science Data Catalogue"
+    short: "ESA Open Science"
+    url: "https://opensciencedata.esa.int/"
+    used: "no"
+    endpoint: ""
+    what: "Catálogo de productos científicos de proyectos financiados por la ESA."
+    how: >-
+      No se consulta: el catálogo describe productos de investigación temáticos y no contiene las
+      variables que compara este sistema.
+    sources: []
+
+  - id: copernicus_dataspace
+    group: adicionales
+    title: "Copernicus Data Space Ecosystem"
+    short: "Copernicus Data Space"
+    url: "https://dataspace.copernicus.eu/"
+    used: "partial"
+    endpoint: "catalogue.dataspace.copernicus.eu · copernicus-dem-90m.s3.amazonaws.com"
+    what: "Portal de datos del programa Copernicus (satélites Sentinel y productos derivados)."
+    how: >-
+      Se consulta el catálogo del Data Space para obtener, sitio por sitio, la escena Sentinel-2 más
+      reciente. La topografía terrestre usa el Copernicus DEM GLO-90, producto del mismo programa,
+      leído desde su copia pública en AWS porque la descarga desde el Data Space exige una cuenta.
+    sources: [copernicus_dem, copernicus_catalogue]
+
+  - id: csa_radarsat
+    group: adicionales
+    title: "Agencia Espacial Canadiense · RADARSAT-1, RCM y tutorial SAR"
+    short: "CSA RADARSAT"
+    url: "https://donnees-data.asc-csa.gc.ca/en/dataset/radarsat1"
+    used: "no"
+    endpoint: ""
+    what: "Datos de radar de apertura sintética (SAR) canadienses y un tutorial de procesamiento."
+    how: >-
+      No se usa: el portal no respondió a consultas automáticas y el sistema no incorpora variables
+      de radar. Los sitios análogos canadienses (isla Devon, Axel Heiberg, Mistastin) serían los
+      primeros candidatos para añadir rugosidad de superficie por SAR.
+    sources: []
+
+# Fuentes oficiales que no están entre los enlaces del desafío.
+other_sources:
+  mcd: "Mars Climate Database (LMD / ESA / CNES)"
+  kaguya_mi_minerals: "USGS Astrogeology (datos de JAXA Kaguya)"
+  iau_gazetteer: "Gazetteer IAU / USGS"
+  nssdca_factsheets: "NASA NSSDCA (fichas planetarias)"
+  nasa_trek: "NASA Solar System Treks"
