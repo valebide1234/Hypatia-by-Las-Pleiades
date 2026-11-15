@@ -1,0 +1,192 @@
+{
+  "version": "1.0.0",
+  "categories": [
+    { "id": "geology", "label": "Geology" },
+    { "id": "environment", "label": "Environment" },
+    { "id": "operational", "label": "Operational" }
+  ],
+  "qualities": [
+    {
+      "id": "basaltic_volcanism",
+      "label": "Basaltic volcanism",
+      "category": "geology",
+      "targets": ["moon", "mars"],
+      "description": "The lunar maria and most Martian volcanic plains are basaltic. Terrestrial basalt flows reproduce lava morphology and the plagioclase–pyroxene–olivine mineralogy, although lunar basalts formed with no water and in very reducing conditions."
+    },
+    {
+      "id": "lava_tubes",
+      "label": "Lava tubes & skylights",
+      "category": "geology",
+      "targets": ["moon", "mars"],
+      "description": "Collapse pits on the Moon (e.g., Marius Hills) and Mars (e.g., Arsia and Pavonis Mons) indicate subsurface lava conduits, which interest scientists as radiation-shielded shelters and as stable environments."
+    },
+    {
+      "id": "pyroclastic_deposits",
+      "label": "Pyroclastic & cinder deposits",
+      "category": "geology",
+      "targets": ["moon", "mars"],
+      "description": "Explosive basaltic eruptions produce cinder cones and tephra. On the Moon they appear as dark mantle deposits and volcanic glass beads (e.g., Apollo 17 orange soil); on Mars, scoria cones and pyroclastic layers have been mapped."
+    },
+    {
+      "id": "impact_craters",
+      "label": "Impact craters & shock metamorphism",
+      "category": "geology",
+      "targets": ["moon", "mars"],
+      "description": "Impact cratering dominates the lunar surface and is important on Mars. Terrestrial structures preserve shatter cones, shocked minerals, breccias and impact melt, the evidence that crews and instruments have to recognise."
+    },
+    {
+      "id": "regolith_fines",
+      "label": "Regolith-like fine soils",
+      "category": "geology",
+      "targets": ["moon", "mars"],
+      "description": "Fine-grained, poorly sorted, unconsolidated volcanic material can approximate the grain size and mechanical behaviour of lunar regolith or Martian soil for mobility, excavation and ISRU tests. No terrestrial material reproduces lunar agglutinates or space weathering."
+    },
+    {
+      "id": "anorthositic_rock",
+      "label": "Anorthositic rock",
+      "category": "geology",
+      "targets": ["moon"],
+      "description": "The lunar highland crust is dominated by plagioclase-rich anorthosite, a rock type that is rare on Earth and is mostly found in old intrusive complexes."
+    },
+    {
+      "id": "layered_sediments",
+      "label": "Layered sedimentary rocks",
+      "category": "geology",
+      "targets": ["mars"],
+      "description": "Thick sedimentary sequences (e.g., Mount Sharp in Gale crater, Meridiani Planum) record ancient Martian lakes, rivers and wind-deposited sediment."
+    },
+    {
+      "id": "evaporites_sulfates",
+      "label": "Evaporites & sulfates",
+      "category": "geology",
+      "targets": ["mars"],
+      "description": "Sulfates (jarosite, gypsum) and chlorides found by rovers and orbiters indicate evaporating, often acidic or saline water."
+    },
+    {
+      "id": "clay_minerals",
+      "label": "Clay minerals",
+      "category": "geology",
+      "targets": ["mars"],
+      "description": "Phyllosilicates detected from orbit (e.g., Mawrth Vallis) and in situ (Gale crater) indicate long-lived water at moderate pH, and clays are good at preserving organic matter."
+    },
+    {
+      "id": "hydrothermal_deposits",
+      "label": "Hydrothermal deposits",
+      "category": "geology",
+      "targets": ["mars"],
+      "description": "Opaline silica near Home Plate (Gusev crater) and hydrated minerals in impact and volcanic settings suggest that hydrothermal systems, potentially habitable environments, existed on Mars."
+    },
+    {
+      "id": "glacial_periglacial",
+      "label": "Glacial & periglacial landforms",
+      "category": "geology",
+      "targets": ["mars"],
+      "description": "Mid- and high-latitude Mars shows polygonal patterned ground, debris-covered glaciers and gullies that resemble cold-climate landforms on Earth."
+    },
+    {
+      "id": "aeolian_bedforms",
+      "label": "Aeolian dunes & ripples",
+      "category": "geology",
+      "targets": ["mars"],
+      "description": "Active sand dunes and megaripples (e.g., the Bagnold Dunes) shape the Martian surface and are a mobility hazard for rovers."
+    },
+    {
+      "id": "microbialites_biosignatures",
+      "label": "Microbialites & fossil biosignatures",
+      "category": "geology",
+      "targets": ["mars"],
+      "description": "Stromatolites and microbialites provide templates for recognising ancient biosignatures in Martian lake and delta deposits such as Jezero crater. Morphology alone is not proof of biogenicity."
+    },
+    {
+      "id": "hyperarid",
+      "label": "Hyperarid",
+      "category": "environment",
+      "targets": ["mars"],
+      "description": "Extremely low precipitation and humidity approach the dryness of the Martian surface, where liquid water is not stable today."
+    },
+    {
+      "id": "extreme_cold",
+      "label": "Extreme cold",
+      "category": "environment",
+      "targets": ["mars"],
+      "description": "Persistently sub-zero temperatures; Earth's coldest deserts still remain much warmer on average than Mars (mean surface temperature about −60 °C)."
+    },
+    {
+      "id": "permafrost_ground_ice",
+      "label": "Permafrost & ground ice",
+      "category": "environment",
+      "targets": ["mars"],
+      "description": "Ice-cemented ground near the surface, as found by the Phoenix lander and mapped across mid-latitude Mars."
+    },
+    {
+      "id": "high_uv",
+      "label": "High UV exposure",
+      "category": "environment",
+      "targets": ["mars"],
+      "description": "Intense ultraviolet radiation at the surface. Mars, with no ozone layer and a thin atmosphere, receives far more UV than anywhere on Earth."
+    },
+    {
+      "id": "high_altitude_low_pressure",
+      "label": "High altitude / low pressure",
+      "category": "environment",
+      "targets": ["mars"],
+      "description": "Reduced atmospheric pressure at high elevation. Even Earth's highest sites stay far above the ~0.6 kPa mean pressure on Mars."
+    },
+    {
+      "id": "oxidizing_soils",
+      "label": "Oxidizing soils (perchlorate-like)",
+      "category": "environment",
+      "targets": ["mars"],
+      "description": "Soils with strong oxidants such as perchlorate, detected at the Phoenix site, which degrade organic molecules and complicate life-detection measurements."
+    },
+    {
+      "id": "low_biomass",
+      "label": "Low biomass",
+      "category": "environment",
+      "targets": ["mars"],
+      "description": "Very sparse life, which makes the site a test bed for detecting faint biosignatures and for contamination-control protocols."
+    },
+    {
+      "id": "isolation_remoteness",
+      "label": "Isolation & remoteness",
+      "category": "operational",
+      "targets": ["moon", "mars"],
+      "description": "Physical isolation, confinement and limited resupply, used to study crew behaviour, autonomy and logistics."
+    },
+    {
+      "id": "rover_eva_traversal",
+      "label": "Rover & EVA traversal testing",
+      "category": "operational",
+      "targets": ["moon", "mars"],
+      "description": "Terrain and logistics suited to testing rovers, spacesuits, navigation and extravehicular activity (EVA) timelines."
+    },
+    {
+      "id": "instrument_sample_testing",
+      "label": "Instrument & sample-collection testing",
+      "category": "operational",
+      "targets": ["moon", "mars"],
+      "description": "Field validation of drills, spectrometers, life-detection instruments and sampling protocols before flight."
+    },
+    {
+      "id": "underwater_neutral_buoyancy",
+      "label": "Underwater / neutral-buoyancy operations",
+      "category": "operational",
+      "targets": ["moon", "mars"],
+      "description": "Underwater operations in which weighting can approximate reduced gravity and divers rehearse EVA tasks in a hazardous environment."
+    },
+    {
+      "id": "crew_geology_training",
+      "label": "Astronaut geology training",
+      "category": "operational",
+      "targets": ["moon", "mars"],
+      "description": "Sites used to train astronauts to observe, describe and sample geology, as practised since the Apollo programme."
+    },
+    {
+      "id": "isru_testing",
+      "label": "Resource extraction (ISRU) testing",
+      "category": "operational",
+      "targets": ["moon", "mars"],
+      "description": "Field demonstrations of in-situ resource utilisation: prospecting, excavation and oxygen or water extraction from local material."
+    }
+  ]
+}
