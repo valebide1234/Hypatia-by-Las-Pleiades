@@ -1,5 +1,7 @@
 # Hypatia: NASA terrestrial analog finder
 
+**Open the app: https://valebide1234.github.io/Hypatia-by-Las-Pleiades/** (no installation needed; you can continue without an account)
+
 Hypatia is a multilingual web application designed to identify, compare, and locate terrestrial environments that replicate specific conditions found on other celestial bodies, particularly Mars and the Moon.
 
 Rather than focusing solely on visual similarities, our platform analyzes environmental and geographical variables, such as temperature, geology, mineralogy, terrain, radiation, and illumination, to identify potential locations for scientific research, experiments, and space mission simulations.
