@@ -1,0 +1,199 @@
+# Regiones de referencia en la Luna y Marte.
+#
+# No se compara un sitio terrestre con "la Luna" o "Marte" en general, sino con
+# regiones concretas. Se priorizan sitios de aterrizaje porque tienen verdad de
+# terreno (mediciones in situ) que respalda los descriptores geológicos.
+#
+# Coordenadas:
+#   coords.source = mission -> coordenadas del módulo de aterrizaje publicadas por la
+#                              misión (latitud planetocéntrica, longitud Este).
+#   coords.source = publication -> coordenadas publicadas en el artículo citado en coords.refs.
+#   coords.host_feature     -> rasgo IAU que contiene el sitio; el pipeline comprueba que las
+#                              coordenadas caen dentro de su caja envolvente.
+#   coords.source = iau     -> NO se escriben a mano: el pipeline las obtiene del
+#                              Gazetteer of Planetary Nomenclature (IAU/USGS) por nombre.
+#
+# geology: descriptores ordinales (0 ausente/no reportado, 0.5 presente/secundario,
+#   1 dominante) codificados a partir de las referencias citadas. Lo no listado vale 0.
+#   Son una codificación experta de la literatura, NO mediciones.
+# literature: valores publicados que no se recuperan de un mapa (se citan).
+
+regions:
+  # ================================================================ LUNA
+  - id: apollo11_tranquillitatis
+    body: moon
+    name: "Mare Tranquillitatis (Apolo 11)"
+    terrain_class: mare
+    coords: {source: mission, lat: 0.674, lon: 23.473, host_feature: "Mare Tranquillitatis"}
+    summary: "Llanura de basaltos de mar ricos en titanio cubierta por regolito maduro de varios metros."
+    geology: {g_basalt: 1, g_volcanic: 1, g_impact: 1, g_loose_regolith: 1}
+    literature:
+      albedo: {value: 0.07, kind: literature, refs: [vasavada2012], note: "Albedo de Bond a incidencia normal adoptado para mares."}
+    refs: [lunar_sourcebook, williams2017]
+
+  - id: apollo15_hadley
+    body: moon
+    name: "Hadley-Apeninos (Apolo 15)"
+    terrain_class: mare
+    coords: {source: mission, lat: 26.132, lon: 3.634, host_feature: "Montes Apenninus"}
+    summary: "Borde de mar basáltico junto a un canal de lava sinuoso (Rima Hadley) y al frente montañoso de los Apeninos."
+    geology: {g_basalt: 1, g_anorthosite: 0.5, g_volcanic: 1, g_lava_tubes: 0.5, g_pyroclastic: 0.5, g_impact: 1, g_loose_regolith: 1}
+    literature:
+      albedo: {value: 0.07, kind: literature, refs: [vasavada2012], note: "Albedo de Bond a incidencia normal adoptado para mares."}
+    refs: [lunar_sourcebook, williams2017]
+
+  - id: apollo16_descartes
+    body: moon
+    name: "Tierras altas de Descartes (Apolo 16)"
+    terrain_class: highlands
+    coords: {source: mission, lat: -8.973, lon: 15.501}
+    summary: "Tierras altas feldespáticas: brechas de impacto anortosíticas, sin basaltos de mar."
+    geology: {g_anorthosite: 1, g_impact: 1, g_loose_regolith: 1}
+    literature:
+      albedo: {value: 0.16, kind: literature, refs: [vasavada2012], note: "Albedo de Bond a incidencia normal adoptado para tierras altas."}
+    refs: [lunar_sourcebook, williams2017]
+
+  - id: apollo17_taurus_littrow
+    body: moon
+    name: "Valle Taurus-Littrow (Apolo 17)"
+    terrain_class: mare
+    coords: {source: mission, lat: 20.191, lon: 30.772}
+    summary: "Valle entre macizos de tierras altas, relleno de basaltos y con depósitos piroclásticos (vidrio naranja)."
+    geology: {g_basalt: 1, g_anorthosite: 0.5, g_volcanic: 1, g_pyroclastic: 1, g_impact: 1, g_loose_regolith: 1}
+    literature:
+      albedo: {value: 0.07, kind: literature, refs: [vasavada2012], note: "Albedo de Bond a incidencia normal adoptado para mares."}
+    refs: [lunar_sourcebook, gaddis2003]
+
+  - id: shackleton_south_pole
+    body: moon
+    name: "Cráter Shackleton (polo sur, región Artemis)"
+    terrain_class: highlands
+    coords: {source: iau, feature: "Shackleton"}
+    summary: "Cráter polar con interior en sombra permanente y bordes con iluminación casi continua; candidato a contener volátiles."
+    geology: {g_anorthosite: 1, g_impact: 1, g_ground_ice: 0.5, g_loose_regolith: 1}
+    literature:
+      albedo: {value: 0.16, kind: literature, refs: [vasavada2012], note: "Albedo de Bond a incidencia normal adoptado para tierras altas."}
+    notes: "La presencia de hielo en Shackleton es probable pero no confirmada (g_ground_ice = 0.5). LCROSS midió agua en Cabeus, no aquí. La insolación calculada para terreno plano no es válida en el polo: depende de la topografía local."
+    refs: [zuber2012, mazarico2011, paige2010, colaprete2010]
+
+  - id: marius_hills
+    body: moon
+    name: "Colinas de Marius (claraboya de tubo de lava)"
+    terrain_class: mare
+    coords: {source: publication, lat: 14.2, lon: 303.3, refs: [haruyama2009]}
+    summary: "Complejo volcánico con domos y conos sobre basaltos de mar; alberga una claraboya de posible tubo de lava."
+    geology: {g_basalt: 1, g_volcanic: 1, g_lava_tubes: 1, g_impact: 1, g_loose_regolith: 1}
+    literature:
+      albedo: {value: 0.07, kind: literature, refs: [vasavada2012], note: "Albedo de Bond a incidencia normal adoptado para mares."}
+    notes: "Coordenadas de la claraboya publicadas por Haruyama et al. (2009)."
+    refs: [haruyama2009, sauro2020]
+
+  - id: aristarchus_plateau
+    body: moon
+    name: "Meseta de Aristarco"
+    terrain_class: pyroclastic
+    coords: {source: iau, feature: "Vallis Schröteri"}
+    summary: "Meseta volcánica con el mayor depósito piroclástico regional de la Luna y el canal sinuoso Vallis Schröteri."
+    geology: {g_basalt: 0.5, g_volcanic: 1, g_lava_tubes: 0.5, g_pyroclastic: 1, g_impact: 1, g_loose_regolith: 1}
+    notes: "Coordenadas IAU de Vallis Schröteri, en el centro de la meseta. Sin valor de albedo de literatura asignado (manto piroclástico oscuro sobre terreno mixto)."
+    refs: [gaddis2003, lunar_sourcebook]
+
+  - id: von_karman_spa
+    body: moon
+    name: "Cráter Von Kármán, cuenca Polo Sur-Aitken (Chang'E-4)"
+    terrain_class: mare
+    coords: {source: mission, lat: -45.445, lon: 177.599, host_feature: "Von Kármán"}
+    summary: "Suelo de cráter relleno de basalto dentro de la mayor cuenca de impacto lunar, en la cara oculta."
+    geology: {g_basalt: 1, g_volcanic: 0.5, g_impact: 1, g_loose_regolith: 1}
+    notes: "Sin valor de albedo de literatura asignado."
+    refs: [li2019_ce4]
+
+  # =============================================================== MARTE
+  - id: gale_crater
+    body: mars
+    name: "Cráter Gale (Curiosity)"
+    coords: {source: mission, lat: -4.5895, lon: 137.4417, host_feature: "Gale"}
+    summary: "Cráter con sedimentos fluvio-lacustres ricos en arcillas, una unidad superior de sulfatos y un campo activo de dunas basálticas."
+    geology: {g_basalt: 0.5, g_impact: 1, g_aeolian: 1, g_fluvial_lacustrine: 1, g_sulfate: 1, g_iron_oxide: 0.5, g_clay: 1, g_perchlorate: 0.5, g_silica: 0.5, g_loose_regolith: 0.5}
+    refs: [grotzinger2014, ewing2017]
+
+  - id: jezero_crater
+    body: mars
+    name: "Cráter Jezero (Perseverance)"
+    coords: {source: mission, lat: 18.4447, lon: 77.4508, host_feature: "Jezero"}
+    summary: "Paleolago con delta bien conservado, suelo de rocas ígneas alteradas por agua y unidades con carbonatos."
+    geology: {g_basalt: 1, g_volcanic: 0.5, g_impact: 1, g_aeolian: 0.5, g_fluvial_lacustrine: 1, g_sulfate: 0.5, g_iron_oxide: 0.5, g_clay: 0.5, g_carbonate: 1, g_perchlorate: 0.5, g_loose_regolith: 0.5}
+    refs: [farley2022, mangold2021]
+
+  - id: meridiani_planum
+    body: mars
+    name: "Meridiani Planum (Opportunity)"
+    coords: {source: mission, lat: -1.9462, lon: 354.4734, host_feature: "Meridiani Planum"}
+    summary: "Llanura de areniscas ricas en sulfatos con esférulas de hematita y jarosita, formadas en ambientes ácidos y salinos."
+    geology: {g_basalt: 0.5, g_impact: 0.5, g_aeolian: 1, g_fluvial_lacustrine: 0.5, g_evaporite: 0.5, g_sulfate: 1, g_iron_oxide: 1, g_clay: 0.5, g_loose_regolith: 0.5}
+    refs: [squyres2004, klingelhofer2004]
+
+  - id: gusev_crater
+    body: mars
+    name: "Cráter Gusev / Columbia Hills (Spirit)"
+    coords: {source: mission, lat: -14.5684, lon: 175.4726, host_feature: "Gusev"}
+    summary: "Llanuras de lava basáltica y colinas con depósitos de sílice opalina hidrotermal y afloramientos con carbonatos."
+    geology: {g_basalt: 1, g_volcanic: 0.5, g_pyroclastic: 0.5, g_impact: 1, g_aeolian: 0.5, g_sulfate: 0.5, g_iron_oxide: 0.5, g_carbonate: 0.5, g_silica: 1, g_loose_regolith: 0.5}
+    refs: [squyres2008, morris2010]
+
+  - id: elysium_insight
+    body: mars
+    name: "Elysium Planitia (InSight)"
+    coords: {source: mission, lat: 4.502, lon: 135.623, host_feature: "Elysium Planitia"}
+    summary: "Llanura volcánica muy plana con regolito arenoso de pocos metros sobre coladas basálticas."
+    geology: {g_basalt: 1, g_volcanic: 1, g_impact: 0.5, g_aeolian: 0.5, g_iron_oxide: 0.5, g_loose_regolith: 1}
+    refs: [golombek2020]
+
+  - id: phoenix_vastitas
+    body: mars
+    name: "Vastitas Borealis (Phoenix)"
+    coords: {source: mission, lat: 68.2188, lon: 234.2508, host_feature: "Vastitas Borealis"}
+    summary: "Llanura polar con terreno poligonal y hielo de agua a pocos centímetros de profundidad; suelo con percloratos y carbonato."
+    geology: {g_basalt: 0.5, g_iron_oxide: 0.5, g_carbonate: 0.5, g_perchlorate: 1, g_ground_ice: 1, g_periglacial: 1, g_loose_regolith: 1}
+    refs: [smith2009_phx, hecht2009]
+
+  - id: ares_vallis
+    body: mars
+    name: "Ares Vallis, Chryse Planitia (Mars Pathfinder)"
+    coords: {source: mission, lat: 19.13, lon: 326.78, host_feature: "Chryse Planitia"}
+    summary: "Desembocadura de un canal de inundación catastrófica: llanura de bloques depositados por megainundaciones."
+    geology: {g_basalt: 1, g_impact: 0.5, g_aeolian: 0.5, g_fluvial_lacustrine: 1, g_iron_oxide: 0.5, g_loose_regolith: 0.5}
+    refs: [golombek1997, baker1978]
+
+  - id: arsia_mons
+    body: mars
+    name: "Arsia Mons (Tharsis)"
+    coords: {source: iau, feature: "Arsia Mons"}
+    summary: "Volcán en escudo gigante; en sus flancos se han identificado posibles claraboyas de cuevas volcánicas."
+    geology: {g_basalt: 1, g_volcanic: 1, g_lava_tubes: 1, g_iron_oxide: 0.5, g_periglacial: 0.5, g_loose_regolith: 1}
+    notes: "Las coordenadas IAU corresponden al centro del edificio (caldera); las claraboyas están en el flanco norte."
+    refs: [cushing2007, sauro2020]
+
+  - id: melas_chasma
+    body: mars
+    name: "Melas Chasma (Valles Marineris)"
+    coords: {source: iau, feature: "Melas Chasma"}
+    summary: "Tramo central del sistema de cañones, con paredes de varios kilómetros y depósitos estratificados ricos en sulfatos."
+    geology: {g_basalt: 0.5, g_aeolian: 0.5, g_fluvial_lacustrine: 0.5, g_sulfate: 1, g_iron_oxide: 0.5, g_loose_regolith: 0.5}
+    refs: [gendrin2005]
+
+  - id: oxia_planum
+    body: mars
+    name: "Oxia Planum (sitio del rover Rosalind Franklin)"
+    coords: {source: iau, feature: "Oxia Planum"}
+    summary: "Llanura antigua con extensos depósitos de arcillas ricas en Fe/Mg y restos de un sistema fluvio-deltaico."
+    geology: {g_basalt: 0.5, g_impact: 0.5, g_aeolian: 0.5, g_fluvial_lacustrine: 1, g_iron_oxide: 0.5, g_clay: 1, g_loose_regolith: 0.5}
+    refs: [quantin2021]
+
+  - id: olympia_undae
+    body: mars
+    name: "Olympia Undae (erg polar norte)"
+    coords: {source: iau, feature: "Olympia Undae"}
+    summary: "Mar de dunas circumpolar con arena basáltica y yeso, estabilizado estacionalmente por escarcha y hielo."
+    geology: {g_basalt: 0.5, g_aeolian: 1, g_sulfate: 1, g_iron_oxide: 0.5, g_ground_ice: 1, g_periglacial: 0.5, g_loose_regolith: 1}
+    refs: [langevin2005, szynkiewicz2010]

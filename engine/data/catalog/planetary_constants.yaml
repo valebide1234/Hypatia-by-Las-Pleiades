@@ -1,0 +1,88 @@
+# Constantes planetarias y condiciones que NINGÚN sitio terrestre reproduce.
+# Fuente de las constantes: NASA NSSDCA Planetary Fact Sheets (clave nssdca_factsheets),
+# salvo indicación. Estas magnitudes no entran en la puntuación de similitud: se
+# informan siempre junto a cada resultado como límite de validez de la analogía.
+
+bodies:
+  earth:
+    label: "Tierra"
+    mean_radius_m: 6371000.0
+    surface_gravity_ms2: 9.81
+    solar_constant_Wm2: 1361.0
+    semi_major_axis_au: 1.000
+    eccentricity: 0.0167
+    obliquity_deg: 23.44
+    solar_day_hours: 24.0
+    mean_surface_pressure_Pa: 101400.0
+    atmosphere: "N2 78.1 %, O2 20.9 %, Ar 0.93 %, CO2 ~0.04 %"
+    refs: [nssdca_factsheets]
+  moon:
+    label: "Luna"
+    mean_radius_m: 1737400.0
+    surface_gravity_ms2: 1.62
+    solar_constant_Wm2: 1361.0
+    semi_major_axis_au: 1.000
+    eccentricity: 0.0167        # órbita heliocéntrica del sistema Tierra-Luna
+    obliquity_deg: 1.54         # inclinación del ecuador lunar respecto de la eclíptica
+    solar_day_hours: 708.7      # día sinódico de 29.53 días terrestres
+    mean_surface_pressure_Pa: 3.0e-10
+    atmosphere: "Exosfera (He, Ar, Ne, Na, K); sin atmósfera colisional"
+    refs: [nssdca_factsheets, stern1999]
+  mars:
+    label: "Marte"
+    mean_radius_m: 3389500.0
+    surface_gravity_ms2: 3.71
+    solar_constant_Wm2: 586.2
+    semi_major_axis_au: 1.524
+    eccentricity: 0.0935
+    obliquity_deg: 25.19
+    solar_day_hours: 24.66
+    mean_surface_pressure_Pa: 636.0
+    atmosphere: "CO2 96.0 %, Ar 1.93 %, N2 1.89 %, O2 0.145 % (Curiosity/SAM)"
+    refs: [nssdca_factsheets, mahaffy2013]
+
+# Valores medidos de dosis de radiación (referencia, no puntuados).
+radiation:
+  earth:
+    value: "~2.4 mSv/año de fondo natural medio mundial (≈0.4 mSv/año de origen cósmico a nivel del mar)"
+    source: "UNSCEAR (2008), Sources and Effects of Ionizing Radiation, Annex B."
+    kind: literature
+  moon:
+    value: "1369 µSv/día (dosis equivalente en superficie, Chang'E-4 LND)"
+    refs: [zhang2020]
+    kind: measured
+  mars:
+    value: "0.64 ± 0.12 mSv/día (dosis equivalente de rayos cósmicos galácticos en superficie, MSL/RAD)"
+    refs: [hassler2014]
+    kind: measured
+
+# Fenómenos no reproducibles en la Tierra, por cuerpo destino.
+not_reproducible:
+  moon:
+    - {item: "Gravedad de 1.62 m/s² (1/6 g)", why: "Solo se aproxima por segundos en vuelos parabólicos o con sistemas de descarga de peso; no hay forma de sostenerla en campo.", affects: [rover_mobility, regolith_soil, habitat_infrastructure, extreme_survival]}
+    - {item: "Vacío (~3e-10 Pa) y ausencia de atmósfera", why: "Cambia la transferencia de calor, la desgasificación, la lubricación y la mecánica del regolito. Requiere cámaras de vacío térmico, no campo.", affects: [instrument_testing, habitat_infrastructure, regolith_soil, water_ice_detection]}
+    - {item: "Rango térmico de ~95 K a ~390 K en el ecuador y <40 K en regiones en sombra permanente", why: "Ningún sitio terrestre baja de ~180 K ni tiene ciclos de 29.5 días.", affects: [habitat_infrastructure, instrument_testing, water_ice_detection, extreme_survival]}
+    - {item: "Noche de ~14 días terrestres", why: "La noche polar terrestre es el único paralelo operativo, pero con atmósfera y temperaturas mucho más altas.", affects: [habitat_infrastructure, extreme_survival]}
+    - {item: "Radiación: rayos cósmicos y eventos de partículas solares sin blindaje magnético ni atmosférico", why: "Dosis ~200 veces el fondo natural terrestre; solo se ensaya en aceleradores.", affects: [extreme_survival, habitat_infrastructure, instrument_testing]}
+    - {item: "Regolito lunar real: granos angulosos, aglutinados, hierro nanofásico, carga electrostática", why: "Los suelos terrestres están meteorizados por agua y oxígeno; se usan simulantes, que reproducen solo algunas propiedades.", affects: [regolith_soil, rover_mobility, habitat_infrastructure]}
+    - {item: "Eyección de regolito por los motores en vacío", why: "En vacío y baja gravedad las partículas siguen trayectorias balísticas de largo alcance.", affects: [habitat_infrastructure]}
+  mars:
+    - {item: "Gravedad de 3.71 m/s² (0.38 g)", why: "No reproducible de forma sostenida en campo.", affects: [rover_mobility, regolith_soil, habitat_infrastructure, extreme_survival]}
+    - {item: "Atmósfera de CO2 a ~600 Pa", why: "La presión terrestre más baja en superficie (~33 kPa en la cima del Everest) es ~50 veces mayor. Afecta enfriamiento convectivo, aerodinámica, arcos eléctricos y estabilidad del agua.", affects: [instrument_testing, habitat_infrastructure, water_ice_detection, extreme_survival]}
+    - {item: "Entrada, descenso y aterrizaje (EDL)", why: "Ningún ensayo terrestre combina densidad, composición, gravedad y velocidad de entrada marcianas; se valida por partes.", affects: [habitat_infrastructure]}
+    - {item: "Radiación en superficie (~0.64 mSv/día) y flujo UV-C", why: "La capa de ozono y el campo magnético terrestres lo impiden; los sitios de gran altitud solo aumentan el UV-A/B.", affects: [extreme_survival, astrobiology, instrument_testing]}
+    - {item: "Química oxidante del suelo (percloratos ~0.5 % en peso)", why: "Atacama contiene percloratos, pero en concentraciones órdenes de magnitud menores.", affects: [astrobiology, regolith_soil]}
+    - {item: "Inestabilidad del agua líquida cerca del punto triple", why: "A ~600 Pa el agua hierve o sublima; los procesos de salmueras y escarcha difieren de los terrestres.", affects: [water_ice_detection, astrobiology]}
+    - {item: "Tormentas de polvo globales y polvo de ~1-2 µm cargado electrostáticamente", why: "El polvo terrestre difiere en tamaño, composición y humedad.", affects: [habitat_infrastructure, instrument_testing, rover_mobility]}
+    - {item: "Retardo real de comunicaciones (~3-22 min por trayecto) e imposibilidad de abortar", why: "Se puede simular el retardo, no el riesgo operativo real.", affects: [extreme_survival, habitat_infrastructure]}
+
+# Qué SÍ se puede ensayar en campo, por objetivo.
+feasible_on_earth:
+  planetary_geology: ["Cartografía y muestreo de unidades análogas", "Protocolos de geología de campo con astronautas", "Validación de interpretación de imágenes orbitales con verdad de terreno"]
+  regolith_soil: ["Caracterización de materiales para simulantes", "Excavación, cribado y manejo de suelos sueltos", "Ensayos geotécnicos (a 1 g)"]
+  rover_mobility: ["Tracción y hundimiento en arena, tefra y pendientes (a 1 g)", "Navegación autónoma y detección de peligros", "Planificación de travesías con retardo simulado"]
+  instrument_testing: ["Espectroscopía (VNIR, Raman, LIBS, XRD) sobre mineralogía análoga", "Radar de penetración y sondeos geofísicos", "Calibración con muestras de composición conocida"]
+  habitat_infrastructure: ["Despliegue y operación de hábitats", "Mitigación de polvo en esclusas y mecanismos", "Energía solar y almacenamiento en ciclos día-noche o noche polar", "Uso de tubos de lava como refugio"]
+  extreme_survival: ["Fisiología y psicología en aislamiento y frío", "Logística con reabastecimiento limitado", "Operaciones con traje y EVA simuladas"]
+  water_ice_detection: ["Perforación en permafrost seco y hielo cementado", "Radar, neutrones y sondeo térmico sobre hielo enterrado", "Extracción de agua de suelo congelado (a presión terrestre)"]
+  astrobiology: ["Límites de la vida en aridez, frío, acidez y salinidad", "Preservación y detección de biofirmas en minerales análogos", "Protocolos de muestreo sin contaminación"]

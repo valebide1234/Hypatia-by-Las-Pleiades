@@ -1,0 +1,156 @@
+{
+  "trained_at": "2026-11-15T22:10:50Z",
+  "n_cells": 877,
+  "features": [
+    "tsurf_mean_K",
+    "tsurf_min_K",
+    "tsurf_max_K",
+    "diurnal_range_K",
+    "precip_mm_yr",
+    "soil_wetness",
+    "albedo",
+    "insolation_Wm2",
+    "wind_speed_ms",
+    "pressure_Pa",
+    "column_water_vapor_kgm2"
+  ],
+  "n_clusters": 8,
+  "algorithm": "k-means sobre variables estandarizadas (scikit-learn)",
+  "training_data": "Grilla global de celdas en tierra firme con variables de NASA POWER (MERRA-2, CERES)",
+  "silhouette": 0.339,
+  "pca": {
+    "explained_variance": [
+      0.7008,
+      0.1709
+    ],
+    "loadings": [
+      [
+        {
+          "feature": "tsurf_mean_K",
+          "loading": 0.357
+        },
+        {
+          "feature": "tsurf_max_K",
+          "loading": 0.352
+        },
+        {
+          "feature": "column_water_vapor_kgm2",
+          "loading": 0.347
+        }
+      ],
+      [
+        {
+          "feature": "precip_mm_yr",
+          "loading": 0.488
+        },
+        {
+          "feature": "insolation_Wm2",
+          "loading": -0.474
+        },
+        {
+          "feature": "diurnal_range_K",
+          "loading": -0.453
+        }
+      ]
+    ]
+  },
+  "isolation_forest": {
+    "trees": 300
+  },
+  "stability": {
+    "kmeans_ari": 0.897,
+    "kmeans_ari_min": 0.871,
+    "forest_spearman": 0.979,
+    "seeds": 5
+  },
+  "clusters": [
+    {
+      "id": 0,
+      "name": "cálido árido",
+      "cells": 99,
+      "pc1": 3.03,
+      "pc2": -2.41,
+      "rarity": 0.772,
+      "tsurf_mean_K": 297.54,
+      "precip_mm_yr": 119.78,
+      "albedo": 0.27
+    },
+    {
+      "id": 1,
+      "name": "polar hiperárido, cubierto de nieve o hielo",
+      "cells": 162,
+      "pc1": -4.357,
+      "pc2": -0.799,
+      "rarity": 0.574,
+      "tsurf_mean_K": 224.21,
+      "precip_mm_yr": 53.43,
+      "albedo": 0.76
+    },
+    {
+      "id": 2,
+      "name": "templado húmedo",
+      "cells": 114,
+      "pc1": 1.396,
+      "pc2": 0.723,
+      "rarity": 0.24,
+      "tsurf_mean_K": 280.43,
+      "precip_mm_yr": 673.9,
+      "albedo": 0.17
+    },
+    {
+      "id": 3,
+      "name": "cálido muy húmedo",
+      "cells": 75,
+      "pc1": 2.792,
+      "pc2": 1.316,
+      "rarity": 0.64,
+      "tsurf_mean_K": 297.85,
+      "precip_mm_yr": 1858.21,
+      "albedo": 0.14
+    },
+    {
+      "id": 4,
+      "name": "frío húmedo",
+      "cells": 190,
+      "pc1": -0.089,
+      "pc2": 1.515,
+      "rarity": 0.292,
+      "tsurf_mean_K": 265.72,
+      "precip_mm_yr": 620.39,
+      "albedo": 0.29
+    },
+    {
+      "id": 5,
+      "name": "cálido húmedo",
+      "cells": 87,
+      "pc1": 3.107,
+      "pc2": -0.404,
+      "rarity": 0.391,
+      "tsurf_mean_K": 297.4,
+      "precip_mm_yr": 912.85,
+      "albedo": 0.15
+    },
+    {
+      "id": 6,
+      "name": "templado semiárido, de gran altitud",
+      "cells": 50,
+      "pc1": 1.45,
+      "pc2": -1.434,
+      "rarity": 0.712,
+      "tsurf_mean_K": 279.41,
+      "precip_mm_yr": 335.01,
+      "albedo": 0.22
+    },
+    {
+      "id": 7,
+      "name": "polar árido, cubierto de nieve o hielo",
+      "cells": 100,
+      "pc1": -2.885,
+      "pc2": 0.059,
+      "rarity": 0.691,
+      "tsurf_mean_K": 244.99,
+      "precip_mm_yr": 227.59,
+      "albedo": 0.74
+    }
+  ]
+}

@@ -1,0 +1,457 @@
+# Sitios terrestres candidatos (punto de partida, no resultado predeterminado).
+# El módulo de descubrimiento añade celdas de una grilla global que no están aquí.
+#
+# lat/lon: punto representativo en WGS84 (grados decimales). coord_precision indica
+#   la incertidumbre del punto elegido; el análisis usa una ventana de 40 x 40 km.
+#   El pipeline valida cada punto comparando la elevación del DEM con `expected_elev_m`
+#   cuando se indica (rango plausible publicado), para detectar coordenadas erróneas.
+# geology: descriptores ordinales 0 / 0.5 / 1 codificados a partir de las referencias
+#   (codificación experta de literatura, NO mediciones). Lo no listado vale 0.
+# access: 1-5, valoración cualitativa de la logística de campo (no entra en la similitud):
+#   5 carretera y servicios cercanos · 4 carretera, permisos · 3 pista 4x4 / temporada corta
+#   2 logística de expedición (avión/barco) · 1 solo programas polares
+
+# nasa_use: used = true si existe un programa, campaña o producto de la NASA documentado para el
+#   sitio (pin rojo en el mapa). false = sin uso documentado EN ESTE CATÁLOGO; no afirma que la
+#   NASA nunca haya trabajado allí. `by` indica quién lo usa como análogo.
+
+sites:
+  - id: atacama_yungay
+    name: "Desierto de Atacama, núcleo hiperárido (Yungay)"
+    country: "Chile"
+    region: "Sudamérica"
+    lat: -24.08
+    lon: -69.92
+    coord_precision: "±0.05°"
+    geology_type: desert
+    summary: "Uno de los lugares más secos de la Tierra: suelos con sulfatos, cloruros, nitratos y percloratos, y casi sin materia orgánica."
+    geology: {g_evaporite: 1, g_sulfate: 1, g_perchlorate: 1, g_iron_oxide: 0.5, g_fluvial_lacustrine: 0.5, g_aeolian: 0.5, g_loose_regolith: 1}
+    access: {score: 4, note: "Acceso por carretera desde Antofagasta; sin servicios en el sitio."}
+    heritage: "Ensayos de rovers e instrumentos de detección de vida (proyecto Life in the Atacama)."
+    nasa_use: {used: true, by: "NASA", program: "Life in the Atacama y ARADS (NASA ASTEP / NASA Ames): ensayos de rovers y de perforación para detección de vida."}
+    refs: [navarro2003, cabrol2007]
+
+  - id: dry_valleys_university
+    name: "Valles Secos de McMurdo (University / Beacon Valley)"
+    country: "Antártida"
+    region: "Antártida"
+    lat: -77.86
+    lon: 160.70
+    coord_precision: "±0.05°"
+    geology_type: polar
+    summary: "Desierto polar hiperárido y frío: permafrost seco sobre hielo cementado, sin capa activa húmeda en las zonas altas."
+    geology: {g_basalt: 0.5, g_evaporite: 0.5, g_perchlorate: 0.5, g_aeolian: 0.5, g_ground_ice: 1, g_periglacial: 1, g_loose_regolith: 1}
+    access: {score: 1, note: "Solo mediante programas antárticos nacionales (helicóptero desde McMurdo), verano austral."}
+    heritage: "Análogo de referencia para el hielo subsuperficial de Marte; ensayos de perforación."
+    nasa_use: {used: true, by: "NASA", program: "Proyecto IceBite (NASA ASTEP): ensayos de perforación en permafrost seco para la propuesta de misión Icebreaker."}
+    refs: [marchant2007, heldmann2013, kounaves2010]
+
+  - id: don_juan_pond
+    name: "Don Juan Pond, Valle Wright"
+    country: "Antártida"
+    region: "Antártida"
+    lat: -77.565
+    lon: 161.19
+    coord_precision: "±0.02°"
+    geology_type: polar
+    summary: "Laguna de salmuera de CaCl2 que no se congela; alimentada por delicuescencia de sales y flujo subsuperficial."
+    geology: {g_basalt: 0.5, g_evaporite: 1, g_fluvial_lacustrine: 0.5, g_ground_ice: 1, g_periglacial: 1, g_loose_regolith: 1}
+    access: {score: 1, note: "Solo mediante programas antárticos nacionales."}
+    heritage: "Análogo de salmueras y de líneas de pendiente recurrentes en Marte."
+    nasa_use: {used: false, by: "Grupos universitarios", program: "Sin programa análogo de la NASA documentado en este catálogo."}
+    refs: [dickson2013, marchant2007]
+
+  - id: iceland_askja
+    name: "Askja - Dyngjusandur - Holuhraun, Tierras Altas"
+    country: "Islandia"
+    region: "Europa"
+    lat: 64.93
+    lon: -16.75
+    coord_precision: "±0.1°"
+    geology_type: volcanic
+    summary: "Desierto volcánico basáltico: caldera, coladas recientes, tefra y una extensa lámina de arena basáltica moldeada por el viento."
+    geology: {g_basalt: 1, g_volcanic: 1, g_pyroclastic: 1, g_aeolian: 1, g_fluvial_lacustrine: 0.5, g_silica: 0.5, g_periglacial: 0.5, g_loose_regolith: 1}
+    access: {score: 3, note: "Pistas de montaña (F-roads), solo en verano; refugios."}
+    heritage: "Entrenamiento geológico de astronautas Apolo (1965, 1967); estudios de arenas basálticas para Marte."
+    nasa_use: {used: true, by: "NASA", program: "Entrenamiento geológico de astronautas del programa Apolo (NASA, 1965 y 1967)."}
+    refs: [mangold2011, leveille2010]
+
+  - id: hawaii_saddle
+    name: "Mauna Loa - Mauna Kea (HI-SEAS, Pu'u Nene)"
+    country: "Estados Unidos (Hawái)"
+    region: "Oceanía"
+    lat: 19.65
+    lon: -155.48
+    coord_precision: "±0.05°"
+    geology_type: volcanic
+    summary: "Escudos basálticos de gran altitud con coladas, conos de ceniza, tubos de lava y tefra palagonítica (fuente del simulante JSC Mars-1)."
+    geology: {g_basalt: 1, g_volcanic: 1, g_lava_tubes: 1, g_pyroclastic: 1, g_iron_oxide: 0.5, g_loose_regolith: 0.5}
+    access: {score: 5, note: "Carretera (Saddle Road); permisos según la zona."}
+    heritage: "Hábitat HI-SEAS; programa BASALT; origen del simulante JSC Mars-1."
+    nasa_use: {used: true, by: "NASA", program: "Hábitat HI-SEAS (financiado por el Programa de Investigación Humana de la NASA), programa BASALT (NASA PSTAR) y simulante JSC Mars-1 (NASA JSC)."}
+    refs: [allen1998, lim2019]
+
+  - id: kilauea_kau
+    name: "Kīlauea - Desierto de Ka'ū"
+    country: "Estados Unidos (Hawái)"
+    region: "Oceanía"
+    lat: 19.36
+    lon: -155.33
+    coord_precision: "±0.05°"
+    geology_type: volcanic
+    summary: "Basaltos jóvenes y tefra alterados por gases volcánicos ácidos, con costras de sílice opalina y dunas basálticas."
+    geology: {g_basalt: 1, g_volcanic: 1, g_lava_tubes: 1, g_pyroclastic: 1, g_aeolian: 0.5, g_sulfate: 0.5, g_silica: 1, g_loose_regolith: 0.5}
+    access: {score: 5, note: "Parque Nacional de los Volcanes de Hawái; permisos de investigación."}
+    heritage: "Análogo de alteración ácido-sulfatada y sílice de Gusev; programa BASALT."
+    nasa_use: {used: true, by: "NASA", program: "Programa BASALT (NASA PSTAR): operaciones científicas de exploración humana en terreno basáltico."}
+    refs: [seelos2010, lim2019]
+
+  - id: salar_uyuni
+    name: "Salar de Uyuni"
+    country: "Bolivia"
+    region: "Sudamérica"
+    lat: -20.20
+    lon: -67.60
+    coord_precision: "±0.1° (centro del salar)"
+    expected_elev_m: [3600, 3700]
+    geology_type: evaporite
+    summary: "La mayor costra de sal del mundo, resto de paleolagos del Altiplano, a gran altitud y con alta radiación UV."
+    geology: {g_evaporite: 1, g_sulfate: 0.5, g_fluvial_lacustrine: 1}
+    access: {score: 4, note: "Acceso por carretera desde la ciudad de Uyuni; inundable en verano austral."}
+    heritage: "Análogo de depósitos de cloruros y cuencas evaporíticas marcianas."
+    nasa_use: {used: false, by: "Grupos académicos", program: "Sin programa análogo planetario de la NASA documentado en este catálogo (la NASA lo usó para calibrar el altímetro ICESat, no como análogo)."}
+    refs: [risacher1991, osterloo2008]
+
+  - id: namib_sand_sea
+    name: "Mar de Arena del Namib (Sossusvlei)"
+    country: "Namibia"
+    region: "África"
+    lat: -24.73
+    lon: 15.30
+    coord_precision: "±0.1°"
+    geology_type: desert
+    summary: "Erg costero hiperárido con dunas lineales y estrelladas de gran tamaño y arenas recubiertas de óxidos de hierro."
+    geology: {g_aeolian: 1, g_iron_oxide: 0.5, g_fluvial_lacustrine: 0.5, g_loose_regolith: 1}
+    access: {score: 4, note: "Carretera hasta Sesriem; parque nacional, permisos."}
+    heritage: "Estudios de morfología de dunas aplicados a Marte y Titán."
+    nasa_use: {used: false, by: "Grupos académicos", program: "Sin programa análogo de la NASA documentado en este catálogo."}
+    refs: [lancaster1989]
+
+  - id: rio_tinto
+    name: "Río Tinto (cabecera, Peña de Hierro)"
+    country: "España"
+    region: "Europa"
+    lat: 37.72
+    lon: -6.55
+    coord_precision: "±0.03°"
+    geology_type: acidic
+    summary: "Río ácido (pH ~2) con depósitos de sulfatos de hierro, jarosita, goethita y hematita, sobre la Faja Pirítica Ibérica."
+    geology: {g_sulfate: 1, g_iron_oxide: 1, g_fluvial_lacustrine: 0.5}
+    access: {score: 5, note: "Carretera y poblaciones cercanas."}
+    heritage: "Análogo mineralógico de Meridiani Planum; proyecto de perforación MARTE."
+    nasa_use: {used: true, by: "NASA", program: "Proyecto MARTE (Mars Astrobiology Research and Technology Experiment, NASA ASTEP): perforación robótica para búsqueda de vida subterránea."}
+    refs: [fernandez2005]
+
+  - id: haughton_devon
+    name: "Estructura de impacto Haughton, Isla Devon"
+    country: "Canadá (Nunavut)"
+    region: "Ártico"
+    lat: 75.37
+    lon: -89.68
+    coord_precision: "±0.05°"
+    geology_type: impact
+    summary: "Cráter de impacto de ~23 km bien conservado en un desierto polar con permafrost continuo; brechas de impacto y depósitos hidrotermales."
+    geology: {g_impact: 1, g_carbonate: 1, g_sulfate: 0.5, g_silica: 0.5, g_fluvial_lacustrine: 0.5, g_ground_ice: 1, g_periglacial: 1, g_loose_regolith: 0.5}
+    access: {score: 1, note: "Avión fletado desde Resolute Bay; campaña de verano."}
+    heritage: "Haughton-Mars Project (desde 1997): operaciones, rovers presurizados, perforación."
+    nasa_use: {used: true, by: "NASA", program: "Haughton-Mars Project (NASA Ames, Mars Institute, SETI), activo desde 1997."}
+    refs: [lee2005, osinski2005]
+
+  - id: meteor_crater
+    name: "Cráter Barringer (Meteor Crater)"
+    country: "Estados Unidos (Arizona)"
+    region: "Norteamérica"
+    lat: 35.027
+    lon: -111.022
+    coord_precision: "±0.005°"
+    expected_elev_m: [1500, 1800]
+    geology_type: impact
+    summary: "Cráter de impacto simple de 1.2 km, de los mejor conservados de la Tierra, en rocas sedimentarias."
+    geology: {g_impact: 1, g_carbonate: 0.5, g_fluvial_lacustrine: 0.5, g_loose_regolith: 0.5}
+    access: {score: 5, note: "Carretera; propiedad privada, requiere autorización."}
+    heritage: "Entrenamiento de astronautas Apolo; referencia para mecánica de cráteres."
+    nasa_use: {used: true, by: "NASA", program: "Entrenamiento geológico de astronautas del programa Apolo (NASA / USGS)."}
+    refs: [kring2007]
+
+  - id: sfvf_sp_crater
+    name: "Campo volcánico de San Francisco (SP Crater - Black Point)"
+    country: "Estados Unidos (Arizona)"
+    region: "Norteamérica"
+    lat: 35.60
+    lon: -111.55
+    coord_precision: "±0.05°"
+    geology_type: volcanic
+    summary: "Conos de ceniza y coladas basálticas jóvenes sobre meseta sedimentaria; fuente de la ceniza del simulante lunar JSC-1."
+    geology: {g_basalt: 1, g_volcanic: 1, g_lava_tubes: 0.5, g_pyroclastic: 1, g_loose_regolith: 0.5}
+    access: {score: 5, note: "Pistas de tierra desde Flagstaff."}
+    heritage: "Campañas Desert RATS de la NASA; entrenamiento Apolo; simulante JSC-1."
+    nasa_use: {used: true, by: "NASA", program: "Campañas Desert RATS de la NASA, entrenamiento Apolo y fuente del simulante lunar JSC-1."}
+    refs: [ross2013, mckay1994]
+
+  - id: craters_of_the_moon
+    name: "Craters of the Moon, llanura del río Snake"
+    country: "Estados Unidos (Idaho)"
+    region: "Norteamérica"
+    lat: 43.42
+    lon: -113.52
+    coord_precision: "±0.05°"
+    geology_type: volcanic
+    summary: "Campo de lavas basálticas a lo largo de una fisura: coladas, conos de salpicadura y de ceniza, y tubos de lava."
+    geology: {g_basalt: 1, g_volcanic: 1, g_lava_tubes: 1, g_pyroclastic: 1, g_loose_regolith: 0.5}
+    access: {score: 5, note: "Carretera; monumento nacional, permisos de investigación."}
+    heritage: "Entrenamiento Apolo 14; programas FINESSE y BASALT de la NASA."
+    nasa_use: {used: true, by: "NASA", program: "Entrenamiento de astronautas de Apolo 14 y programas FINESSE y BASALT de la NASA."}
+    refs: [lim2019, sauro2020]
+
+  - id: lanzarote_timanfaya
+    name: "Lanzarote (Timanfaya - tubo de La Corona)"
+    country: "España (Canarias)"
+    region: "Europa"
+    lat: 29.01
+    lon: -13.75
+    coord_precision: "±0.05°"
+    geology_type: volcanic
+    summary: "Isla volcánica árida con coladas y lapilli de erupciones históricas y uno de los mayores tubos de lava conocidos."
+    geology: {g_basalt: 1, g_volcanic: 1, g_lava_tubes: 1, g_pyroclastic: 1, g_aeolian: 0.5, g_loose_regolith: 0.5}
+    access: {score: 5, note: "Carretera y servicios; parque nacional, permisos."}
+    heritage: "Curso PANGAEA de la ESA para astronautas; ensayos de exploración de tubos de lava."
+    nasa_use: {used: false, by: "ESA (curso PANGAEA)", program: "Sin programa análogo de la NASA documentado en este catálogo."}
+    refs: [sauro2020]
+
+  - id: amboy_crater
+    name: "Cráter Amboy, Desierto de Mojave"
+    country: "Estados Unidos (California)"
+    region: "Norteamérica"
+    lat: 34.544
+    lon: -115.791
+    coord_precision: "±0.01°"
+    geology_type: volcanic
+    summary: "Cono de ceniza y campo de lava basáltica en un desierto, con estelas de viento y arena sobre la lava, junto a una playa salina."
+    geology: {g_basalt: 1, g_volcanic: 1, g_pyroclastic: 0.5, g_aeolian: 1, g_evaporite: 0.5, g_loose_regolith: 0.5}
+    access: {score: 5, note: "Carretera (Ruta 66)."}
+    heritage: "Sitio análogo clásico de interacción viento-lava; datos de campo archivados en el PDS."
+    nasa_use: {used: true, by: "NASA", program: "Sitio análogo de campo cuyos datos archiva la NASA en el PDS Geosciences Node."}
+    refs: [greeley_amboy, peters2008]
+
+  - id: utah_mdrs
+    name: "Desierto de Utah, Hanksville (MDRS)"
+    country: "Estados Unidos (Utah)"
+    region: "Norteamérica"
+    lat: 38.406
+    lon: -110.792
+    coord_precision: "±0.01°"
+    geology_type: sedimentary
+    summary: "Tierras baldías de sedimentos jurásicos: lutitas arcillosas, yeso, concreciones de hierro y canales fluviales invertidos."
+    geology: {g_fluvial_lacustrine: 1, g_clay: 1, g_sulfate: 1, g_iron_oxide: 0.5, g_loose_regolith: 0.5}
+    access: {score: 5, note: "Carretera hasta Hanksville y pista corta."}
+    heritage: "Mars Desert Research Station (Mars Society); ensayos de rovers de varias agencias."
+    nasa_use: {used: false, by: "Mars Society (MDRS)", program: "Sin programa análogo de la NASA documentado en este catálogo."}
+    refs: [clarke2011]
+
+  - id: svalbard_bockfjorden
+    name: "Complejo volcánico de Bockfjorden, Svalbard"
+    country: "Noruega (Svalbard)"
+    region: "Ártico"
+    lat: 79.43
+    lon: 13.35
+    coord_precision: "±0.1°"
+    geology_type: polar
+    summary: "Volcán basáltico cuaternario y manantiales termales en permafrost ártico, con carbonatos comparables a los del meteorito ALH84001."
+    geology: {g_basalt: 1, g_volcanic: 1, g_carbonate: 1, g_ground_ice: 1, g_periglacial: 1}
+    access: {score: 2, note: "Expedición en barco desde Longyearbyen; verano."}
+    heritage: "Campañas AMASE: ensayo de instrumentos de Curiosity y ExoMars."
+    nasa_use: {used: true, by: "NASA", program: "Expediciones AMASE, financiadas por NASA ASTEP: ensayo de los instrumentos CheMin y SAM de Curiosity."}
+    refs: [treiman2002, preston2014]
+
+  - id: dallol
+    name: "Área geotermal de Dallol, Depresión de Danakil"
+    country: "Etiopía"
+    region: "África"
+    lat: 14.242
+    lon: 40.300
+    coord_precision: "±0.01°"
+    expected_elev_m: [-140, -60]
+    geology_type: acidic
+    summary: "Sistema hidrotermal hiperácido e hipersalino bajo el nivel del mar: salmueras calientes, sales, azufre y óxidos de hierro."
+    geology: {g_basalt: 0.5, g_volcanic: 0.5, g_evaporite: 1, g_sulfate: 1, g_iron_oxide: 1}
+    access: {score: 2, note: "Logística de expedición; calor extremo y condiciones de seguridad variables."}
+    heritage: "Estudios de los límites de la vida en ambientes poliextremos."
+    nasa_use: {used: false, by: "Europlanet y grupos europeos", program: "Sin programa análogo de la NASA documentado en este catálogo."}
+    refs: [cavalazzi2019]
+
+  - id: pilbara_dresser
+    name: "Pilbara, Formación Dresser (North Pole Dome)"
+    country: "Australia"
+    region: "Oceanía"
+    lat: -21.15
+    lon: 119.43
+    coord_precision: "±0.1°"
+    geology_type: hydrothermal
+    summary: "Rocas de ~3500 millones de años con estromatolitos y depósitos de fuentes termales, en un cinturón de basaltos arcaicos."
+    geology: {g_basalt: 1, g_volcanic: 0.5, g_sulfate: 1, g_iron_oxide: 0.5, g_carbonate: 0.5, g_silica: 1, g_fluvial_lacustrine: 0.5}
+    access: {score: 3, note: "Pistas 4x4 desde Marble Bar; clima muy cálido."}
+    heritage: "Entrenamiento de equipos científicos de Mars 2020 y ExoMars en biofirmas antiguas."
+    nasa_use: {used: true, by: "NASA y ESA", program: "Viaje de campo conjunto de los equipos científicos de Mars 2020 (NASA) y ExoMars (ESA), 2019."}
+    refs: [djokic2017]
+
+  - id: qaidam_dalangtan
+    name: "Cuenca de Qaidam (playa de Dalangtan)"
+    country: "China"
+    region: "Asia"
+    lat: 38.3
+    lon: 91.4
+    coord_precision: "aproximada (±0.5°): sector noroeste de la cuenca"
+    expected_elev_m: [2600, 3400]
+    geology_type: evaporite
+    summary: "Cuenca endorreica de gran altitud, hiperárida y fría: playas salinas, sulfatos, yardangs y dunas."
+    geology: {g_evaporite: 1, g_sulfate: 1, g_aeolian: 1, g_fluvial_lacustrine: 1, g_clay: 0.5, g_loose_regolith: 0.5}
+    access: {score: 3, note: "Pistas; zona remota del altiplano tibetano."}
+    heritage: "Sitio análogo de Marte propuesto para la exploración china."
+    nasa_use: {used: false, by: "Instituciones chinas", program: "Sin programa análogo de la NASA documentado en este catálogo."}
+    refs: [xiao2017]
+
+  - id: lonar_crater
+    name: "Cráter Lonar"
+    country: "India"
+    region: "Asia"
+    lat: 19.977
+    lon: 76.508
+    coord_precision: "±0.005°"
+    expected_elev_m: [450, 620]
+    geology_type: impact
+    summary: "Cráter de impacto de 1.8 km excavado en basaltos del Decán: caso raro de impacto en basalto, como en Marte y en los mares lunares."
+    geology: {g_impact: 1, g_basalt: 1, g_volcanic: 0.5, g_fluvial_lacustrine: 0.5, g_evaporite: 0.5}
+    access: {score: 5, note: "Carretera y población junto al cráter."}
+    heritage: "Estudio de eyecta y vidrios de impacto en basalto."
+    nasa_use: {used: false, by: "Grupos académicos", program: "Sin programa análogo de la NASA documentado en este catálogo."}
+    refs: [maloof2010]
+
+  - id: ries_crater
+    name: "Cráter Nördlinger Ries"
+    country: "Alemania"
+    region: "Europa"
+    lat: 48.87
+    lon: 10.57
+    coord_precision: "±0.05°"
+    geology_type: impact
+    summary: "Cráter complejo de ~24 km con suevita (brecha de impacto con fundido), eyecta conservada y sedimentos de lago de cráter."
+    geology: {g_impact: 1, g_carbonate: 0.5, g_clay: 0.5, g_fluvial_lacustrine: 1}
+    access: {score: 5, note: "Carretera, canteras accesibles y museo."}
+    heritage: "Entrenamiento de astronautas Apolo 14 y 17; cursos de la ESA."
+    nasa_use: {used: true, by: "NASA", program: "Entrenamiento geológico de astronautas de Apolo 14 y Apolo 17 (NASA, 1970)."}
+    refs: [stoffler2013]
+
+  - id: mistastin
+    name: "Estructura de impacto del lago Mistastin (Kamestastin)"
+    country: "Canadá (Labrador)"
+    region: "Norteamérica"
+    lat: 55.88
+    lon: -63.30
+    coord_precision: "±0.05°"
+    geology_type: impact
+    summary: "Cráter de ~28 km excavado en anortosita: uno de los pocos análogos de un impacto en corteza de tipo tierras altas lunares."
+    geology: {g_impact: 1, g_anorthosite: 1, g_fluvial_lacustrine: 0.5, g_periglacial: 0.5}
+    access: {score: 2, note: "Hidroavión; campaña de verano."}
+    heritage: "Misiones análogas lunares de la Agencia Espacial Canadiense."
+    nasa_use: {used: false, by: "Agencia Espacial Canadiense (CSA)", program: "Sin programa análogo de la NASA documentado en este catálogo."}
+    refs: [mader2018]
+
+  - id: stillwater_complex
+    name: "Complejo de Stillwater"
+    country: "Estados Unidos (Montana)"
+    region: "Norteamérica"
+    lat: 45.40
+    lon: -109.90
+    coord_precision: "±0.1°"
+    geology_type: anorthosite
+    summary: "Intrusión máfica estratificada con anortositas y noritas; materia prima de los simulantes de tierras altas lunares NU-LHT."
+    geology: {g_anorthosite: 1}
+    access: {score: 4, note: "Carretera; zona minera y de montaña."}
+    heritage: "Fuente de los simulantes NU-LHT de regolito de tierras altas."
+    nasa_use: {used: true, by: "NASA", program: "Materia prima de los simulantes de regolito lunar NU-LHT (NASA MSFC / USGS)."}
+    refs: [stoeser2010]
+
+  - id: axel_heiberg_mars
+    name: "Isla Axel Heiberg (estación McGill, Expedition Fiord)"
+    country: "Canadá (Nunavut)"
+    region: "Ártico"
+    lat: 79.415
+    lon: -90.75
+    coord_precision: "±0.05°"
+    geology_type: polar
+    summary: "Desierto polar con permafrost de más de 500 m atravesado por manantiales salinos perennes y diapiros de yeso y sal."
+    geology: {g_evaporite: 1, g_sulfate: 1, g_carbonate: 0.5, g_fluvial_lacustrine: 0.5, g_ground_ice: 1, g_periglacial: 1, g_loose_regolith: 0.5}
+    access: {score: 1, note: "Avión fletado desde Resolute Bay; campaña de verano."}
+    heritage: "Estación de investigación ártica de McGill; estudios de manantiales fríos como análogo marciano."
+    nasa_use: {used: false, by: "Universidad McGill y CSA", program: "Sin programa análogo de la NASA documentado en este catálogo."}
+    refs: [pollard2009]
+
+  - id: white_sands
+    name: "White Sands"
+    country: "Estados Unidos (Nuevo México)"
+    region: "Norteamérica"
+    lat: 32.80
+    lon: -106.28
+    coord_precision: "±0.05°"
+    geology_type: evaporite
+    summary: "El mayor campo de dunas de yeso del mundo, alimentado por una playa evaporítica."
+    geology: {g_aeolian: 1, g_sulfate: 1, g_evaporite: 1, g_fluvial_lacustrine: 0.5, g_loose_regolith: 1}
+    access: {score: 5, note: "Carretera; parque nacional y zona militar contigua."}
+    heritage: "Análogo de las dunas de yeso de Olympia Undae."
+    nasa_use: {used: false, by: "Grupos académicos", program: "Sin programa análogo planetario de la NASA documentado en este catálogo."}
+    refs: [szynkiewicz2010]
+
+  - id: licancabur
+    name: "Volcán Licancabur y lagunas altoandinas"
+    country: "Chile / Bolivia"
+    region: "Sudamérica"
+    lat: -22.83
+    lon: -67.88
+    coord_precision: "±0.02°"
+    geology_type: volcanic
+    summary: "Estratovolcán de casi 6000 m con lago de cráter y lagunas salinas en su base: baja presión, frío y radiación UV muy alta."
+    geology: {g_volcanic: 1, g_pyroclastic: 0.5, g_evaporite: 0.5, g_fluvial_lacustrine: 0.5, g_periglacial: 0.5, g_loose_regolith: 0.5}
+    access: {score: 3, note: "Pista hasta la base; ascenso a gran altitud."}
+    heritage: "High Lakes Project (NASA/SETI): lagos en desecación como análogo del Marte temprano."
+    nasa_use: {used: true, by: "NASA", program: "High Lakes Project (NASA Astrobiology Institute, SETI y NASA Ames)."}
+    refs: [cabrol2009]
+
+  - id: channeled_scabland
+    name: "Channeled Scabland (Dry Falls)"
+    country: "Estados Unidos (Washington)"
+    region: "Norteamérica"
+    lat: 47.607
+    lon: -119.36
+    coord_precision: "±0.05°"
+    geology_type: fluvial
+    summary: "Paisaje tallado por megainundaciones glaciares sobre basaltos de inundación: cataratas secas, canales y barras gigantes."
+    geology: {g_basalt: 1, g_volcanic: 1, g_fluvial_lacustrine: 1, g_aeolian: 0.5, g_loose_regolith: 0.5}
+    access: {score: 5, note: "Carretera y parques estatales."}
+    heritage: "Análogo clásico de los canales de desbordamiento marcianos."
+    nasa_use: {used: true, by: "NASA", program: "Guía de campo y conferencia de geología planetaria patrocinadas por la NASA (1978) sobre los canales de Marte."}
+    refs: [baker1978]
+
+  - id: lava_beds
+    name: "Lava Beds, volcán Medicine Lake"
+    country: "Estados Unidos (California)"
+    region: "Norteamérica"
+    lat: 41.71
+    lon: -121.51
+    coord_precision: "±0.05°"
+    geology_type: volcanic
+    summary: "Campo de lavas basálticas con cientos de tubos de lava accesibles."
+    geology: {g_basalt: 1, g_volcanic: 1, g_lava_tubes: 1, g_pyroclastic: 0.5}
+    access: {score: 5, note: "Carretera; monumento nacional, permisos."}
+    heritage: "Ensayos de exploración robótica de cuevas (proyecto BRAILLE de la NASA)."
+    nasa_use: {used: true, by: "NASA", program: "Proyecto BRAILLE (NASA PSTAR): exploración robótica de tubos de lava."}
+    refs: [sauro2020]

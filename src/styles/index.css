@@ -1,0 +1,72 @@
+@import "@fontsource-variable/inter";
+@import "@fontsource/cormorant-garamond/400.css";
+@import "@fontsource/cormorant-garamond/500.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-space-950 font-sans text-slate-100 antialiased;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-pleiad-300 ring-offset-2 ring-offset-space-950;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium tracking-wide transition-colors disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-pleiad-300 text-space-950 hover:bg-white;
+  }
+  .btn-ghost {
+    @apply btn border border-white/25 bg-space-950/40 text-slate-100 backdrop-blur hover:border-white/50 hover:bg-space-800/60;
+  }
+  .field {
+    @apply w-full rounded-lg border border-white/15 bg-space-900/70 px-3 py-2.5 text-sm text-slate-100 placeholder:text-slate-500 focus:border-pleiad-400;
+  }
+  .glass {
+    @apply rounded-2xl border border-white/10 bg-space-900/70 shadow-2xl shadow-black/50 backdrop-blur-md;
+  }
+  .sky-text {
+    text-shadow: 0 0 24px rgba(3, 5, 11, 0.9), 0 0 4px rgba(3, 5, 11, 0.8);
+  }
+}
+
+/* Guided tour: each note fades in as its step starts. */
+@keyframes tour-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.tour-in {
+  animation: tour-in 220ms ease-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tour-in {
+    animation: none;
+  }
+}
+
+/* Cesium: keep the mandatory imagery credits legible but unobtrusive on the dark UI. */
+.hypatia-globe .cesium-widget-credits {
+  @apply rounded bg-space-950/60 px-1.5 py-0.5 text-[10px] text-slate-400;
+}
+.hypatia-globe .cesium-viewer-bottom {
+  left: auto;
+  right: 0.75rem;
+  bottom: 0.25rem;
+}

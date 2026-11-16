@@ -1,0 +1,17 @@
+{
+  "version": "0.1.0",
+  "built_at": "2026-11-15T21:55:55Z",
+  "elapsed_s": 60.4,
+  "window_km": 40.0,
+  "baseline_m": 463.0,
+  "earth_climate_years": 10,
+  "n_measurements": 2268,
+  "n_missing": 6,
+  "warnings": [
+    "hawaii_saddle: la celda de reanálisis está 1149 m por debajo del sitio; temperatura y presión se corrigieron por elevación (dato derivado)",
+    "lanzarote_timanfaya: la celda climática es 96% océano; temperatura, viento y humedad son representativos del entorno marino, no del terreno del sitio",
+    "dallol: la celda de reanálisis está 1086 m por encima del sitio; temperatura y presión se corrigieron por elevación (dato derivado)",
+    "stillwater_complex: la celda de reanálisis está 306 m por debajo del sitio; temperatura y presión se corrigieron por elevación (dato derivado)",
+    "licancabur: la celda de reanálisis está 1324 m por debajo del sitio; temperatura y presión se corrigieron por elevación (dato derivado)"
+  ]
+}

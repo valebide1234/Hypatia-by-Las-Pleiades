@@ -1,0 +1,94 @@
+{
+  "checked_at": "2026-11-15T21:55:55Z",
+  "earth_collections": [
+    {
+      "label": "MERRA-2 mensual, diagnósticos de superficie (temperatura, viento, presión)",
+      "short_name": "M2TMNXSLV",
+      "version": "5.12.4",
+      "title": "MERRA-2 tavgM_2d_slv_Nx: 2d,Monthly mean,Time-Averaged,Single-Level,Assimilation,Single-Level Diagnostics 0.625 x 0.5 degree V5.12.4 (M2TMNXSLV)",
+      "collection_start": "1980-01-01T00:00:00.000Z",
+      "latest_granule_start": "2026-09-01T00:00:00.000Z",
+      "latest_granule_end": "2026-09-30T23:59:59.000Z",
+      "concept_id": "C1276812859-GES_DISC"
+    },
+    {
+      "label": "MERRA-2 mensual, superficie terrestre (humedad del suelo)",
+      "short_name": "M2TMNXLND",
+      "version": "5.12.4",
+      "title": "MERRA-2 tavgM_2d_lnd_Nx: 2d,Monthly mean,Time-Averaged,Single-Level,Assimilation,Land Surface Diagnostics 0.625 x 0.5 degree V5.12.4 (M2TMNXLND)",
+      "collection_start": "1980-01-01T00:00:00.000Z",
+      "latest_granule_start": "2026-09-01T00:00:00.000Z",
+      "latest_granule_end": "2026-09-30T23:59:59.000Z",
+      "concept_id": "C1276812856-GES_DISC"
+    },
+    {
+      "label": "MERRA-2 mensual, aerosoles (espesor óptico)",
+      "short_name": "M2TMNXAER",
+      "version": "5.12.4",
+      "title": "MERRA-2 tavgM_2d_aer_Nx: 2d,Monthly mean,Time-averaged,Single-Level,Assimilation,Aerosol Diagnostics 0.625 x 0.5 degree V5.12.4 (M2TMNXAER)",
+      "collection_start": "1980-01-01T00:00:00.000Z",
+      "latest_granule_start": "2026-09-01T00:00:00.000Z",
+      "latest_granule_end": "2026-09-30T23:59:59.000Z",
+      "concept_id": "C1276812866-GES_DISC"
+    },
+    {
+      "label": "MODIS/Terra temperatura de la superficie terrestre, mensual 0.05°",
+      "short_name": "MOD11C3",
+      "version": "061",
+      "title": "MODIS/Terra Land Surface Temperature/Emissivity Monthly L3 Global 0.05Deg CMG V061",
+      "collection_start": "2000-02-01T00:00:00.000Z",
+      "latest_granule_start": "2026-10-01T00:00:00.000Z",
+      "latest_granule_end": "2026-10-31T23:59:59.000Z",
+      "concept_id": "C2565788897-LPCLOUD"
+    },
+    {
+      "label": "MODIS albedo BRDF, 0.05°",
+      "short_name": "MCD43C3",
+      "version": "061",
+      "title": "MODIS/Terra+Aqua BRDF/Albedo Albedo Daily L3 Global 0.05Deg CMG V061",
+      "collection_start": "2000-02-16T00:00:00.000Z",
+      "latest_granule_start": "2026-11-06T00:00:00.000Z",
+      "latest_granule_end": "2026-11-13T23:59:59.999Z",
+      "concept_id": "C2532068039-LPCLOUD"
+    }
+  ],
+  "planetary_archives": [
+    {
+      "label": "LRO Diviner GCP (temperatura lunar)",
+      "url": "https://pds-geosciences.wustl.edu/lro/urn-nasa-pds-lro_diviner_derived1/data_derived_gcp/global_cumul_avg_cyl_00n10n_002.lbl",
+      "status": 200,
+      "last_modified": "Wed, 15 Mar 2017 20:33:39 GMT"
+    },
+    {
+      "label": "LRO LOLA LDEM_64 (topografía lunar)",
+      "url": "https://pds-geosciences.wustl.edu/lro/lro-l-lola-3-rdr-v1/lrolol_1xxx/data/lola_gdr/cylindrical/img/ldem_64.lbl",
+      "status": 200,
+      "last_modified": "Mon, 04 Mar 2019 20:54:37 GMT"
+    },
+    {
+      "label": "MGS MOLA MEGDR 463 m (topografía de Marte)",
+      "url": "https://planetarymaps.usgs.gov/mosaic/Mars_MGS_MOLA_DEM_mosaic_global_463m.tif",
+      "status": 200,
+      "last_modified": "Thu, 10 Nov 2022 03:31:07 GMT"
+    },
+    {
+      "label": "MGS TES albedo (Marte)",
+      "url": "https://planetarymaps.usgs.gov/mosaic/Mars_MGS_TES_Albedo_mosaic_global_7410m.tif",
+      "status": 200,
+      "last_modified": "Thu, 10 Nov 2022 03:48:54 GMT"
+    },
+    {
+      "label": "MGS TES inercia térmica (Marte)",
+      "url": "https://pds-geosciences.wustl.edu/mgs/mgs-m-tes-5-timap-v1/mgst_9001/data/global_ti_night_2007.lbl",
+      "status": 200,
+      "last_modified": "Thu, 05 Nov 2009 17:58:46 GMT"
+    },
+    {
+      "label": "Copernicus DEM GLO-90 (tesela de ejemplo)",
+      "url": "https://copernicus-dem-90m.s3.amazonaws.com/Copernicus_DSM_COG_30_S25_00_W070_00_DEM/Copernicus_DSM_COG_30_S25_00_W070_00_DEM.tif",
+      "status": 200,
+      "last_modified": "Mon, 09 May 2022 13:34:10 GMT"
+    }
+  ],
+  "earth_climate_window_years": 10
+}

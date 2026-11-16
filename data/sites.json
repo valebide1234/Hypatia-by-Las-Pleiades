@@ -1,0 +1,3109 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-11-15",
+  "sites": [
+    {
+      "id": "haughton-crater",
+      "name": "Haughton Crater, Devon Island",
+      "country": "Canada",
+      "lat": 75.38,
+      "lon": -89.68,
+      "origin": "nasa_official",
+      "programs": [
+        "Haughton-Mars Project (NASA Ames / Mars Institute / SETI Institute)"
+      ],
+      "targets": [
+        "mars",
+        "moon"
+      ],
+      "summary": "A ~23 km impact structure in a polar desert (formed ~39–31 million years ago; the age is debated), used since 1997 to study impact geology, periglacial processes and the human and robotic exploration of the Moon and Mars.",
+      "similarities": [
+        {
+          "qualityId": "impact_craters",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Well-preserved complex crater with shocked gneiss, impact-melt breccias and impact-generated hydrothermal deposits, comparable to mid-sized Martian craters."
+        },
+        {
+          "qualityId": "glacial_periglacial",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Ice-wedge polygons, gullies and patterned ground in permafrost resemble Martian periglacial landforms."
+        },
+        {
+          "qualityId": "permafrost_ground_ice",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Continuous permafrost with ground ice close to the surface."
+        },
+        {
+          "qualityId": "extreme_cold",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Polar-desert climate with mean annual temperatures around −16 °C."
+        },
+        {
+          "qualityId": "hydrothermal_deposits",
+          "target": "mars",
+          "strength": "partial",
+          "explanation": "Fossil impact-induced hydrothermal veins and vugs, a template for impact-driven habitats on Mars."
+        },
+        {
+          "qualityId": "isolation_remoteness",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Reachable only by aircraft; field crews operate with limited logistics and communications."
+        },
+        {
+          "qualityId": "rover_eva_traversal",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Rugged, unvegetated terrain used for rover (K10), pressurised-vehicle and simulated EVA traverses."
+        },
+        {
+          "qualityId": "impact_craters",
+          "target": "moon",
+          "strength": "moderate",
+          "explanation": "Impact lithologies and crater structure useful for training crews to recognise impactites."
+        },
+        {
+          "qualityId": "isolation_remoteness",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Remote field base used to rehearse lunar surface operations and medical contingencies."
+        },
+        {
+          "qualityId": "rover_eva_traversal",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Used for robotic and simulated lunar EVA operations, including a 2006 lunar medical contingency simulation."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "mars",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Martian surface has neither."
+        },
+        {
+          "target": "mars",
+          "explanation": "Surface gravity is about 2.6 times that of Mars, which changes slope stability, sediment transport and crew workload."
+        },
+        {
+          "target": "mars",
+          "explanation": "Seasonal liquid water and active streams; the Martian surface is too cold and the air too thin for stable liquid water today."
+        },
+        {
+          "target": "mars",
+          "explanation": "Microbial life and sparse vegetation are present, unlike any known Martian environment.",
+          "qualityId": "low_biomass"
+        },
+        {
+          "target": "moon",
+          "explanation": "The Moon has no permafrost, water ice in the sampled terrain, or periglacial processes; only the impact geology transfers.",
+          "qualityId": "permafrost_ground_ice"
+        },
+        {
+          "target": "moon",
+          "explanation": "Surface gravity is about six times that of the Moon, so suits, rovers and regolith mechanics behave differently."
+        }
+      ],
+      "researchUse": [
+        "Haughton-Mars Project expeditions (1997–present) on impact geology, astrobiology and exploration technology.",
+        "K10 rover field tests and robotic follow-up of human traverses.",
+        "2006 NASA lunar medical contingency simulation.",
+        "MIT/NASA studies of interplanetary supply-chain logistics (2005)."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-haughton-rovers.jpg",
+            "caption": "NASA K10 rovers operating near the Haughton-Mars Project base camp, Devon Island.",
+            "source": "Wikimedia Commons",
+            "instrument": "Ground photograph",
+            "date": "2007-07-18",
+            "credit": "NASA/Matt Deans",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rovers_Red_and_Black_at_Houghton_Crater_Devon_Island_Canada.jpg"
+          },
+          {
+            "url": "/images/sites/e-haughton-gneiss.jpg",
+            "caption": "Shocked Precambrian gneiss from the Haughton impact structure (8.8 cm across).",
+            "source": "Wikimedia Commons",
+            "instrument": "Specimen photograph",
+            "date": "2015-03-17",
+            "credit": "James St. John",
+            "license": "CC BY 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shocked_gneiss_(Eocene,_39_Ma;_Haughton_Impact_Structure,_Devon_Island,_northern_Canada)_3_(16247340623).jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/m-victoria.jpg",
+            "caption": "Victoria crater (~750 m), Meridiani Planum, with Opportunity on the rim.",
+            "source": "Wikimedia Commons",
+            "instrument": "MRO HiRISE",
+            "date": "2006-10-03",
+            "credit": "NASA/JPL/University of Arizona",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Victoria_crater_from_HiRise.jpg",
+            "target": "mars"
+          },
+          {
+            "url": "/images/sites/l-linne.jpg",
+            "caption": "Linné crater (2.2 km), a young, fresh simple crater in mare basalt, Mare Serenitatis.",
+            "source": "Wikimedia Commons",
+            "instrument": "Lunar Reconnaissance Orbiter Camera (NAC)",
+            "date": "2014-01-18",
+            "credit": "NASA/GSFC/Arizona State University",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Linne_(LRO)_1.png",
+            "target": "moon"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "Haughton Mars Project (HMP), Canadian Arctic (NASA)",
+          "url": "https://www.nasa.gov/mission/haughton-mars-project-hmp-canadian-arctic/",
+          "type": "nasa"
+        },
+        {
+          "title": "Haughton-Mars Project (HMP)/NASA 2006 Lunar Medical Contingency Simulation: An Overview (NASA NTRS)",
+          "url": "https://ntrs.nasa.gov/citations/20060056230",
+          "type": "nasa"
+        },
+        {
+          "title": "Lee, P. et al. (2005) The Haughton-Mars Project: Overview of science investigations at the Haughton impact structure. Meteoritics & Planetary Science 40",
+          "url": "https://doi.org/10.1111/j.1945-5100.2005.tb00144.x",
+          "type": "peer_reviewed"
+        },
+        {
+          "title": "Osinski, G. R. et al. (2005) Geological overview and cratering model for the Haughton impact structure. Meteoritics & Planetary Science 40",
+          "url": "https://doi.org/10.1111/j.1945-5100.2005.tb00145.x",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "black-point-lava-flow",
+      "name": "Black Point Lava Flow, San Francisco Volcanic Field",
+      "country": "United States",
+      "lat": 35.69,
+      "lon": -111.47,
+      "origin": "nasa_official",
+      "programs": [
+        "Desert RATS (NASA JSC)"
+      ],
+      "targets": [
+        "moon"
+      ],
+      "summary": "A basaltic lava flow and cinder field north of Flagstaff that has been NASA's main Desert Research and Technology Studies (D-RATS) site for testing pressurised rovers, robots and EVA operations.",
+      "similarities": [
+        {
+          "qualityId": "basaltic_volcanism",
+          "target": "moon",
+          "strength": "moderate",
+          "explanation": "Basalt flows and cinder resemble the volcanic plains of the lunar maria."
+        },
+        {
+          "qualityId": "rover_eva_traversal",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Used for multi-day pressurised-rover missions (2008–2011, 2022) and EVA traverse planning."
+        },
+        {
+          "qualityId": "regolith_fines",
+          "target": "moon",
+          "strength": "partial",
+          "explanation": "Cinder and fine volcanic sand allow mobility testing, though grain shapes and mechanics differ from lunar regolith."
+        },
+        {
+          "qualityId": "instrument_sample_testing",
+          "target": "moon",
+          "strength": "moderate",
+          "explanation": "Field geology tools, sampling procedures and science back-room operations tested during D-RATS."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "moon",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Moon has neither."
+        },
+        {
+          "target": "moon",
+          "explanation": "Surface gravity is about six times that of the Moon, so suits, rovers and regolith mechanics behave differently."
+        },
+        {
+          "target": "moon",
+          "explanation": "Terrestrial fines lack agglutinates, nanophase iron and the sharp, unweathered grains of lunar regolith produced by space weathering."
+        },
+        {
+          "target": "moon",
+          "explanation": "Desert vegetation, wind and rain-driven erosion are absent on the Moon."
+        },
+        {
+          "target": "moon",
+          "explanation": "Daylight and thermal cycles differ greatly from the 14-day lunar day and extreme lunar polar lighting."
+        }
+      ],
+      "researchUse": [
+        "D-RATS 2008: 72-hour crewed test of the Small Pressurized Rover.",
+        "D-RATS 2009: Tri-ATHLETE robot and K10 scout rover tests.",
+        "D-RATS 2010–2011: integrated multi-destination and asteroid mission simulations.",
+        "D-RATS 2022: Artemis-era pressurised rover operations with NASA and JAXA crews."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-blackpoint.jpg",
+            "caption": "Black Point Lava Flow, northern Arizona, photographed from the International Space Station.",
+            "source": "Wikimedia Commons",
+            "instrument": "ISS astronaut photograph (Expedition 20)",
+            "date": "2009-09-07",
+            "credit": "NASA Earth Observatory / ISS Expedition 20 crew",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_Point_Lava_Flow,_Arizona.jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/l-rover.jpg",
+            "caption": "James Irwin at the Lunar Roving Vehicle, Hadley–Apennine, with Mount Hadley behind.",
+            "source": "Wikimedia Commons",
+            "instrument": "Apollo 15 Hasselblad, AS15-86-11603",
+            "date": "1971-07-31",
+            "credit": "NASA (photo: David Scott)",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apollo_15_Rover,_Irwin.jpg",
+            "target": "moon"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "Desert RATS image gallery (NASA)",
+          "url": "https://www.nasa.gov/gallery/desert-rats/",
+          "type": "nasa"
+        },
+        {
+          "title": "Desert Research and Technology Studies (D-RATS) 2022 Quicklook Report (NASA NTRS)",
+          "url": "https://ntrs.nasa.gov/citations/20230007175",
+          "type": "nasa"
+        },
+        {
+          "title": "Eppler, D. et al. (2013) Desert Research and Technology Studies (DRATS) 2010 science operations. Acta Astronautica 90",
+          "url": "https://doi.org/10.1016/j.actaastro.2012.03.009",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "sp-crater",
+      "name": "SP Crater, San Francisco Volcanic Field",
+      "country": "United States",
+      "lat": 35.583,
+      "lon": -111.632,
+      "origin": "nasa_official",
+      "programs": [
+        "JETT3 (Artemis EVA & Human Surface Mobility test team)"
+      ],
+      "targets": [
+        "moon"
+      ],
+      "summary": "A symmetrical, ~250 m high basaltic cinder cone with a long lava flow, used in October 2022 for night-time Artemis III moonwalk rehearsals under lighting that mimicked the lunar south pole.",
+      "similarities": [
+        {
+          "qualityId": "pyroclastic_deposits",
+          "target": "moon",
+          "strength": "moderate",
+          "explanation": "Scoria cone and tephra blanket, a terrestrial counterpart to lunar dark mantle (pyroclastic) deposits."
+        },
+        {
+          "qualityId": "basaltic_volcanism",
+          "target": "moon",
+          "strength": "moderate",
+          "explanation": "Basaltic andesite lava flow extending ~6 km from the cone."
+        },
+        {
+          "qualityId": "rover_eva_traversal",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Used for simulated Artemis EVAs, including low-sun-angle lighting tests."
+        },
+        {
+          "qualityId": "crew_geology_training",
+          "target": "moon",
+          "strength": "moderate",
+          "explanation": "Astronauts practised describing and sampling volcanic geology during JETT3."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "moon",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Moon has neither."
+        },
+        {
+          "target": "moon",
+          "explanation": "Surface gravity is about six times that of the Moon, so suits, rovers and regolith mechanics behave differently."
+        },
+        {
+          "target": "moon",
+          "explanation": "Terrestrial fines lack agglutinates, nanophase iron and the sharp, unweathered grains of lunar regolith produced by space weathering."
+        },
+        {
+          "target": "moon",
+          "explanation": "Lunar pyroclastics are glass beads from fire-fountaining, not cinder cones; lunar cones are rare and small."
+        }
+      ],
+      "researchUse": [
+        "JETT3 field test (October 2022): night-time Artemis III EVA simulations with flight control and science teams."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-spcrater.jpg",
+            "caption": "SP Crater cinder cone and its lava flow, San Francisco Volcanic Field, Arizona.",
+            "source": "Wikimedia Commons",
+            "instrument": "EO-1 Advanced Land Imager",
+            "date": "2010-04-17",
+            "credit": "NASA Earth Observatory (Jesse Allen), EO-1 ALI data",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:SP_Crater,_Northern_Arizona.jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/l-orange.jpg",
+            "caption": "Orange pyroclastic glass soil exposed in a trench at Shorty crater, Apollo 17 Station 4.",
+            "source": "Wikimedia Commons",
+            "instrument": "Apollo 17 Hasselblad, AS17-137-20990",
+            "date": "1972-12-12",
+            "credit": "NASA",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apollo_17_orange_soil_at_Shorty_Crater_AS17-137-20990HR.jpg",
+            "target": "moon"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "JETT Field Test 3 (JETT3) Report (NASA NTRS)",
+          "url": "https://ntrs.nasa.gov/citations/20230010686",
+          "type": "nasa"
+        },
+        {
+          "title": "NASA tests technology, practices Artemis moonwalks in Arizona desert (NASA)",
+          "url": "https://www.nasa.gov/humans-in-space/nasa-tests-technology-practices-artemis-moonwalks-in-arizona-desert/",
+          "type": "nasa"
+        }
+      ]
+    },
+    {
+      "id": "meteor-crater",
+      "name": "Meteor Crater (Barringer Crater)",
+      "country": "United States",
+      "lat": 35.027,
+      "lon": -111.022,
+      "origin": "nasa_official",
+      "programs": [
+        "Apollo geology training",
+        "NASA astronaut geoscience training"
+      ],
+      "targets": [
+        "moon"
+      ],
+      "summary": "A ~1.2 km, ~50,000-year-old simple impact crater in layered sedimentary rock, one of the best-preserved on Earth and a training site for astronauts since 1963.",
+      "similarities": [
+        {
+          "qualityId": "impact_craters",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Simple bowl-shaped crater with overturned rim strata and ejecta, morphologically similar to fresh lunar craters of similar size."
+        },
+        {
+          "qualityId": "crew_geology_training",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Used for Mercury, Gemini and Apollo crew training and in current NASA astronaut geoscience training."
+        },
+        {
+          "qualityId": "rover_eva_traversal",
+          "target": "moon",
+          "strength": "partial",
+          "explanation": "Rim and ejecta traverses used to practise sampling and description, historically in suits."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "moon",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Moon has neither."
+        },
+        {
+          "target": "moon",
+          "explanation": "Surface gravity is about six times that of the Moon, so suits, rovers and regolith mechanics behave differently."
+        },
+        {
+          "target": "moon",
+          "explanation": "Target rocks are sandstone and limestone, unlike the basalt and anorthosite of lunar craters."
+        },
+        {
+          "target": "moon",
+          "explanation": "Erosion and vegetation have modified the crater; lunar craters of this age remain sharp."
+        }
+      ],
+      "researchUse": [
+        "Astronaut field geology training from 1963 through Apollo 17, and for later astronaut classes.",
+        "Impact fracturing and structural studies."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-meteor.jpg",
+            "caption": "Meteor Crater (~1.2 km diameter), Arizona, aerial orthophoto at 2 m/pixel.",
+            "source": "Wikimedia Commons",
+            "instrument": "USGS aerial orthophoto (The National Map)",
+            "date": "published 2009",
+            "credit": "USGS, via NASA Earth Observatory",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meteor_Crater_-_Arizona.jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/l-linne.jpg",
+            "caption": "Linné crater (2.2 km), a young, fresh simple crater in mare basalt, Mare Serenitatis.",
+            "source": "Wikimedia Commons",
+            "instrument": "Lunar Reconnaissance Orbiter Camera (NAC)",
+            "date": "2014-01-18",
+            "credit": "NASA/GSFC/Arizona State University",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Linne_(LRO)_1.png",
+            "target": "moon"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "Science Training History of the Apollo Astronauts, NASA/SP-2015-626 (NASA NTRS)",
+          "url": "https://ntrs.nasa.gov/citations/20190026783",
+          "type": "nasa"
+        },
+        {
+          "title": "50 Years Ago: Apollo 14 and 15 preparations (NASA History)",
+          "url": "https://www.nasa.gov/history/50-years-ago-apollo-14-and-15-preparations-2/",
+          "type": "nasa"
+        },
+        {
+          "title": "Kumar, P. S. & Kring, D. A. (2008) Impact fracturing and structural modification of sedimentary rocks at Meteor Crater, Arizona. JGR Planets 113",
+          "url": "https://doi.org/10.1029/2008JE003115",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "cinder-lake-crater-field",
+      "name": "Cinder Lake Crater Field",
+      "country": "United States",
+      "lat": 35.3,
+      "lon": -111.47,
+      "origin": "nasa_official",
+      "programs": [
+        "Apollo crew training (USGS Astrogeology)",
+        "Artemis field testing"
+      ],
+      "targets": [
+        "moon"
+      ],
+      "summary": "Artificial crater fields blasted by the USGS in 1967–1968 into basaltic cinder to reproduce part of the Apollo 11 landing area; used for Apollo crew training and still used for testing.",
+      "similarities": [
+        {
+          "qualityId": "impact_craters",
+          "target": "moon",
+          "strength": "partial",
+          "explanation": "Explosion craters reproduce the size and spacing of a lunar crater field, but not true impact processes."
+        },
+        {
+          "qualityId": "regolith_fines",
+          "target": "moon",
+          "strength": "moderate",
+          "explanation": "Dark basaltic cinder over clay provides a loose, low-albedo surface for traverse practice."
+        },
+        {
+          "qualityId": "crew_geology_training",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Apollo crews (first used by Apollo 13 in 1970) practised geological traverses here."
+        },
+        {
+          "qualityId": "rover_eva_traversal",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Used for rover and suit testing from the Apollo era to the present."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "moon",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Moon has neither."
+        },
+        {
+          "target": "moon",
+          "explanation": "Surface gravity is about six times that of the Moon, so suits, rovers and regolith mechanics behave differently."
+        },
+        {
+          "target": "moon",
+          "explanation": "Terrestrial fines lack agglutinates, nanophase iron and the sharp, unweathered grains of lunar regolith produced by space weathering."
+        },
+        {
+          "target": "moon",
+          "explanation": "The craters are explosion features and have degraded since the 1960s; they lack shock metamorphism."
+        }
+      ],
+      "researchUse": [
+        "Apollo astronaut traverse training (1970s).",
+        "USGS drone topographic surveys (2023–2024).",
+        "Testing of Artemis-era equipment."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-cinderlake.jpg",
+            "caption": "Construction of Cinder Lake Crater Field #2 near Flagstaff, blasted by the USGS to replicate part of the Apollo 11 landing area.",
+            "source": "Wikimedia Commons",
+            "instrument": "Aerial photograph",
+            "date": "c. 1970",
+            "credit": "U.S. Geological Survey",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cinder_Lake_Crater_Field.jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/l-a11.jpg",
+            "caption": "The Apollo 11 landing site and West crater from orbit.",
+            "source": "Wikimedia Commons",
+            "instrument": "Lunar Reconnaissance Orbiter Camera (NAC)",
+            "date": "2009",
+            "credit": "NASA/GSFC/Arizona State University",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apollo_11_Landing_Site_%26_West_Crater.png",
+            "target": "moon"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "Arizona's 'lunar' craters (NASA Science / Earth Observatory)",
+          "url": "https://science.nasa.gov/earth/arizonas-lunar-craters/",
+          "type": "nasa"
+        },
+        {
+          "title": "Vaughan, R. G., Schindler, K. et al. (2019) Walk in the footsteps of the Apollo astronauts: A field guide to northern Arizona astronaut training sites. GSA Field Guide 55",
+          "url": "https://doi.org/10.1130/2019.0055(12)",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "mauna-kea",
+      "name": "Mauna Kea upper flanks (ISRU test sites)",
+      "country": "United States",
+      "lat": 19.8,
+      "lon": -155.47,
+      "origin": "nasa_official",
+      "programs": [
+        "NASA ISRU field tests (2008, 2010, 2012)",
+        "PISCES"
+      ],
+      "targets": [
+        "moon",
+        "mars"
+      ],
+      "summary": "High-altitude volcanic terrain with fine tephra and cinder used in NASA/CSA/DLR field campaigns to demonstrate lunar resource prospecting, excavation and oxygen extraction.",
+      "similarities": [
+        {
+          "qualityId": "regolith_fines",
+          "target": "moon",
+          "strength": "moderate",
+          "explanation": "Fine-grained basaltic tephra (e.g., at Puʻu Hiwahine) used as a field regolith simulant."
+        },
+        {
+          "qualityId": "isru_testing",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Field demonstrations of regolith excavation, hydrogen reduction, carbothermal oxygen production and Mössbauer prospecting."
+        },
+        {
+          "qualityId": "basaltic_volcanism",
+          "target": "moon",
+          "strength": "moderate",
+          "explanation": "Basaltic to hawaiitic cinder cones and lava flows."
+        },
+        {
+          "qualityId": "instrument_sample_testing",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "RESOLVE prospecting payload and miniaturised Mössbauer spectrometers field-tested."
+        },
+        {
+          "qualityId": "isru_testing",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Resource-processing hardware relevant to Mars surface operations was tested in the same campaigns."
+        },
+        {
+          "qualityId": "regolith_fines",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Palagonitic Hawaiian tephra (Puʻu Nene cinder cone, in the saddle south of Mauna Kea) was the source of the JSC Mars-1 soil simulant."
+        },
+        {
+          "qualityId": "high_altitude_low_pressure",
+          "target": "mars",
+          "strength": "partial",
+          "explanation": "Summit area above 4,000 m has about 60% of sea-level pressure, still more than 100 times Mars' pressure."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "moon",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Moon has neither."
+        },
+        {
+          "target": "moon",
+          "explanation": "Surface gravity is about six times that of the Moon, so suits, rovers and regolith mechanics behave differently."
+        },
+        {
+          "target": "moon",
+          "explanation": "Terrestrial fines lack agglutinates, nanophase iron and the sharp, unweathered grains of lunar regolith produced by space weathering."
+        },
+        {
+          "target": "moon",
+          "explanation": "Tephra is altered by water and contains hydrated minerals unlike lunar regolith."
+        },
+        {
+          "target": "mars",
+          "explanation": "Snow, rain and vegetation are present at lower elevations.",
+          "qualityId": "hyperarid"
+        },
+        {
+          "target": "mars",
+          "explanation": "Surface gravity is about 2.6 times that of Mars, which changes slope stability, sediment transport and crew workload."
+        }
+      ],
+      "researchUse": [
+        "2008 and 2010 International Lunar Surface Operations ISRU analogue tests (NASA, CSA, DLR, NORCAT via PISCES).",
+        "2012 RESOLVE field demonstration."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-maunakea.jpg",
+            "caption": "Cinder cones (pu'u) near the summit of Mauna Kea, Hawaiʻi.",
+            "source": "Wikimedia Commons",
+            "instrument": "Ground photograph",
+            "date": "2025-06-11",
+            "credit": "S P Schmidt",
+            "license": "CC BY 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pu%27u_on_Mauna_Kea.jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/l-boot.jpg",
+            "caption": "Bootprint in the fine lunar regolith at Tranquility Base.",
+            "source": "Wikimedia Commons",
+            "instrument": "Apollo 11 Hasselblad, AS11-40-5878",
+            "date": "1969-07-20",
+            "credit": "NASA",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:AS11-40-5878_-_Apollo_11_-_Apollo_11_Mission_image_-_Astronaut_bootprint_on_the_lunar_surface_-_NARA_-_16685061.jpg",
+            "target": "moon"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "The ISRU field tests 2010 and 2012 at Mauna Kea, Hawaii: results from the miniaturised Mössbauer spectrometers (NASA NTRS)",
+          "url": "https://ntrs.nasa.gov/citations/20140008708",
+          "type": "nasa"
+        },
+        {
+          "title": "Sanders, G. B. & Larson, W. E. (2011) Integration of in-situ resource utilization into lunar/Mars exploration through field analogs. Advances in Space Research 47",
+          "url": "https://doi.org/10.1016/j.asr.2010.08.020",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "kilauea-iki",
+      "name": "Kīlauea Iki & Kīlauea caldera region",
+      "country": "United States",
+      "lat": 19.416,
+      "lon": -155.244,
+      "origin": "nasa_official",
+      "programs": [
+        "BASALT (NASA SMD PSTAR)"
+      ],
+      "targets": [
+        "mars"
+      ],
+      "summary": "Young basaltic lava lake, flows and fumarolic deposits in Hawaiʻi Volcanoes National Park, used by NASA's BASALT project (2016–2017) for Mars-relevant science under simulated mission constraints.",
+      "similarities": [
+        {
+          "qualityId": "basaltic_volcanism",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Olivine-rich tholeiitic basalt comparable to Martian basalts analysed by Spirit in Gusev crater."
+        },
+        {
+          "qualityId": "hydrothermal_deposits",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Fumarolic and steam-vent alteration deposits relevant to ancient Martian volcanic hydrothermal systems."
+        },
+        {
+          "qualityId": "rover_eva_traversal",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "BASALT conducted ten simulated Mars EVAs with communication latency in 2017."
+        },
+        {
+          "qualityId": "instrument_sample_testing",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Field-portable instruments and sampling protocols tested on altered and unaltered basalt."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "mars",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Martian surface has neither."
+        },
+        {
+          "target": "mars",
+          "explanation": "Surface gravity is about 2.6 times that of Mars, which changes slope stability, sediment transport and crew workload."
+        },
+        {
+          "target": "mars",
+          "explanation": "Tropical rainfall and abundant vegetation nearby; biomass is much higher than any Mars analogue needs.",
+          "qualityId": "low_biomass"
+        },
+        {
+          "target": "mars",
+          "explanation": "Humid climate rather than hyperarid.",
+          "qualityId": "hyperarid"
+        }
+      ],
+      "researchUse": [
+        "BASALT third field deployment (November 2017): ten simulated EVAs at Kīlauea Iki and the caldera region.",
+        "2016 BASALT work at Mauna Ulu."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-kilaueaiki.jpg",
+            "caption": "Kīlauea Iki crater floor, the solidified 1959 lava lake, seen from the overlook.",
+            "source": "Wikimedia Commons",
+            "instrument": "Ground photograph",
+            "date": "2019-05-29",
+            "credit": "Aleksomber",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kilauea_iki.jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/m-adirondack.jpg",
+            "caption": "'Adirondack', an olivine-bearing basalt in Gusev crater (approximate true colour).",
+            "source": "Wikimedia Commons",
+            "instrument": "Spirit Pancam",
+            "date": "2004-01",
+            "credit": "NASA/JPL/Cornell",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adirondack_rock_Gusev_crater_Mars.jpg",
+            "target": "mars"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "What is BASALT? (NASA)",
+          "url": "https://www.nasa.gov/missions/analog-field-testing/what-is-basalt/",
+          "type": "nasa"
+        },
+        {
+          "title": "Lim, D. S. S. et al. (2019) The BASALT research program: designing and developing mission elements in support of human scientific exploration of Mars. Astrobiology 19",
+          "url": "https://doi.org/10.1089/ast.2018.1869",
+          "type": "peer_reviewed"
+        },
+        {
+          "title": "Hughes, S. S. et al. (2019) Basaltic terrains in Idaho and Hawaiʻi as planetary analogs for Mars geology and astrobiology. Astrobiology 19",
+          "url": "https://doi.org/10.1089/ast.2018.1847",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "craters-of-the-moon",
+      "name": "Craters of the Moon National Monument",
+      "country": "United States",
+      "lat": 43.42,
+      "lon": -113.52,
+      "origin": "nasa_official",
+      "programs": [
+        "FINESSE (NASA SSERVI)",
+        "BASALT"
+      ],
+      "targets": [
+        "moon",
+        "mars"
+      ],
+      "summary": "A young (2,000–15,000-year-old) basaltic volcanic field on the Snake River Plain with lava tubes, fissures and cinder cones; studied by NASA's FINESSE and BASALT teams and visited by Apollo 14 crew.",
+      "similarities": [
+        {
+          "qualityId": "basaltic_volcanism",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Fissure-fed basaltic volcanism similar in style to lunar mare eruptions."
+        },
+        {
+          "qualityId": "lava_tubes",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Numerous accessible lava tubes and collapse pits analogous to lunar skylights."
+        },
+        {
+          "qualityId": "pyroclastic_deposits",
+          "target": "moon",
+          "strength": "moderate",
+          "explanation": "Cinder cones and spatter ramparts along the Great Rift."
+        },
+        {
+          "qualityId": "instrument_sample_testing",
+          "target": "moon",
+          "strength": "moderate",
+          "explanation": "FINESSE tested handheld instruments and field-traverse concepts."
+        },
+        {
+          "qualityId": "crew_geology_training",
+          "target": "moon",
+          "strength": "moderate",
+          "explanation": "Apollo 14 astronauts trained here in 1969."
+        },
+        {
+          "qualityId": "basaltic_volcanism",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "BASALT treated the area as an analogue for present-day Martian volcanic plains."
+        },
+        {
+          "qualityId": "lava_tubes",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Lava tubes similar in scale to some of those inferred on Mars."
+        },
+        {
+          "qualityId": "pyroclastic_deposits",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Cinder cones and spatter ramparts comparable to small scoria cones mapped on Mars."
+        },
+        {
+          "qualityId": "rover_eva_traversal",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Simulated Mars EVAs with time-delayed science support (BASALT 2016)."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "moon",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Moon has neither."
+        },
+        {
+          "target": "moon",
+          "explanation": "Surface gravity is about six times that of the Moon, so suits, rovers and regolith mechanics behave differently."
+        },
+        {
+          "target": "moon",
+          "explanation": "Terrestrial fines lack agglutinates, nanophase iron and the sharp, unweathered grains of lunar regolith produced by space weathering."
+        },
+        {
+          "target": "mars",
+          "explanation": "Surface gravity is about 2.6 times that of Mars, which changes slope stability, sediment transport and crew workload."
+        },
+        {
+          "target": "mars",
+          "explanation": "Seasonal snow and sagebrush vegetation; soils host abundant microbes.",
+          "qualityId": "low_biomass"
+        },
+        {
+          "target": "mars",
+          "explanation": "Lavas are less than 15,000 years old and largely unaltered, whereas many Martian volcanic surfaces are billions of years old and dust-mantled."
+        }
+      ],
+      "researchUse": [
+        "FINESSE field campaigns from 2014 on lunar-style volcanism (Kings Bowl, Highway flow).",
+        "BASALT 2016 simulated Mars missions (Big Craters, Highway flows)."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-cotm-tube.jpg",
+            "caption": "Lava tube in Craters of the Moon National Monument, Idaho.",
+            "source": "Wikimedia Commons",
+            "instrument": "Ground photograph",
+            "date": "2015-05-07",
+            "credit": "Bob Wick, Bureau of Land Management",
+            "license": "CC BY 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Craters_of_the_Moon_National_Monument_Lava_Tubes.jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/l-marius.jpg",
+            "caption": "Marius Hills pit (~65 m across), a candidate lava-tube skylight.",
+            "source": "Wikimedia Commons",
+            "instrument": "Lunar Reconnaissance Orbiter Camera (NAC)",
+            "date": "2010-03-01",
+            "credit": "NASA/GSFC/Arizona State University",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marius_Hills_Pit_-_Lava_Tube_Skylight%3F_(LROC202_-_M114328462R_enlargement).png",
+            "target": "moon"
+          },
+          {
+            "url": "/images/sites/m-pavonis.jpg",
+            "caption": "Lava-tube skylight on Pavonis Mons.",
+            "source": "Wikimedia Commons",
+            "instrument": "MRO HiRISE, ESP_023531_1840",
+            "date": "2011-08-04",
+            "credit": "NASA/JPL/University of Arizona",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pavonis_Mons_lava_tube_skylight_crop.jpg",
+            "target": "mars"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "SSERVI team launches project at Craters of the Moon (NASA SSERVI)",
+          "url": "https://sservi.nasa.gov/articles/sservi-team-launches-project-at-craters-of-the-moon/",
+          "type": "nasa"
+        },
+        {
+          "title": "Overview of NASA FINESSE science and exploration results (NASA NTRS)",
+          "url": "https://ntrs.nasa.gov/citations/20150023448",
+          "type": "nasa"
+        },
+        {
+          "title": "Hughes, S. S. et al. (2019) Basaltic terrains in Idaho and Hawaiʻi as planetary analogs for Mars geology and astrobiology. Astrobiology 19",
+          "url": "https://doi.org/10.1089/ast.2018.1847",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "atacama-yungay",
+      "name": "Atacama Desert (Yungay region)",
+      "country": "Chile",
+      "lat": -24.1,
+      "lon": -70.02,
+      "origin": "nasa_official",
+      "programs": [
+        "ARADS (NASA Ames)"
+      ],
+      "targets": [
+        "mars"
+      ],
+      "summary": "The hyperarid core of the Atacama, one of the driest places on Earth, whose soils are oxidising and nearly sterile; NASA's ARADS project used it to test rover-mounted drilling and life detection (2016–2019).",
+      "similarities": [
+        {
+          "qualityId": "hyperarid",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Rainfall of a few millimetres per year or less in the hyperarid core."
+        },
+        {
+          "qualityId": "oxidizing_soils",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Soils contain oxidants and perchlorate that degrade organics, as at the Phoenix site."
+        },
+        {
+          "qualityId": "low_biomass",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Microbial abundance approaches the detection limit of culture-based methods."
+        },
+        {
+          "qualityId": "high_uv",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "High-altitude, cloudless conditions give some of the highest surface UV on Earth."
+        },
+        {
+          "qualityId": "instrument_sample_testing",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "K-REX2 rover with a 1–2 m drill and three life-detection instruments operated remotely."
+        },
+        {
+          "qualityId": "evaporites_sulfates",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Sulfate and nitrate-rich salt crusts accumulate in the absence of rain."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "mars",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Martian surface has neither."
+        },
+        {
+          "target": "mars",
+          "explanation": "Surface gravity is about 2.6 times that of Mars, which changes slope stability, sediment transport and crew workload."
+        },
+        {
+          "target": "mars",
+          "explanation": "Fog and rare rain events occur; Mars has no comparable liquid-water events today."
+        },
+        {
+          "target": "mars",
+          "explanation": "Surface temperatures are far warmer than on Mars.",
+          "qualityId": "extreme_cold"
+        }
+      ],
+      "researchUse": [
+        "ARADS field seasons 2016–2019 with the K-REX2 rover and life-detection payloads.",
+        "Classic studies of Mars-like soils and the dry limit of microbial life."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-atacama.jpg",
+            "caption": "Hyperarid Atacama Desert landscape about 50 km northeast of Calama, Chile (not the Yungay study area itself).",
+            "source": "Wikimedia Commons",
+            "instrument": "Ground photograph",
+            "date": "2016-02-01",
+            "credit": "Diego Delso",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paisaje_cerca_de_Calama,_Chile,_2016-02-01,_DD_83.JPG"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/m-rocknest.jpg",
+            "caption": "Rocknest panorama, Gale crater (crop).",
+            "source": "Wikimedia Commons",
+            "instrument": "Curiosity Mastcam (PIA16453)",
+            "date": "2012",
+            "credit": "NASA/JPL-Caltech/MSSS",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:PIA16453-MarsCuriosityRover-RocknestPanorama-20121126.jpg",
+            "target": "mars"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "Atacama Rover Astrobiology Drilling Studies (ARADS) (NASA)",
+          "url": "https://www.nasa.gov/universe/atacama-rover-astrobiology-drilling-studies-arads/",
+          "type": "nasa"
+        },
+        {
+          "title": "Atacama Rover Astrobiology Drilling Studies project: final year (NASA NTRS)",
+          "url": "https://ntrs.nasa.gov/citations/20220002136",
+          "type": "nasa"
+        },
+        {
+          "title": "Navarro-González, R. et al. (2003) Mars-like soils in the Atacama Desert, Chile, and the dry limit of microbial life. Science 302",
+          "url": "https://doi.org/10.1126/science.1089143",
+          "type": "peer_reviewed"
+        },
+        {
+          "title": "Hecht, M. H. et al. (2009) Detection of perchlorate and the soluble chemistry of martian soil at the Phoenix lander site. Science 325",
+          "url": "https://doi.org/10.1126/science.1172466",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "aquarius-reef-base",
+      "name": "Aquarius Reef Base (NEEMO)",
+      "country": "United States",
+      "lat": 24.95,
+      "lon": -80.45,
+      "origin": "nasa_official",
+      "programs": [
+        "NEEMO (NASA Extreme Environment Mission Operations)"
+      ],
+      "targets": [
+        "moon",
+        "mars"
+      ],
+      "summary": "An undersea habitat 19 m deep off Key Largo, where NASA's NEEMO crews live for 1–3 weeks and use weighted, tethered dives to rehearse reduced-gravity EVAs and operations with communication delays.",
+      "similarities": [
+        {
+          "qualityId": "underwater_neutral_buoyancy",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Ballasted divers approximate lunar-gravity mobility and EVA task loading."
+        },
+        {
+          "qualityId": "isolation_remoteness",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Saturation diving means crews cannot surface quickly, a true isolated and confined environment."
+        },
+        {
+          "qualityId": "rover_eva_traversal",
+          "target": "moon",
+          "strength": "moderate",
+          "explanation": "EVA timelines, tools and sampling procedures rehearsed on the seafloor."
+        },
+        {
+          "qualityId": "underwater_neutral_buoyancy",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Reduced-gravity EVA techniques transferable to Mars (0.38 g) operations."
+        },
+        {
+          "qualityId": "isolation_remoteness",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Used to test operations with imposed communication latency similar to Mars missions."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "moon",
+          "explanation": "Water drag and buoyancy are not true reduced gravity; movement dynamics differ."
+        },
+        {
+          "target": "moon",
+          "explanation": "No geological analogue for lunar terrain."
+        },
+        {
+          "target": "mars",
+          "explanation": "Not a geological or environmental analogue for Mars.",
+          "qualityId": "hyperarid"
+        },
+        {
+          "target": "mars",
+          "explanation": "A humid, biologically rich marine environment.",
+          "qualityId": "low_biomass"
+        }
+      ],
+      "researchUse": [
+        "NEEMO missions 1–23 (2001–2019), including EVA, telemedicine and latency studies.",
+        "NEEMO 15: evaluation of exploration systems for near-Earth asteroids."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-aquarius.jpg",
+            "caption": "NEEMO 12 crew members swimming to the Aquarius habitat, about 19 m deep off Key Largo.",
+            "source": "Wikimedia Commons",
+            "instrument": "Underwater photograph, JSC2007-E-21796",
+            "date": "2007-05-02",
+            "credit": "NASA",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aquarius_exterior_(whole).jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/l-tracy.jpg",
+            "caption": "Harrison Schmitt, a field geologist, at 'Tracy's Rock', Apollo 17 Station 6.",
+            "source": "Wikimedia Commons",
+            "instrument": "Apollo 17 Hasselblad, AS17-140-21493",
+            "date": "1972-12-13",
+            "credit": "NASA (photo: Eugene Cernan)",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tracy%27s_Rock_(Split_Rock),_AS17-140-21493.jpg",
+            "target": "moon"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "NEEMO (NASA Extreme Environment Mission Operations) (NASA)",
+          "url": "https://www.nasa.gov/missions/analog-field-testing/neemo/neemo-nasa-extreme-environment-mission-operations/",
+          "type": "nasa"
+        },
+        {
+          "title": "Chappell, S. P. et al. (2013) NEEMO 15: Evaluation of human exploration systems for near-Earth asteroids. Acta Astronautica 89",
+          "url": "https://doi.org/10.1016/j.actaastro.2013.03.002",
+          "type": "peer_reviewed"
+        },
+        {
+          "title": "Chappell, S. P. et al. (2016) NEEMO 18–20: Analog testing for mitigation of communication latency during human space exploration. IEEE Aerospace Conference",
+          "url": "https://doi.org/10.1109/AERO.2016.7500717",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "hi-seas",
+      "name": "HI-SEAS, Mauna Loa",
+      "country": "United States",
+      "lat": 19.602,
+      "lon": -155.487,
+      "origin": "nasa_official",
+      "programs": [
+        "HI-SEAS (University of Hawaiʻi; NASA Human Research Program-funded missions)"
+      ],
+      "targets": [
+        "mars"
+      ],
+      "summary": "A habitat dome at ~2,500 m on barren lava on Mauna Loa; its long-duration isolation missions (up to one year) were funded by NASA's Human Research Program to study crew behaviour and food systems.",
+      "similarities": [
+        {
+          "qualityId": "isolation_remoteness",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Four- to twelve-month isolation missions with delayed communication and suited excursions."
+        },
+        {
+          "qualityId": "basaltic_volcanism",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "The habitat sits on a ~1,800-year-old basalt flow among younger flows and lava tubes."
+        },
+        {
+          "qualityId": "rover_eva_traversal",
+          "target": "mars",
+          "strength": "partial",
+          "explanation": "Excursions in mock suits; limited rover use."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "mars",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Martian surface has neither."
+        },
+        {
+          "target": "mars",
+          "explanation": "Surface gravity is about 2.6 times that of Mars, which changes slope stability, sediment transport and crew workload."
+        },
+        {
+          "target": "mars",
+          "explanation": "Crews can be evacuated within hours; psychological isolation differs from an interplanetary mission."
+        },
+        {
+          "target": "mars",
+          "explanation": "Rain and fog occur; not a hyperarid environment.",
+          "qualityId": "hyperarid"
+        }
+      ],
+      "researchUse": [
+        "HI-SEAS missions I–V (2013–2017), funded by NASA's Human Research Program, on crew cohesion, food and sleep.",
+        "Veggie plant-growth tests and later lunar/Mars analogue campaigns."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-hiseas-oli.jpg",
+            "caption": "The HI-SEAS habitat site among lava flows on the northern slope of Mauna Loa, from Landsat 8.",
+            "source": "NASA Earth Observatory",
+            "instrument": "Landsat 8 Operational Land Imager",
+            "date": "2017-12-12",
+            "credit": "NASA Earth Observatory (Lauren Dauphin), Landsat data from USGS",
+            "license": "Public domain",
+            "sourceUrl": "https://earthobservatory.nasa.gov/images/92630/living-the-mars-life-on-mauna-loa"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/m-athabasca.jpg",
+            "caption": "Platy flood-lava surface in Athabasca Valles.",
+            "source": "Wikimedia Commons",
+            "instrument": "MRO HiRISE, ESP_049736_1880",
+            "date": "2017-03",
+            "credit": "NASA/JPL/University of Arizona",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:ESP_049736_1880_(23924305708).jpg",
+            "target": "mars"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "HI-SEAS team completes 8-month isolation mission (NASA)",
+          "url": "https://www.nasa.gov/feature/hi-seas-team-completes-8-month-isolation-mission",
+          "type": "nasa"
+        },
+        {
+          "title": "Living the Mars life on Mauna Loa (NASA Earth Observatory)",
+          "url": "https://earthobservatory.nasa.gov/images/92630/living-the-mars-life-on-mauna-loa",
+          "type": "nasa"
+        },
+        {
+          "title": "Engler, S. et al. (2019) HI-SEAS habitat energy requirements and forecasting. Acta Astronautica 162",
+          "url": "https://doi.org/10.1016/j.actaastro.2019.05.049",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "rio-tinto",
+      "name": "Río Tinto (Peña de Hierro)",
+      "country": "Spain",
+      "lat": 37.72,
+      "lon": -6.56,
+      "origin": "nasa_official",
+      "programs": [
+        "MARTE (NASA Ames / Centro de Astrobiología, NASA ASTEP)"
+      ],
+      "targets": [
+        "mars"
+      ],
+      "summary": "An acidic (pH ~2), iron- and sulfate-rich river draining the Iberian Pyrite Belt, whose jarosite-bearing sediments are a reference for Meridiani Planum; NASA's MARTE project drilled here (2003–2005) to rehearse a robotic search for subsurface life.",
+      "similarities": [
+        {
+          "qualityId": "evaporites_sulfates",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Jarosite, schwertmannite and other sulfates precipitate from acidic waters, as inferred at Meridiani Planum."
+        },
+        {
+          "qualityId": "hydrothermal_deposits",
+          "target": "mars",
+          "strength": "partial",
+          "explanation": "Iron oxides and sulfates derived from the weathering of a hydrothermal massive-sulfide deposit."
+        },
+        {
+          "qualityId": "instrument_sample_testing",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "MARTE simulated an automated Mars drilling mission with remote science operations."
+        },
+        {
+          "qualityId": "layered_sediments",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Terraced iron-rich sediments and goethite/hematite deposits."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "mars",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Martian surface has neither."
+        },
+        {
+          "target": "mars",
+          "explanation": "Surface gravity is about 2.6 times that of Mars, which changes slope stability, sediment transport and crew workload."
+        },
+        {
+          "target": "mars",
+          "explanation": "Abundant, diverse acidophilic life; the system is biologically dominated.",
+          "qualityId": "low_biomass"
+        },
+        {
+          "target": "mars",
+          "explanation": "Mediterranean climate with liquid surface water year-round.",
+          "qualityId": "hyperarid"
+        },
+        {
+          "target": "mars",
+          "explanation": "Centuries of mining have modified the drainage chemistry."
+        }
+      ],
+      "researchUse": [
+        "MARTE drilling campaigns 2003–2005 and a remote-science simulation in September 2005.",
+        "Mineralogical and geobiological comparison with Meridiani Planum."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-riotinto.jpg",
+            "caption": "The acidic, iron-rich Río Tinto at Minas de Riotinto, Huelva.",
+            "source": "Wikimedia Commons",
+            "instrument": "Ground photograph",
+            "date": "2016-03-19",
+            "credit": "David Perez",
+            "license": "CC BY 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minas_de_Riotinto_21_rio_Tinto_by-dpc.jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/m-elcap.jpg",
+            "caption": "'El Capitan', Meridiani Planum: sulfate-rich, jarosite-bearing sandstone with hematite spherules.",
+            "source": "Wikimedia Commons",
+            "instrument": "Opportunity Pancam (PIA05478)",
+            "date": "2004",
+            "credit": "NASA/JPL/Cornell",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rocher_El_Capitan_gros_plan_avec_spherules_Opportunity_sur_Mars.jpg",
+            "target": "mars"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "Mars Analog Rio Tinto Experiment (MARTE): 2003 drilling campaign to search for a subsurface biosphere at Rio Tinto, Spain (NASA NTRS)",
+          "url": "https://ntrs.nasa.gov/citations/20040062221",
+          "type": "nasa"
+        },
+        {
+          "title": "Drilling for weird life (NASA Astrobiology)",
+          "url": "https://astrobiology.nasa.gov/news/drilling-for-weird-life/",
+          "type": "nasa"
+        },
+        {
+          "title": "Fernández-Remolar, D. C. et al. (2005) The Río Tinto Basin, Spain: Mineralogy, sedimentary geobiology, and implications for interpretation of outcrop rocks at Meridiani Planum, Mars. EPSL 240",
+          "url": "https://doi.org/10.1016/j.epsl.2005.09.043",
+          "type": "peer_reviewed"
+        },
+        {
+          "title": "Bonaccorsi, R. & Stoker, C. R. (2008) Science results from a Mars drilling simulation (Río Tinto, Spain). Astrobiology 8",
+          "url": "https://doi.org/10.1089/ast.2007.0152",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "pavilion-lake",
+      "name": "Pavilion Lake",
+      "country": "Canada",
+      "lat": 50.87,
+      "lon": -121.74,
+      "origin": "nasa_official",
+      "programs": [
+        "Pavilion Lake Research Project (NASA-supported)"
+      ],
+      "targets": [
+        "mars"
+      ],
+      "summary": "A freshwater lake with large modern carbonate microbialites; the Pavilion Lake Research Project combined astrobiology with NASA exploration-operations research using DeepWorker submersibles.",
+      "similarities": [
+        {
+          "qualityId": "microbialites_biosignatures",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Modern microbialites help to calibrate how microbial structures form and are preserved, relevant to Martian lake deposits."
+        },
+        {
+          "qualityId": "underwater_neutral_buoyancy",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Submersible piloting and science operations used as an analogue for planetary EVA and robotic exploration."
+        },
+        {
+          "qualityId": "instrument_sample_testing",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Science-operations concepts, mapping and sampling protocols tested with NASA JSC."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "mars",
+          "explanation": "Life is abundant; the microbialites are actively growing.",
+          "qualityId": "low_biomass"
+        },
+        {
+          "target": "mars",
+          "explanation": "A temperate, liquid-water lake; no current Martian equivalent.",
+          "qualityId": "hyperarid"
+        },
+        {
+          "target": "mars",
+          "explanation": "Surface gravity is about 2.6 times that of Mars, which changes slope stability, sediment transport and crew workload."
+        }
+      ],
+      "researchUse": [
+        "PLRP field seasons 2004–2014, including the 2014 joint human–robotic underwater deployment.",
+        "Studies of microbialite morphogenesis and growth rates."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-pavilion.jpg",
+            "caption": "Field operations of the NASA-supported Pavilion Lake Research Project, British Columbia.",
+            "source": "Wikimedia Commons",
+            "instrument": "Field photograph",
+            "date": "c. 2010",
+            "credit": "NASA Glenn Research Center (via DVIDS)",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pavilion_Lake_Research_Project_(PLRP)_DVIDS842605.jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/m-yk.jpg",
+            "caption": "Sedimentary outcrops near Yellowknife Bay, Gale crater, including lake-bed mudstone.",
+            "source": "Wikimedia Commons",
+            "instrument": "Curiosity Mastcam (PIA17603)",
+            "date": "2013",
+            "credit": "NASA/JPL-Caltech/MSSS",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:PIA17603_Erosion_by_Scarp_Retreat_in_Gale_Crater.jpg",
+            "target": "mars"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "Pavilion Lake, Canada (NASA)",
+          "url": "https://www.nasa.gov/missions/analog-field-testing/pavilion-lake-canada/",
+          "type": "nasa"
+        },
+        {
+          "title": "Brady, A. L. et al. (2009) Constraining carbon sources and growth rates of freshwater microbialites in Pavilion Lake using 14C analysis. Geobiology 7",
+          "url": "https://doi.org/10.1111/j.1472-4669.2009.00215.x",
+          "type": "peer_reviewed"
+        },
+        {
+          "title": "Omelon, C. R. et al. (2013) Microstructure variability in freshwater microbialites, Pavilion Lake, Canada. Palaeogeography, Palaeoclimatology, Palaeoecology 392",
+          "url": "https://doi.org/10.1016/j.palaeo.2013.08.017",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "svalbard-bockfjorden",
+      "name": "Bockfjorden volcanic complex, Svalbard",
+      "country": "Norway",
+      "lat": 79.43,
+      "lon": 13.32,
+      "origin": "nasa_official",
+      "programs": [
+        "AMASE (NASA ASTEP-funded, with ESA)"
+      ],
+      "targets": [
+        "mars"
+      ],
+      "summary": "Quaternary volcanic centres (Sverrefjellet, Sigurdfjell) and warm springs in the high Arctic, where carbonate globules resemble those in the Martian meteorite ALH84001; AMASE expeditions tested MSL and ExoMars instruments here.",
+      "similarities": [
+        {
+          "qualityId": "hydrothermal_deposits",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Carbonate globules precipitated from warm fluids in basalt and mantle xenoliths, morphologically like those in ALH84001."
+        },
+        {
+          "qualityId": "basaltic_volcanism",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Basaltic volcanic centres interacting with ice."
+        },
+        {
+          "qualityId": "permafrost_ground_ice",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Continuous Arctic permafrost."
+        },
+        {
+          "qualityId": "instrument_sample_testing",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Prototype CheMin and SAM (Curiosity) and ExoMars instruments field-tested; cliff-climbing robot sampling."
+        },
+        {
+          "qualityId": "extreme_cold",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "High-Arctic climate at ~79° N."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "mars",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Martian surface has neither."
+        },
+        {
+          "target": "mars",
+          "explanation": "Surface gravity is about 2.6 times that of Mars, which changes slope stability, sediment transport and crew workload."
+        },
+        {
+          "target": "mars",
+          "explanation": "Tundra vegetation and microbial life are present.",
+          "qualityId": "low_biomass"
+        },
+        {
+          "target": "mars",
+          "explanation": "Glacial meltwater and marine influence; not hyperarid.",
+          "qualityId": "hyperarid"
+        }
+      ],
+      "researchUse": [
+        "AMASE expeditions (from 2003) testing life-detection and mineralogy instruments.",
+        "JPL Cliff-Bot robotic sampling of steep outcrops."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-svalbard.jpg",
+            "caption": "Bockfjorden area, northern Spitsbergen, with the Sverrefjellet volcanic centre.",
+            "source": "Wikimedia Commons",
+            "instrument": "Ground photograph",
+            "date": "2012-08-08",
+            "credit": "Bjoertvedt",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haakon_VII_Land_Bockfjorden_IMG_5543_Trolltindane_Sverrefjellet_Adolfbreen_Sm%C3%B6rstabben.JPG"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/m-alh.jpg",
+            "caption": "Martian meteorite ALH84001, recovered in Antarctica in 1984.",
+            "source": "Wikimedia Commons",
+            "instrument": "Laboratory photograph S85-39565",
+            "date": "1985",
+            "credit": "NASA",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:ALH84001_(S85-39565).jpg",
+            "target": "mars"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "NASA participates in the Arctic Mars Analogue Svalbard Expedition (AMASE) 2009 (NASA Astrobiology)",
+          "url": "https://astrobiology.nasa.gov/news/check-type-nasa-participates-in-the-arctic-mars-analogue-svalbard-expedition-amase-2009/",
+          "type": "nasa"
+        },
+        {
+          "title": "AMASE: Arctic Mars Analogue Svalbard Expedition (JPL Robotics)",
+          "url": "https://www-robotics.jpl.nasa.gov/what-we-do/research-tasks/amase-arctic-mars-analogue-svalbard-expedition/",
+          "type": "nasa"
+        },
+        {
+          "title": "Steele, A. et al. (2007) Comprehensive imaging and Raman spectroscopy of carbonate globules from Martian meteorite ALH 84001 and a terrestrial analogue from Svalbard. Meteoritics & Planetary Science 42",
+          "url": "https://doi.org/10.1111/j.1945-5100.2007.tb00590.x",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "pilbara-dresser",
+      "name": "Pilbara Craton (Dresser & Strelley Pool formations)",
+      "country": "Australia",
+      "lat": -21.12,
+      "lon": 119.4,
+      "origin": "nasa_official",
+      "programs": [
+        "Mars 2020 / ExoMars science-team field expedition"
+      ],
+      "targets": [
+        "mars"
+      ],
+      "summary": "Some of Earth's oldest well-preserved sedimentary rocks (~3.5–3.4 billion years), with stromatolites and hydrothermal deposits; Mars 2020 and ExoMars science teams visited to refine how to recognise ancient biosignatures.",
+      "similarities": [
+        {
+          "qualityId": "microbialites_biosignatures",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Among the oldest widely accepted stromatolites on Earth, formed when early Mars may have had lakes."
+        },
+        {
+          "qualityId": "hydrothermal_deposits",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Hydrothermal chert and barite veins closely associated with early life."
+        },
+        {
+          "qualityId": "layered_sediments",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Layered carbonate and chert sequences in a well-mapped stratigraphic context."
+        },
+        {
+          "qualityId": "crew_geology_training",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Used to train Mars mission scientists in sampling-site selection and contextual measurements."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "mars",
+          "explanation": "Billions of years of metamorphism, deformation and weathering have overprinted the original rocks."
+        },
+        {
+          "target": "mars",
+          "explanation": "Modern vegetation and microbial contamination of outcrops.",
+          "qualityId": "low_biomass"
+        },
+        {
+          "target": "mars",
+          "explanation": "Surface gravity is about 2.6 times that of Mars, which changes slope stability, sediment transport and crew workload."
+        }
+      ],
+      "researchUse": [
+        "Mars 2020 / ExoMars joint field expedition guided by the Australian Centre for Astrobiology.",
+        "Studies of early Archean stromatolite reefs."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-pilbara.jpg",
+            "caption": "Stromatolite from the ~3.48-billion-year-old Dresser Formation, Pilbara (museum specimen).",
+            "source": "Wikimedia Commons",
+            "instrument": "Specimen photograph",
+            "date": "2019-05-04",
+            "credit": "James St. John",
+            "license": "CC BY 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stromatolite_(Dresser_Formation,_Paleoarchean,_3.48_Ga;_Normay_Mine,_North_Pole_Dome,_Pilbara_Craton,_Western_Australia)_1_(32857204117).jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/m-jezero.jpg",
+            "caption": "Scarps of the Jezero crater delta (crop of a mosaic).",
+            "source": "Wikimedia Commons",
+            "instrument": "Perseverance Mastcam-Z",
+            "date": "2021-04-17",
+            "credit": "NASA/JPL-Caltech/ASU/MSSS",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Scarps_of_Jezero_Crater%E2%80%99s_Delta_(stacked_panoramas).jpg",
+            "target": "mars"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "NASA, partners study ancient life in Australia to inform Mars search (NASA)",
+          "url": "https://www.nasa.gov/general/nasa-partners-study-ancient-life-in-australia-to-inform-mars-search/",
+          "type": "nasa"
+        },
+        {
+          "title": "Allwood, A. C. et al. (2006) Stromatolite reef from the Early Archaean era of Australia. Nature 441",
+          "url": "https://doi.org/10.1038/nature04764",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "dumont-dunes",
+      "name": "Dumont Dunes, Mojave Desert",
+      "country": "United States",
+      "lat": 35.68,
+      "lon": -116.22,
+      "origin": "nasa_official",
+      "programs": [
+        "Mars Science Laboratory mobility tests (JPL)"
+      ],
+      "targets": [
+        "mars"
+      ],
+      "summary": "An active dune field near Death Valley where JPL drove 'Scarecrow', a mobility test rover weighted to match Curiosity's weight on Mars, to characterise slope and sand performance before and after landing.",
+      "similarities": [
+        {
+          "qualityId": "aeolian_bedforms",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Active dunes with slip faces and ripples comparable to the Bagnold Dunes crossed by Curiosity."
+        },
+        {
+          "qualityId": "rover_eva_traversal",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Slope-climbing and slip tests that informed rover driving on Mars."
+        },
+        {
+          "qualityId": "hyperarid",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Mojave Desert climate with very low rainfall."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "mars",
+          "explanation": "Surface gravity is about 2.6 times that of Mars, which changes slope stability, sediment transport and crew workload. Scarecrow omitted most systems to match Curiosity's Mars weight."
+        },
+        {
+          "target": "mars",
+          "explanation": "Quartz sand differs from Martian basaltic sand in density and grain shape."
+        },
+        {
+          "target": "mars",
+          "explanation": "Recreational off-road use disturbs the dunes."
+        }
+      ],
+      "researchUse": [
+        "May 2012 Scarecrow mobility tests before Curiosity's landing.",
+        "Data used for Curiosity drive planning near Mount Sharp."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-dumont.jpg",
+            "caption": "Dumont Dunes, Mojave Desert, California.",
+            "source": "Wikimedia Commons",
+            "instrument": "Ground photograph",
+            "date": "2019-12-10",
+            "credit": "Bureau of Land Management California",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dumont_Dunes_(49279401426).jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/m-namib.jpg",
+            "caption": "Slip face of Namib Dune, Bagnold Dunes, Gale crater (crop).",
+            "source": "Wikimedia Commons",
+            "instrument": "Curiosity Mastcam (PIA20281)",
+            "date": "2016-01",
+            "credit": "NASA/JPL-Caltech/MSSS",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:PIA20281_Slip_Face_on_Downwind_Side_of_Namib_Sand_Dune.jpg",
+            "target": "mars"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "Scarecrow rover desert tests (NASA Science)",
+          "url": "https://science.nasa.gov/resource/scarecrow-rover-desert-tests/",
+          "type": "nasa"
+        },
+        {
+          "title": "Test rover aids preparations in California for Curiosity rover on Mars (PIA15682)",
+          "url": "https://photojournal.jpl.nasa.gov/catalog/PIA15682",
+          "type": "nasa"
+        },
+        {
+          "title": "Heverly, M. et al. (2013) Traverse performance characterization for the Mars Science Laboratory rover. Journal of Field Robotics 30",
+          "url": "https://doi.org/10.1002/rob.21481",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "askja-holuhraun",
+      "name": "Askja & Holuhraun, Icelandic Highlands",
+      "country": "Iceland",
+      "lat": 64.95,
+      "lon": -16.78,
+      "origin": "nasa_official",
+      "programs": [
+        "Apollo geology training (1965 Askja; 1967 Iceland)",
+        "Artemis II crew geology training"
+      ],
+      "targets": [
+        "moon",
+        "mars"
+      ],
+      "summary": "A barren volcanic highland of basaltic lava, tephra and glaciovolcanic landforms; Apollo astronauts trained around Askja, the Artemis II crew trained in Iceland, and the 2014–2015 Holuhraun flow field is studied as a Mars flood-lava analogue.",
+      "similarities": [
+        {
+          "qualityId": "crew_geology_training",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Apollo astronauts trained in Iceland in 1965 (including Askja) and 1967; the Artemis II crew also trained in Iceland."
+        },
+        {
+          "qualityId": "basaltic_volcanism",
+          "target": "moon",
+          "strength": "moderate",
+          "explanation": "Extensive, little-vegetated basaltic lavas and tephra."
+        },
+        {
+          "qualityId": "basaltic_volcanism",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "The Holuhraun flood-lava field is compared with young volcanic terrains in Elysium Planitia, Mars."
+        },
+        {
+          "qualityId": "glacial_periglacial",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Volcano–ice interaction (subglacial eruptions, outwash plains) as proposed for parts of Mars."
+        },
+        {
+          "qualityId": "hydrothermal_deposits",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Geothermal alteration in volcano–ice settings offers potential microbial habitats."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "moon",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Moon has neither."
+        },
+        {
+          "target": "moon",
+          "explanation": "Surface gravity is about six times that of the Moon, so suits, rovers and regolith mechanics behave differently."
+        },
+        {
+          "target": "moon",
+          "explanation": "Abundant water, ice and active weathering; the Moon is anhydrous."
+        },
+        {
+          "target": "mars",
+          "explanation": "Surface gravity is about 2.6 times that of Mars, which changes slope stability, sediment transport and crew workload."
+        },
+        {
+          "target": "mars",
+          "explanation": "Subarctic maritime climate with frequent precipitation.",
+          "qualityId": "hyperarid"
+        }
+      ],
+      "researchUse": [
+        "Apollo-era astronaut geology field trips to Askja.",
+        "Artemis II crew geology training.",
+        "Morphological studies of the Holuhraun lava flow as a Mars analogue."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-askja.jpg",
+            "caption": "Víti crater and Öskjuvatn in the Askja caldera, Icelandic Highlands, from the air.",
+            "source": "Wikimedia Commons",
+            "instrument": "Aerial photograph",
+            "date": "2023-08-26",
+            "credit": "Areuland",
+            "license": "CC BY 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Luftbild_Viti_und_%C3%96skjuvatn_-_Vulkan_Askja.jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/l-tracy.jpg",
+            "caption": "Harrison Schmitt, a field geologist, at 'Tracy's Rock', Apollo 17 Station 6.",
+            "source": "Wikimedia Commons",
+            "instrument": "Apollo 17 Hasselblad, AS17-140-21493",
+            "date": "1972-12-13",
+            "credit": "NASA (photo: Eugene Cernan)",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tracy%27s_Rock_(Split_Rock),_AS17-140-21493.jpg",
+            "target": "moon"
+          },
+          {
+            "url": "/images/sites/m-athabasca.jpg",
+            "caption": "Platy flood-lava surface in Athabasca Valles.",
+            "source": "Wikimedia Commons",
+            "instrument": "MRO HiRISE, ESP_049736_1880",
+            "date": "2017-03",
+            "credit": "NASA/JPL/University of Arizona",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:ESP_049736_1880_(23924305708).jpg",
+            "target": "mars"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "NASA's Artemis II crew uses Iceland terrain for lunar training (NASA Science)",
+          "url": "https://science.nasa.gov/missions/artemis/nasas-artemis-ii-crew-uses-iceland-terrain-for-lunar-training/",
+          "type": "nasa"
+        },
+        {
+          "title": "Science Training History of the Apollo Astronauts, NASA/SP-2015-626 (NASA NTRS)",
+          "url": "https://ntrs.nasa.gov/citations/20190026783",
+          "type": "nasa"
+        },
+        {
+          "title": "Voigt, J. R. C., Hamilton, C. W., Keszthelyi, L. P. et al. (2025) The 2014–2015 Holuhraun lava flow-field in Iceland as a planetary analog for young volcanic terrains in Elysium Planitia, Mars. Planetary Science Journal 6",
+          "url": "https://doi.org/10.3847/PSJ/adb5f1",
+          "type": "peer_reviewed"
+        },
+        {
+          "title": "Cousins, C. R. & Crawford, I. A. (2011) Volcano-ice interaction as a microbial habitat on Earth and Mars. Astrobiology 11",
+          "url": "https://doi.org/10.1089/ast.2010.0550",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "nordlinger-ries",
+      "name": "Nördlinger Ries",
+      "country": "Germany",
+      "lat": 48.88,
+      "lon": 10.56,
+      "origin": "nasa_official",
+      "programs": [
+        "Apollo 14 geology training (1970)"
+      ],
+      "targets": [
+        "moon",
+        "mars"
+      ],
+      "summary": "A ~24 km, ~14.8-million-year-old complex impact structure with classic suevite and impact breccias, where the Apollo 14 crews trained in August 1970 before sampling Cone crater's ejecta.",
+      "similarities": [
+        {
+          "qualityId": "impact_craters",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Suevite, polymict breccias and shocked minerals; a type locality for impact petrology."
+        },
+        {
+          "qualityId": "crew_geology_training",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Apollo 14 prime and backup crews trained here to recognise impact ejecta."
+        },
+        {
+          "qualityId": "impact_craters",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Impact into layered sedimentary and crystalline targets, relevant to Martian craters in layered terrain."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "moon",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Moon has neither."
+        },
+        {
+          "target": "moon",
+          "explanation": "Surface gravity is about six times that of the Moon, so suits, rovers and regolith mechanics behave differently."
+        },
+        {
+          "target": "moon",
+          "explanation": "Farmland, towns and vegetation cover most of the structure; exposures are mainly in quarries."
+        },
+        {
+          "target": "mars",
+          "explanation": "Surface gravity is about 2.6 times that of Mars, which changes slope stability, sediment transport and crew workload."
+        },
+        {
+          "target": "mars",
+          "explanation": "Temperate humid climate; abundant life.",
+          "qualityId": "low_biomass"
+        }
+      ],
+      "researchUse": [
+        "Apollo 14 crew training (week of 10 August 1970).",
+        "Reference site for suevite formation and impact modelling."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-ries-apollo.jpg",
+            "caption": "Apollo 14 prime and backup crews during geology training in the Nördlinger Ries, August 1970.",
+            "source": "Wikimedia Commons",
+            "instrument": "Field photograph",
+            "date": "1970-08-14",
+            "credit": "NASA",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apollo_14_geology_training_N%C3%B6rdlingen_Ries_Crater_Germany_10-15_August_1970.jpg"
+          },
+          {
+            "url": "/images/sites/e-ries.jpg",
+            "caption": "The ~24 km Nördlinger Ries impact structure from orbit.",
+            "source": "Wikimedia Commons",
+            "instrument": "Declassified satellite panoramic camera image DZB1207-500027L007001",
+            "date": "1973-11-18",
+            "credit": "USGS EarthExplorer",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:N%C3%B6rdlinger_Ries_crater_1973-11-18_DZB1207-500027L007001.jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/l-cone.jpg",
+            "caption": "Boulders on the rim of Cone crater, Fra Mauro highlands, during Apollo 14 EVA-2.",
+            "source": "Wikimedia Commons",
+            "instrument": "Apollo 14 Hasselblad, AS14-64-9101",
+            "date": "1971-02-06",
+            "credit": "NASA",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apollo_14_cone_crater_boulders.jpg",
+            "target": "moon"
+          },
+          {
+            "url": "/images/sites/m-victoria.jpg",
+            "caption": "Victoria crater (~750 m), Meridiani Planum, with Opportunity on the rim.",
+            "source": "Wikimedia Commons",
+            "instrument": "MRO HiRISE",
+            "date": "2006-10-03",
+            "credit": "NASA/JPL/University of Arizona",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Victoria_crater_from_HiRise.jpg",
+            "target": "mars"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "Nördlinger Ries Crater, Germany: Apollo 14 field trip (Apollo Lunar Surface Journal, NASA)",
+          "url": "https://history.nasa.gov/alsj/a14/a14ries.html",
+          "type": "nasa"
+        },
+        {
+          "title": "Stöffler, D. et al. (2013) Ries crater and suevite revisited — Observations and modeling Part I. Meteoritics & Planetary Science 48",
+          "url": "https://doi.org/10.1111/maps.12086",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "sudbury",
+      "name": "Sudbury impact structure",
+      "country": "Canada",
+      "lat": 46.6,
+      "lon": -81.18,
+      "origin": "nasa_official",
+      "programs": [
+        "Apollo 16 geology training"
+      ],
+      "targets": [
+        "moon"
+      ],
+      "summary": "A 1.85-billion-year-old impact structure, originally ~200 km across and now deformed, with shatter cones, breccias and a thick impact-melt sheet; Apollo 16 astronauts trained here in 1971.",
+      "similarities": [
+        {
+          "qualityId": "impact_craters",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Shatter cones, pseudotachylite breccias and a differentiated impact-melt sheet comparable to lunar basin-forming impacts."
+        },
+        {
+          "qualityId": "crew_geology_training",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Apollo 16 crew field training in July 1971 on impact breccias."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "moon",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Moon has neither."
+        },
+        {
+          "target": "moon",
+          "explanation": "Surface gravity is about six times that of the Moon, so suits, rovers and regolith mechanics behave differently."
+        },
+        {
+          "target": "moon",
+          "explanation": "Deformed and eroded by later orogeny and glaciation; the original crater form is not preserved."
+        },
+        {
+          "target": "moon",
+          "explanation": "Forest, lakes and mining infrastructure cover much of the structure."
+        }
+      ],
+      "researchUse": [
+        "Apollo 16 crew field training (July 1971).",
+        "Studies of large impact-melt sheets and ore genesis."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-sudbury.jpg",
+            "caption": "Shatter cone from the 1.85-billion-year-old Sudbury impact structure (museum specimen).",
+            "source": "Wikimedia Commons",
+            "instrument": "Specimen photograph",
+            "date": "2006-07-22",
+            "credit": "James St. John",
+            "license": "CC BY 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shattercone_(Paleoproterozoic,_1.85_Ga;_Sudbury_Impact_Structure,_Ontario,_Canada)_(14824505423).jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/l-orientale.jpg",
+            "caption": "Orientale multi-ring impact basin (~930 km across).",
+            "source": "Wikimedia Commons",
+            "instrument": "Lunar Reconnaissance Orbiter Camera (WAC mosaic)",
+            "date": "LRO mission data",
+            "credit": "NASA/GSFC/Arizona State University",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mare_Orientale_(LRO).png",
+            "target": "moon"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "50 Years Ago: NASA selects landing site for Apollo 16 (NASA History)",
+          "url": "https://www.nasa.gov/history/50-years-ago-nasa-selects-landing-site-for-apollo-16/",
+          "type": "nasa"
+        },
+        {
+          "title": "Grieve, R. A. F., Stöffler, D. & Deutsch, A. (1991) The Sudbury structure: Controversial or misunderstood? JGR 96(E5)",
+          "url": "https://doi.org/10.1029/91JE02513",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "west-clearwater",
+      "name": "West Clearwater Lake impact structure",
+      "country": "Canada",
+      "lat": 56.21,
+      "lon": -74.5,
+      "origin": "nasa_official",
+      "programs": [
+        "FINESSE (NASA SSERVI)"
+      ],
+      "targets": [
+        "moon"
+      ],
+      "summary": "A ~36 km complex impact structure with a central ring of islands and impact-melt rocks in northern Québec; the FINESSE team's impact field site for lunar and small-body science.",
+      "similarities": [
+        {
+          "qualityId": "impact_craters",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Complex crater with a central uplift ring, impact-melt sheets and breccias, comparable to lunar complex craters."
+        },
+        {
+          "qualityId": "isolation_remoteness",
+          "target": "moon",
+          "strength": "moderate",
+          "explanation": "Very remote subarctic site requiring float-plane logistics."
+        },
+        {
+          "qualityId": "instrument_sample_testing",
+          "target": "moon",
+          "strength": "moderate",
+          "explanation": "FINESSE tested field instruments and sampling strategies for impact rocks."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "moon",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Moon has neither."
+        },
+        {
+          "target": "moon",
+          "explanation": "Surface gravity is about six times that of the Moon, so suits, rovers and regolith mechanics behave differently."
+        },
+        {
+          "target": "moon",
+          "explanation": "Glacially eroded and partly drowned; boreal forest and lakes cover much of it."
+        }
+      ],
+      "researchUse": [
+        "FINESSE impact-science deployments (from 2014).",
+        "Geochronology and shock studies of impact melt."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-westclear.jpg",
+            "caption": "The Clearwater Lakes impact structures; West Clearwater is the larger basin with a ring of islands.",
+            "source": "Wikimedia Commons",
+            "instrument": "Landsat 8 Operational Land Imager",
+            "date": "2019-09-18",
+            "credit": "NASA/USGS Landsat",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clearwater_Lakes_LC08_L1TP_018021_20190918_20190926_01_T1.jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/l-tycho.jpg",
+            "caption": "Sunrise oblique view of the central peak complex of Tycho, an 85 km complex crater.",
+            "source": "Wikimedia Commons",
+            "instrument": "Lunar Reconnaissance Orbiter Camera (NAC)",
+            "date": "2011-06-10",
+            "credit": "NASA/GSFC/Arizona State University",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:LRO_Tycho_Central_Peak_0.25.jpg",
+            "target": "moon"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "FINESSE overview (NASA)",
+          "url": "https://www.nasa.gov/general/overview-finesse/",
+          "type": "nasa"
+        },
+        {
+          "title": "Chinchalkar, A. et al. (2024) Zircon microstructures record high temperature and pressure conditions during impact melt evolution at the West Clearwater Lake impact structure, Canada. EPSL 636",
+          "url": "https://doi.org/10.1016/j.epsl.2024.118714",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "mcmurdo-dry-valleys",
+      "name": "McMurdo Dry Valleys",
+      "country": "Antarctica",
+      "lat": -77.5,
+      "lon": 162.0,
+      "origin": "literature",
+      "programs": [
+        "US Antarctic Program research"
+      ],
+      "targets": [
+        "mars"
+      ],
+      "summary": "The largest ice-free region of Antarctica: a cold polar desert with ice-cemented permafrost, sublimation-dominated landforms and very low biomass, widely regarded as one of the closest terrestrial analogues to Martian surface conditions.",
+      "similarities": [
+        {
+          "qualityId": "extreme_cold",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Mean annual temperatures around −20 °C, colder in the upland stable zone."
+        },
+        {
+          "qualityId": "hyperarid",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Very low precipitation and humidity in the upland stable zone; sublimation exceeds melting."
+        },
+        {
+          "qualityId": "permafrost_ground_ice",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Ice-cemented permafrost and buried glacier ice, as found by the Phoenix lander."
+        },
+        {
+          "qualityId": "glacial_periglacial",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Sublimation-type polygons, gullies and debris-covered glaciers similar to Martian landforms."
+        },
+        {
+          "qualityId": "low_biomass",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Microbial communities at the limits of habitability in soils and rocks."
+        },
+        {
+          "qualityId": "oxidizing_soils",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Salt-rich soils with perchlorate in some locations."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "mars",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Martian surface has neither."
+        },
+        {
+          "target": "mars",
+          "explanation": "Surface gravity is about 2.6 times that of Mars, which changes slope stability, sediment transport and crew workload."
+        },
+        {
+          "target": "mars",
+          "explanation": "Seasonal meltwater streams and lakes in the lower valleys."
+        },
+        {
+          "target": "mars",
+          "explanation": "Air pressure is about 160 times higher than on Mars.",
+          "qualityId": "high_altitude_low_pressure"
+        }
+      ],
+      "researchUse": [
+        "Geomorphology of microclimate zones as a guide to Martian climate.",
+        "Microbial ecology at the cold–dry limits of life."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-mcmurdo.jpg",
+            "caption": "Taylor Valley, McMurdo Dry Valleys, Antarctica.",
+            "source": "Wikimedia Commons",
+            "instrument": "Ground photograph",
+            "date": "2017-02-26",
+            "credit": "owamux",
+            "license": "CC BY 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taylor_Valley_of_the_McMurdo_Dry_Valleys.jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/m-phoenix-poly.jpg",
+            "caption": "Polygonal patterned ground at the Phoenix landing site (false colour).",
+            "source": "Wikimedia Commons",
+            "instrument": "Phoenix Surface Stereo Imager",
+            "date": "2008-05-26",
+            "credit": "NASA/JPL-Caltech/University of Arizona",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mars_from_Phoenix.jpg",
+            "target": "mars"
+          },
+          {
+            "url": "/images/sites/m-phoenix-ice.jpg",
+            "caption": "'Dodo-Goldilocks' trench exposing shallow water ice at the Phoenix site.",
+            "source": "Wikimedia Commons",
+            "instrument": "Phoenix Surface Stereo Imager (PIA10903)",
+            "date": "2008-06-13",
+            "credit": "NASA/JPL-Caltech/University of Arizona/Texas A&M",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:PIA10903-_%22Dodo-Goldilocks%22_Trench.jpg",
+            "target": "mars"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "Marchant, D. R. & Head, J. W. (2007) Antarctic dry valleys: Microclimate zonation, variable geomorphic processes, and implications for assessing climate change on Mars. Icarus 192",
+          "url": "https://doi.org/10.1016/j.icarus.2007.06.018",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "mdrs-utah",
+      "name": "Mars Desert Research Station",
+      "country": "United States",
+      "lat": 38.406,
+      "lon": -110.792,
+      "origin": "literature",
+      "programs": [
+        "The Mars Society"
+      ],
+      "targets": [
+        "mars"
+      ],
+      "summary": "A Mars Society habitat near Hanksville, Utah, among colourful Jurassic–Cretaceous sedimentary rocks with exhumed, inverted channels and concretions; used since 2001 for two-week simulated Mars missions.",
+      "similarities": [
+        {
+          "qualityId": "layered_sediments",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Brightly coloured fluvial and marine sedimentary layers."
+        },
+        {
+          "qualityId": "clay_minerals",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Clay-rich mudstones (e.g., the Morrison Formation) with swelling clays."
+        },
+        {
+          "qualityId": "isolation_remoteness",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Crews follow simulated-mission protocols, though help is nearby."
+        },
+        {
+          "qualityId": "rover_eva_traversal",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Regular simulated EVAs in mock suits with vehicles."
+        },
+        {
+          "qualityId": "hyperarid",
+          "target": "mars",
+          "strength": "partial",
+          "explanation": "Arid (not hyperarid) Colorado Plateau desert."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "mars",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Martian surface has neither."
+        },
+        {
+          "target": "mars",
+          "explanation": "Surface gravity is about 2.6 times that of Mars, which changes slope stability, sediment transport and crew workload."
+        },
+        {
+          "target": "mars",
+          "explanation": "Occasional flash floods and seasonal snow."
+        },
+        {
+          "target": "mars",
+          "explanation": "Desert soils host microbes and some vegetation.",
+          "qualityId": "low_biomass"
+        }
+      ],
+      "researchUse": [
+        "Annual field seasons of student and professional crews since 2001.",
+        "Studies of inverted channels and concretions as analogues for Martian sinuous ridges and Meridiani spherules."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-mdrs.jpg",
+            "caption": "Mars Desert Research Station campus near Hanksville, Utah.",
+            "source": "Wikimedia Commons",
+            "instrument": "Ground photograph",
+            "date": "2020-10-07",
+            "credit": "The Mars Society / MDRS",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mars_Desert_Research_Station_2020.jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/m-inverted.jpg",
+            "caption": "Inverted fluvial channel standing in relief.",
+            "source": "Wikimedia Commons",
+            "instrument": "MRO HiRISE, ESP_012435_2015",
+            "date": "2009",
+            "credit": "NASA/JPL/University of Arizona",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Inverted_Channel_012435.jpg",
+            "target": "mars"
+          },
+          {
+            "url": "/images/sites/m-sharp.jpg",
+            "caption": "Layered sedimentary rocks at the base of Mount Sharp, Gale crater.",
+            "source": "Wikimedia Commons",
+            "instrument": "Curiosity Mastcam (PIA16105)",
+            "date": "2012",
+            "credit": "NASA/JPL-Caltech/MSSS",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:PIA16105_Layers_at_the_Base_of_Mount_Sharp.jpg",
+            "target": "mars"
+          },
+          {
+            "url": "/images/sites/m-clays.jpg",
+            "caption": "Clay-bearing layered terrain at Mawrth Vallis (enhanced colour).",
+            "source": "Wikimedia Commons",
+            "instrument": "MRO HiRISE",
+            "date": "published 2019",
+            "credit": "NASA/JPL/University of Arizona",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Colorful_Mawrth_Vallis_(47259462272).jpg",
+            "target": "mars"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "Clarke, J. D. A. & Stoker, C. R. (2011) Concretions in exhumed and inverted channels near Hanksville Utah: implications for Mars. International Journal of Astrobiology 10",
+          "url": "https://doi.org/10.1017/S1473550411000048",
+          "type": "peer_reviewed"
+        },
+        {
+          "title": "Mars Desert Research Station (The Mars Society)",
+          "url": "https://mdrs.marssociety.org/",
+          "type": "other"
+        }
+      ]
+    },
+    {
+      "id": "lonar-crater",
+      "name": "Lonar Crater",
+      "country": "India",
+      "lat": 19.976,
+      "lon": 76.508,
+      "origin": "literature",
+      "programs": [],
+      "targets": [
+        "moon",
+        "mars"
+      ],
+      "summary": "A ~1.8 km Pleistocene simple impact crater in Deccan flood basalt (published ages range from ~50,000 to ~570,000 years), one of the few well-preserved terrestrial craters formed in basaltic target rock.",
+      "similarities": [
+        {
+          "qualityId": "impact_craters",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Simple crater in basalt with shocked plagioclase (maskelynite) and impact glass, like small lunar mare craters."
+        },
+        {
+          "qualityId": "basaltic_volcanism",
+          "target": "moon",
+          "strength": "moderate",
+          "explanation": "Deccan basalt target, compositionally closer to mare basalt than most impact targets on Earth."
+        },
+        {
+          "qualityId": "impact_craters",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "An analogue for impacts into Martian basaltic plains."
+        },
+        {
+          "qualityId": "basaltic_volcanism",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Flood-basalt target rocks."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "moon",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Moon has neither."
+        },
+        {
+          "target": "moon",
+          "explanation": "Surface gravity is about six times that of the Moon, so suits, rovers and regolith mechanics behave differently."
+        },
+        {
+          "target": "moon",
+          "explanation": "Monsoon climate, a saline lake and dense vegetation."
+        },
+        {
+          "target": "mars",
+          "explanation": "The crater hosts a saline, alkaline lake rich in life.",
+          "qualityId": "low_biomass"
+        },
+        {
+          "target": "mars",
+          "explanation": "Humid monsoon climate.",
+          "qualityId": "hyperarid"
+        }
+      ],
+      "researchUse": [
+        "Geological mapping, shock petrology and dating of the crater.",
+        "Studies of impact into basalt."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-lonar.jpg",
+            "caption": "Lonar crater lake, Buldhana district, Maharashtra.",
+            "source": "Wikimedia Commons",
+            "instrument": "Ground photograph",
+            "date": "2023-12-25",
+            "credit": "Kumbharamit",
+            "license": "CC0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lonar_Lake_view.jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/l-linne.jpg",
+            "caption": "Linné crater (2.2 km), a young, fresh simple crater in mare basalt, Mare Serenitatis.",
+            "source": "Wikimedia Commons",
+            "instrument": "Lunar Reconnaissance Orbiter Camera (NAC)",
+            "date": "2014-01-18",
+            "credit": "NASA/GSFC/Arizona State University",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Linne_(LRO)_1.png",
+            "target": "moon"
+          },
+          {
+            "url": "/images/sites/m-victoria.jpg",
+            "caption": "Victoria crater (~750 m), Meridiani Planum, with Opportunity on the rim.",
+            "source": "Wikimedia Commons",
+            "instrument": "MRO HiRISE",
+            "date": "2006-10-03",
+            "credit": "NASA/JPL/University of Arizona",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Victoria_crater_from_HiRise.jpg",
+            "target": "mars"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "Maloof, A. C. et al. (2010) Geology of Lonar Crater, India. GSA Bulletin 122",
+          "url": "https://doi.org/10.1130/B26474.1",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "dallol-danakil",
+      "name": "Dallol, Danakil Depression",
+      "country": "Ethiopia",
+      "lat": 14.24,
+      "lon": 40.3,
+      "origin": "literature",
+      "programs": [
+        "Europlanet / independent research"
+      ],
+      "targets": [
+        "mars"
+      ],
+      "summary": "A polyextreme hydrothermal field below sea level in the Afar rift, with hyperacidic (pH < 1), hypersaline, iron-rich brines, salt chimneys and evaporites.",
+      "similarities": [
+        {
+          "qualityId": "hydrothermal_deposits",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Active hydrothermal system precipitating salts, iron oxides and silica."
+        },
+        {
+          "qualityId": "evaporites_sulfates",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Thick halite, sylvite and sulfate evaporites of the Danakil salt plain."
+        },
+        {
+          "qualityId": "hyperarid",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "One of the hottest, driest inhabited regions on Earth."
+        },
+        {
+          "qualityId": "low_biomass",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "The most extreme pools appear to lack active life, constraining habitability limits."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "mars",
+          "explanation": "Surface temperatures are very high, the opposite of the cold Martian surface.",
+          "qualityId": "extreme_cold"
+        },
+        {
+          "target": "mars",
+          "explanation": "Surface gravity is about 2.6 times that of Mars, which changes slope stability, sediment transport and crew workload."
+        },
+        {
+          "target": "mars",
+          "explanation": "Brines are actively fed by magmatic heat; present-day Mars lacks such systems."
+        }
+      ],
+      "researchUse": [
+        "Microbial diversity along polyextreme gradients.",
+        "Geochemistry of iron-controlled hyperacidic brines."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-dallol.jpg",
+            "caption": "The Dallol hydrothermal field, Danakil Depression, from the air.",
+            "source": "Wikimedia Commons",
+            "instrument": "Aerial photograph",
+            "date": "2019-11-15",
+            "credit": "Thomas Fuhrmann",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ethiopia_-_Dallol.jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/m-silica.jpg",
+            "caption": "'Gertrude Weise': soil of ~90% opaline silica exposed by Spirit's wheel near Home Plate.",
+            "source": "Wikimedia Commons",
+            "instrument": "Spirit Pancam (PIA09403)",
+            "date": "2007-04-06",
+            "credit": "NASA/JPL-Caltech/Cornell",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spirit_Mars_Silica_April_20_2007.jpg",
+            "target": "mars"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "Belilla, J. et al. (2019) Hyperdiverse archaea near life limits at the polyextreme geothermal Dallol area. Nature Ecology & Evolution 3",
+          "url": "https://doi.org/10.1038/s41559-019-1005-0",
+          "type": "peer_reviewed"
+        },
+        {
+          "title": "Kotopoulou, E. et al. (2018) A polyextreme hydrothermal system controlled by iron: the case of Dallol at the Afar Triangle. ACS Earth and Space Chemistry 3",
+          "url": "https://doi.org/10.1021/acsearthspacechem.8b00141",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "mistastin-lake",
+      "name": "Mistastin Lake impact structure",
+      "country": "Canada",
+      "lat": 55.88,
+      "lon": -63.3,
+      "origin": "literature",
+      "programs": [
+        "Canadian Lunar Research Network"
+      ],
+      "targets": [
+        "moon"
+      ],
+      "summary": "A ~28 km, ~36-million-year-old impact structure in Labrador, one of the few on Earth formed in anorthosite, the dominant rock of the lunar highlands.",
+      "similarities": [
+        {
+          "qualityId": "anorthositic_rock",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Anorthosite and related rocks of the Mistastin batholith form the target rock."
+        },
+        {
+          "qualityId": "impact_craters",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "Anorthositic impact melt, shocked plagioclase and breccias directly comparable to lunar highland samples."
+        },
+        {
+          "qualityId": "isolation_remoteness",
+          "target": "moon",
+          "strength": "moderate",
+          "explanation": "Remote, roadless site."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "moon",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Moon has neither."
+        },
+        {
+          "target": "moon",
+          "explanation": "Surface gravity is about six times that of the Moon, so suits, rovers and regolith mechanics behave differently."
+        },
+        {
+          "target": "moon",
+          "explanation": "Glacially eroded, partly lake-filled and vegetated."
+        },
+        {
+          "target": "moon",
+          "explanation": "Terrestrial anorthosites formed with water present and differ chemically from lunar ferroan anorthosite."
+        }
+      ],
+      "researchUse": [
+        "Geochemistry of anorthositic impact melt as a lunar highlands analogue."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-mistastin.jpg",
+            "caption": "Mistastin Lake impact structure, Labrador, with its central island.",
+            "source": "Wikimedia Commons",
+            "instrument": "Landsat 8 Operational Land Imager",
+            "date": "2017-09-11",
+            "credit": "NASA Earth Observatory, Landsat data from USGS",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mistastin_oli_2017254_lrg.jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/l-genesis.jpg",
+            "caption": "The 'Genesis Rock' (sample 15415, anorthosite) before collection near Spur crater.",
+            "source": "Wikimedia Commons",
+            "instrument": "Apollo 15 Hasselblad, AS15-86-11670",
+            "date": "1971-08-01",
+            "credit": "NASA",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apollo_15_The_Genesis_Rock.jpg",
+            "target": "moon"
+          },
+          {
+            "url": "/images/sites/l-a16.jpg",
+            "caption": "Descartes highlands at the Apollo 16 landing site, seen from the Lunar Module.",
+            "source": "Wikimedia Commons",
+            "instrument": "Apollo 16 Hasselblad panorama",
+            "date": "1972-04-21",
+            "credit": "NASA / LPI",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apollo_16_Landing_Site,_View_from_LM.jpg",
+            "target": "moon"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "Marion, C. L. & Sylvester, P. J. (2010) Composition and heterogeneity of anorthositic impact melt at Mistastin Lake crater, Labrador. Planetary and Space Science 58",
+          "url": "https://doi.org/10.1016/j.pss.2009.09.018",
+          "type": "peer_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "lanzarote",
+      "name": "Lanzarote (Corona lava tube & Timanfaya)",
+      "country": "Spain",
+      "lat": 29.16,
+      "lon": -13.44,
+      "origin": "literature",
+      "programs": [
+        "ESA PANGAEA training",
+        "ESA CAVES"
+      ],
+      "targets": [
+        "moon",
+        "mars"
+      ],
+      "summary": "A volcanic island with one of the longest known lava tubes (~8 km, partly submarine) and recent, little-vegetated lava fields; used by ESA for astronaut geology (PANGAEA) and cave-operations training.",
+      "similarities": [
+        {
+          "qualityId": "lava_tubes",
+          "target": "moon",
+          "strength": "strong",
+          "explanation": "The Corona tube and its skylights are a reference for lunar pits such as Marius Hills."
+        },
+        {
+          "qualityId": "basaltic_volcanism",
+          "target": "moon",
+          "strength": "moderate",
+          "explanation": "Basaltic lava fields from the 1730–1736 Timanfaya eruptions."
+        },
+        {
+          "qualityId": "crew_geology_training",
+          "target": "moon",
+          "strength": "moderate",
+          "explanation": "ESA's PANGAEA course trains astronauts in planetary geology here."
+        },
+        {
+          "qualityId": "lava_tubes",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Comparable to tubes inferred on Martian volcanoes, though Martian tubes may be far larger."
+        },
+        {
+          "qualityId": "basaltic_volcanism",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Basaltic lavas and cinder cones."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "moon",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Moon has neither."
+        },
+        {
+          "target": "moon",
+          "explanation": "Surface gravity is about six times that of the Moon, so suits, rovers and regolith mechanics behave differently."
+        },
+        {
+          "target": "moon",
+          "explanation": "Lunar tubes may be much larger than terrestrial ones because of low gravity."
+        },
+        {
+          "target": "mars",
+          "explanation": "Surface gravity is about 2.6 times that of Mars, which changes slope stability, sediment transport and crew workload."
+        },
+        {
+          "target": "mars",
+          "explanation": "Oceanic, mild climate; lichens and microbes colonise the lava.",
+          "qualityId": "low_biomass"
+        }
+      ],
+      "researchUse": [
+        "ESA PANGAEA astronaut geology training.",
+        "Comparative morphology of terrestrial, lunar and Martian lava tubes."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-lanzarote.jpg",
+            "caption": "Entrance to Cueva de los Verdes, part of the Corona lava tube, Lanzarote.",
+            "source": "Wikimedia Commons",
+            "instrument": "Ground photograph",
+            "date": "2018-05-06",
+            "credit": "H. Zell",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cueva_de_los_Verdes_-_Lanzarote_02.jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/l-marius.jpg",
+            "caption": "Marius Hills pit (~65 m across), a candidate lava-tube skylight.",
+            "source": "Wikimedia Commons",
+            "instrument": "Lunar Reconnaissance Orbiter Camera (NAC)",
+            "date": "2010-03-01",
+            "credit": "NASA/GSFC/Arizona State University",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marius_Hills_Pit_-_Lava_Tube_Skylight%3F_(LROC202_-_M114328462R_enlargement).png",
+            "target": "moon"
+          },
+          {
+            "url": "/images/sites/m-arsia.jpg",
+            "caption": "Dark pit on the flank of Arsia Mons, a possible cave entrance.",
+            "source": "Wikimedia Commons",
+            "instrument": "MRO HiRISE",
+            "date": "2007-08-09",
+            "credit": "NASA/JPL/University of Arizona",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mars;_Arsia_Mons_cave_entrance_-MRO.jpg",
+            "target": "mars"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "Sauro, F. et al. (2020) Lava tubes on Earth, Moon and Mars: A review on their size and morphology revealed by comparative planetology. Earth-Science Reviews 209",
+          "url": "https://doi.org/10.1016/j.earscirev.2020.103288",
+          "type": "peer_reviewed"
+        },
+        {
+          "title": "PANGAEA: planetary geology training for astronauts (ESA)",
+          "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/CAVES_and_Pangaea",
+          "type": "other"
+        }
+      ]
+    },
+    {
+      "id": "axel-heiberg-springs",
+      "name": "Expedition Fiord cold springs, Axel Heiberg Island",
+      "country": "Canada",
+      "lat": 79.42,
+      "lon": -90.75,
+      "origin": "literature",
+      "programs": [
+        "McGill Arctic Research Station"
+      ],
+      "targets": [
+        "mars"
+      ],
+      "summary": "Perennial saline springs that flow year-round through ~600 m of continuous permafrost at mean annual air temperatures near −15 °C, depositing gypsum, halite and other salts.",
+      "similarities": [
+        {
+          "qualityId": "permafrost_ground_ice",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Deep continuous permafrost with groundwater flow through it."
+        },
+        {
+          "qualityId": "extreme_cold",
+          "target": "mars",
+          "strength": "strong",
+          "explanation": "Springs keep flowing in winter air temperatures below −40 °C."
+        },
+        {
+          "qualityId": "evaporites_sulfates",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Gypsum, halite and thenardite precipitate around spring outlets."
+        },
+        {
+          "qualityId": "glacial_periglacial",
+          "target": "mars",
+          "strength": "moderate",
+          "explanation": "Glaciers, push moraines and periglacial landforms nearby."
+        }
+      ],
+      "limitations": [
+        {
+          "target": "mars",
+          "explanation": "Earth's dense atmosphere and magnetic field shield the surface from radiation and micrometeorites; the Martian surface has neither."
+        },
+        {
+          "target": "mars",
+          "explanation": "Surface gravity is about 2.6 times that of Mars, which changes slope stability, sediment transport and crew workload."
+        },
+        {
+          "target": "mars",
+          "explanation": "Springs host microbial mats; the landscape has tundra vegetation.",
+          "qualityId": "low_biomass"
+        },
+        {
+          "target": "mars",
+          "explanation": "Liquid water is stable seasonally at the surface."
+        }
+      ],
+      "researchUse": [
+        "Studies of cold perennial springs as possible analogues for Martian groundwater discharge.",
+        "Microbiology of saline, subzero springs."
+      ],
+      "images": {
+        "earth": [
+          {
+            "url": "/images/sites/e-axel.jpg",
+            "caption": "Expedition Fiord area, Axel Heiberg Island, seen from Wolf Mountain.",
+            "source": "Wikimedia Commons",
+            "instrument": "Ground photograph",
+            "date": "1975-06-24",
+            "credit": "Lorenz King",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Axel_Heiberg_Island_06.jpg"
+          }
+        ],
+        "target": [
+          {
+            "url": "/images/sites/m-gullies.jpg",
+            "caption": "Gullies and dunes on a Martian crater wall.",
+            "source": "Wikimedia Commons",
+            "instrument": "MRO HiRISE (PIA11178)",
+            "date": "2011",
+            "credit": "NASA/JPL-Caltech/University of Arizona",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:PIA11178_-_The_Contrasting_Colors_of_Crater_Dunes_and_Gullies.jpg",
+            "target": "mars"
+          }
+        ]
+      },
+      "references": [
+        {
+          "title": "Andersen, D. T. et al. (2002) Cold springs in permafrost on Earth and Mars. JGR Planets 107",
+          "url": "https://doi.org/10.1029/2000JE001436",
+          "type": "peer_reviewed"
+        }
+      ]
+    }
+  ]
+}

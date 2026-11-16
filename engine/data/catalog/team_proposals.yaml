@@ -1,0 +1,315 @@
+# Places proposed as analogs by the team behind Hypatia (Las Pléyades), from their own research.
+#
+# They are NOT in Hypatia's catalogue and no space agency recognises them through this file.
+# The engine measures each one with the same NASA data as every other place; the `proposed`
+# qualities come from the team's rationale and from the cited literature, not from the engine.
+#
+# coords: approximate (about ±0.1°). The engine describes a 40 km terrain window and a climate
+#   cell about 50 km wide, so this precision is enough for it, but not for field work.
+# status: under_review = a published study supports the analogy (see refs);
+#         unverified   = proposed by the team, no supporting study recorded here.
+# proposed: Hypatia quality ids the rationale claims. `evidence` says where the claim comes from:
+#   literature (the cited study) or team (the team's proposal). Strength is never "strong".
+# refs: checked against the Crossref catalogue on 2026-11-15.
+
+proposals:
+  # ------------------------------------------------------------------ ARGENTINA
+  - id: laguna-diamante
+    name: "Laguna Diamante (Galán caldera)"
+    country: "Argentina"
+    lat: -26.02
+    lon: -67.03
+    targets: [mars]
+    status: under_review
+    rationale:
+      es: "Lago dentro de una caldera volcánica a unos 4.570 m, con radiación UV muy alta, aire delgado y aguas muy salinas y ricas en arsénico. Tiene tapetes microbianos de extremófilos y se estudia como análogo de lagos marcianos antiguos y de la búsqueda de vida."
+      en: "A lake inside a volcanic caldera at about 4,570 m, with very high UV radiation, thin air and very saline, arsenic-rich water. It hosts mats of extremophile microbes and is studied as an analog of ancient Martian lakes and of the search for life."
+    note:
+      es: "La propuesta lo ubicaba en Mendoza. El lago de los extremófilos estudiado a esa altitud está en la caldera del Galán, en Catamarca; la Laguna del Diamante de Mendoza está en la caldera del Maipo, a unos 3.300 m. Se usa la ubicación de Catamarca."
+      en: "The proposal placed it in Mendoza. The extremophile lake studied at that altitude is in the Galán caldera, in Catamarca; Mendoza's Laguna del Diamante is in the Maipo caldera, at about 3,300 m. The Catamarca location is used."
+    proposed:
+      - {quality: microbialites_biosignatures, targets: [mars], strength: moderate, evidence: literature,
+         es: "Biopelículas rojas de haloarqueas en un lago salino con arsénico (Rascovan et al., 2016).",
+         en: "Red biofilms of haloarchaea in a saline, arsenic-rich lake (Rascovan et al., 2016)."}
+      - {quality: evaporites_sulfates, targets: [mars], strength: partial, evidence: team,
+         es: "Aguas de salinidad extrema, según la propuesta del equipo.",
+         en: "Water of extreme salinity, as stated in the team's proposal."}
+    refs:
+      - {title: "Rascovan et al. (2016), Metagenomic study of red biofilms from Diamante Lake reveals ancient arsenic bioenergetics in haloarchaea. The ISME Journal", url: "https://doi.org/10.1038/ismej.2015.109", type: peer_reviewed}
+
+  - id: campo-piedra-pomez
+    name: "Campo de Piedra Pómez (Puna)"
+    country: "Argentina"
+    lat: -26.58
+    lon: -67.50
+    targets: [mars]
+    status: under_review
+    rationale:
+      es: "Parte de la Puna de Catamarca: un campo de ignimbrita esculpida por el viento, muy árido, con mucha radiación y megaóndulas de grava. La Puna es la continuación argentina del Atacama chileno, el análogo marciano de referencia."
+      en: "Part of the Puna of Catamarca: a field of wind-sculpted ignimbrite, very arid, with strong radiation and gravel megaripples. The Puna is the Argentine continuation of Chile's Atacama, the reference Mars analog."
+    proposed:
+      - {quality: aeolian_bedforms, targets: [mars], strength: moderate, evidence: literature,
+         es: "Megaóndulas de grava de la Puna estudiadas por sus implicancias para Marte (de Silva et al., 2013).",
+         en: "Gravel megaripples of the Puna studied for their implications for Mars (de Silva et al., 2013)."}
+      - {quality: pyroclastic_deposits, targets: [mars], strength: partial, evidence: literature,
+         es: "El campo está formado por ignimbrita, un depósito piroclástico (de Silva et al., 2013).",
+         en: "The field is made of ignimbrite, a pyroclastic deposit (de Silva et al., 2013)."}
+    refs:
+      - {title: "de Silva et al. (2013), Gravel-mantled megaripples of the Argentinean Puna: A model for their origin and growth with implications for Mars. Geological Society of America Bulletin", url: "https://doi.org/10.1130/B30916.1", type: peer_reviewed}
+      - {title: "de Silva et al. (2010), Yardangs in terrestrial ignimbrites: Synergistic remote and field observations on Earth with applications to Mars. Planetary and Space Science", url: "https://doi.org/10.1016/j.pss.2009.10.002", type: peer_reviewed}
+
+  - id: salar-hombre-muerto
+    name: "Salar del Hombre Muerto (Puna)"
+    country: "Argentina"
+    lat: -25.38
+    lon: -67.08
+    targets: [mars]
+    status: unverified
+    rationale:
+      es: "Salar de altura de la Puna, muy árido, con mucha radiación y suelos salinos."
+      en: "A high-altitude salt flat of the Puna, very arid, with strong radiation and saline soils."
+    proposed:
+      - {quality: evaporites_sulfates, targets: [mars], strength: partial, evidence: team,
+         es: "Costra salina de un salar de altura, según la propuesta del equipo.",
+         en: "Salt crust of a high-altitude salt flat, as stated in the team's proposal."}
+    refs: []
+
+  - id: llullaillaco
+    name: "Volcán Llullaillaco (Puna)"
+    country: "Argentina / Chile"
+    lat: -24.72
+    lon: -68.54
+    targets: [mars]
+    status: under_review
+    rationale:
+      es: "Volcán de más de 6.700 m en la Puna: aire muy delgado, frío, mucha radiación y suelos casi sin vida."
+      en: "A volcano over 6,700 m high in the Puna: very thin air, cold, strong radiation and soils with almost no life."
+    proposed:
+      - {quality: low_biomass, targets: [mars], strength: moderate, evidence: literature,
+         es: "Suelos minerales por encima de 6.000 m con muy poca vida microbiana (Lynch et al., 2012).",
+         en: "Mineral soils above 6,000 m with very little microbial life (Lynch et al., 2012)."}
+    refs:
+      - {title: "Lynch et al. (2012), The potential for microbial life in the highest-elevation (>6000 m.a.s.l.) mineral soils of the Atacama region. Journal of Geophysical Research: Biogeosciences", url: "https://doi.org/10.1029/2012JG001961", type: peer_reviewed}
+
+  - id: payun-matru
+    name: "Payún Matrú (Payunia)"
+    country: "Argentina"
+    lat: -36.42
+    lon: -69.20
+    targets: [moon, mars]
+    status: under_review
+    rationale:
+      es: "Campo volcánico basáltico de Mendoza con coladas muy largas y tubos de lava, útil como análogo de los tubos de lava de la Luna y de Marte. Está cerca de Malargüe, donde hay una antena de espacio profundo de la ESA."
+      en: "A basaltic volcanic field in Mendoza with very long lava flows and lava tubes, useful as an analog of lunar and Martian lava tubes. It is near Malargüe, where ESA has a deep-space antenna."
+    proposed:
+      - {quality: basaltic_volcanism, targets: [mars], strength: moderate, evidence: literature,
+         es: "Coladas basálticas infladas comparadas con las de Daedalia Planum, en Marte (Giacomini et al., 2009).",
+         en: "Inflated basaltic flows compared with those of Daedalia Planum, on Mars (Giacomini et al., 2009)."}
+      - {quality: basaltic_volcanism, targets: [moon], strength: partial, evidence: team,
+         es: "Campo de basalto, según la propuesta del equipo.",
+         en: "A basalt field, as stated in the team's proposal."}
+      - {quality: lava_tubes, targets: [moon, mars], strength: partial, evidence: team,
+         es: "Tubos de lava, según la propuesta del equipo.",
+         en: "Lava tubes, as stated in the team's proposal."}
+    refs:
+      - {title: "Giacomini et al. (2009), Inflated flows on Daedalia Planum (Mars)? Clues from a comparative analysis with the Payen volcanic complex (Argentina). Planetary and Space Science", url: "https://doi.org/10.1016/j.pss.2008.12.001", type: peer_reviewed}
+
+  - id: somuncura
+    name: "Meseta de Somuncurá (Patagonia)"
+    country: "Argentina"
+    lat: -41.35
+    lon: -66.95
+    targets: [moon, mars]
+    status: unverified
+    rationale:
+      es: "Meseta basáltica de la Patagonia: llanuras de basalto con viento y frío. Se propone como análogo de los basaltos de los mares lunares y de superficies marcianas frías."
+      en: "A basaltic plateau in Patagonia: basalt plains with wind and cold. Proposed as an analog of lunar mare basalts and of cold Martian surfaces."
+    proposed:
+      - {quality: basaltic_volcanism, targets: [moon, mars], strength: partial, evidence: team,
+         es: "Llanuras de basalto, según la propuesta del equipo.",
+         en: "Basalt plains, as stated in the team's proposal."}
+    refs: []
+
+  - id: base-marambio
+    name: "Base Marambio (Antártida)"
+    country: "Antarctica (Argentine base)"
+    lat: -64.24
+    lon: -56.62
+    targets: [moon, mars]
+    status: unverified
+    rationale:
+      es: "Base antártica argentina. Más que por la geología, se propone como análogo de aislamiento y de hábitat para una base lunar; lo mismo vale para la Base Esperanza."
+      en: "An Argentine Antarctic base. Proposed less for its geology than as an analog of isolation and of a habitat for a lunar base; the same holds for Base Esperanza."
+    proposed:
+      - {quality: isolation_remoteness, targets: [moon, mars], strength: partial, evidence: team,
+         es: "Base aislada con reabastecimiento limitado, según la propuesta del equipo.",
+         en: "An isolated base with limited resupply, as stated in the team's proposal."}
+    refs: []
+
+  # --------------------------------------------------------------------- BRASIL
+  - id: domo-vargeao
+    name: "Vargeão Dome"
+    country: "Brazil"
+    lat: -26.82
+    lon: -52.17
+    targets: [moon, mars]
+    status: under_review
+    rationale:
+      es: "Cráter de impacto de unos 12 km formado en basalto, en Santa Catarina. Ese tipo de blanco es parecido al de muchos cráteres de Marte."
+      en: "An impact crater about 12 km across formed in basalt, in Santa Catarina. That kind of target rock resembles that of many Martian craters."
+    proposed:
+      - {quality: impact_craters, targets: [moon, mars], strength: moderate, evidence: literature,
+         es: "Estructura de impacto con rasgos de choque descritos en basaltos (Crósta et al., 2012).",
+         en: "An impact structure with shock features described in basalts (Crósta et al., 2012)."}
+      - {quality: basaltic_volcanism, targets: [mars], strength: partial, evidence: literature,
+         es: "El impacto ocurrió sobre basaltos de inundación (Crósta et al., 2012).",
+         en: "The impact happened on flood basalts (Crósta et al., 2012)."}
+    refs:
+      - {title: "Crósta et al. (2012), Geology and impact features of Vargeão Dome, southern Brazil. Meteoritics & Planetary Science", url: "https://doi.org/10.1111/j.1945-5100.2011.01312.x", type: peer_reviewed}
+
+  - id: domo-araguainha
+    name: "Araguainha Dome"
+    country: "Brazil"
+    lat: -16.78
+    lon: -52.98
+    targets: [moon, mars]
+    status: under_review
+    rationale:
+      es: "El mayor cráter de impacto de Sudamérica, de unos 40 km, entre Mato Grosso y Goiás. Se propone como análogo de cráteres complejos lunares y marcianos."
+      en: "South America's largest impact crater, about 40 km across, between Mato Grosso and Goiás. Proposed as an analog of complex lunar and Martian craters."
+    proposed:
+      - {quality: impact_craters, targets: [moon, mars], strength: moderate, evidence: literature,
+         es: "Estructura de impacto compleja de 40 km (Lana et al., 2008).",
+         en: "A 40 km complex impact structure (Lana et al., 2008)."}
+    refs:
+      - {title: "Lana et al. (2008), Structural evolution of the 40 km wide Araguainha impact structure, central Brazil. Meteoritics & Planetary Science", url: "https://doi.org/10.1111/j.1945-5100.2008.tb00679.x", type: peer_reviewed}
+
+  - id: quadrilatero-ferrifero
+    name: "Quadrilátero Ferrífero"
+    country: "Brazil"
+    lat: -20.15
+    lon: -43.80
+    targets: [mars]
+    status: unverified
+    rationale:
+      es: "Formaciones de hierro con hematita en Minas Gerais. La hematita es un mineral que Marte tiene en Meridiani Planum."
+      en: "Iron formations with hematite in Minas Gerais. Hematite is a mineral that Mars has at Meridiani Planum."
+    note:
+      es: "El catálogo de Hypatia no tiene una cualidad para óxidos de hierro, así que la hematita queda descrita acá y no entra en los filtros."
+      en: "Hypatia's catalogue has no quality for iron oxides, so hematite is described here and does not enter the filters."
+    proposed:
+      - {quality: layered_sediments, targets: [mars], strength: partial, evidence: team,
+         es: "Formaciones de hierro bandeado, rocas sedimentarias en capas, según la propuesta del equipo.",
+         en: "Banded iron formations, which are layered sedimentary rocks, as stated in the team's proposal."}
+    refs: []
+
+  - id: carajas
+    name: "Serra dos Carajás"
+    country: "Brazil"
+    lat: -6.07
+    lon: -50.17
+    targets: [mars]
+    status: unverified
+    rationale:
+      es: "Formaciones de hierro con hematita en Pará, con cuevas ferruginosas. Se propone por el parecido con la hematita de Meridiani Planum."
+      en: "Iron formations with hematite in Pará, with caves in iron-rich rock. Proposed for its resemblance to the hematite of Meridiani Planum."
+    proposed:
+      - {quality: layered_sediments, targets: [mars], strength: partial, evidence: team,
+         es: "Formaciones de hierro bandeado, según la propuesta del equipo.",
+         en: "Banded iron formations, as stated in the team's proposal."}
+    refs: []
+
+  - id: nhecolandia
+    name: "Saline lakes of Nhecolândia (Pantanal)"
+    country: "Brazil"
+    lat: -18.99
+    lon: -56.62
+    targets: [mars]
+    status: unverified
+    rationale:
+      es: "Lagunas alcalinas y salinas del Pantanal con comunidades microbianas, propuestas como análogo de lagos marcianos antiguos."
+      en: "Alkaline, saline lakes of the Pantanal with microbial communities, proposed as an analog of ancient Martian lakes."
+    proposed:
+      - {quality: microbialites_biosignatures, targets: [mars], strength: partial, evidence: team,
+         es: "Lagos salinos con microbios, según la propuesta del equipo.",
+         en: "Saline lakes with microbes, as stated in the team's proposal."}
+    refs: []
+
+  - id: lencois-maranhenses
+    name: "Lençóis Maranhenses"
+    country: "Brazil"
+    lat: -2.53
+    lon: -43.12
+    targets: [mars]
+    status: unverified
+    rationale:
+      es: "Campo de dunas con lagunas intercaladas, propuesto como análogo visual y geomorfológico de campos de dunas marcianos. Queda cerca de Alcântara, el centro de lanzamiento brasileño."
+      en: "A dune field with lagoons between the dunes, proposed as a visual and geomorphological analog of Martian dune fields. It is near Alcântara, Brazil's launch centre."
+    proposed:
+      - {quality: aeolian_bedforms, targets: [mars], strength: partial, evidence: literature,
+         es: "Campo de dunas transversales medido en el terreno (Parteli et al., 2006); el parecido con Marte es de la propuesta del equipo.",
+         en: "A transverse dune field measured in the field (Parteli et al., 2006); the resemblance to Mars is the team's proposal."}
+    refs:
+      - {title: "Parteli et al. (2006), Profile measurement and simulation of a transverse dune field in the Lençóis Maranhenses. Geomorphology", url: "https://doi.org/10.1016/j.geomorph.2006.02.015", type: peer_reviewed}
+
+  # -------------------------------------------------------------------- URUGUAY
+  - id: arapey
+    name: "Arapey basalts and thermal waters"
+    country: "Uruguay"
+    lat: -30.95
+    lon: -57.52
+    targets: [moon, mars]
+    status: unverified
+    rationale:
+      es: "Coladas de basalto de inundación de la Formación Arapey (Salto, Artigas, Paysandú), parecidas a los mares lunares y a las llanuras volcánicas de Marte. Las aguas termales de Arapey y Daymán vienen del Acuífero Guaraní, agua subterránea profunda y antigua, propuesta como análogo de la hipótesis de agua en el subsuelo marciano."
+      en: "Flood-basalt flows of the Arapey Formation (Salto, Artigas, Paysandú), similar to the lunar maria and to the volcanic plains of Mars. The thermal waters of Arapey and Daymán come from the Guaraní Aquifer, deep and ancient groundwater, proposed as an analog of the hypothesis of water in the Martian subsurface."
+    note:
+      es: "Las termas son agua del acuífero que sale caliente por la profundidad de los pozos; no se registran acá depósitos minerales hidrotermales, así que no se le asigna esa cualidad."
+      en: "The thermal baths are aquifer water that comes out warm because of the depth of the wells; no hydrothermal mineral deposits are recorded here, so that quality is not assigned."
+    proposed:
+      - {quality: basaltic_volcanism, targets: [moon, mars], strength: partial, evidence: team,
+         es: "Coladas de basalto de inundación, según la propuesta del equipo.",
+         en: "Flood-basalt flows, as stated in the team's proposal."}
+    refs: []
+
+  - id: areniscas-botucatu
+    name: "Botucatu sandstones (Tacuarembó)"
+    country: "Uruguay"
+    lat: -31.60
+    lon: -55.90
+    targets: [mars]
+    status: unverified
+    rationale:
+      es: "Antiguos desiertos de dunas fosilizados; es el mismo sistema de areniscas que contiene al Acuífero Guaraní. Se propone como análogo de la arenisca eólica marciana."
+      en: "Ancient dune deserts turned to stone; the same sandstone system that holds the Guaraní Aquifer. Proposed as an analog of Martian aeolian sandstone."
+    proposed:
+      - {quality: layered_sediments, targets: [mars], strength: partial, evidence: team,
+         es: "Arenisca de dunas antiguas, una roca sedimentaria en capas, según la propuesta del equipo.",
+         en: "Sandstone from ancient dunes, a layered sedimentary rock, as stated in the team's proposal."}
+    refs: []
+
+  # -------------------------------------------------------------------- BOLIVIA
+  - id: salar-uyuni
+    name: "Salar de Uyuni"
+    country: "Bolivia"
+    lat: -20.20
+    lon: -67.60
+    targets: [mars]
+    status: unverified
+    rationale:
+      es: "La mayor costra de sal del mundo, resto de antiguos lagos del Altiplano, a gran altitud y con alta radiación UV. Se propone como análogo de cuencas evaporíticas marcianas."
+      en: "The world's largest salt crust, the remains of ancient Altiplano lakes, at high altitude and with strong UV radiation. Proposed as an analog of Martian evaporite basins."
+    proposed:
+      - {quality: evaporites_sulfates, targets: [mars], strength: partial, evidence: team,
+         es: "Costra de sal de una cuenca evaporítica, según la propuesta del equipo.",
+         en: "Salt crust of an evaporite basin, as stated in the team's proposal."}
+    refs: []
+
+# Proposed but not included, with the reason.
+declined:
+  - name: "Lake Karachay (Russia)"
+    es: "No se incluye. Su radiación viene de residuos nucleares (cesio-137, estroncio-90), no se parece a la radiación del espacio, que son partículas de alta energía; además el lago fue rellenado y es un sitio contaminado, no un lugar para ensayos."
+    en: "Not included. Its radiation comes from nuclear waste (caesium-137, strontium-90) and does not resemble space radiation, which is high-energy particles; the lake has also been filled in and is a contaminated site, not a place for tests."
+  - name: "Laguna Verde (Puna)"
+    es: "No se incluye por ahora: hay varias lagunas con ese nombre en la región y hace falta saber cuál es."
+    en: "Not included for now: several lakes in the region have that name, and which one is meant needs to be known."

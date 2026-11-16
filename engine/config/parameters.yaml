@@ -1,0 +1,249 @@
+# Definición de los parámetros de comparación.
+#
+# Para cada parámetro numérico la similitud entre un sitio terrestre (e) y una
+# región de referencia (t) se calcula como
+#       d = |f(x_e) - f(x_t)| / scale          s = exp(-d^2 / 2)
+# donde f es `transform` (identity | log10 | log1p10) y `scale` es la tolerancia
+# científica: la diferencia a la que la similitud cae a 0.61 (a 2*scale cae a 0.14).
+# Las tolerancias son decisiones metodológicas explícitas y editables, no datos.
+#
+# floor (opcional): valor mínimo antes de aplicar el logaritmo; evita que un cero
+#   numérico (p. ej. un salar perfectamente plano en el DEM) produzca -infinito.
+# mode:
+#   absolute  -> se comparan magnitudes físicas en las mismas unidades.
+#   log       -> se comparan órdenes de magnitud (variables que abarcan décadas).
+#   ordinal   -> descriptor geológico codificado 0 / 0.5 / 1 a partir de literatura
+#                (0 = ausente o no reportado, 0.5 = presente/secundario, 1 = dominante).
+#                s = 1 - |a - b|; las ausencias conjuntas (0,0) no puntúan.
+#                Los descriptores se aplican a los dos cuerpos: que la Luna no tenga
+#                arcillas, sulfatos ni dunas es una propiedad real, y un sitio terrestre
+#                que sí los tiene es menos parecido a ella.
+# applies_to: cuerpos para los que la comparación tiene sentido físico. Fuera de
+#   esa lista el parámetro se informa como "no aplicable" (distinto de "dato faltante").
+# comparability: factor 0-1 que multiplica el peso cuando las mediciones de la Tierra
+#   y del otro cuerpo no son estrictamente equivalentes (banda, altura, modelo vs medición).
+
+categories:
+  geology:      {label: "Geología y mineralogía", order: 1}
+  topography:   {label: "Topografía", order: 2}
+  environment:  {label: "Condiciones ambientales", order: 3}
+  water:        {label: "Agua y hielo", order: 4}
+
+parameters:
+  # ------------------------------------------------------------ TOPOGRAFÍA
+  # Todas las métricas se calculan con el mismo algoritmo sobre DEM remuestreados a
+  # la MISMA línea de base (463 m) y la MISMA ventana (40 x 40 km) en una proyección
+  # local equidistante: Copernicus GLO-90 (Tierra), LOLA LDEM_64 (Luna), MOLA MEGDR (Marte).
+  relief_m:
+    label: "Relieve local (P95-P5 de elevación)"
+    category: topography
+    unit: "m"
+    mode: log
+    transform: log10
+    floor: 5.0          # por debajo de la exactitud vertical de los DEM no se distingue
+    scale: 0.40
+    applies_to: [moon, mars]
+    comparability: {moon: 1.0, mars: 1.0}
+  slope_mean_deg:
+    label: "Pendiente media (línea de base 463 m)"
+    category: topography
+    unit: "grados"
+    mode: absolute
+    transform: identity
+    scale: 3.0
+    applies_to: [moon, mars]
+    comparability: {moon: 1.0, mars: 1.0}
+  slope_p95_deg:
+    label: "Pendiente percentil 95"
+    category: topography
+    unit: "grados"
+    mode: absolute
+    transform: identity
+    scale: 6.0
+    applies_to: [moon, mars]
+    comparability: {moon: 1.0, mars: 1.0}
+  roughness_tri_m:
+    label: "Rugosidad (índice TRI medio, 463 m)"
+    category: topography
+    unit: "m"
+    mode: log
+    transform: log10
+    floor: 1.0
+    scale: 0.40
+    applies_to: [moon, mars]
+    comparability: {moon: 1.0, mars: 1.0}
+
+  # -------------------------------------------------------------- AMBIENTE
+  tsurf_mean_K:
+    label: "Temperatura superficial media"
+    category: environment
+    unit: "K"
+    mode: absolute
+    transform: identity
+    scale: 30.0
+    applies_to: [moon, mars]
+    comparability: {moon: 1.0, mars: 0.8}
+    note: "Tierra: temperatura de piel MERRA-2 (reanálisis). Luna: temperatura bolométrica Diviner (medida). Marte: MCD (modelo)."
+  tsurf_min_K:
+    label: "Temperatura superficial mínima"
+    category: environment
+    unit: "K"
+    mode: absolute
+    transform: identity
+    scale: 40.0
+    applies_to: [moon, mars]
+    comparability: {moon: 1.0, mars: 0.8}
+  tsurf_max_K:
+    label: "Temperatura superficial máxima"
+    category: environment
+    unit: "K"
+    mode: absolute
+    transform: identity
+    scale: 40.0
+    applies_to: [moon, mars]
+    comparability: {moon: 1.0, mars: 0.8}
+  diurnal_range_K:
+    label: "Amplitud térmica diurna de la superficie"
+    category: environment
+    unit: "K"
+    mode: absolute
+    transform: identity
+    scale: 30.0
+    applies_to: [moon, mars]
+    comparability: {moon: 0.7, mars: 0.8}
+    note: "El 'día' difiere: 24 h (Tierra), 24.66 h (Marte), 29.53 días (Luna). Se compara la amplitud, no la tasa de cambio."
+  albedo:
+    label: "Albedo de banda ancha"
+    category: environment
+    unit: "-"
+    mode: absolute
+    transform: identity
+    scale: 0.08
+    applies_to: [moon, mars]
+    comparability: {moon: 0.6, mars: 0.9}
+    note: "Tierra: CERES SYN1deg (medido, ~110 km), ponderado por la insolación mensual; incluye nieve estacional y se omite si la celda es mayormente océano. Marte: albedo bolométrico TES (medido). Luna: valor de literatura por tipo de terreno (mar/tierras altas), no un mapa."
+  insolation_Wm2:
+    label: "Insolación media anual sobre superficie horizontal"
+    category: environment
+    unit: "W/m2"
+    mode: absolute
+    transform: identity
+    scale: 60.0
+    applies_to: [moon, mars]
+    comparability: {moon: 0.7, mars: 0.8}
+    note: "Tierra: CERES en superficie (con nubes). Marte: flujo en superficie del MCD (modelo). Luna: cálculo astronómico sin atmósfera para terreno plano (no considera sombras topográficas)."
+  pressure_Pa:
+    label: "Presión atmosférica en superficie"
+    category: environment
+    unit: "Pa"
+    mode: log
+    transform: log10
+    scale: 1.0
+    applies_to: [moon, mars]
+    comparability: {moon: 1.0, mars: 1.0}
+    note: "Ningún sitio terrestre se acerca a Marte (~600 Pa) ni al vacío lunar. Se incluye para que la brecha quede cuantificada, no para premiar a ningún sitio."
+  wind_speed_ms:
+    label: "Velocidad media del viento (10 m)"
+    category: environment
+    unit: "m/s"
+    mode: absolute
+    transform: identity
+    scale: 3.0
+    applies_to: [mars]
+    comparability: {mars: 0.5}
+    note: "Velocidades similares NO implican fuerzas similares: la densidad del aire marciano es ~1 % de la terrestre. Ver presión dinámica."
+  wind_dynamic_pressure_Pa:
+    label: "Presión dinámica media del viento (0.5 rho v^2)"
+    category: environment
+    unit: "Pa"
+    mode: log
+    transform: log10
+    floor: 0.01
+    scale: 1.0
+    applies_to: [mars]
+    comparability: {mars: 0.7}
+    note: "Derivado. Tierra: rho de la ley de gases ideales con presión y temperatura de POWER. Marte: rho y viento del MCD."
+  dust_optical_depth:
+    label: "Espesor óptico de aerosoles/polvo (visible)"
+    category: environment
+    unit: "-"
+    mode: log
+    transform: log10
+    floor: 0.01         # resolución con la que NASA POWER informa el AOD
+    scale: 0.5
+    applies_to: [mars]
+    comparability: {mars: 0.6}
+    note: "Tierra: AOD a 550 nm (MERRA-2). Marte: espesor óptico visible de la columna de polvo (MCD). Composición y tamaño de partícula distintos."
+
+  # ----------------------------------------------------------- AGUA Y HIELO
+  precip_mm_yr:
+    label: "Precipitación anual"
+    category: water
+    unit: "mm/año"
+    mode: log
+    transform: log1p10
+    scale: 1.0
+    applies_to: [moon, mars]
+    comparability: {moon: 1.0, mars: 1.0}
+    note: "En la Luna y en Marte actual la precipitación líquida es cero por física (no es un dato faltante)."
+  soil_wetness:
+    label: "Humedad del suelo superficial (fracción de saturación)"
+    category: water
+    unit: "0-1"
+    mode: absolute
+    transform: identity
+    scale: 0.15
+    applies_to: [moon, mars]
+    comparability: {moon: 0.8, mars: 0.8}
+    note: "Tierra: GWETTOP de MERRA-2 (modelo de superficie, ~50 km). Luna/Marte: 0 (sin agua líquida en el suelo)."
+  column_water_vapor_kgm2:
+    label: "Vapor de agua en columna"
+    category: water
+    unit: "kg/m2"
+    mode: log
+    transform: log10
+    floor: 0.001
+    scale: 1.0
+    applies_to: [mars]
+    comparability: {mars: 0.8}
+  thermal_cycling_273K:
+    label: "Fracción del año con ciclo diurno que cruza 273.15 K"
+    category: water
+    unit: "0-1"
+    mode: absolute
+    transform: identity
+    scale: 0.30
+    applies_to: [mars]
+    comparability: {mars: 0.6}
+    note: "Indicador de ciclos de congelación-descongelación. En Marte cruzar 273 K no implica agua líquida estable (presión cercana al punto triple)."
+
+  # ---------------------------------------- GEOLOGÍA Y MINERALOGÍA (ordinal)
+  g_basalt:            {label: "Litología basáltica", category: geology, mode: ordinal, applies_to: [moon, mars]}
+  g_anorthosite:       {label: "Litología anortosítica / feldespática", category: geology, mode: ordinal, applies_to: [moon, mars]}
+  g_volcanic:          {label: "Formas volcánicas (coladas, conos, escudos)", category: geology, mode: ordinal, applies_to: [moon, mars]}
+  g_lava_tubes:        {label: "Tubos de lava / cavidades", category: geology, mode: ordinal, applies_to: [moon, mars]}
+  g_pyroclastic:       {label: "Depósitos piroclásticos / tefra", category: geology, mode: ordinal, applies_to: [moon, mars]}
+  g_impact:            {label: "Estructuras y litologías de impacto", category: geology, mode: ordinal, applies_to: [moon, mars]}
+  g_aeolian:           {label: "Formas eólicas (dunas, ripples)", category: geology, mode: ordinal, applies_to: [moon, mars]}
+  g_fluvial_lacustrine: {label: "Sedimentos fluviales / deltaicos / lacustres", category: geology, mode: ordinal, applies_to: [moon, mars]}
+  g_evaporite:         {label: "Evaporitas / cloruros", category: geology, mode: ordinal, applies_to: [moon, mars]}
+  g_sulfate:           {label: "Sulfatos", category: geology, mode: ordinal, applies_to: [moon, mars]}
+  g_iron_oxide:        {label: "Óxidos e hidróxidos de hierro / jarosita", category: geology, mode: ordinal, applies_to: [moon, mars]}
+  g_clay:              {label: "Filosilicatos (arcillas)", category: geology, mode: ordinal, applies_to: [moon, mars]}
+  g_carbonate:         {label: "Carbonatos", category: geology, mode: ordinal, applies_to: [moon, mars]}
+  g_perchlorate:       {label: "Percloratos / nitratos (oxidantes)", category: geology, mode: ordinal, applies_to: [moon, mars]}
+  g_silica:            {label: "Sílice hidrotermal / opalina", category: geology, mode: ordinal, applies_to: [moon, mars]}
+  g_ground_ice:        {label: "Hielo en el subsuelo / permafrost", category: water, mode: ordinal, applies_to: [moon, mars]}
+  g_periglacial:       {label: "Formas glaciares / periglaciares", category: water, mode: ordinal, applies_to: [moon, mars]}
+  g_loose_regolith:    {label: "Cobertura suelta de grano fino (regolito, arena, tefra)", category: geology, mode: ordinal, applies_to: [moon, mars]}
+
+# Factor de calidad por tipo de dato, usado solo en el cálculo de CONFIANZA
+# (no modifica la puntuación de similitud).
+data_quality:
+  measured: 1.00        # medición satelital o in situ
+  reanalysis: 0.85      # reanálisis que asimila observaciones (MERRA-2)
+  modeled: 0.70         # salida de modelo climático (MCD) o cálculo astronómico
+  derived: 0.70         # derivado de otras variables
+  literature: 0.75      # valor publicado, no recuperado de un mapa
+  expert_coded: 0.60    # descriptor ordinal codificado a partir de literatura
+  physical_zero: 1.00   # cero impuesto por la física (p. ej. lluvia en la Luna)

@@ -1,0 +1,115 @@
+# Perfiles de ponderación por objetivo científico.
+#
+# category_weights: peso relativo de cada categoría (se normalizan a suma 1).
+#   Dentro de una categoría el peso se reparte por igual entre sus parámetros
+#   disponibles, multiplicado por `parameter_multipliers` (por defecto 1) y por
+#   la `comparability` del parámetro para el cuerpo destino.
+# Un multiplicador 0 excluye el parámetro de ese objetivo.
+# Los pesos son hipótesis de trabajo editables; el dashboard permite ajustarlos.
+
+objectives:
+  balanced:
+    label: "Equilibrado (general)"
+    description: "Da el mismo peso a geología, topografía, ambiente y agua/hielo."
+    category_weights: {geology: 0.30, topography: 0.20, environment: 0.25, water: 0.25}
+    parameter_multipliers: {pressure_Pa: 0.3}
+
+  planetary_geology:
+    label: "Geología planetaria"
+    description: "Procesos y unidades geológicas comparables: litología, vulcanismo, impactos, sedimentación."
+    category_weights: {geology: 0.60, topography: 0.20, environment: 0.05, water: 0.15}
+    parameter_multipliers: {pressure_Pa: 0.0, wind_speed_ms: 0.0, wind_dynamic_pressure_Pa: 0.0}
+
+  regolith_soil:
+    label: "Regolito y suelos"
+    description: "Materiales sueltos: composición, cobertura de grano fino, sales y humedad."
+    category_weights: {geology: 0.55, topography: 0.10, environment: 0.10, water: 0.25}
+    parameter_multipliers:
+      g_loose_regolith: 3.0
+      g_basalt: 2.0
+      g_anorthosite: 2.0
+      g_pyroclastic: 1.5
+      g_perchlorate: 1.5
+      g_lava_tubes: 0.0
+      soil_wetness: 2.0
+      pressure_Pa: 0.0
+
+  rover_mobility:
+    label: "Movilidad de rovers"
+    description: "Pendientes, rugosidad, relieve y tipo de terreno suelto (arena, regolito, dunas)."
+    category_weights: {geology: 0.25, topography: 0.60, environment: 0.10, water: 0.05}
+    parameter_multipliers:
+      g_loose_regolith: 3.0
+      g_aeolian: 3.0
+      g_volcanic: 1.5
+      g_impact: 1.5
+      g_clay: 0.0
+      g_carbonate: 0.0
+      g_sulfate: 0.0
+      g_perchlorate: 0.0
+      g_silica: 0.0
+      g_iron_oxide: 0.0
+      g_evaporite: 0.5
+      pressure_Pa: 0.0
+      insolation_Wm2: 0.5
+
+  instrument_testing:
+    label: "Prueba de instrumentos y sensores"
+    description: "Mineralogía diagnóstica y condiciones de operación (temperatura, iluminación, polvo)."
+    category_weights: {geology: 0.50, topography: 0.05, environment: 0.30, water: 0.15}
+    parameter_multipliers: {pressure_Pa: 0.3}
+
+  habitat_infrastructure:
+    label: "Hábitats e infraestructura"
+    description: "Cargas ambientales sobre estructuras y sistemas: ciclos térmicos, viento, insolación, polvo, terreno."
+    category_weights: {geology: 0.10, topography: 0.25, environment: 0.50, water: 0.15}
+    parameter_multipliers:
+      g_lava_tubes: 3.0
+      g_loose_regolith: 2.0
+      diurnal_range_K: 1.5
+      insolation_Wm2: 1.5
+      pressure_Pa: 0.5
+
+  extreme_survival:
+    label: "Supervivencia en ambientes extremos"
+    description: "Frío, aridez, radiación solar y aislamiento como estresores combinados."
+    category_weights: {geology: 0.05, topography: 0.05, environment: 0.60, water: 0.30}
+    parameter_multipliers:
+      tsurf_min_K: 2.0
+      tsurf_mean_K: 1.5
+      precip_mm_yr: 1.5
+      pressure_Pa: 1.0
+
+  water_ice_detection:
+    label: "Detección de agua y hielo"
+    description: "Hielo en el subsuelo, permafrost seco, régimen térmico bajo cero y aridez."
+    category_weights: {geology: 0.10, topography: 0.05, environment: 0.20, water: 0.65}
+    parameter_multipliers:
+      g_ground_ice: 4.0
+      g_periglacial: 2.0
+      tsurf_mean_K: 2.0
+      tsurf_max_K: 1.5
+      pressure_Pa: 0.0
+      wind_speed_ms: 0.0
+      wind_dynamic_pressure_Pa: 0.0
+
+  astrobiology:
+    label: "Astrobiología"
+    description: "Ambientes acuosos antiguos o extremos y minerales que preservan biofirmas (arcillas, sulfatos, carbonatos, sílice, sales)."
+    category_weights: {geology: 0.50, topography: 0.0, environment: 0.20, water: 0.30}
+    parameter_multipliers:
+      g_clay: 2.0
+      g_sulfate: 2.0
+      g_carbonate: 2.0
+      g_silica: 2.0
+      g_evaporite: 2.0
+      g_perchlorate: 2.0
+      g_iron_oxide: 1.5
+      g_fluvial_lacustrine: 2.0
+      g_ground_ice: 1.5
+      g_impact: 0.5
+      g_lava_tubes: 1.0
+      g_loose_regolith: 0.5
+      pressure_Pa: 0.0
+      wind_speed_ms: 0.0
+      wind_dynamic_pressure_Pa: 0.0
