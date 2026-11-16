@@ -194,7 +194,9 @@ def explain(quality: str, v: dict, period: str, uv_percentile=None) -> str:
         return text + ", NASA POWER, MERRA-2 reanalysis. Mars averages about 0.6 kPa."
     if quality == "high_uv":
         text = f"All-sky UV index {v['ctx_uv_index']:.1f} (daily mean over {period}; CERES SYN1deg satellite product via NASA POWER)"
-        if uv_percentile is not None:
+        if uv_percentile is not None and uv_percentile >= 99.5:
+            text += ", higher than at every land cell of the engine's global grid"
+        elif uv_percentile is not None:
             text += f", higher than {uv_percentile:.0f}% of Earth's land grid cells"
         return text + ". Mars receives far more UV, including UVC."
     raise KeyError(quality)
