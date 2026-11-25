@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-15T21:55:55Z",
+  "checked_at": "2026-11-25T17:01:27Z",
   "earth_collections": [
     {
       "label": "MERRA-2 mensual, diagnósticos de superficie (temperatura, viento, presión)",
@@ -7,8 +7,8 @@
       "version": "5.12.4",
       "title": "MERRA-2 tavgM_2d_slv_Nx: 2d,Monthly mean,Time-Averaged,Single-Level,Assimilation,Single-Level Diagnostics 0.625 x 0.5 degree V5.12.4 (M2TMNXSLV)",
       "collection_start": "1980-01-01T00:00:00.000Z",
-      "latest_granule_start": "2026-09-01T00:00:00.000Z",
-      "latest_granule_end": "2026-09-30T23:59:59.000Z",
+      "latest_granule_start": "2026-10-01T00:00:00.000Z",
+      "latest_granule_end": "2026-10-31T23:59:59.000Z",
       "concept_id": "C1276812859-GES_DISC"
     },
     {
@@ -17,8 +17,8 @@
       "version": "5.12.4",
       "title": "MERRA-2 tavgM_2d_lnd_Nx: 2d,Monthly mean,Time-Averaged,Single-Level,Assimilation,Land Surface Diagnostics 0.625 x 0.5 degree V5.12.4 (M2TMNXLND)",
       "collection_start": "1980-01-01T00:00:00.000Z",
-      "latest_granule_start": "2026-09-01T00:00:00.000Z",
-      "latest_granule_end": "2026-09-30T23:59:59.000Z",
+      "latest_granule_start": "2026-10-01T00:00:00.000Z",
+      "latest_granule_end": "2026-10-31T23:59:59.000Z",
       "concept_id": "C1276812856-GES_DISC"
     },
     {
@@ -27,8 +27,8 @@
       "version": "5.12.4",
       "title": "MERRA-2 tavgM_2d_aer_Nx: 2d,Monthly mean,Time-averaged,Single-Level,Assimilation,Aerosol Diagnostics 0.625 x 0.5 degree V5.12.4 (M2TMNXAER)",
       "collection_start": "1980-01-01T00:00:00.000Z",
-      "latest_granule_start": "2026-09-01T00:00:00.000Z",
-      "latest_granule_end": "2026-09-30T23:59:59.000Z",
+      "latest_granule_start": "2026-10-01T00:00:00.000Z",
+      "latest_granule_end": "2026-10-31T23:59:59.000Z",
       "concept_id": "C1276812866-GES_DISC"
     },
     {
@@ -47,8 +47,8 @@
       "version": "061",
       "title": "MODIS/Terra+Aqua BRDF/Albedo Albedo Daily L3 Global 0.05Deg CMG V061",
       "collection_start": "2000-02-16T00:00:00.000Z",
-      "latest_granule_start": "2026-11-06T00:00:00.000Z",
-      "latest_granule_end": "2026-11-13T23:59:59.999Z",
+      "latest_granule_start": "2026-11-12T00:00:00.000Z",
+      "latest_granule_end": "2026-11-19T23:59:59.999Z",
       "concept_id": "C2532068039-LPCLOUD"
     }
   ],
